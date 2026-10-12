@@ -1,0 +1,4 @@
+model,seed,checkpoint_id,weight_bits,activation_bits,weight_quantization,activation_quantization,calibration_samples,fp32_accuracy,quantized_accuracy,accuracy_loss_pp
+resnet34,0,cifar10-resnet34-seed0-split42fbb7440cc27c71-e100,8,8,per_output_channel_symmetric,per_layer_symmetric_static_ptq,2048,0.9482,0.948,0.0200000000000089
+resnet34,0,cifar10-resnet34-seed0-split42fbb7440cc27c71-e100,9,9,per_output_channel_symmetric,per_layer_symmetric_static_ptq,2048,0.9482,0.9482,0.0
+resnet34,0,cifar10-resnet34-seed0-split42fbb7440cc27c71-e100,10,10,per_output_channel_symmetric,per_layer_symmetric_static_ptq,2048,0.9482,0.9477,0.050000000000005596

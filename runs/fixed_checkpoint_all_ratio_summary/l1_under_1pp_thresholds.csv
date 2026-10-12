@@ -1,0 +1,11 @@
+model,tm,highest_tested_ratio_under_1pp_mean,first_tested_ratio_at_or_above_1pp_mean
+resnet34,8,0.9,0.95
+resnet34,16,0.85,0.9
+resnet50,8,0.85,0.9
+resnet50,16,0.8,0.85
+googlenet,8,0.85,0.9
+googlenet,16,0.8,0.85
+densenet121,8,0.85,0.9
+densenet121,16,0.8,0.85
+mobilenet_v2,8,,0.7
+mobilenet_v2,16,,0.7

@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.orig
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local datasets
+data/
+datasets/
+
+# Model checkpoints and large binary artifacts
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.tar
+*.tar.gz
+*.zip
+
+# Runtime logs and temporary files
+*.log
+*.lock
+*.pid
+*.tmp
+*.swp
+.DS_Store
+
+# IDE
+.idea/
+.vscode/

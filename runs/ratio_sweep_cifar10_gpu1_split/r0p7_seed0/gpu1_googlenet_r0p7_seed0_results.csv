@@ -1,0 +1,6 @@
+dataset,model,method,criterion,ratio_source,direct_acc,after_extra_or_ft_acc,pruning_ratio,mac_reduction,pe_utilization,cycle_pe_utilization,cycle_reduction,estimated_speedup
+cifar10,googlenet,Dense baseline,,,0.7307,,0.0,0.0,1.0,1.0,0.0,1.0
+cifar10,googlenet,Dense extra training,,,0.7307,0.8389,0.0,0.0,1.0,1.0,0.0,1.0
+cifar10,googlenet,Global unstructured,,global,0.5128,0.8448,0.7000000358573051,0.5208775885027901,0.8778777044651651,0.5073454009597627,0.055628748007101936,1.058905592360747
+cifar10,googlenet,Cross-filter l1_sum (global_cluster),l1_sum,global_cluster,0.1,0.8439,0.7000249566843755,0.5209545868360026,1.0,1.0,0.5209545868360026,2.087484761403316
+cifar10,googlenet,Cross-filter max_abs (global_cluster),max_abs,global_cluster,0.1007,0.8491,0.7000249566843755,0.5209545868360026,1.0,1.0,0.5209545868360026,2.087484761403316

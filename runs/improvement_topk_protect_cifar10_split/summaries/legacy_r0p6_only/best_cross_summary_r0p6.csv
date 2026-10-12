@@ -1,0 +1,6 @@
+model,variant,acc_pct,dense_extra_ref_pct,global_ref_pct,delta_vs_dense_extra_pp,delta_vs_global_pp,prune_pct,speedup_x,source_file
+densenet121,B_top4_mean_abs,85.82,87.78,88.14,-1.960000000000008,-2.3200000000000074,59.999114029115795,2.157371996029781,runs/improvement_topk_protect_cifar10_split/per_run_csv/r0p6/b_protect_cap_densenet121_r0p6_seed0_results.csv
+googlenet,A_top4_mean_abs,85.22,83.89,84.36,1.3299999999999983,0.8599999999999994,59.99902468130027,1.7762375809479083,runs/improvement_topk_protect_cifar10_split/per_run_csv/r0p6/a_topk_googlenet_r0p6_seed0_results.csv
+mobilenet_v2,A_top2_mean_abs,49.34,49.36,48.93,-0.01999999999999602,0.4100000000000037,59.98063714744995,2.2494859087210592,runs/improvement_topk_protect_cifar10_split/per_run_csv/r0p6/a_topk_mobilenet_v2_r0p6_seed0_results.csv
+resnet34,B_top2_mean_abs,83.86,82.75,83.95,1.1099999999999994,-0.09000000000000341,59.99580055811937,1.8124421467907752,runs/improvement_topk_protect_cifar10_split/per_run_csv/r0p6/b_protect_cap_resnet34_r0p6_seed0_results.csv
+resnet50,B_top2_mean_abs,71.89999999999999,72.49,72.16,-0.5900000000000034,-0.2600000000000051,57.93471911737812,1.700198021196602,runs/improvement_topk_protect_cifar10_split/per_run_csv/r0p6/b_protect_cap_resnet50_r0p6_seed0_results.csv

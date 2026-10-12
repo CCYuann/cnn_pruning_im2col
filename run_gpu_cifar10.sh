@@ -1,0 +1,13 @@
+python resnet34_pruning_experiments.py \
+  --dataset cifar10 \
+  --device cuda \
+  --amp \
+  --epochs 10 \
+  --finetune-epochs 5 \
+  --batch-size 128 \
+  --num-workers 4 \
+  --pin-memory \
+  --prune-ratio 0.6 \
+  --cross-criteria all \
+  --save-dir runs \
+  --run-name resnet34_cifar10_gpu

@@ -1,0 +1,2 @@
+dataset,model,method,criterion,ratio_source,direct_acc,after_extra_or_ft_acc,pruning_ratio,mac_reduction,pe_utilization,cycle_pe_utilization,cycle_reduction,estimated_speedup,seed,checkpoint_id,validation_acc
+cifar10,resnet34,Dense baseline,,,0.9488,,0.0,0.0,1.0,1.0,0.0,1.0,1,cifar10-resnet34-seed1-split42fbb7440cc27c71-e100,0.9532

@@ -1,0 +1,3 @@
+dataset,model,method,criterion,ratio_source,direct_acc,after_extra_or_ft_acc,pruning_ratio,mac_reduction,pe_utilization,cycle_pe_utilization,cycle_reduction,estimated_speedup,seed,checkpoint_id,tm,target_prune_ratio,dense_test_acc,dense_extra_test_acc,accuracy_delta_vs_dense_extra
+cifar10,resnet34,Dense baseline,,,0.9488,,0.0,0.0,1.0,1.0,0.0,1.0,1,cifar10-resnet34-seed1-split42fbb7440cc27c71-e100,8,0.9,0.9488,,
+cifar10,resnet34,Cross-filter l1_sum (global_cluster+group_similarity_jaccard),l1_sum,global_cluster+group_similarity_jaccard,0.2446,0.9394,0.8999964628356919,0.7978347261672603,1.0,1.0,0.7978347261672603,4.946447928675148,1,cifar10-resnet34-seed1-split42fbb7440cc27c71-e100,8,0.9,0.9488,,

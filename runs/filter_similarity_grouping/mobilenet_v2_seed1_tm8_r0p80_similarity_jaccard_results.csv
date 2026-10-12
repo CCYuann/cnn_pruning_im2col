@@ -1,0 +1,3 @@
+dataset,model,method,criterion,ratio_source,direct_acc,after_extra_or_ft_acc,pruning_ratio,mac_reduction,pe_utilization,cycle_pe_utilization,cycle_reduction,estimated_speedup,seed,checkpoint_id,tm,target_prune_ratio,dense_test_acc,dense_extra_test_acc,accuracy_delta_vs_dense_extra
+cifar10,mobilenet_v2,Dense baseline,,,0.8572,,0.0,0.0,1.0,1.0,0.0,1.0,1,cifar10-mobilenet_v2-seed1-split42fbb7440cc27c71-e100,8,0.8,0.8572,,
+cifar10,mobilenet_v2,Cross-filter l1_sum (global_cluster+group_similarity_jaccard),l1_sum,global_cluster+group_similarity_jaccard,0.6585,0.8513,0.799956159579132,0.6373609976754413,1.0,0.46302944007700947,0.7540479040340932,4.065832397454409,1,cifar10-mobilenet_v2-seed1-split42fbb7440cc27c71-e100,8,0.8,0.8572,,

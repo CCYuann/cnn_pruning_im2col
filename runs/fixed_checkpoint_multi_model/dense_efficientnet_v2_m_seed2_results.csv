@@ -1,0 +1,2 @@
+dataset,model,method,criterion,ratio_source,direct_acc,after_extra_or_ft_acc,pruning_ratio,mac_reduction,pe_utilization,cycle_pe_utilization,cycle_reduction,estimated_speedup,seed,checkpoint_id,validation_acc
+cifar10,efficientnet_v2_m,Dense baseline,,,0.7879,,0.0,0.0,1.0,1.0,0.0,1.0,2,cifar10-efficientnet_v2_m-seed2-split42fbb7440cc27c71-e100,0.7846

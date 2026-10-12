@@ -1,0 +1,22 @@
+Wrote runs/ratio_sweep_cifar10_gpu1_split/all_results_combined.csv
+max_abs - l1_sum mean: +0.52 percentage points over 20 model/file pairs
+cifar10      densenet121        diff=-0.28 pp speedup=1.80x source=runs/ratio_sweep_cifar10_gpu1_split/r0p5_seed0/gpu1_densenet121_r0p5_seed0_results.csv
+cifar10      googlenet          diff=+0.75 pp speedup=1.56x source=runs/ratio_sweep_cifar10_gpu1_split/r0p5_seed0/gpu1_googlenet_r0p5_seed0_results.csv
+cifar10      mobilenet_v2       diff=-0.62 pp speedup=1.86x source=runs/ratio_sweep_cifar10_gpu1_split/r0p5_seed0/gpu1_mobilenet_v2_r0p5_seed0_results.csv
+cifar10      resnet34           diff=-0.79 pp speedup=1.58x source=runs/ratio_sweep_cifar10_gpu1_split/r0p5_seed0/gpu1_resnet34_r0p5_seed0_results.csv
+cifar10      resnet50           diff=+0.47 pp speedup=1.50x source=runs/ratio_sweep_cifar10_gpu1_split/r0p5_seed0/gpu1_resnet50_r0p5_seed0_results.csv
+cifar10      densenet121        diff=+1.02 pp speedup=2.16x source=runs/ratio_sweep_cifar10_gpu1_split/r0p6_seed0/gpu1_densenet121_r0p6_seed0_results.csv
+cifar10      googlenet          diff=+0.39 pp speedup=1.78x source=runs/ratio_sweep_cifar10_gpu1_split/r0p6_seed0/gpu1_googlenet_r0p6_seed0_results.csv
+cifar10      mobilenet_v2       diff=+0.37 pp speedup=2.25x source=runs/ratio_sweep_cifar10_gpu1_split/r0p6_seed0/gpu1_mobilenet_v2_r0p6_seed0_results.csv
+cifar10      resnet34           diff=+0.24 pp speedup=1.81x source=runs/ratio_sweep_cifar10_gpu1_split/r0p6_seed0/gpu1_resnet34_r0p6_seed0_results.csv
+cifar10      resnet50           diff=+2.45 pp speedup=1.75x source=runs/ratio_sweep_cifar10_gpu1_split/r0p6_seed0/gpu1_resnet50_r0p6_seed0_results.csv
+cifar10      densenet121        diff=+1.49 pp speedup=2.71x source=runs/ratio_sweep_cifar10_gpu1_split/r0p7_seed0/gpu1_densenet121_r0p7_seed0_results.csv
+cifar10      googlenet          diff=+0.52 pp speedup=2.09x source=runs/ratio_sweep_cifar10_gpu1_split/r0p7_seed0/gpu1_googlenet_r0p7_seed0_results.csv
+cifar10      mobilenet_v2       diff=+0.94 pp speedup=2.85x source=runs/ratio_sweep_cifar10_gpu1_split/r0p7_seed0/gpu1_mobilenet_v2_r0p7_seed0_results.csv
+cifar10      resnet34           diff=-0.15 pp speedup=2.15x source=runs/ratio_sweep_cifar10_gpu1_split/r0p7_seed0/gpu1_resnet34_r0p7_seed0_results.csv
+cifar10      resnet50           diff=+0.61 pp speedup=2.05x source=runs/ratio_sweep_cifar10_gpu1_split/r0p7_seed0/gpu1_resnet50_r0p7_seed0_results.csv
+cifar10      densenet121        diff=-0.07 pp speedup=3.69x source=runs/ratio_sweep_cifar10_gpu1_split/r0p8_seed0/gpu1_densenet121_r0p8_seed0_results.csv
+cifar10      googlenet          diff=+0.15 pp speedup=2.60x source=runs/ratio_sweep_cifar10_gpu1_split/r0p8_seed0/gpu1_googlenet_r0p8_seed0_results.csv
+cifar10      mobilenet_v2       diff=+0.64 pp speedup=3.93x source=runs/ratio_sweep_cifar10_gpu1_split/r0p8_seed0/gpu1_mobilenet_v2_r0p8_seed0_results.csv
+cifar10      resnet34           diff=+0.35 pp speedup=2.71x source=runs/ratio_sweep_cifar10_gpu1_split/r0p8_seed0/gpu1_resnet34_r0p8_seed0_results.csv
+cifar10      resnet50           diff=+2.01 pp speedup=2.63x source=runs/ratio_sweep_cifar10_gpu1_split/r0p8_seed0/gpu1_resnet50_r0p8_seed0_results.csv

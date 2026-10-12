@@ -1,0 +1,2 @@
+model,seed,checkpoint_id,prune_ratio_target,prune_ratio_actual,filter_grouping,criterion,finetune_epochs,calibration_samples,dense_fp32_accuracy,pruned_direct_accuracy,pruned_finetuned_fp32_accuracy,pruned_finetuned_int8_accuracy,int8_loss_vs_pruned_fp32_pp
+resnet34,1,cifar10-resnet34-seed1-split42fbb7440cc27c71-e100,0.8,0.7999985700825137,similarity_jaccard,l1_sum,10,2048,0.9488,0.7914,0.9448,0.9454,-0.060000000000004494

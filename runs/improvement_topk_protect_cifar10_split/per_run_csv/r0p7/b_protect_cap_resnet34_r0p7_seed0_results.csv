@@ -1,0 +1,7 @@
+dataset,model,method,criterion,ratio_source,direct_acc,after_extra_or_ft_acc,pruning_ratio,mac_reduction,pe_utilization,cycle_pe_utilization,cycle_reduction,estimated_speedup
+cifar10,resnet34,Dense baseline,,,0.7755,,0.0,0.0,1.0,1.0,0.0,1.0
+cifar10,resnet34,Dense extra training,,,0.7755,0.8428,0.0,0.0,1.0,1.0,0.0,1.0
+cifar10,resnet34,Global unstructured,,global,0.5664,0.844,0.7000000188147038,0.5345368661589933,0.9467664161159671,0.4812992964194013,0.032902941467412794,1.0340223777718212
+cifar10,resnet34,Cross-filter max_abs (global_cluster+protect2@0.2+cap0.75),max_abs,global_cluster+protect2@0.2+cap0.75,0.1457,0.8316,0.6800680038652928,0.5261606802187553,1.0,1.0,0.5261606802187553,2.110420048006285
+cifar10,resnet34,Cross-filter top2_mean_abs (global_cluster+protect2@0.2+cap0.75),top2_mean_abs,global_cluster+protect2@0.2+cap0.75,0.1557,0.8362,0.6800680038652928,0.5261606802187553,1.0,1.0,0.5261606802187553,2.110420048006285
+cifar10,resnet34,Cross-filter top4_mean_abs (global_cluster+protect2@0.2+cap0.75),top4_mean_abs,global_cluster+protect2@0.2+cap0.75,0.1729,0.84,0.6800680038652928,0.5261606802187553,1.0,1.0,0.5261606802187553,2.110420048006285
