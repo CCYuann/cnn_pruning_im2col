@@ -8,16 +8,18 @@
 
 ## 0. 一頁結論
 
-1. **目前主線：共享mask下的保留權重補償，以B Dense-input ridge為主。** 不換mask、不加回連接、不改kept_count，在ResNet50三個獨立Dense seeds中，FT10平均優於A/BN-only 0.500pp、優於per-filter scalar 0.393pp。
+1. **主線已從補償轉向訓練端。** B Dense-input ridge在ResNet50/90%的FT10平均優於A/BN-only 0.500pp、優於scalar 0.393pp，但95%判定未通過（B-A +0.08pp，門檻+0.8pp），降為低成本附加步驟。見第12.8節。
 2. **補償收益不是單純BN校正或純量縮放就能完全取代。** 便宜控制已實際補跑，不能只與很差的raw FT0相比。
 3. **長微調會縮小優勢，但本輪平均未完全消失。** FT30的B-A為+0.233pp、B-scalar為+0.213pp；B-A僅2/3seeds為正，不能宣稱所有seed都更好或收斂後普遍提升。
 4. **C逐層補償並非越複雜越好。** FT10的C-B僅+0.027pp；FT30為-0.173pp，三seeds均低於B。C的可能價值在zero/極少FT，而非目前最終精度主線。
 5. **共享位置限制留下可量測的經驗差距。** FT10同逐filter q的非共享mask參考94.580%，A93.633%，B94.133%；B補回約52.8%的這個平均差距。這不是精度數學上界。
 6. **多輪搜尋共同顯示：代理指標下降，不保證FT後分類更好。** L1分組代價、activation加權代價、局部重建誤差、搜尋CE，都出現改善但FT10未勝過強控制的案例。
 7. **保護敏感層必須一起檢查實際預算。** 只保護不補剪，target90%可能只實際剪59%至74%；補回預算則可能把其他層剪壞，尤其本批DenseNet121。
-8. **停止新增分組搜尋及activation加權實驗。** 補償感知mask選擇仍是延伸，尚未實作；先把固定mask補償的證據做完整。
+8. **停止新增分組搜尋及activation加權實驗。** 補償感知mask選擇不再列為優先。
+9. **高LR重訓明顯勝過舊微調。** ResNet50/95%、60epochs，rewind比固定lr0.001高0.713pp，3/3seeds為正。
+10. **Group L2,1懲罰是目前唯一通過方法門檻的做法。** 比rewind高0.427pp、3/3seeds為正，共享差距縮小約42%；但95%仍比90%低0.407pp。
 
-截至本日，補償主線仍只有ResNet50/約90%/三Dense seeds的validation證據。5seeds、跨模型、80/95%、校正量/lambda消融、獨立test確認及最新補償模型的INT8都尚未完成。
+截至本日，rewind與group只有ResNet50/三Dense seeds的validation證據，沒有test、ResNet34及INT8結果。硬體評估主體定為ResNet34/80%，ResNet50/95%作為高稀疏度架構延伸。
 
 ## 1. 讀數據前必須知道的比較規則
 
@@ -70,7 +72,9 @@ MAC/PE利用率是軟體估算；現有`paper_cycle_estimate`不是目前8x8 out
 | 固定support ridge | A/B/C同mask、FT10 | ResNet50三Dense seeds、9分支、val | 轉為主線 |
 | BN/scalar/FT30/非共享參考 | 補齊便宜控制與長微調 | 三Dense seeds、24軌跡、val | 支持B固定預算收益，需更多確認 |
 | 量化旁證 | Dense INT8/9/10、ResNet34 pruned INT8/Q15 | 不同模型/ratio/backend的歷史測試 | 不外推最新ResNet50補償INT8 |
-| 補償感知mask | 以refit後重建目標選位置 | 尚未實作 | 延伸，不列已完成成果 |
+| 補償感知mask | 以refit後重建目標選位置 | 尚未實作 | 不再列為優先 |
+| B@95% | A/B、FT10 | ResNet50三Dense seeds、val | 未過判定，B降為附加步驟 |
+| 訓練端救回@95% | rewind、KD、gradual、group、B+重訓 | ResNet50三Dense seeds、29分支、val | H1通過，H2僅group，H3未過，H4 group通過 |
 
 ## 3. 基礎定義：我們究竟剪什麼
 
@@ -404,6 +408,30 @@ B補回比例 = 0.500 / 0.947 = 約52.8%
 
 證據：[完整研究判斷](../runs/compensation_controls_ft30/FINDINGS.md)、[主表/圖](../runs/compensation_controls_ft30/README.md)、[逐seed/epoch](../runs/compensation_controls_ft30/validation_long.csv)、[配對統計](../runs/compensation_controls_ft30/paired_differences.csv)、[成本](../runs/compensation_controls_ft30/costs.csv)、[數值稀疏度稽核](../runs/compensation_controls_ft30/numerical_sparsity_audit.csv)。
 
+### 12.8 後續：95%判定與訓練端救回
+
+原本預期B在95%增益放大，事前定下B-A於FT10平均>=+0.8pp且3/3為正。實際+0.08pp、1/3為正，未通過。BN副本FT0為A46.41%、B78.95%，補償本身有作用，但FT10後幾乎消失。
+
+隨後以凍結計畫比較訓練端方法：ResNet50、Tm8、contiguous、l1、global_cluster，60epochs，LR為Dense cosine的最後60epochs，5000張validation最後一epoch，未評估test。
+
+| 組別 | seed0/1/2 (%) | 平均 | 對rewind (pp) | 平均MAC減少 | q=0 |
+|---|---|---:|---:|---:|---|
+| ft_const | 93.40/92.96/93.94 | 93.433 | -0.713 | 88.06% | 247/172/510 |
+| rewind | 94.28/93.88/94.28 | 94.147 | 基準 | 88.06% | 247/172/510 |
+| rewind_B | 94.10/94.26/94.66 | 94.340 | +0.193（2/3） | 88.06% | 247/172/510 |
+| rewind_kd | 92.94/92.42/93.38 | 92.913 | -1.233（0/3） | 88.06% | 247/172/510 |
+| gradual | 94.28/94.44/94.48 | 94.400 | +0.253（2/3） | 90.91% | 309/403/574 |
+| group λ3e-5 | 94.76/94.38/94.58 | 94.573 | +0.427（3/3） | 88.44% | 353/285/616 |
+| rewind_r90 | 94.96/94.86/95.12 | 94.980 | +0.833 | 79.89% | 43/26/209 |
+| unstructured | 95.02/95.20/95.24 | 95.153 | +1.007 | 88.05% | n/a |
+| dense | 94.96/95.04/95.44 | 95.147 | +1.000 | 0 | n/a |
+
+判定：H1通過；H2僅group通過；H3未通過，group比rewind_r90低0.407pp；H4由group通過，共享差距由1.007pp降到0.580pp。
+
+限制：λ在seed0挑選，seed1/2平均仍為+0.40pp；λ=3e-5是試驗範圍最小值，真正最佳值可能更小。n=3且門檻不是顯著性檢定。gradual的MAC優勢為事後觀察，q<=4比例達37.0至40.6%，seed2的layer4.2.conv2整層q=0。
+
+證據：[B@95%](../runs/compensation_r0p95/RESULT.md)、[救回實驗結果](../runs/retrain_recovery_r0p95/RESULT.md)、[凍結計畫](../runs/retrain_recovery_r0p95/PLAN.md)。
+
 ## 13. 為什麼「不行」：已證實與仍屬假說的分界
 
 | 方法 | 已觀察、可確認 | 可能解釋，尚未隔離證實 | 不能下的結論 |
@@ -468,27 +496,19 @@ ResNet34 seed0固定權重倍率對照：x32加INT8 activation為21.36%、x64為
 
 ## 16. 接下來怎麼更好，以及明確不再做什麼
 
-### P0：維持方法不變，確認B的穩定性
+### P0：硬體實測
 
-本輪已達預先5seed投入資格：B在FT10或FT30對BN/scalar均平均>=0.2pp，且至少2/3seeds同時為正。這是投入門檻，不是顯著性證據。下一輪應新增兩個獨立Dense訓練，而不是對同一Dense換兩個FT seeds湊數。
+硬體評估以ResNet34/80%為主。用三seeds的真實kept_count跑週期模型，回答實際加速比，以及「寬度<8塞兩列」與第三個bank的取捨。全域配額下layer4剪得最多，一階估計塞兩列只省2.6至4.7% vectors，第三個bank的施力點更少，正式結論以週期模型為準。
 
-固定B、scalar、A及必要C控制的規則再確認，不在新seeds上調lambda或挑epoch。C仍留短FT比較，但不因舊FT10平均高0.027pp就當主線。
+軟體端配合：完成參數檔RTL載入測試、identity requant轉換、Q15 contiguous golden。介面細節見[軟體做法](../software_approach.md)。
 
-### P1：有限跨模型、ratio與設計消融
+### P1：確認group
 
-先選一個一般卷積第二模型，如ResNet34或GoogLeNet；MobileNetV2的group/depthwise需另定輸入/共享H的映射，不能直接套本ResNet50 worker。
+在ResNet34/80%比較rewind與group，再做INT8驗證。mask與q會改變，採用時要重新匯出package並重跑週期模型。更小的λ要另開凍結計畫，不算入本批結果。
 
-之後分批做80/95%、512/2048校正量、lambda及Dense-input/student-prefix消融，每次只改一組因素。早期其他方法做過80/95%不代表最新ridge已做。
+### P2：其他
 
-若要主張少FT效率，預先定義目標accuracy與停止規則，測包含校正/求解的完整time-to-accuracy；不能從目前均值曲線就宣稱實測倍速。
-
-### P2：補償感知mask延伸，尚未實作
-
-對比「L1 mask+B」與「補償後重建目標選mask+B」，固定每cluster q、資料、lambda及FT。先在小型case確認預測代價與重新求解後實測誤差一致，再擴模型。
-
-Gram可能因樣本不足/相關性奇異；K最大4608而patches最多4096時不可直接假設可逆。需要對齊prior-centered ridge與damping，C的student X/teacher Y不能偷換成Dense-input公式。批次刪除有交互作用，單位置OBS分數相加只是近似，不能冒充精確joint代價。
-
-共享support可共用分解是效率設計依據，不是已確認新貢獻，也不保證整體8倍快。未來新穎性仍需與OBC/SparseGPT及group/block相關工作對照。
+group+其他方法的疊加、CIFAR-100等較難任務，等P0、P1後再決定。B因95%未通過，不再為它跑5seeds、80%消融或補償感知mask。KD只測過一組參數，不代表整類無效。
 
 ### 不再新增的實驗
 
@@ -503,6 +523,8 @@ Gram可能因樣本不足/相關性奇異；K最大4608而patches最多4096時�
 
 | 主題 | 入口 |
 |---|---|
+| 95%救回實驗 | [結果](../runs/retrain_recovery_r0p95/RESULT.md)、[B@95%](../runs/compensation_r0p95/RESULT.md) |
+| 軟體做法與硬體介面 | [software_approach.md](../software_approach.md) |
 | 最新便宜控制/FT30 | [報告與圖](../runs/compensation_controls_ft30/README.md)、[ZIP](../runs/compensation_controls_ft30.zip) |
 | 最初三seed補償 | [報告](../runs/fixed_mask_weight_compensation/FINAL_REPORT.md) |
 | 固定q分組 | [報告](../runs/fixed_quota_filter_regrouping/README.md) |

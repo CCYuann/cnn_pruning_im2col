@@ -4,6 +4,12 @@
 
 [截至2026-11-05的研究發現與完整實驗紀錄](../research_notes/RESEARCH_FINDINGS_MASTER_2026-11-05.md)：整合目前主線亮點、所有主要已測方向、改善條件、未奏效的數據、已確認問題與可能原因，以及量化/硬體界線。先讀此檔可避免把舊test、近期validation或不同剪枝配額混在一起。
 
+## 已完成：95%共享Mask訓練端救回
+
+`retrain_recovery_r0p95/`：ResNet50、3 Dense seeds、29條、60 epochs。高LR重訓勝過舊微調；僅group懲罰通過方法門檻（+0.427pp，3/3），95%仍比90%低0.407pp。見[結果](retrain_recovery_r0p95/RESULT.md)。
+
+`compensation_r0p95/`：B@95%未通過判定（B-A +0.08pp，門檻+0.8pp）。見[結果](compensation_r0p95/RESULT.md)。
+
 ## 已完成：共享Mask補償的便宜控制與FT30
 
 `compensation_controls_ft30/`：2026-11-05完成三個獨立ResNet50 Dense seeds、Tm8、約90%原共享mask的24條軌跡。FT10平均：A/BN93.633%、scalar93.740%、B94.133%、C94.160%；FT30：A/BN94.020%、scalar94.040%、B94.253%、C94.080%。B對scalar的配對提升由FT10的+0.393pp縮為FT30的+0.213pp，長微調對A只2/3seeds為正，不能宣稱普遍或顯著。兩種非共享參考FT10為global94.600%、quota-matched94.580%；B補回約52.8%的同配額經驗差距。63項tests與42個checkpoint稽核通過；沒有新test forward或RTL變更。達預先5seed投入資格，但5seeds/跨模型/稀疏度掃描尚未做。[完整表格與圖](compensation_controls_ft30/README.md)、[研究判斷](compensation_controls_ft30/FINDINGS.md)、[資料ZIP](compensation_controls_ft30.zip)、[凍結計畫](../research_notes/2026-11-05_compensation_controls_plan.md)。
