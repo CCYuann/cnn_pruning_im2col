@@ -1,0 +1,9 @@
+{
+  "method": "mean_safe_tail_repair",
+  "worst_repair_label": "8 mean steps then 8 tail steps; mean cap reset to post-mean mask",
+  "mean_repair_label": "16 mean steps (matched maximum search rounds)",
+  "wrapper_sha256": "ada7ff604b301fc23ac23897a16c58fb43626aef979199eb8e9c54a01c14e49c",
+  "base_worker_sha256": "59275ed1187aab7f1dd94192f78e06a1445ba79c46b370ca63a44b7acfef80e5",
+  "repair_sha256": "4cb4097f32bc89a0f6ea0d160f4a44af5b7473efdbc75f032c83f08279c6f0a9",
+  "test_used_for_selection": false
+}

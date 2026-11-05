@@ -1,0 +1,14 @@
+{
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:09:02) [GCC 11.2.0]",
+  "torch": "2.6.0+cu124",
+  "cuda": "12.4",
+  "cudnn": 90100,
+  "solve_dtype": "float64",
+  "stored_weight_dtype": "float32",
+  "fine_tune_amp": "float16",
+  "threads": 4,
+  "gpus": [
+    "NVIDIA L40S, 580.178.04, 46068 MiB",
+    "NVIDIA L40S, 580.178.04, 46068 MiB"
+  ]
+}

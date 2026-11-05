@@ -1,0 +1,11 @@
+{"time": "2026-11-02T01:05:17+08:00", "kind": "epoch_complete", "epoch": 1, "train_loss": 0.1975286204152637, "train_accuracy": 0.9482666666666667, "validation_loss": 0.23176656484603883, "validation_accuracy": 0.9238}
+{"time": "2026-11-02T01:05:30+08:00", "kind": "epoch_complete", "epoch": 2, "train_loss": 0.08613191134929657, "train_accuracy": 0.9764888888888889, "validation_loss": 0.2350094365119934, "validation_accuracy": 0.9322}
+{"time": "2026-11-02T01:05:43+08:00", "kind": "epoch_complete", "epoch": 3, "train_loss": 0.06490011470847659, "train_accuracy": 0.9814, "validation_loss": 0.23031395745277405, "validation_accuracy": 0.9338}
+{"time": "2026-11-02T01:05:56+08:00", "kind": "epoch_complete", "epoch": 4, "train_loss": 0.05472322040001551, "train_accuracy": 0.9846222222222222, "validation_loss": 0.23166829738616943, "validation_accuracy": 0.9366}
+{"time": "2026-11-02T01:06:09+08:00", "kind": "epoch_complete", "epoch": 5, "train_loss": 0.045702488655514184, "train_accuracy": 0.9874, "validation_loss": 0.23941766023635863, "validation_accuracy": 0.9348}
+{"time": "2026-11-02T01:06:22+08:00", "kind": "epoch_complete", "epoch": 6, "train_loss": 0.04045782371097141, "train_accuracy": 0.9885111111111111, "validation_loss": 0.24960954179763795, "validation_accuracy": 0.936}
+{"time": "2026-11-02T01:06:35+08:00", "kind": "epoch_complete", "epoch": 7, "train_loss": 0.037814046131239995, "train_accuracy": 0.9890222222222222, "validation_loss": 0.23568335399627685, "validation_accuracy": 0.9356}
+{"time": "2026-11-02T01:06:48+08:00", "kind": "epoch_complete", "epoch": 8, "train_loss": 0.03304299730790986, "train_accuracy": 0.9908, "validation_loss": 0.24780714645385743, "validation_accuracy": 0.9354}
+{"time": "2026-11-02T01:07:00+08:00", "kind": "epoch_complete", "epoch": 9, "train_loss": 0.03033294799360964, "train_accuracy": 0.9915555555555555, "validation_loss": 0.2518245620727539, "validation_accuracy": 0.9348}
+{"time": "2026-11-02T01:07:13+08:00", "kind": "epoch_complete", "epoch": 10, "train_loss": 0.027034902691841126, "train_accuracy": 0.9927333333333334, "validation_loss": 0.2562245969772339, "validation_accuracy": 0.9346}
+{"time": "2026-11-02T01:07:14+08:00", "kind": "worker_complete", "variant": "continuous_control", "validation_accuracy": 0.9346}

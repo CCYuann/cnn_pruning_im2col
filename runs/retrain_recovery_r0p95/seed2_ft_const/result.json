@@ -1,0 +1,16 @@
+{
+  "seed": 2,
+  "arm": "ft_const",
+  "group_lambda": null,
+  "epochs": 60,
+  "final_validation": 0.9394,
+  "final_train": 0.9978,
+  "split_id": "42fbb7440cc27c71",
+  "seconds": 2598.6791956699453,
+  "test_evaluated": false,
+  "kept": 1171896,
+  "sparsity": 0.9500198573545909,
+  "macs": 163394304,
+  "mac_reduction": 0.8740999233070746,
+  "q_zero": 510
+}

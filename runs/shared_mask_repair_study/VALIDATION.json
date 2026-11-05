@@ -1,0 +1,55 @@
+{
+  "status": "passed",
+  "model_runs": [
+    {
+      "model_directory": "v1/densenet121_seed0",
+      "quota_check": "passed",
+      "calibration_validation_disjoint": "passed",
+      "mask_sha256": "7b5a6102bb4da96871f8679dccad1bd99c2df73d1ef345a40a96f8a271d20c55",
+      "actual_sparsity": 0.8999867104367371
+    },
+    {
+      "model_directory": "v1/googlenet_seed0",
+      "quota_check": "passed",
+      "calibration_validation_disjoint": "passed",
+      "mask_sha256": "33254660ebdf36c690a7f00cfbb99f02afaf5da13bebd416154758583d229230",
+      "actual_sparsity": 0.9000169246480247
+    },
+    {
+      "model_directory": "v1/mobilenet_v2_seed0",
+      "quota_check": "passed",
+      "calibration_validation_disjoint": "passed",
+      "mask_sha256": "f069d3c27b5cec0a47cc2046ff1838cfe95e2fa6388fcc3681a06e71e3197fcc",
+      "actual_sparsity": 0.8999817331579717
+    },
+    {
+      "model_directory": "v1/resnet34_seed0",
+      "quota_check": "passed",
+      "calibration_validation_disjoint": "passed",
+      "mask_sha256": "578022773908873c474ef32c66d834921c9ba5458eee3dc36b407271384f702c",
+      "actual_sparsity": 0.9000009783645958
+    },
+    {
+      "model_directory": "v1/resnet50_seed0",
+      "quota_check": "passed",
+      "calibration_validation_disjoint": "passed",
+      "mask_sha256": "3c64a56fe9dfa603ac6943aa82d7c6d68ed70873819815c690a298b976b64c3d",
+      "actual_sparsity": 0.89999433621845
+    },
+    {
+      "model_directory": "v3_mean_safe/densenet121_seed0",
+      "quota_check": "passed",
+      "calibration_validation_disjoint": "passed",
+      "mask_sha256": "34d9e53816d5c47bf44b739879b98002029555029b3084c44538d1fb70db22da",
+      "actual_sparsity": 0.8999867104367371
+    },
+    {
+      "model_directory": "v3_mean_safe/resnet50_seed0",
+      "quota_check": "passed",
+      "calibration_validation_disjoint": "passed",
+      "mask_sha256": "02148592ead906aba2c6a072f76ee2dbd9d69bc3a71d2544ff1d95573fa54efb",
+      "actual_sparsity": 0.89999433621845
+    }
+  ],
+  "note": "Checks confirm reproducible mask/data constraints; they do not prove novelty or statistical significance."
+}

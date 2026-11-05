@@ -1,0 +1,12 @@
+{"time": "2026-11-05T15:36:19+08:00", "kind": "initial_validation", "raw_loss": 2.064803894042969, "raw_accuracy": 0.1868, "bn_clone_loss": 0.44627747955322267, "bn_clone_accuracy": 0.8622}
+{"time": "2026-11-05T15:36:31+08:00", "kind": "epoch_complete", "epoch": 1, "train_loss": 0.08336584577560424, "train_accuracy": 0.9859111111111111, "validation_loss": 0.19678051066398622, "validation_accuracy": 0.937}
+{"time": "2026-11-05T15:36:44+08:00", "kind": "epoch_complete", "epoch": 2, "train_loss": 0.038197631861103906, "train_accuracy": 0.9942666666666666, "validation_loss": 0.2041187087059021, "validation_accuracy": 0.9386}
+{"time": "2026-11-05T15:36:57+08:00", "kind": "epoch_complete", "epoch": 3, "train_loss": 0.028239245101478364, "train_accuracy": 0.9958, "validation_loss": 0.20357229795455933, "validation_accuracy": 0.9402}
+{"time": "2026-11-05T15:37:10+08:00", "kind": "epoch_complete", "epoch": 4, "train_loss": 0.024152489371101062, "train_accuracy": 0.9959777777777777, "validation_loss": 0.2048522560596466, "validation_accuracy": 0.94}
+{"time": "2026-11-05T15:37:22+08:00", "kind": "epoch_complete", "epoch": 5, "train_loss": 0.020987525031963983, "train_accuracy": 0.9964222222222222, "validation_loss": 0.20829019470214843, "validation_accuracy": 0.9424}
+{"time": "2026-11-05T15:37:35+08:00", "kind": "epoch_complete", "epoch": 6, "train_loss": 0.018168267228868273, "train_accuracy": 0.9968, "validation_loss": 0.21094377975463868, "validation_accuracy": 0.9432}
+{"time": "2026-11-05T15:37:48+08:00", "kind": "epoch_complete", "epoch": 7, "train_loss": 0.01696464520270626, "train_accuracy": 0.997, "validation_loss": 0.2123898956298828, "validation_accuracy": 0.942}
+{"time": "2026-11-05T15:38:01+08:00", "kind": "epoch_complete", "epoch": 8, "train_loss": 0.01585721650454733, "train_accuracy": 0.9971555555555556, "validation_loss": 0.21360416164398194, "validation_accuracy": 0.9424}
+{"time": "2026-11-05T15:38:14+08:00", "kind": "epoch_complete", "epoch": 9, "train_loss": 0.014893208545611965, "train_accuracy": 0.9970222222222223, "validation_loss": 0.21283287153244018, "validation_accuracy": 0.9436}
+{"time": "2026-11-05T15:38:27+08:00", "kind": "epoch_complete", "epoch": 10, "train_loss": 0.0140179644452201, "train_accuracy": 0.9975555555555555, "validation_loss": 0.21578353748321533, "validation_accuracy": 0.9426}
+{"time": "2026-11-05T15:38:27+08:00", "kind": "worker_complete", "epochs": 10, "accuracy": 0.9426, "training_seconds": 128.13483158010058}

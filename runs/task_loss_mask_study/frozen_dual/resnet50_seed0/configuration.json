@@ -1,0 +1,14 @@
+{
+  "model": "resnet50",
+  "seed": 0,
+  "policy": "dual",
+  "bn": "frozen",
+  "minimum_ce_gain": 1e-05,
+  "source_masks": "/home/yenmh3/11457019/cnn_pruning_im2col/runs/shared_mask_repair_study/v1/resnet50_seed0/masks.pt",
+  "source_sha256": "3c64a56fe9dfa603ac6943aa82d7c6d68ed70873819815c690a298b976b64c3d",
+  "checkpoint_sha256": "3790757f8314e0559dfa58270f908f7a0164a652de1c6c79ac1e065e360490fe",
+  "worker_sha256": "9884bab9943b8929d7159f8b2d08455bbbffb53c873b96db87476d95070fea3d",
+  "core_sha256": "ecf1576102d4e32d90758a580557357485e0ce677bbb02462d68de01854a0e7f",
+  "pilot_sha256": "59275ed1187aab7f1dd94192f78e06a1445ba79c46b370ca63a44b7acfef80e5",
+  "epochs": 10
+}

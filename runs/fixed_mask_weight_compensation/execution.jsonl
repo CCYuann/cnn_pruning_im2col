@@ -1,0 +1,27 @@
+{"time": "2026-11-02T01:46:14+08:00", "kind": "study_plan", "primary": "sequential", "variants": ["original", "dense_input", "sequential"], "calibration_seed": 20261107, "promotion": "C-A >=0.3pp and C >= best existing seed0 control; no test"}
+{"time": "2026-11-02T01:46:14+08:00", "kind": "job_start", "job": {"mode": "prepare", "seed": 0}, "gpu": 1, "pid": 996454}
+{"time": "2026-11-02T01:46:34+08:00", "kind": "job_complete", "job": {"mode": "prepare", "seed": 0}, "gpu": 1}
+{"time": "2026-11-02T01:46:34+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 0, "variant": "original"}, "gpu": 1, "pid": 996487}
+{"time": "2026-11-02T01:46:34+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 0, "variant": "dense_input"}, "gpu": 0, "pid": 996490}
+{"time": "2026-11-02T01:48:54+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 0, "variant": "original"}, "gpu": 1}
+{"time": "2026-11-02T01:48:54+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 0, "variant": "sequential"}, "gpu": 1, "pid": 997422}
+{"time": "2026-11-02T01:49:24+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 0, "variant": "dense_input"}, "gpu": 0}
+{"time": "2026-11-02T01:51:44+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 0, "variant": "sequential"}, "gpu": 1}
+{"time": "2026-11-02T01:51:44+08:00", "kind": "confirmation_decision", "promote": true}
+{"time": "2026-11-02T01:51:44+08:00", "kind": "job_start", "job": {"mode": "prepare", "seed": 1}, "gpu": 1, "pid": 998066}
+{"time": "2026-11-02T01:51:44+08:00", "kind": "job_start", "job": {"mode": "prepare", "seed": 2}, "gpu": 0, "pid": 998069}
+{"time": "2026-11-02T01:52:04+08:00", "kind": "job_complete", "job": {"mode": "prepare", "seed": 1}, "gpu": 1}
+{"time": "2026-11-02T01:52:04+08:00", "kind": "job_complete", "job": {"mode": "prepare", "seed": 2}, "gpu": 0}
+{"time": "2026-11-02T01:52:04+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 1, "variant": "original"}, "gpu": 1, "pid": 998118}
+{"time": "2026-11-02T01:52:04+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 1, "variant": "dense_input"}, "gpu": 0, "pid": 998121}
+{"time": "2026-11-02T01:54:24+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 1, "variant": "original"}, "gpu": 1}
+{"time": "2026-11-02T01:54:24+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 1, "variant": "sequential"}, "gpu": 1, "pid": 998987}
+{"time": "2026-11-02T01:54:54+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 1, "variant": "dense_input"}, "gpu": 0}
+{"time": "2026-11-02T01:54:54+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 2, "variant": "original"}, "gpu": 0, "pid": 999068}
+{"time": "2026-11-02T01:57:14+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 1, "variant": "sequential"}, "gpu": 1}
+{"time": "2026-11-02T01:57:14+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 2, "variant": "original"}, "gpu": 0}
+{"time": "2026-11-02T01:57:14+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 2, "variant": "dense_input"}, "gpu": 1, "pid": 999986}
+{"time": "2026-11-02T01:57:14+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 2, "variant": "sequential"}, "gpu": 0, "pid": 999989}
+{"time": "2026-11-02T02:00:04+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 2, "variant": "dense_input"}, "gpu": 1}
+{"time": "2026-11-02T02:00:14+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 2, "variant": "sequential"}, "gpu": 0}
+{"time": "2026-11-02T02:00:18+08:00", "kind": "study_complete", "completed_at": "2026-11-02T02:00:18+08:00", "seeds": [0, 1, 2], "new_ft_branches": 9, "promoted_seed0": true, "test_evaluated": false, "int8_evaluated": false}

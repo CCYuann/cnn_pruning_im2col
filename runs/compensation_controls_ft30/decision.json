@@ -1,0 +1,21 @@
+{
+  "next_round_5seed_qualified": true,
+  "criteria": [
+    {
+      "budget": 10,
+      "mean_vs_bn_pp": 0.5,
+      "mean_vs_scalar_pp": 0.3933333333333356,
+      "joint_positive_seeds": 3,
+      "qualifies": true
+    },
+    {
+      "budget": 30,
+      "mean_vs_bn_pp": 0.23333333333333903,
+      "mean_vs_scalar_pp": 0.2133333333333335,
+      "joint_positive_seeds": 2,
+      "qualifies": true
+    }
+  ],
+  "caution": "Effort gate, not significance. Five-seed/cross-model/sparsity experiments have not been run in this study.",
+  "test_evaluated": false
+}

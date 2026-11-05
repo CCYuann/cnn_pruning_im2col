@@ -1,0 +1,5 @@
+model,seed,variant,direct_validation_acc,final_validation_acc,validation_loss,total_epochs,test_evaluated,sparsity,split_id,gain_vs_best_baseline_pp,proposed_swaps,gated_swaps,accepted_layers
+resnet50,0,continuous_control,0.1008,0.9346,0.2562245969772339,10,False,0.89999433621845,42fbb7440cc27c71,-0.21999999999999797,0,0,0
+resnet50,0,gradient_all,0.1008,0.9352,0.2563617504119873,10,False,0.89999433621845,42fbb7440cc27c71,-0.15999999999999348,3261,144,8
+resnet50,0,gradient_gate,0.1008,0.9354,0.2559593517303467,10,False,0.89999433621845,42fbb7440cc27c71,-0.13999999999999568,3261,144,8
+resnet50,0,matched_random,0.1008,0.9358,0.25552667789459227,10,False,0.89999433621845,42fbb7440cc27c71,-0.10000000000000009,3261,144,8

@@ -1,0 +1,12 @@
+{
+  "model": "densenet121",
+  "seed": 0,
+  "root": "/home/yenmh3/11457019/cnn_pruning_im2col/runs/shared_mask_repair_study/v3_mean_safe",
+  "images": 512,
+  "patches": 1024,
+  "calibration_seed": 20261101,
+  "candidates": 8,
+  "iterations": 8,
+  "core_sha256": "ecf1576102d4e32d90758a580557357485e0ce677bbb02462d68de01854a0e7f",
+  "repair_sha256": "4cb4097f32bc89a0f6ea0d160f4a44af5b7473efdbc75f032c83f08279c6f0a9"
+}

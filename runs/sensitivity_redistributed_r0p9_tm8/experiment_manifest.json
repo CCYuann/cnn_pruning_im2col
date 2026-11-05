@@ -1,0 +1,148 @@
+{
+  "stage": "matched_weight_budget_sensitivity_redistribution",
+  "criteria": [
+    "l1_sum",
+    "top2_mean_abs"
+  ],
+  "tm": 8,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "target_ratio": 0.9,
+  "protected_top_k": 4,
+  "skip_top_k": 1,
+  "protected_cap": 0.2,
+  "all_layer_cap": null,
+  "non_sensitive_min_kept_k": 1,
+  "allocation_mobility": "1/(1+max(0,mean_drop_pp))",
+  "finetune_epochs": 10,
+  "finetune_lr": 0.001,
+  "batch_size": 128,
+  "core_sha256": "ecf1576102d4e32d90758a580557357485e0ce677bbb02462d68de01854a0e7f",
+  "worker_sha256": "006923a9c35163ea09c3305a005c18c11a30fcc9b8980e39c304076b8d47ed0f",
+  "runner_sha256": "d9c073247bf9f34aa16af01750cd7cd98bb0add6ee0bf1ef0236200724effdfe",
+  "provenance": [
+    {
+      "model": "densenet121",
+      "seed": 0,
+      "checkpoint_id": "cifar10-densenet121-seed0-split42fbb7440cc27c71-e100",
+      "ranking_sha256": "823494049b130aea2d03b1ed8183e45ce430a30459ba7381ca832209bb291601",
+      "layer_metadata_sha256": "c232a793f9baeb9888aac52935b40bce3ac8af1ea52fecabc3de00039ea76110",
+      "checkpoint_sha256": "12e2b0eb45b41ed959e6a59da28397f6e4e26d3ef818e5fed50d1cf3512e4515"
+    },
+    {
+      "model": "densenet121",
+      "seed": 1,
+      "checkpoint_id": "cifar10-densenet121-seed1-split42fbb7440cc27c71-e100",
+      "ranking_sha256": "971e8cb2409b4af67ab95e44a87d4f521cf0046774d66d341c9f7131b9ce5cc4",
+      "layer_metadata_sha256": "a097b3abdb32b783f6af466efaea7a18afcbf828b7d6496ec494743a08b6ec43",
+      "checkpoint_sha256": "1790fc40e98b1d81e2969281b137a12c9e44f06270dea14b929ebb191ddc93d2"
+    },
+    {
+      "model": "densenet121",
+      "seed": 2,
+      "checkpoint_id": "cifar10-densenet121-seed2-split42fbb7440cc27c71-e100",
+      "ranking_sha256": "4a43f9c54fb6ccfcc58f2c1f509ed2e86b5967b14bb6dfb86a064d03c960bac5",
+      "layer_metadata_sha256": "6ed63fd27e22522a43759537e6143b40b7c9ffb28f5b1941c2bdc60ea8429969",
+      "checkpoint_sha256": "78b95131a588e187189e55a9fbd81aebf17f9bca5e00299fda55be8f9e5712b8"
+    },
+    {
+      "model": "googlenet",
+      "seed": 0,
+      "checkpoint_id": "cifar10-googlenet-seed0-split42fbb7440cc27c71-e100",
+      "ranking_sha256": "ab0b0fc204b74fdeb28e1021276fd7cefd5c6d51ffb73c4677720f187b0c6d24",
+      "layer_metadata_sha256": "d5a0e916719571fd4b2277deeb695e27e337fcc88d7938303077371a337806f5",
+      "checkpoint_sha256": "56513c4d2540abf67a25ed516fe207e6cf36b90c98ab6f0f3039ae6b2644fe09"
+    },
+    {
+      "model": "googlenet",
+      "seed": 1,
+      "checkpoint_id": "cifar10-googlenet-seed1-split42fbb7440cc27c71-e100",
+      "ranking_sha256": "ede24d33f621a4903c8520937f20288b425fd84e1029cad1e334540a13e1ce38",
+      "layer_metadata_sha256": "36afa5ac7acc60bb2082e1f6da42b07cf65386c9f6496c6e06a7c486ea20ce93",
+      "checkpoint_sha256": "e39d433fb9a1b4b70a3aea1f4e0c98234e21d7d026241b98cb614507f9d330b1"
+    },
+    {
+      "model": "googlenet",
+      "seed": 2,
+      "checkpoint_id": "cifar10-googlenet-seed2-split42fbb7440cc27c71-e100",
+      "ranking_sha256": "dda7434b01504d3e2b3e2ab7919bba5d9adb54ed73429a4c881b1f76b49ec966",
+      "layer_metadata_sha256": "5175c8f9e2b8bda323d24b792a28f478a609360b3951a8e0f0d1f1964bd03500",
+      "checkpoint_sha256": "44fecd60d229ab4198641afbea87982d816fbd91c3047d652e4ffc1f63a15c57"
+    },
+    {
+      "model": "mobilenet_v2",
+      "seed": 0,
+      "checkpoint_id": "cifar10-mobilenet_v2-seed0-split42fbb7440cc27c71-e100",
+      "ranking_sha256": "9a7e8973c49a2e4d3270b3932cbf383bfc26c5b47dea5ffd3ef95426f1b644f6",
+      "layer_metadata_sha256": "017b52d7b1606c53249666591184d0dea347701b6d6a22cf618611430e59fc99",
+      "checkpoint_sha256": "d44dde2d8b785ecf57cb40887a62f79e4079ce588520fda02508e0f30cc67eac"
+    },
+    {
+      "model": "mobilenet_v2",
+      "seed": 1,
+      "checkpoint_id": "cifar10-mobilenet_v2-seed1-split42fbb7440cc27c71-e100",
+      "ranking_sha256": "ce5a91cb80f6c834571e52f96b2eb62fb898f2541f8e9e79950d99743587c448",
+      "layer_metadata_sha256": "c7e62d3ad97bef70d809ebc3c27afc8cc19754334574e498bdda5c26e2b7f4b8",
+      "checkpoint_sha256": "6cddbe7b3a096e854ea7cc4e0dfcac426ecda84261a04e4deaa65158db1c875b"
+    },
+    {
+      "model": "mobilenet_v2",
+      "seed": 2,
+      "checkpoint_id": "cifar10-mobilenet_v2-seed2-split42fbb7440cc27c71-e100",
+      "ranking_sha256": "33168b62194557389133298d1a2db0998048703556b174be280b7839d2a95fd9",
+      "layer_metadata_sha256": "f5ca106610107ef64da741cfdd40a6a6f3d0a850c5cd42e5c4f221a406c03f34",
+      "checkpoint_sha256": "857087b01be5f2ac7bab33a8fab90a8ecb36eaabad783db2074b6e52d8bb4a70"
+    },
+    {
+      "model": "resnet50",
+      "seed": 0,
+      "checkpoint_id": "cifar10-resnet50-seed0-split42fbb7440cc27c71-e100",
+      "ranking_sha256": "a52917d645246eb9f4acba0545e8cfb60a30927e0eda62a1d398f1ca4a71717c",
+      "layer_metadata_sha256": "c7d5182cbc211dad0a0e0f17b39258b427e4935fcf5a4f40e0120702c02350aa",
+      "checkpoint_sha256": "3790757f8314e0559dfa58270f908f7a0164a652de1c6c79ac1e065e360490fe"
+    },
+    {
+      "model": "resnet50",
+      "seed": 1,
+      "checkpoint_id": "cifar10-resnet50-seed1-split42fbb7440cc27c71-e100",
+      "ranking_sha256": "ee860b292ba2a49270a58f8d7b4c6ea773b3f0994d516604b8c1f54200033951",
+      "layer_metadata_sha256": "caf9112cc60835fd5d029d21e3ba54eaaaa3d11c48912f3eb9146d080f37ad69",
+      "checkpoint_sha256": "c7bfee43152bd7fe4ae5f7b1321ebb9ca444ec35cd66e11a6b0498aa7e0dce54"
+    },
+    {
+      "model": "resnet50",
+      "seed": 2,
+      "checkpoint_id": "cifar10-resnet50-seed2-split42fbb7440cc27c71-e100",
+      "ranking_sha256": "692eb5917ea49b5f2872d6b36c8e68001d5a0da56bcc562074ae935d1a487760",
+      "layer_metadata_sha256": "057edaa5b17dd2d28a861dfc450f8f5224cb4af6c7283e921ac42915fd051c42",
+      "checkpoint_sha256": "e5a6a905e3303872cc05c42b99b987ccf0f7d2e2fdef987ce94a3310192d92cd"
+    },
+    {
+      "model": "resnet34",
+      "seed": 0,
+      "checkpoint_id": "cifar10-resnet34-seed0-split42fbb7440cc27c71-e100",
+      "ranking_sha256": "97a03841898055ce78dd9cd15fc77b04e03fc23aa8b06f1e8a1d9ed1a6e742fd",
+      "layer_metadata_sha256": "e2f7d8fd44bc9c7aa0de9b94da32918f8984de67215ad4134742abcca54ce0f2",
+      "checkpoint_sha256": "7b73af14c3d7257aadd1dc300bb3d2efaba25db47d62db5a07c036e02f783f0b"
+    },
+    {
+      "model": "resnet34",
+      "seed": 1,
+      "checkpoint_id": "cifar10-resnet34-seed1-split42fbb7440cc27c71-e100",
+      "ranking_sha256": "37b1bba52156f03068ba2f151c9fcd29e722a5f3fdee37c71345489da914323c",
+      "layer_metadata_sha256": "0f2e5060120999f11fcb21848d4a9b598f0467f37004cd62db1f8c7f674b50f2",
+      "checkpoint_sha256": "62acfede0b29983f77bd20f027fa68e3b6a0a518a9ae5a0c9f1c61538e4c7a68"
+    },
+    {
+      "model": "resnet34",
+      "seed": 2,
+      "checkpoint_id": "cifar10-resnet34-seed2-split42fbb7440cc27c71-e100",
+      "ranking_sha256": "ae09fa5cd6ea48a3bf7f6275181ce7f3bebc2b68d9c03b47b601703c4a4898d9",
+      "layer_metadata_sha256": "ce1ca2def73c8417b95d39e7c37d2c5a6c92c055838134ba096d2237cd1c1897",
+      "checkpoint_sha256": "9422f59770bcfbd542e0c7067a5816dcca06fc0efd7e8fa6797f3860de0e88ff"
+    }
+  ]
+}

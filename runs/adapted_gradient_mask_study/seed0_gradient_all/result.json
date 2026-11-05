@@ -1,0 +1,12 @@
+{
+  "model": "resnet50",
+  "seed": 0,
+  "variant": "gradient_all",
+  "direct_validation_acc": 0.1008,
+  "final_validation_acc": 0.9352,
+  "validation_loss": 0.2563617504119873,
+  "total_epochs": 10,
+  "test_evaluated": false,
+  "sparsity": 0.89999433621845,
+  "split_id": "42fbb7440cc27c71"
+}

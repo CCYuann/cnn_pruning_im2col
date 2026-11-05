@@ -1,0 +1,19 @@
+{
+  "seed": 0,
+  "variant": "contiguous",
+  "ft0_accuracy": 0.1004,
+  "ft0_bn_clone_accuracy": 0.601,
+  "ft1_accuracy": 0.9032,
+  "ft2_accuracy": 0.9158,
+  "ft10_accuracy": 0.9248,
+  "validation_loss": 0.2718250219345093,
+  "sparsity": 0.8999871711935976,
+  "kept_weights": 2345024,
+  "kept_macs": 233504768,
+  "training_seconds": 145.37035766302142,
+  "peak_gpu_bytes": 2064276480,
+  "epochs": 10,
+  "split_id": "42fbb7440cc27c71",
+  "grouping_sha256": "3bd5c02a6085fcfb52b7985bc873773e9fa293aa439385710c9b277ff72d4b70",
+  "test_evaluated": false
+}

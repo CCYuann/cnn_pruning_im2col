@@ -1,0 +1,54 @@
+{
+  "checks": [
+    {
+      "job": {
+        "seed": 0,
+        "bn": "frozen",
+        "policy": "dual"
+      },
+      "quotas": true,
+      "original_l1_identical": true,
+      "data_isolation": true,
+      "acceptance_trace": true,
+      "masks_sha256": "42d9385d177d2af46d00596cae481b470bec94a8227fd542520ae158bbe69060"
+    },
+    {
+      "job": {
+        "seed": 0,
+        "bn": "frozen",
+        "policy": "search_only"
+      },
+      "quotas": true,
+      "original_l1_identical": true,
+      "data_isolation": true,
+      "acceptance_trace": true,
+      "masks_sha256": "2b7d6442e707b1afbec2d90e3762a420bb9ed9c5d609aa7b924a4fbbbb7c13c8"
+    },
+    {
+      "job": {
+        "seed": 0,
+        "bn": "recalibrate",
+        "policy": "dual"
+      },
+      "quotas": true,
+      "original_l1_identical": true,
+      "data_isolation": true,
+      "acceptance_trace": true,
+      "masks_sha256": "8c2f6e5e62fa86fa927f5462144a56d1ca4c04dc30e82abcc9ce2dd17af8ca7c"
+    },
+    {
+      "job": {
+        "seed": 0,
+        "bn": "recalibrate",
+        "policy": "search_only"
+      },
+      "quotas": true,
+      "original_l1_identical": true,
+      "data_isolation": true,
+      "acceptance_trace": true,
+      "masks_sha256": "291009ac74934c44db617d7c18710cb1e0517749e07d23e1dc6fc678f5944cbc"
+    }
+  ],
+  "passed": true,
+  "test_evaluated": false
+}

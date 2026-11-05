@@ -1,0 +1,14 @@
+{
+  "target_pruned_weights": 6176400,
+  "total_weights": 6862528,
+  "actual_planned_pruning_ratio": 0.9000181857181494,
+  "allocated_pruned_weights": 6176400,
+  "protected_layer_caps": {
+    "features.conv0": 0.0,
+    "features.transition2.conv": 0.2,
+    "features.transition1.conv": 0.2,
+    "features.transition3.conv": 0.2
+  },
+  "non_sensitive_min_kept_k": 1,
+  "allocation_rule": "r=min(cap,initial_r+lambda/(1+max(0,mean_drop_pp))); exact integer correction"
+}

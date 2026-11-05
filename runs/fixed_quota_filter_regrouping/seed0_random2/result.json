@@ -1,0 +1,19 @@
+{
+  "seed": 0,
+  "variant": "random2",
+  "ft0_accuracy": 0.1014,
+  "ft0_bn_clone_accuracy": 0.7014,
+  "ft1_accuracy": 0.9228,
+  "ft2_accuracy": 0.9242,
+  "ft10_accuracy": 0.933,
+  "validation_loss": 0.24950338468551636,
+  "sparsity": 0.8999871711935976,
+  "kept_weights": 2345024,
+  "kept_macs": 233504768,
+  "training_seconds": 171.09592388907913,
+  "peak_gpu_bytes": 2160190464,
+  "epochs": 10,
+  "split_id": "42fbb7440cc27c71",
+  "grouping_sha256": "8606bdb57ccb4033944206d9bfb5adb6df89b6af69f86136634ad94c4c3a9ff6",
+  "test_evaluated": false
+}

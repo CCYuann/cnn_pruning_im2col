@@ -1,0 +1,29 @@
+{
+  "state": "complete",
+  "updated_at": "2026-11-02T00:12:04+08:00",
+  "jobs": [
+    {
+      "seed": 0,
+      "bn": "frozen",
+      "policy": "dual"
+    },
+    {
+      "seed": 0,
+      "bn": "frozen",
+      "policy": "search_only"
+    },
+    {
+      "seed": 0,
+      "bn": "recalibrate",
+      "policy": "dual"
+    },
+    {
+      "seed": 0,
+      "bn": "recalibrate",
+      "policy": "search_only"
+    }
+  ],
+  "selected_confirmation": null,
+  "test_evaluated": false,
+  "meaning": "Bounded reproducible result, not a forced positive outcome"
+}

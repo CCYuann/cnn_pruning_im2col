@@ -1,0 +1,13 @@
+{
+  "scripts/run_fixed_quota_regrouping.py": "3cac4fda3d13fe98eeac857d77abf833c3b3ed739b0af9a61df2fe2e317cf470",
+  "scripts/fixed_quota_grouping_worker.py": "24bc4b46d1194a93d57db7988e59d767f8a8b19b011847ade110f4ca696b0272",
+  "scripts/fixed_quota_grouping.py": "09e7eb0bff067a00b2403143ce72b5ab7ac0ec6f7e87a2e0a138996c9979af8d",
+  "research_notes/2026-11-02_fixed_quota_regrouping_plan.md": "6490540cab21d12c60d4c00dca41f721f9f471d837ed50717488e154339dddf7",
+  "tests/test_fixed_quota_grouping.py": "f620c52a88c154b0ec98504151e65083d485aab4dc996dc7831cdbbd4af6d425",
+  "resnet34_pruning_experiments.py": "ecf1576102d4e32d90758a580557357485e0ce677bbb02462d68de01854a0e7f",
+  "scripts/run_fair_criterion_r0p9.py": "ce0741d90995dacb167d691520b7628c86bf6ad5fd5182b7f185e977c0a5b9c0",
+  "scripts/run_shared_mask_repair.py": "59275ed1187aab7f1dd94192f78e06a1445ba79c46b370ca63a44b7acfef80e5",
+  "scripts/weight_compensation_worker.py": "875e89fec81f531665f2a0e3d92b3d22caaaea85b02546d6a6f46837a1e74796",
+  "scripts/adapted_gradient_mask.py": "ede0a26c936d4c7a515e30a0a8e7a6c8ff086ba65504908747bd68a39d07ee06",
+  "scripts/task_loss_mask_search.py": "9884bab9943b8929d7159f8b2d08455bbbffb53c873b96db87476d95070fea3d"
+}

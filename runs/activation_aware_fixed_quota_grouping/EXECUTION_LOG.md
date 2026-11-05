@@ -1,0 +1,76 @@
+# 執行與問題紀錄
+
+新增2個FT10分支，重用2個L1控制；不改舊實驗或RTL。
+
+- 啟動前GPU1空閒、GPU0有既有負載；每卡最多新增一worker，未停止既有程序。
+- 訓練直接重用未改動的舊worker.train，新增wrapper另凍結activation方法/source及ready checksum。
+- 每(c,r,s) patch統計而非channel近似，納入padding、stride及dilation，以獨立切片核對真實層。
+- 若遇錯誤保留log與epoch resume，不能看validation改搜尋或配額。
+
+## 事件
+
+- 2026-11-02T13:40:16+08:00 study_start_or_resume {}
+- 2026-11-02T13:40:16+08:00 job_start {"job": {"mode": "prepare"}, "gpu": 1, "pid": 1117388}
+- 2026-11-02T13:40:19+08:00 activation_batch {"images": 32}
+- 2026-11-02T13:40:19+08:00 activation_batch {"images": 256}
+- 2026-11-02T13:40:19+08:00 activation_batch {"images": 512}
+- 2026-11-02T13:40:19+08:00 layer_grouped {"layer": "conv1", "q": 16, "swaps": 12}
+- 2026-11-02T13:40:19+08:00 layer_grouped {"layer": "layer1.0.conv1", "q": 15, "swaps": 13}
+- 2026-11-02T13:40:19+08:00 layer_grouped {"layer": "layer1.0.conv2", "q": 76, "swaps": 12}
+- 2026-11-02T13:40:19+08:00 layer_grouped {"layer": "layer1.0.conv3", "q": 10, "swaps": 51}
+- 2026-11-02T13:40:20+08:00 layer_grouped {"layer": "layer1.0.downsample.0", "q": 20, "swaps": 40}
+- 2026-11-02T13:40:20+08:00 layer_grouped {"layer": "layer1.1.conv1", "q": 35, "swaps": 14}
+- 2026-11-02T13:40:20+08:00 layer_grouped {"layer": "layer1.1.conv2", "q": 61, "swaps": 13}
+- 2026-11-02T13:40:20+08:00 layer_grouped {"layer": "layer1.1.conv3", "q": 9, "swaps": 52}
+- 2026-11-02T13:40:20+08:00 layer_grouped {"layer": "layer1.2.conv1", "q": 62, "swaps": 11}
+- 2026-11-02T13:40:20+08:00 layer_grouped {"layer": "layer1.2.conv2", "q": 138, "swaps": 10}
+- 2026-11-02T13:40:20+08:00 layer_grouped {"layer": "layer1.2.conv3", "q": 14, "swaps": 44}
+- 2026-11-02T13:40:20+08:00 layer_grouped {"layer": "layer2.0.conv1", "q": 59, "swaps": 21}
+- 2026-11-02T13:40:20+08:00 layer_grouped {"layer": "layer2.0.conv2", "q": 206, "swaps": 25}
+- 2026-11-02T13:40:20+08:00 layer_grouped {"layer": "layer2.0.conv3", "q": 29, "swaps": 98}
+- 2026-11-02T13:40:20+08:00 layer_grouped {"layer": "layer2.0.downsample.0", "q": 47, "swaps": 79}
+- 2026-11-02T13:40:20+08:00 layer_grouped {"layer": "layer2.1.conv1", "q": 86, "swaps": 18}
+- 2026-11-02T13:40:20+08:00 layer_grouped {"layer": "layer2.1.conv2", "q": 233, "swaps": 23}
+- 2026-11-02T13:40:20+08:00 layer_grouped {"layer": "layer2.1.conv3", "q": 32, "swaps": 87}
+- 2026-11-02T13:40:20+08:00 layer_grouped {"layer": "layer2.2.conv1", "q": 111, "swaps": 18}
+- 2026-11-02T13:40:20+08:00 layer_grouped {"layer": "layer2.2.conv2", "q": 272, "swaps": 21}
+- 2026-11-02T13:40:20+08:00 layer_grouped {"layer": "layer2.2.conv3", "q": 36, "swaps": 93}
+- 2026-11-02T13:40:20+08:00 layer_grouped {"layer": "layer2.3.conv1", "q": 142, "swaps": 18}
+- 2026-11-02T13:40:20+08:00 layer_grouped {"layer": "layer2.3.conv2", "q": 292, "swaps": 21}
+- 2026-11-02T13:40:20+08:00 layer_grouped {"layer": "layer2.3.conv3", "q": 31, "swaps": 90}
+- 2026-11-02T13:40:20+08:00 layer_grouped {"layer": "layer3.0.conv1", "q": 189, "swaps": 36}
+- 2026-11-02T13:40:20+08:00 layer_grouped {"layer": "layer3.0.conv2", "q": 502, "swaps": 35}
+- 2026-11-02T13:40:20+08:00 layer_grouped {"layer": "layer3.0.conv3", "q": 83, "swaps": 154}
+- 2026-11-02T13:40:20+08:00 layer_grouped {"layer": "layer3.0.downsample.0", "q": 100, "swaps": 157}
+- 2026-11-02T13:40:20+08:00 layer_grouped {"layer": "layer3.1.conv1", "q": 131, "swaps": 39}
+- 2026-11-02T13:40:20+08:00 layer_grouped {"layer": "layer3.1.conv2", "q": 376, "swaps": 40}
+- 2026-11-02T13:40:20+08:00 layer_grouped {"layer": "layer3.1.conv3", "q": 70, "swaps": 150}
+- 2026-11-02T13:40:20+08:00 layer_grouped {"layer": "layer3.2.conv1", "q": 253, "swaps": 37}
+- 2026-11-02T13:40:20+08:00 layer_grouped {"layer": "layer3.2.conv2", "q": 648, "swaps": 42}
+- 2026-11-02T13:40:21+08:00 layer_grouped {"layer": "layer3.2.conv3", "q": 83, "swaps": 146}
+- 2026-11-02T13:40:21+08:00 layer_grouped {"layer": "layer3.3.conv1", "q": 232, "swaps": 35}
+- 2026-11-02T13:40:21+08:00 layer_grouped {"layer": "layer3.3.conv2", "q": 387, "swaps": 38}
+- 2026-11-02T13:40:21+08:00 layer_grouped {"layer": "layer3.3.conv3", "q": 46, "swaps": 169}
+- 2026-11-02T13:40:21+08:00 layer_grouped {"layer": "layer3.4.conv1", "q": 272, "swaps": 35}
+- 2026-11-02T13:40:21+08:00 layer_grouped {"layer": "layer3.4.conv2", "q": 437, "swaps": 37}
+- 2026-11-02T13:40:21+08:00 layer_grouped {"layer": "layer3.4.conv3", "q": 45, "swaps": 171}
+- 2026-11-02T13:40:21+08:00 layer_grouped {"layer": "layer3.5.conv1", "q": 244, "swaps": 29}
+- 2026-11-02T13:40:21+08:00 layer_grouped {"layer": "layer3.5.conv2", "q": 259, "swaps": 34}
+- 2026-11-02T13:40:21+08:00 layer_grouped {"layer": "layer3.5.conv3", "q": 26, "swaps": 174}
+- 2026-11-02T13:40:21+08:00 layer_grouped {"layer": "layer4.0.conv1", "q": 249, "swaps": 63}
+- 2026-11-02T13:40:21+08:00 layer_grouped {"layer": "layer4.0.conv2", "q": 227, "swaps": 78}
+- 2026-11-02T13:40:21+08:00 layer_grouped {"layer": "layer4.0.conv3", "q": 16, "swaps": 305}
+- 2026-11-02T13:40:21+08:00 layer_grouped {"layer": "layer4.0.downsample.0", "q": 19, "swaps": 358}
+- 2026-11-02T13:40:22+08:00 layer_grouped {"layer": "layer4.1.conv1", "q": 52, "swaps": 78}
+- 2026-11-02T13:40:22+08:00 layer_grouped {"layer": "layer4.1.conv2", "q": 201, "swaps": 72}
+- 2026-11-02T13:40:22+08:00 layer_grouped {"layer": "layer4.1.conv3", "q": 12, "swaps": 355}
+- 2026-11-02T13:40:22+08:00 layer_grouped {"layer": "layer4.2.conv1", "q": 71, "swaps": 68}
+- 2026-11-02T13:40:22+08:00 layer_grouped {"layer": "layer4.2.conv2", "q": 83, "swaps": 77}
+- 2026-11-02T13:40:22+08:00 layer_grouped {"layer": "layer4.2.conv3", "q": 9, "swaps": 347}
+- 2026-11-02T13:40:22+08:00 prepare_complete {"seconds": 4.099436782067642, "stats_seconds": 1.246032097027637}
+- 2026-11-02T13:40:31+08:00 job_complete {"job": {"mode": "prepare"}, "gpu": 1}
+- 2026-11-02T13:40:36+08:00 job_start {"job": {"mode": "train", "variant": "contiguous"}, "gpu": 1, "pid": 1117572}
+- 2026-11-02T13:40:36+08:00 job_start {"job": {"mode": "train", "variant": "jaccard_swap"}, "gpu": 0, "pid": 1117575}
+- 2026-11-02T13:43:21+08:00 job_complete {"job": {"mode": "train", "variant": "contiguous"}, "gpu": 1}
+- 2026-11-02T13:43:21+08:00 job_complete {"job": {"mode": "train", "variant": "jaccard_swap"}, "gpu": 0}
+- 2026-11-02T13:43:26+08:00 study_complete {}

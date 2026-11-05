@@ -1,0 +1,55 @@
+{
+  "seed": 2,
+  "total_weights": 23447232,
+  "totals": {
+    "shared": {
+      "kept": 2344352,
+      "macs": 280465280
+    },
+    "quota": {
+      "kept": 2344352,
+      "macs": 280465280
+    },
+    "global": {
+      "kept": 2344352,
+      "macs": 280455776
+    }
+  },
+  "scalar_seconds": 6.519684498896822,
+  "bn_seconds": 0.13905331096611917,
+  "scalar_fallback": 0,
+  "reference_mask_seconds": 0.24827252980321646,
+  "checkpoint_id": "cifar10-resnet50-seed2-split42fbb7440cc27c71-e100",
+  "dense_epochs": 100,
+  "dense_validation_accuracy": 0.9524,
+  "dense_training_config": {
+    "batch_size": 128,
+    "lr": 0.1,
+    "lr_scheduler": "cosine",
+    "min_lr": 0.0001,
+    "weight_decay": 0.0005,
+    "deterministic": true
+  },
+  "split_metadata": {
+    "split_seed": 0,
+    "val_size": 5000,
+    "train_size": 45000,
+    "validation_size": 5000,
+    "test_size": 10000,
+    "split_id": "42fbb7440cc27c71"
+  },
+  "scalar_accepted": 3111,
+  "dense_macs": 1297809408,
+  "files": {
+    "shared_masks.pt": "2b0e782384d4fd5fbb4969c66bb541d2b291041576dfecd587de45ce55c3299a",
+    "quota_masks.pt": "0f490d7a6aa9f493b60117bba08b979035f8bc6f3959e6fd0fc6694b56bb2bd2",
+    "global_masks.pt": "e471631ae68b7ecce141519dd41849d48ef195fce1c02236025866f4f342cdb4",
+    "scalar_initialization.pt": "1821a96ab9e3e8692e2d232fc3c5c16a4f0d9e752892830db7db6be7f9704baa",
+    "bn_initialization.pt": "376fc456158adc4b7b5d034f6753a6c9d3e534f06bcc78e45dae7f347be199ea",
+    "scalar_reconstruction.csv": "9c88de0fec4ceec2ac0db821e36693bd4738963a35aea070012e52d5c5ac0537",
+    "layers.csv": "69b86f91a4a71e5255588bcac0affdb894ecb0e98db3ee7326a0ed35d8afd078",
+    "clusters.csv": "057373b9a59bf16fc819c55ac75031167b3af0bc23bd89c5b68284c36691331e",
+    "data_indices.json": "2fe46dfbfce80d2af4bff9fda6772d140e701cf1b1e8520a9f2b91756c90bb6e"
+  },
+  "test_evaluated": false
+}

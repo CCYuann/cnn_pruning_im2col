@@ -1,0 +1,17 @@
+{
+  "model": "resnet50",
+  "seed": 0,
+  "criterion": "l1_sum",
+  "granularity": "flat",
+  "original_weights": 23447232,
+  "kept_weights": 2344856,
+  "sparsity": 0.89999433621845,
+  "changed_weight_mask_entries": 157296,
+  "changed_clusters": 480,
+  "clusters": 3320,
+  "identical_1x1_clusters": 2840,
+  "flat_matches_existing_core": true,
+  "per_cluster_budget_equal": true,
+  "test_evaluated": false,
+  "claim": "Per-spatial interpretation with exact whole-cluster budget, not verified author implementation"
+}

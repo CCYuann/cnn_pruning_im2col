@@ -1,0 +1,12 @@
+{
+  "variant": "dense_input",
+  "seconds": 25.0453611810226,
+  "clusters": 3320,
+  "accepted": 3277,
+  "fallback": 0,
+  "empty": 43,
+  "full": 0,
+  "nonconv_unchanged": true,
+  "max_weight_after": 0.849333643913269,
+  "max_weight_before": 0.6784720420837402
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "criterion": "l1_sum",
+    "granularity": "flat",
+    "accuracy": 0.9346,
+    "source": "runs/spatial_quota_baseline_study/resnet50_seed0_l1_sum_flat/pilots/l1_sum.json",
+    "sha256": "7308771a7065fe362b2fb9a94d4229692c735bcac92cbfba2e1b107483b3a603"
+  },
+  {
+    "criterion": "l1_sum",
+    "granularity": "spatial",
+    "accuracy": 0.934,
+    "source": "runs/spatial_quota_baseline_study/resnet50_seed0_l1_sum_spatial/pilots/l1_sum.json",
+    "sha256": "a0fdaaa11367dcf751bf916a0f137053cf2a7ff9f3d8ec73d514cffeadd919cd"
+  },
+  {
+    "criterion": "top2_mean_abs",
+    "granularity": "flat",
+    "accuracy": 0.9342,
+    "source": "runs/spatial_quota_baseline_study/resnet50_seed0_top2_mean_abs_flat/pilots/top2_mean_abs.json",
+    "sha256": "73b6cf4206656b87d8b360bfa992f2d8fd59a4a540d3c04782147550c7752541"
+  },
+  {
+    "criterion": "top2_mean_abs",
+    "granularity": "spatial",
+    "accuracy": 0.9368,
+    "source": "runs/spatial_quota_baseline_study/resnet50_seed0_top2_mean_abs_spatial/pilots/top2_mean_abs.json",
+    "sha256": "a8a11ae0b9a2ddb08a5f4bfa4aa7ecd85bb9d04578e5754fe73b58bb78d40dc9"
+  }
+]

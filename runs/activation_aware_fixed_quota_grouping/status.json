@@ -1,0 +1,10 @@
+{
+  "state": "complete",
+  "completed_at": "2026-11-02T13:43:26+08:00",
+  "new_branches": 2,
+  "reused_branches": 2,
+  "dense_seeds": [
+    0
+  ],
+  "test_evaluated": false
+}

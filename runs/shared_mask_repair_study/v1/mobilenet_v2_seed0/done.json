@@ -1,0 +1,9 @@
+{
+  "completed_at": "2026-11-01T23:23:34+08:00",
+  "checkpoint_id": "cifar10-mobilenet_v2-seed0-split42fbb7440cc27c71-e100",
+  "total_weights": 2189760,
+  "kept_weights": 219016,
+  "actual_sparsity": 0.8999817331579717,
+  "seconds": 30.632176279090345,
+  "test_evaluated": false
+}

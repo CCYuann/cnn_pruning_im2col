@@ -1,0 +1,23 @@
+{
+  "dense_unchanged": true,
+  "train_images": 512,
+  "test_evaluated": false,
+  "independent_patch_checks": [
+    {
+      "layer": "conv1",
+      "independent_patch_check": true,
+      "max_abs_difference": 5.684341886080802e-14
+    },
+    {
+      "layer": "layer1.0.conv1",
+      "independent_patch_check": true,
+      "max_abs_difference": 3.552713678800501e-15
+    },
+    {
+      "layer": "layer2.0.conv2",
+      "independent_patch_check": true,
+      "max_abs_difference": 8.881784197001252e-16
+    }
+  ],
+  "stats_seconds": 1.246032097027637
+}

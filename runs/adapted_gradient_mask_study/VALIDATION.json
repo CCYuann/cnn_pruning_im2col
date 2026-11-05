@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "seed": 0,
+      "variant": "continuous_control",
+      "quota": true,
+      "identical_adaptation": true,
+      "continuous_control_bit_exact": true,
+      "masks_sha256": "b16f13b1bc05d841989df3d88cb33074c06a89a45377e0c1d51c4c1d19f83227"
+    },
+    {
+      "seed": 0,
+      "variant": "gradient_all",
+      "quota": true,
+      "identical_adaptation": true,
+      "continuous_control_bit_exact": true,
+      "masks_sha256": "2857c08171571457303628010cf50ec2a0adfaf621776ca7e33935fa743d9c7c"
+    },
+    {
+      "seed": 0,
+      "variant": "gradient_gate",
+      "quota": true,
+      "identical_adaptation": true,
+      "continuous_control_bit_exact": true,
+      "masks_sha256": "aa68dd1b55fef0d8ed3c0caa4d47b3c77f6539da23bd4e28c99f48f64c383080"
+    },
+    {
+      "seed": 0,
+      "variant": "matched_random",
+      "quota": true,
+      "identical_adaptation": true,
+      "continuous_control_bit_exact": true,
+      "masks_sha256": "abba1837968fb422556fbe13e2c653207b761a31e82f7789f5bc35d3609f8491"
+    }
+  ],
+  "test_evaluated": false
+}

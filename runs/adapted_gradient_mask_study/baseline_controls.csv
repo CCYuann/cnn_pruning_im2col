@@ -1,0 +1,5 @@
+model,seed,variant,direct_validation_acc,final_validation_acc,validation_loss,finetune_epochs,sparsity,test_evaluated,criterion,granularity
+resnet50,0,l1_sum,0.1008,0.9346,0.2562245969772339,10,0.89999433621845,False,l1_sum,flat
+resnet50,0,l1_sum,0.1004,0.934,0.25796873807907106,10,0.89999433621845,False,l1_sum,spatial
+resnet50,0,top2_mean_abs,0.1078,0.9342,0.2546021083831787,10,0.89999433621845,False,top2_mean_abs,flat
+resnet50,0,top2_mean_abs,0.1008,0.9368,0.23996408052444457,10,0.89999433621845,False,top2_mean_abs,spatial

@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "seed": 0,
+      "variant": "contiguous",
+      "reference_quotas": true,
+      "actual_kept_weights": 2345024,
+      "actual_kept_macs": 233504768
+    },
+    {
+      "seed": 0,
+      "variant": "random0",
+      "reference_quotas": true,
+      "actual_kept_weights": 2345024,
+      "actual_kept_macs": 233504768
+    },
+    {
+      "seed": 0,
+      "variant": "random1",
+      "reference_quotas": true,
+      "actual_kept_weights": 2345024,
+      "actual_kept_macs": 233504768
+    },
+    {
+      "seed": 0,
+      "variant": "random2",
+      "reference_quotas": true,
+      "actual_kept_weights": 2345024,
+      "actual_kept_macs": 233504768
+    },
+    {
+      "seed": 0,
+      "variant": "norm_sorted",
+      "reference_quotas": true,
+      "actual_kept_weights": 2345024,
+      "actual_kept_macs": 233504768
+    },
+    {
+      "seed": 0,
+      "variant": "jaccard",
+      "reference_quotas": true,
+      "actual_kept_weights": 2345024,
+      "actual_kept_macs": 233504768
+    },
+    {
+      "seed": 0,
+      "variant": "jaccard_swap",
+      "reference_quotas": true,
+      "actual_kept_weights": 2345024,
+      "actual_kept_macs": 233504768
+    }
+  ]
+}

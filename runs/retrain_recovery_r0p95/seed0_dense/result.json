@@ -1,0 +1,11 @@
+{
+  "seed": 0,
+  "arm": "dense",
+  "group_lambda": null,
+  "epochs": 60,
+  "final_validation": 0.9496,
+  "final_train": 0.9996444444444444,
+  "split_id": "42fbb7440cc27c71",
+  "seconds": 2762.5797714691143,
+  "test_evaluated": false
+}

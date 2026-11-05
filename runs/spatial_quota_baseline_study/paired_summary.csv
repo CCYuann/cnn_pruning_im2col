@@ -1,0 +1,5 @@
+model,criterion,seeds,flat_val_pct,spatial_val_pct,spatial_minus_flat_pp,paired_sample_std_pp
+resnet34,l1_sum,1,94.5,94.64,0.14000000000000679,
+resnet34,top2_mean_abs,1,94.76,94.72,-0.039999999999995595,
+resnet50,l1_sum,1,93.46,93.4,-0.05999999999999339,
+resnet50,top2_mean_abs,1,93.42,93.67999999999999,0.25999999999999357,

@@ -1,0 +1,58 @@
+[
+  {
+    "seed": 0,
+    "budget": 10,
+    "functional_state_bitexact": false,
+    "mismatched_keys": [
+      "layer4.0.downsample.1.running_mean",
+      "layer4.0.downsample.1.running_var",
+      "layer4.1.bn3.running_mean",
+      "layer4.1.bn3.running_var",
+      "layer4.2.bn3.running_mean",
+      "layer4.2.bn3.running_var"
+    ],
+    "optimizer_bitexact": true,
+    "scaler_bitexact": true,
+    "rng_bitexact": true
+  },
+  {
+    "seed": 1,
+    "budget": 10,
+    "functional_state_bitexact": false,
+    "mismatched_keys": [
+      "layer3.3.bn3.running_mean",
+      "layer3.3.bn3.running_var",
+      "layer3.5.bn3.running_mean",
+      "layer3.5.bn3.running_var",
+      "layer4.0.bn3.running_mean",
+      "layer4.0.bn3.running_var",
+      "layer4.0.downsample.1.running_mean",
+      "layer4.0.downsample.1.running_var",
+      "layer4.1.bn3.running_mean",
+      "layer4.1.bn3.running_var",
+      "layer4.2.bn3.running_mean",
+      "layer4.2.bn3.running_var"
+    ],
+    "optimizer_bitexact": true,
+    "scaler_bitexact": true,
+    "rng_bitexact": true
+  },
+  {
+    "seed": 2,
+    "budget": 10,
+    "functional_state_bitexact": false,
+    "mismatched_keys": [
+      "layer4.0.downsample.1.running_mean",
+      "layer4.0.downsample.1.running_var",
+      "layer4.1.bn3.running_mean",
+      "layer4.1.bn3.running_var",
+      "layer4.2.bn2.running_mean",
+      "layer4.2.bn2.running_var",
+      "layer4.2.bn3.running_mean",
+      "layer4.2.bn3.running_var"
+    ],
+    "optimizer_bitexact": true,
+    "scaler_bitexact": true,
+    "rng_bitexact": true
+  }
+]

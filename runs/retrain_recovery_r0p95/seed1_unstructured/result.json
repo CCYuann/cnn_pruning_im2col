@@ -1,0 +1,15 @@
+{
+  "seed": 1,
+  "arm": "unstructured",
+  "group_lambda": null,
+  "epochs": 60,
+  "final_validation": 0.952,
+  "final_train": 0.9994444444444445,
+  "split_id": "42fbb7440cc27c71",
+  "seconds": 2972.177391686011,
+  "test_evaluated": false,
+  "kept": 1172362,
+  "sparsity": 0.949999982940417,
+  "macs": 166990768,
+  "mac_reduction": 0.8713287429027483
+}

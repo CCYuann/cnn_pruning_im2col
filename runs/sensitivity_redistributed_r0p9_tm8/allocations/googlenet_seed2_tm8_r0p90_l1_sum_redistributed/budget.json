@@ -1,0 +1,14 @@
+{
+  "target_pruned_weights": 5019904,
+  "total_weights": 5577664,
+  "actual_planned_pruning_ratio": 0.9000011474337644,
+  "allocated_pruned_weights": 5019904,
+  "protected_layer_caps": {
+    "inception4a.branch4.1.conv": 0.0,
+    "conv1.conv": 0.2,
+    "inception3a.branch1.conv": 0.2,
+    "conv3.conv": 0.2
+  },
+  "non_sensitive_min_kept_k": 1,
+  "allocation_rule": "r=min(cap,initial_r+lambda/(1+max(0,mean_drop_pp))); exact integer correction"
+}

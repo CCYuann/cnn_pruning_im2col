@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "seed": 0,
+      "variant": "contiguous",
+      "partition": true,
+      "quotas": true,
+      "scatter": true,
+      "proxy": true,
+      "no_regrowth": true,
+      "test_evaluated": false
+    },
+    {
+      "seed": 0,
+      "variant": "random0",
+      "partition": true,
+      "quotas": true,
+      "scatter": true,
+      "proxy": true,
+      "no_regrowth": true,
+      "test_evaluated": false
+    },
+    {
+      "seed": 0,
+      "variant": "random1",
+      "partition": true,
+      "quotas": true,
+      "scatter": true,
+      "proxy": true,
+      "no_regrowth": true,
+      "test_evaluated": false
+    },
+    {
+      "seed": 0,
+      "variant": "random2",
+      "partition": true,
+      "quotas": true,
+      "scatter": true,
+      "proxy": true,
+      "no_regrowth": true,
+      "test_evaluated": false
+    },
+    {
+      "seed": 0,
+      "variant": "norm_sorted",
+      "partition": true,
+      "quotas": true,
+      "scatter": true,
+      "proxy": true,
+      "no_regrowth": true,
+      "test_evaluated": false
+    },
+    {
+      "seed": 0,
+      "variant": "jaccard",
+      "partition": true,
+      "quotas": true,
+      "scatter": true,
+      "proxy": true,
+      "no_regrowth": true,
+      "test_evaluated": false
+    },
+    {
+      "seed": 0,
+      "variant": "jaccard_swap",
+      "partition": true,
+      "quotas": true,
+      "scatter": true,
+      "proxy": true,
+      "no_regrowth": true,
+      "test_evaluated": false
+    }
+  ],
+  "source_hashes": true
+}

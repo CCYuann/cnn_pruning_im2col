@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "job": {
+        "seed": 0,
+        "bn": "frozen",
+        "policy": "dual"
+      },
+      "core_equal_to_control": true,
+      "checkpoint_equal_to_control": true,
+      "source_hashes": true
+    },
+    {
+      "job": {
+        "seed": 0,
+        "bn": "frozen",
+        "policy": "search_only"
+      },
+      "core_equal_to_control": true,
+      "checkpoint_equal_to_control": true,
+      "source_hashes": true
+    },
+    {
+      "job": {
+        "seed": 0,
+        "bn": "recalibrate",
+        "policy": "dual"
+      },
+      "core_equal_to_control": true,
+      "checkpoint_equal_to_control": true,
+      "source_hashes": true
+    },
+    {
+      "job": {
+        "seed": 0,
+        "bn": "recalibrate",
+        "policy": "search_only"
+      },
+      "core_equal_to_control": true,
+      "checkpoint_equal_to_control": true,
+      "source_hashes": true
+    }
+  ],
+  "unit_tests": 16
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "seed": 0,
+    "ft_epochs": 10,
+    "all_parameters_bitexact": true,
+    "max_running_buffer_difference": 5.605193857299268e-45,
+    "optimizer_bitexact": true,
+    "scaler_bitexact": true,
+    "rng_bitexact": true,
+    "validation_difference_pp": 0.0
+  },
+  {
+    "seed": 0,
+    "ft_epochs": 30,
+    "all_parameters_bitexact": true,
+    "max_running_buffer_difference": 5.605193857299268e-45,
+    "optimizer_bitexact": true,
+    "scaler_bitexact": true,
+    "rng_bitexact": true,
+    "validation_difference_pp": 0.0
+  },
+  {
+    "seed": 1,
+    "ft_epochs": 10,
+    "all_parameters_bitexact": true,
+    "max_running_buffer_difference": 5.605193857299268e-45,
+    "optimizer_bitexact": true,
+    "scaler_bitexact": true,
+    "rng_bitexact": true,
+    "validation_difference_pp": 0.0
+  },
+  {
+    "seed": 1,
+    "ft_epochs": 30,
+    "all_parameters_bitexact": true,
+    "max_running_buffer_difference": 5.605193857299268e-45,
+    "optimizer_bitexact": true,
+    "scaler_bitexact": true,
+    "rng_bitexact": true,
+    "validation_difference_pp": 0.0
+  },
+  {
+    "seed": 2,
+    "ft_epochs": 10,
+    "all_parameters_bitexact": true,
+    "max_running_buffer_difference": 5.605193857299268e-45,
+    "optimizer_bitexact": true,
+    "scaler_bitexact": true,
+    "rng_bitexact": true,
+    "validation_difference_pp": 0.0
+  },
+  {
+    "seed": 2,
+    "ft_epochs": 30,
+    "all_parameters_bitexact": true,
+    "max_running_buffer_difference": 5.605193857299268e-45,
+    "optimizer_bitexact": true,
+    "scaler_bitexact": true,
+    "rng_bitexact": true,
+    "validation_difference_pp": 0.0
+  }
+]

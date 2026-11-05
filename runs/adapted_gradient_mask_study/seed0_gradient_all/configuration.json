@@ -1,0 +1,16 @@
+{
+  "seed": 0,
+  "variant": "gradient_all",
+  "checkpoint_sha256": "3790757f8314e0559dfa58270f908f7a0164a652de1c6c79ac1e065e360490fe",
+  "initial_masks_sha256": "605f431dfce76a85b08ab701e995264e0e3ba48ea0c5a6712e697bb0c01e6d47",
+  "core_sha256": "ecf1576102d4e32d90758a580557357485e0ce677bbb02462d68de01854a0e7f",
+  "worker_sha256": "ede0a26c936d4c7a515e30a0a8e7a6c8ff086ba65504908747bd68a39d07ee06",
+  "helper_sha256": "aadf883d82e25e9b0b211133b5f15713f9fe0eae71754c6799c2c191b9965c41",
+  "evaluator_sha256": "9884bab9943b8929d7159f8b2d08455bbbffb53c873b96db87476d95070fea3d",
+  "tm": 8,
+  "total_epochs": 10,
+  "adaptation_epochs": 2,
+  "max_swaps_per_cluster": 1,
+  "search_images": 512,
+  "check_images": 512
+}

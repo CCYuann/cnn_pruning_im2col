@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "variant": "contiguous",
+      "layers": 53,
+      "kept_weights": 2345024,
+      "kept_macs": 233504768,
+      "mask_score_verified": true,
+      "final_no_regrowth": true
+    },
+    {
+      "variant": "jaccard_swap",
+      "layers": 53,
+      "kept_weights": 2345024,
+      "kept_macs": 233504768,
+      "mask_score_verified": true,
+      "final_no_regrowth": true
+    }
+  ],
+  "test_evaluated": false
+}

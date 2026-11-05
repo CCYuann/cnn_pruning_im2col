@@ -1,0 +1,101 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "job": {
+        "model": "resnet34",
+        "seed": 0,
+        "criterion": "l1_sum",
+        "granularity": "flat"
+      },
+      "quotas": true,
+      "pointwise_identical": true,
+      "source_hashes": true,
+      "test_evaluated": false
+    },
+    {
+      "job": {
+        "model": "resnet34",
+        "seed": 0,
+        "criterion": "l1_sum",
+        "granularity": "spatial"
+      },
+      "quotas": true,
+      "pointwise_identical": true,
+      "source_hashes": true,
+      "test_evaluated": false
+    },
+    {
+      "job": {
+        "model": "resnet34",
+        "seed": 0,
+        "criterion": "top2_mean_abs",
+        "granularity": "flat"
+      },
+      "quotas": true,
+      "pointwise_identical": true,
+      "source_hashes": true,
+      "test_evaluated": false
+    },
+    {
+      "job": {
+        "model": "resnet34",
+        "seed": 0,
+        "criterion": "top2_mean_abs",
+        "granularity": "spatial"
+      },
+      "quotas": true,
+      "pointwise_identical": true,
+      "source_hashes": true,
+      "test_evaluated": false
+    },
+    {
+      "job": {
+        "model": "resnet50",
+        "seed": 0,
+        "criterion": "l1_sum",
+        "granularity": "flat"
+      },
+      "quotas": true,
+      "pointwise_identical": true,
+      "source_hashes": true,
+      "test_evaluated": false
+    },
+    {
+      "job": {
+        "model": "resnet50",
+        "seed": 0,
+        "criterion": "l1_sum",
+        "granularity": "spatial"
+      },
+      "quotas": true,
+      "pointwise_identical": true,
+      "source_hashes": true,
+      "test_evaluated": false
+    },
+    {
+      "job": {
+        "model": "resnet50",
+        "seed": 0,
+        "criterion": "top2_mean_abs",
+        "granularity": "flat"
+      },
+      "quotas": true,
+      "pointwise_identical": true,
+      "source_hashes": true,
+      "test_evaluated": false
+    },
+    {
+      "job": {
+        "model": "resnet50",
+        "seed": 0,
+        "criterion": "top2_mean_abs",
+        "granularity": "spatial"
+      },
+      "quotas": true,
+      "pointwise_identical": true,
+      "source_hashes": true,
+      "test_evaluated": false
+    }
+  ]
+}
