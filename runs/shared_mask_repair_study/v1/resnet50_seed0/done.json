@@ -1,0 +1,9 @@
+{
+  "completed_at": "2026-11-01T23:22:55+08:00",
+  "checkpoint_id": "cifar10-resnet50-seed0-split42fbb7440cc27c71-e100",
+  "total_weights": 23447232,
+  "kept_weights": 2344856,
+  "actual_sparsity": 0.89999433621845,
+  "seconds": 91.18015162192751,
+  "test_evaluated": false
+}

@@ -1,0 +1,23 @@
+{"time": "2026-11-02T10:05:48+08:00", "kind": "study_start_or_resume", "plan_sha256": "6490540cab21d12c60d4c00dca41f721f9f471d837ed50717488e154339dddf7"}
+{"time": "2026-11-02T10:05:48+08:00", "kind": "job_start", "job": {"mode": "prepare", "seed": 0}, "gpu": 1, "pid": 1051284}
+{"time": "2026-11-02T10:06:48+08:00", "kind": "job_complete", "job": {"mode": "prepare", "seed": 0}, "gpu": 1}
+{"time": "2026-11-02T10:06:48+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 0, "variant": "contiguous"}, "gpu": 1, "pid": 1051564}
+{"time": "2026-11-02T10:06:48+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 0, "variant": "random0"}, "gpu": 0, "pid": 1051567}
+{"time": "2026-11-02T10:10:08+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 0, "variant": "contiguous"}, "gpu": 1}
+{"time": "2026-11-02T10:10:08+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 0, "variant": "random1"}, "gpu": 1, "pid": 1052993}
+{"time": "2026-11-02T10:10:28+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 0, "variant": "random0"}, "gpu": 0}
+{"time": "2026-11-02T10:10:28+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 0, "variant": "random2"}, "gpu": 0, "pid": 1053106}
+{"time": "2026-11-02T10:14:01+08:00", "kind": "explicit_review_amendment", "changed": ["scripts/run_fixed_quota_regrouping.py", "tests/test_regrouping_integration.py"], "completed_branches_preserved": true}
+{"time": "2026-11-02T10:14:04+08:00", "kind": "study_start_or_resume", "plan_sha256": "6490540cab21d12c60d4c00dca41f721f9f471d837ed50717488e154339dddf7"}
+{"time": "2026-11-02T10:14:07+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 0, "variant": "random1"}, "gpu": 1, "pid": 1053879}
+{"time": "2026-11-02T10:14:07+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 0, "variant": "random2"}, "gpu": 0, "pid": 1053882}
+{"time": "2026-11-02T10:15:27+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 0, "variant": "random1"}, "gpu": 1}
+{"time": "2026-11-02T10:15:27+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 0, "variant": "norm_sorted"}, "gpu": 1, "pid": 1054259}
+{"time": "2026-11-02T10:15:47+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 0, "variant": "random2"}, "gpu": 0}
+{"time": "2026-11-02T10:15:48+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 0, "variant": "jaccard"}, "gpu": 0, "pid": 1054348}
+{"time": "2026-11-02T10:18:08+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 0, "variant": "norm_sorted"}, "gpu": 1}
+{"time": "2026-11-02T10:18:08+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 0, "variant": "jaccard_swap"}, "gpu": 1, "pid": 1055238}
+{"time": "2026-11-02T10:18:28+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 0, "variant": "jaccard"}, "gpu": 0}
+{"time": "2026-11-02T10:20:48+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 0, "variant": "jaccard_swap"}, "gpu": 1}
+{"time": "2026-11-02T10:20:55+08:00", "kind": "promotion_decision", "expanded": false, "seed0_gain_pp": 0.1799999999999926, "reason": "交換搜尋版未達預先擴展條件，完成seed0可行性檢查後停止，不調參追高。", "test_evaluated": false}
+{"time": "2026-11-02T10:21:03+08:00", "kind": "study_complete", "seeds": [0]}

@@ -1,0 +1,79 @@
+{"time": "2026-11-05T15:32:58+08:00", "kind": "study_start_or_resume", "stage": "three-seed minimum evidence chain"}
+{"time": "2026-11-05T15:32:59+08:00", "kind": "job_start", "job": {"mode": "prepare", "seed": 0}, "gpu": 1, "pid": 2619766}
+{"time": "2026-11-05T15:32:59+08:00", "kind": "job_start", "job": {"mode": "prepare", "seed": 1}, "gpu": 0, "pid": 2619769}
+{"time": "2026-11-05T15:33:19+08:00", "kind": "job_complete", "job": {"mode": "prepare", "seed": 0}, "gpu": 1}
+{"time": "2026-11-05T15:33:19+08:00", "kind": "job_complete", "job": {"mode": "prepare", "seed": 1}, "gpu": 0}
+{"time": "2026-11-05T15:33:19+08:00", "kind": "job_start", "job": {"mode": "prepare", "seed": 2}, "gpu": 1, "pid": 2619809}
+{"time": "2026-11-05T15:33:39+08:00", "kind": "job_complete", "job": {"mode": "prepare", "seed": 2}, "gpu": 1}
+{"time": "2026-11-05T15:33:52+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 0, "variant": "BN", "epochs": 10}, "gpu": 1, "pid": 2619861}
+{"time": "2026-11-05T15:33:52+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 0, "variant": "scalar", "epochs": 10}, "gpu": 0, "pid": 2619864}
+{"time": "2026-11-05T15:36:12+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 0, "variant": "BN", "epochs": 10}, "gpu": 1}
+{"time": "2026-11-05T15:36:12+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 0, "variant": "scalar", "epochs": 10}, "gpu": 0}
+{"time": "2026-11-05T15:36:12+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 0, "variant": "global_unstructured", "epochs": 10}, "gpu": 1, "pid": 2621236}
+{"time": "2026-11-05T15:36:12+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 0, "variant": "quota_unstructured", "epochs": 10}, "gpu": 0, "pid": 2621239}
+{"time": "2026-11-05T15:38:32+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 0, "variant": "global_unstructured", "epochs": 10}, "gpu": 1}
+{"time": "2026-11-05T15:38:32+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 0, "variant": "quota_unstructured", "epochs": 10}, "gpu": 0}
+{"time": "2026-11-05T15:38:32+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 0, "variant": "dense_extra", "epochs": 10}, "gpu": 1, "pid": 2626274}
+{"time": "2026-11-05T15:38:32+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 1, "variant": "BN", "epochs": 10}, "gpu": 0, "pid": 2626277}
+{"time": "2026-11-05T15:40:52+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 0, "variant": "dense_extra", "epochs": 10}, "gpu": 1}
+{"time": "2026-11-05T15:40:52+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 1, "variant": "BN", "epochs": 10}, "gpu": 0}
+{"time": "2026-11-05T15:40:52+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 1, "variant": "scalar", "epochs": 10}, "gpu": 1, "pid": 2627147}
+{"time": "2026-11-05T15:40:52+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 1, "variant": "global_unstructured", "epochs": 10}, "gpu": 0, "pid": 2627150}
+{"time": "2026-11-05T15:43:12+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 1, "variant": "scalar", "epochs": 10}, "gpu": 1}
+{"time": "2026-11-05T15:43:12+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 1, "variant": "global_unstructured", "epochs": 10}, "gpu": 0}
+{"time": "2026-11-05T15:43:12+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 1, "variant": "quota_unstructured", "epochs": 10}, "gpu": 1, "pid": 2628096}
+{"time": "2026-11-05T15:43:12+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 1, "variant": "dense_extra", "epochs": 10}, "gpu": 0, "pid": 2628099}
+{"time": "2026-11-05T15:45:32+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 1, "variant": "quota_unstructured", "epochs": 10}, "gpu": 1}
+{"time": "2026-11-05T15:45:32+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 1, "variant": "dense_extra", "epochs": 10}, "gpu": 0}
+{"time": "2026-11-05T15:45:32+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 2, "variant": "BN", "epochs": 10}, "gpu": 1, "pid": 2628958}
+{"time": "2026-11-05T15:45:32+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 2, "variant": "scalar", "epochs": 10}, "gpu": 0, "pid": 2628961}
+{"time": "2026-11-05T15:47:53+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 2, "variant": "BN", "epochs": 10}, "gpu": 1}
+{"time": "2026-11-05T15:47:53+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 2, "variant": "scalar", "epochs": 10}, "gpu": 0}
+{"time": "2026-11-05T15:47:53+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 2, "variant": "global_unstructured", "epochs": 10}, "gpu": 1, "pid": 2629825}
+{"time": "2026-11-05T15:47:53+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 2, "variant": "quota_unstructured", "epochs": 10}, "gpu": 0, "pid": 2629828}
+{"time": "2026-11-05T15:50:13+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 2, "variant": "global_unstructured", "epochs": 10}, "gpu": 1}
+{"time": "2026-11-05T15:50:13+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 2, "variant": "quota_unstructured", "epochs": 10}, "gpu": 0}
+{"time": "2026-11-05T15:50:13+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 2, "variant": "dense_extra", "epochs": 10}, "gpu": 1, "pid": 2630693}
+{"time": "2026-11-05T15:52:33+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 2, "variant": "dense_extra", "epochs": 10}, "gpu": 1}
+{"time": "2026-11-05T15:52:33+08:00", "kind": "ft10_controls_complete"}
+{"time": "2026-11-05T15:52:33+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 0, "variant": "A", "epochs": 30}, "gpu": 1, "pid": 2631173}
+{"time": "2026-11-05T15:52:33+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 0, "variant": "BN", "epochs": 30}, "gpu": 0, "pid": 2631176}
+{"time": "2026-11-05T15:57:13+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 0, "variant": "A", "epochs": 30}, "gpu": 1}
+{"time": "2026-11-05T15:57:13+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 0, "variant": "BN", "epochs": 30}, "gpu": 0}
+{"time": "2026-11-05T15:57:13+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 0, "variant": "scalar", "epochs": 30}, "gpu": 1, "pid": 2632765}
+{"time": "2026-11-05T15:57:13+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 0, "variant": "B", "epochs": 30}, "gpu": 0, "pid": 2632768}
+{"time": "2026-11-05T16:01:53+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 0, "variant": "scalar", "epochs": 30}, "gpu": 1}
+{"time": "2026-11-05T16:01:53+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 0, "variant": "B", "epochs": 30}, "gpu": 0}
+{"time": "2026-11-05T16:01:53+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 0, "variant": "C", "epochs": 30}, "gpu": 1, "pid": 2634346}
+{"time": "2026-11-05T16:01:53+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 0, "variant": "dense_extra", "epochs": 30}, "gpu": 0, "pid": 2634349}
+{"time": "2026-11-05T16:06:13+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 0, "variant": "dense_extra", "epochs": 30}, "gpu": 0}
+{"time": "2026-11-05T16:06:13+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 1, "variant": "A", "epochs": 30}, "gpu": 0, "pid": 2635913}
+{"time": "2026-11-05T16:06:33+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 0, "variant": "C", "epochs": 30}, "gpu": 1}
+{"time": "2026-11-05T16:06:33+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 1, "variant": "BN", "epochs": 30}, "gpu": 1, "pid": 2636018}
+{"time": "2026-11-05T16:10:33+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 1, "variant": "A", "epochs": 30}, "gpu": 0}
+{"time": "2026-11-05T16:10:33+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 1, "variant": "scalar", "epochs": 30}, "gpu": 0, "pid": 2637719}
+{"time": "2026-11-05T16:11:13+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 1, "variant": "BN", "epochs": 30}, "gpu": 1}
+{"time": "2026-11-05T16:11:13+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 1, "variant": "B", "epochs": 30}, "gpu": 1, "pid": 2637957}
+{"time": "2026-11-05T16:15:33+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 1, "variant": "scalar", "epochs": 30}, "gpu": 0}
+{"time": "2026-11-05T16:15:33+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 1, "variant": "C", "epochs": 30}, "gpu": 0, "pid": 2639543}
+{"time": "2026-11-05T16:15:53+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 1, "variant": "B", "epochs": 30}, "gpu": 1}
+{"time": "2026-11-05T16:15:53+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 1, "variant": "dense_extra", "epochs": 30}, "gpu": 1, "pid": 2639634}
+{"time": "2026-11-05T16:20:13+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 1, "variant": "dense_extra", "epochs": 30}, "gpu": 1}
+{"time": "2026-11-05T16:20:13+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 2, "variant": "A", "epochs": 30}, "gpu": 1, "pid": 2641203}
+{"time": "2026-11-05T16:20:33+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 1, "variant": "C", "epochs": 30}, "gpu": 0}
+{"time": "2026-11-05T16:20:33+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 2, "variant": "BN", "epochs": 30}, "gpu": 0, "pid": 2641358}
+{"time": "2026-11-05T16:24:33+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 2, "variant": "A", "epochs": 30}, "gpu": 1}
+{"time": "2026-11-05T16:24:33+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 2, "variant": "scalar", "epochs": 30}, "gpu": 1, "pid": 2642758}
+{"time": "2026-11-05T16:25:33+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 2, "variant": "BN", "epochs": 30}, "gpu": 0}
+{"time": "2026-11-05T16:25:34+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 2, "variant": "B", "epochs": 30}, "gpu": 0, "pid": 2643097}
+{"time": "2026-11-05T16:28:54+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 2, "variant": "scalar", "epochs": 30}, "gpu": 1}
+{"time": "2026-11-05T16:28:54+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 2, "variant": "C", "epochs": 30}, "gpu": 1, "pid": 2644261}
+{"time": "2026-11-05T16:30:34+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 2, "variant": "B", "epochs": 30}, "gpu": 0}
+{"time": "2026-11-05T16:30:34+08:00", "kind": "job_start", "job": {"mode": "train", "seed": 2, "variant": "dense_extra", "epochs": 30}, "gpu": 0, "pid": 2644909}
+{"time": "2026-11-05T16:33:14+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 2, "variant": "C", "epochs": 30}, "gpu": 1}
+{"time": "2026-11-05T16:35:34+08:00", "kind": "job_complete", "job": {"mode": "train", "seed": 2, "variant": "dense_extra", "epochs": 30}, "gpu": 0}
+{"time": "2026-11-05T16:35:48+08:00", "kind": "report_only_numpy_audit_fix", "training_recomputed": false}
+{"time": "2026-11-05T16:36:34+08:00", "kind": "report_only_numpy_audit_fix", "training_recomputed": false}
+{"time": "2026-11-05T16:36:36+08:00", "kind": "study_start_or_resume", "stage": "three-seed minimum evidence chain"}
+{"time": "2026-11-05T16:36:50+08:00", "kind": "ft10_controls_complete"}
+{"time": "2026-11-05T16:37:08+08:00", "kind": "study_complete"}

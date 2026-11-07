@@ -1,0 +1,10 @@
+{
+  "time": "2026-11-05T16:36:34+08:00",
+  "issue": "Original reporting-only equal_nested did not handle NumPy arrays in saved RNG state",
+  "remedy": "Use np.array_equal in the in-memory finalizer only; frozen worker/controller sources and all training states unchanged",
+  "sources": {
+    "scripts/finalize_compensation_controls.py": "cb2e4501818b7fe74bc15b897d76a335a8af121a7d8dee5aa063c00e7d526626",
+    "tests/test_compensation_report_audit.py": "505ce98dddf85222a98a9d00ee7c6d2304f5bb03c5f78cd07926f47d7cc03305"
+  },
+  "training_recomputed": false
+}

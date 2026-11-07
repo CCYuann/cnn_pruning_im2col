@@ -1,0 +1,8 @@
+{
+  "batch_size": 128,
+  "lr": 0.1,
+  "lr_scheduler": "cosine",
+  "min_lr": 0.0001,
+  "weight_decay": 0.0005,
+  "deterministic": true
+}

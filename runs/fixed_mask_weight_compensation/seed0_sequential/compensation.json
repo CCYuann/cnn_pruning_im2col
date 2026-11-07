@@ -1,0 +1,12 @@
+{
+  "variant": "sequential",
+  "seconds": 34.792781412019394,
+  "clusters": 3320,
+  "accepted": 3276,
+  "fallback": 1,
+  "empty": 43,
+  "full": 0,
+  "nonconv_unchanged": true,
+  "max_weight_after": 0.849333643913269,
+  "max_weight_before": 0.6784720420837402
+}

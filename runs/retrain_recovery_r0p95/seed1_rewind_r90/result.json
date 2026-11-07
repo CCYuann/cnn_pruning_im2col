@@ -1,0 +1,16 @@
+{
+  "seed": 1,
+  "arm": "rewind_r90",
+  "group_lambda": null,
+  "epochs": 60,
+  "final_validation": 0.9486,
+  "final_train": 0.9992,
+  "split_id": "42fbb7440cc27c71",
+  "seconds": 2982.2376177280676,
+  "test_evaluated": false,
+  "kept": 2344552,
+  "sparsity": 0.9000073015015162,
+  "macs": 268907776,
+  "mac_reduction": 0.7927987157880119,
+  "q_zero": 26
+}

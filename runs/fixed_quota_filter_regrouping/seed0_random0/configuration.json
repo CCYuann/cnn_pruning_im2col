@@ -1,0 +1,27 @@
+{
+  "seed": 0,
+  "checkpoint_sha256": "3790757f8314e0559dfa58270f908f7a0164a652de1c6c79ac1e065e360490fe",
+  "source_sha256": {
+    "scripts/fixed_quota_grouping_worker.py": "24bc4b46d1194a93d57db7988e59d767f8a8b19b011847ade110f4ca696b0272",
+    "scripts/fixed_quota_grouping.py": "09e7eb0bff067a00b2403143ce72b5ab7ac0ec6f7e87a2e0a138996c9979af8d",
+    "scripts/weight_compensation_worker.py": "875e89fec81f531665f2a0e3d92b3d22caaaea85b02546d6a6f46837a1e74796",
+    "scripts/adapted_gradient_mask.py": "ede0a26c936d4c7a515e30a0a8e7a6c8ff086ba65504908747bd68a39d07ee06",
+    "scripts/run_shared_mask_repair.py": "59275ed1187aab7f1dd94192f78e06a1445ba79c46b370ca63a44b7acfef80e5",
+    "scripts/task_loss_mask_search.py": "9884bab9943b8929d7159f8b2d08455bbbffb53c873b96db87476d95070fea3d",
+    "scripts/run_fair_criterion_r0p9.py": "ce0741d90995dacb167d691520b7628c86bf6ad5fd5182b7f185e977c0a5b9c0",
+    "resnet34_pruning_experiments.py": "ecf1576102d4e32d90758a580557357485e0ce677bbb02462d68de01854a0e7f"
+  },
+  "tm": 8,
+  "target_sparsity": 0.9,
+  "quota_source": "global_layer_uniform_integer",
+  "ft_epochs": 10,
+  "batch_size": 128,
+  "lr": 0.001,
+  "momentum": 0.9,
+  "weight_decay": 0.0005,
+  "amp": "float16",
+  "bn_calibration_images": 512,
+  "bn_calibration_seed": 20261109,
+  "variant": "random0",
+  "preparation_sha256": "a63573127f136594e034b12d58f1f6ce98194d6f9b15ca1f32b972f39662fb6d"
+}

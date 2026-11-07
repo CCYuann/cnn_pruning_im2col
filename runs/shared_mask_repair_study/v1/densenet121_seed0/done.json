@@ -1,0 +1,9 @@
+{
+  "completed_at": "2026-11-01T23:22:03+08:00",
+  "checkpoint_id": "cifar10-densenet121-seed0-split42fbb7440cc27c71-e100",
+  "total_weights": 6862528,
+  "kept_weights": 686344,
+  "actual_sparsity": 0.8999867104367371,
+  "seconds": 37.798607378965244,
+  "test_evaluated": false
+}

@@ -1,0 +1,15 @@
+{
+  "state": "complete",
+  "updated_at": "2026-11-01T23:51:00+08:00",
+  "v3_models": [
+    "resnet50",
+    "densenet121"
+  ],
+  "eligible_v3_models": [
+    "resnet50",
+    "densenet121"
+  ],
+  "confirmed_candidates": [],
+  "test_evaluated": false,
+  "conclusion": "Inspect held-out diagnostics, validation, and any three-seed confirmation without hiding negative versions"
+}

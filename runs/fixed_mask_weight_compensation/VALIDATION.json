@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "seed": 0,
+      "variant": "original",
+      "masks_identical": true,
+      "forbidden_positions_zero": true,
+      "nonconv_initial_state_identical": true,
+      "data_isolation": true,
+      "source_hashes": true
+    },
+    {
+      "seed": 0,
+      "variant": "dense_input",
+      "masks_identical": true,
+      "forbidden_positions_zero": true,
+      "nonconv_initial_state_identical": true,
+      "data_isolation": true,
+      "source_hashes": true
+    },
+    {
+      "seed": 0,
+      "variant": "sequential",
+      "masks_identical": true,
+      "forbidden_positions_zero": true,
+      "nonconv_initial_state_identical": true,
+      "data_isolation": true,
+      "source_hashes": true
+    },
+    {
+      "seed": 1,
+      "variant": "original",
+      "masks_identical": true,
+      "forbidden_positions_zero": true,
+      "nonconv_initial_state_identical": true,
+      "data_isolation": true,
+      "source_hashes": true
+    },
+    {
+      "seed": 1,
+      "variant": "dense_input",
+      "masks_identical": true,
+      "forbidden_positions_zero": true,
+      "nonconv_initial_state_identical": true,
+      "data_isolation": true,
+      "source_hashes": true
+    },
+    {
+      "seed": 1,
+      "variant": "sequential",
+      "masks_identical": true,
+      "forbidden_positions_zero": true,
+      "nonconv_initial_state_identical": true,
+      "data_isolation": true,
+      "source_hashes": true
+    },
+    {
+      "seed": 2,
+      "variant": "original",
+      "masks_identical": true,
+      "forbidden_positions_zero": true,
+      "nonconv_initial_state_identical": true,
+      "data_isolation": true,
+      "source_hashes": true
+    },
+    {
+      "seed": 2,
+      "variant": "dense_input",
+      "masks_identical": true,
+      "forbidden_positions_zero": true,
+      "nonconv_initial_state_identical": true,
+      "data_isolation": true,
+      "source_hashes": true
+    },
+    {
+      "seed": 2,
+      "variant": "sequential",
+      "masks_identical": true,
+      "forbidden_positions_zero": true,
+      "nonconv_initial_state_identical": true,
+      "data_isolation": true,
+      "source_hashes": true
+    }
+  ],
+  "test_evaluated": false
+}

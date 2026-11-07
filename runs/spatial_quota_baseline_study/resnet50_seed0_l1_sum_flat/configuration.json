@@ -1,0 +1,14 @@
+{
+  "model": "resnet50",
+  "seed": 0,
+  "criterion": "l1_sum",
+  "granularity": "flat",
+  "checkpoint_sha256": "3790757f8314e0559dfa58270f908f7a0164a652de1c6c79ac1e065e360490fe",
+  "core_sha256": "ecf1576102d4e32d90758a580557357485e0ce677bbb02462d68de01854a0e7f",
+  "worker_sha256": "06e3f617c8addd46ff58b1dea0a357f58ad865117f3fdcb9b1fba4e3fd2e0c16",
+  "pilot_sha256": "59275ed1187aab7f1dd94192f78e06a1445ba79c46b370ca63a44b7acfef80e5",
+  "tm": 8,
+  "target_sparsity": 0.9,
+  "fine_tune_epochs": 10,
+  "split_id": "42fbb7440cc27c71"
+}

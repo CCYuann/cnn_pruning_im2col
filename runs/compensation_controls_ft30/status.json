@@ -1,0 +1,11 @@
+{
+  "state": "complete",
+  "completed_at": "2026-11-05T16:37:08+08:00",
+  "dense_seeds": [
+    0,
+    1,
+    2
+  ],
+  "trajectories": 24,
+  "test_evaluated": false
+}

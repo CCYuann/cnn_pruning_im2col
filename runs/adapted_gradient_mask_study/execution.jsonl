@@ -1,0 +1,14 @@
+{"time": "2026-11-02T01:04:59+08:00", "kind": "pilot_plan", "jobs": [{"mode": "gradient", "seed": 0, "variant": "continuous_control"}, {"mode": "gradient", "seed": 0, "variant": "gradient_all"}, {"mode": "gradient", "seed": 0, "variant": "gradient_gate"}, {"mode": "gradient", "seed": 0, "variant": "matched_random"}], "total_training_epochs": 10, "promotion": "gate >= best four baseline controls +0.1pp and >= all/random"}
+{"time": "2026-11-02T01:04:59+08:00", "kind": "job_start", "gpu": 1, "pid": 990965, "job": {"mode": "gradient", "seed": 0, "variant": "continuous_control"}}
+{"time": "2026-11-02T01:04:59+08:00", "kind": "job_start", "gpu": 0, "pid": 990968, "job": {"mode": "gradient", "seed": 0, "variant": "gradient_all"}}
+{"time": "2026-11-02T01:07:19+08:00", "kind": "job_complete", "job": {"mode": "gradient", "seed": 0, "variant": "continuous_control"}, "gpu": 1}
+{"time": "2026-11-02T01:07:19+08:00", "kind": "job_start", "gpu": 1, "pid": 991853, "job": {"mode": "gradient", "seed": 0, "variant": "gradient_gate"}}
+{"time": "2026-11-02T01:07:29+08:00", "kind": "job_complete", "job": {"mode": "gradient", "seed": 0, "variant": "gradient_all"}, "gpu": 0}
+{"time": "2026-11-02T01:07:29+08:00", "kind": "job_start", "gpu": 0, "pid": 991944, "job": {"mode": "gradient", "seed": 0, "variant": "matched_random"}}
+{"time": "2026-11-02T01:09:49+08:00", "kind": "job_complete", "job": {"mode": "gradient", "seed": 0, "variant": "gradient_gate"}, "gpu": 1}
+{"time": "2026-11-02T01:09:59+08:00", "kind": "job_complete", "job": {"mode": "gradient", "seed": 0, "variant": "matched_random"}, "gpu": 0}
+{"time": "2026-11-02T01:09:59+08:00", "kind": "study_error", "error": "TypeError(\"dict() got multiple values for keyword argument 'seed'\")"}
+{"time": "2026-11-02T01:10:37+08:00", "kind": "report_only_controller_fix", "previous_sha256": "f9112b9ad03e25917212e798ad834bb5c7197c80879c2c0c393513ecdbf5f257", "new_sha256": "dd2a6839821f93040f410f41c233b8fe16df402f540530bd9a3d333e62c9565e", "reason": "Avoid duplicate seed keyword while merging already completed control metrics; workers unchanged"}
+{"time": "2026-11-02T01:10:37+08:00", "kind": "pilot_plan", "jobs": [{"mode": "gradient", "seed": 0, "variant": "continuous_control"}, {"mode": "gradient", "seed": 0, "variant": "gradient_all"}, {"mode": "gradient", "seed": 0, "variant": "gradient_gate"}, {"mode": "gradient", "seed": 0, "variant": "matched_random"}], "total_training_epochs": 10, "promotion": "gate >= best four baseline controls +0.1pp and >= all/random"}
+{"time": "2026-11-02T01:10:37+08:00", "kind": "confirmation_decision", "promote": false}
+{"time": "2026-11-02T01:10:39+08:00", "kind": "study_complete", "seeds": [0]}

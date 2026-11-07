@@ -1,0 +1,23 @@
+{
+  "seed": 2,
+  "variant": "dense_extra",
+  "preparation_sha256": "2a499d002c7cac2d4c27c377d017213f6f867410117319166e6d0176fff248c7",
+  "sources": {
+    "scripts/compensation_controls_worker.py": "a08a6a6e3c06f30a96cc2479666dd7c55ff0f9dd3e214c9f6279e2fb705422f6",
+    "scripts/run_compensation_controls.py": "aba9c6473cd5ea1ceef6f9cfce0099e9c0b208a6c71bd6b3e0b60ab33ef301c9",
+    "research_notes/2026-11-05_compensation_controls_plan.md": "20a254ef9e46db587770154f0d19c72b58dfcbc4e1492e1fdead4872757ac548",
+    "scripts/scalar_weight_compensation.py": "3d248e05ae5317677917a0a7aa24420060951b15ce2459254d0e6e77aa6b4f1e",
+    "tests/test_scalar_weight_compensation.py": "c583f93774f08771c572180c4e08bcd10fffe52db48774defe140f5508e591f0",
+    "tests/test_compensation_controls.py": "8589f0f85aa265adcfe84d97a61056d26df6c67258156f49015a537961a0e993",
+    "resnet34_pruning_experiments.py": "ecf1576102d4e32d90758a580557357485e0ce677bbb02462d68de01854a0e7f",
+    "scripts/weight_compensation_worker.py": "875e89fec81f531665f2a0e3d92b3d22caaaea85b02546d6a6f46837a1e74796",
+    "scripts/run_fair_criterion_r0p9.py": "ce0741d90995dacb167d691520b7628c86bf6ad5fd5182b7f185e977c0a5b9c0",
+    "scripts/adapted_gradient_mask.py": "ede0a26c936d4c7a515e30a0a8e7a6c8ff086ba65504908747bd68a39d07ee06",
+    "scripts/run_shared_mask_repair.py": "59275ed1187aab7f1dd94192f78e06a1445ba79c46b370ca63a44b7acfef80e5",
+    "scripts/task_loss_mask_search.py": "9884bab9943b8929d7159f8b2d08455bbbffb53c873b96db87476d95070fea3d",
+    "scripts/fixed_support_ridge.py": "0718cd74592effb20f027c55a0c6081e69ea911d7af614aa5a0e7bfd0d2738e7"
+  },
+  "max_epochs": 30,
+  "ft_rng": 100002,
+  "test_evaluated": false
+}

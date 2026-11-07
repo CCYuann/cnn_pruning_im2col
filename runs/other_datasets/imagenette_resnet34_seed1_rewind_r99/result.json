@@ -1,0 +1,20 @@
+{
+  "dataset": "imagenette",
+  "model": "resnet34",
+  "seed": 1,
+  "arm": "rewind",
+  "ratio": 0.99,
+  "q_floor": false,
+  "stem_keep": false,
+  "epochs": 60,
+  "final_validation": 0.87,
+  "final_test": 0.8636942675159236,
+  "final_train": 0.9397803754870705,
+  "seconds": 416.4675740429666,
+  "kept": 212328,
+  "sparsity": 0.9900163854508031,
+  "macs": 124201200,
+  "mac_reduction": 0.9335468801364234,
+  "q_zero": 279,
+  "zero_layers": []
+}

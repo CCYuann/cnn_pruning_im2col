@@ -1,0 +1,10 @@
+{
+  "state": "baseline_complete",
+  "completed_at": "2026-11-02T00:59:42+08:00",
+  "jobs": 8,
+  "expanded_models": [],
+  "gradient_pilot_justified": true,
+  "reason": "No >=0.3pp mean baseline gap in this bounded audit",
+  "caution": "The threshold controls effort, not statistical significance or equivalence; author implementation is unverified",
+  "test_evaluated": false
+}

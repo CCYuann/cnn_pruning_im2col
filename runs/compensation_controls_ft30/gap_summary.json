@@ -1,0 +1,7 @@
+{
+  "mean_dense_to_global_gap_pp": 0.3000000000000019,
+  "mean_matched_shared_mask_gap_pp": 0.9466666666666678,
+  "mean_matched_remaining_B_gap_pp": 0.4466666666666678,
+  "B_recovery_ratio_of_mean_matched_gaps_pct": 52.81690140845064,
+  "caution": "Empirical reference gaps, not mathematical accuracy bounds or relative error-rate reductions"
+}

@@ -1,0 +1,7 @@
+{
+  "checkpoint_sha256": "7b73af14c3d7257aadd1dc300bb3d2efaba25db47d62db5a07c036e02f783f0b",
+  "images_per_split": 512,
+  "patches_per_layer": 1024,
+  "calibration_seed": 20261101,
+  "sampler_sha256": "618e1628947106dd8241106c6a9b9e62d51249da3024b75a8019347ad8419e1b"
+}

@@ -1,0 +1,20 @@
+{
+  "dataset": "imagewoof",
+  "model": "resnet34",
+  "seed": 2,
+  "arm": "gradual",
+  "ratio": 0.99,
+  "q_floor": true,
+  "stem_keep": false,
+  "epochs": 60,
+  "final_validation": 0.76,
+  "final_test": 0.7716976329854925,
+  "final_train": 0.8937071651090343,
+  "seconds": 552.4376538312063,
+  "kept": 213472,
+  "sparsity": 0.98996259482948,
+  "macs": 66689800,
+  "mac_reduction": 0.9643180156626671,
+  "q_zero": 0,
+  "zero_layers": []
+}

@@ -1,5 +1,39 @@
 # Cross-Filter Structured Pruning 研究改良方向
 
+## 目前主線與完整紀錄（2026-11-05）
+
+請先讀[研究發現與完整實驗總檔](research_notes/RESEARCH_FINDINGS_MASTER_2026-11-05.md)。其中區分test/validation、實際剪枝預算、三Dense seeds與單seed探索，逐項記錄做過什麼、數據、改善條件、已證實限制與尚未證實的失敗原因。
+
+目前以B Dense-input ridge的共享mask權重補償為主線。三seed FT10對BN-only平均+0.500pp、對per-filter scalar +0.393pp；FT30縮為+0.233/+0.213pp。C在FT30三seeds都低於B，不再因早期FT0或FT10的小優勢當成更好的最終主線。[最新控制/FT30結果](runs/compensation_controls_ft30/FINDINGS.md)。
+
+停止新增分組搜尋與RMS activation加權實驗。補償感知mask僅為尚未實作的延伸；5seeds、跨模型、80/95%與lambda/校正量消融也尚未完成。下文是歷史結果及早期提案，不能將「預期優點」或舊的「目前結論」當成最新已驗證優勢。
+
+## 歷史結果：補償方法初次FT10（2026-11-02）
+
+使用者指定簡稱為「補償方法」：不改mask與kept_count，只重算保留權重。B為Dense-input簡單版，C為student-prefix逐層版；後續討論沿用此名稱。
+
+2026-11-02完成ResNet50三seeds、9個10epoch分支。相同共享mask與實際約90%剪枝，validation FT10：原權重93.633%、Dense-input補償94.133%、student-prefix逐層補償94.160%。主方法C相對A逐seed+0.48/+0.84/+0.26pp，平均+0.527pp；但C-B只有+0.027pp且seed1為負，不支持逐層版本一定更好。
+
+這是目前比前幾輪更一致的初步正面訊號，仍不是獨立test、跨模型或學術新穎性證明。39項測試及mask/資料/非卷積參數稽核通過；本機Q15完整路徑未覆蓋ResNet50 Bottleneck，因此INT8尚未驗證。[完整結果](runs/fixed_mask_weight_compensation/FINAL_REPORT.md)、[判斷與限制](research_notes/2026-11-02_weight_compensation_findings.md)。
+
+## 最新追加：配額粒度與適應後梯度
+
+2026-11-02又完成12個新訓練分支。原文Figure4/5及公式未唯一指定spatial subcluster配額，因此不能把目前flat K直接判為錯誤。固定每cluster q的兩種解讀，在ResNet34/50 seed0的差異為-0.06至+0.26pp，未達預設擴大門檻；不是等效證明。
+
+接續的ResNet50適應2epochs後共享gate梯度候選，總訓練仍10epochs，主方法93.54%、隨機控制93.58%，都低於本輪最佳控制93.68%。未支持此版本有優勢，未使用test。[總結與完整證據](runs/BASELINE_AND_GRADIENT_20261102.md)。不把單seed小提升或數學導數正確當成已成立分類貢獻。
+
+## 最新追加：2026-11-02
+
+已完成固定配額的全模型分類loss接受／否決mask搜尋，ResNet50 seed0共四個10epoch分支，含一次BN proxy有界調整。主方法dual均未勝過l1；search-only最高+0.08pp，未達預設擴大門檻。這輪再次顯示訓練前proxy改善不保證fine-tune後精度提升，但不能由單模型單seed斷言所有task-aware mask方法無效。[完整結果](runs/task_loss_mask_study/FINAL_REPORT.md)、[預先計畫](research_notes/2026-11-02_task_loss_mask_plan.md)。
+
+## 最新研究紀錄：2026-11-01
+
+已完成實際約90%剪枝的importance-only比較與敏感層保護／預算重新分配實驗。保護但不補剪會降低實際sparsity；補足預算的現有方法在MobileNetV2有幫助，但在其他受測模型退步，DenseNet121尤其明顯。請優先閱讀 [正式結果與研究判斷](research_notes/2026-11-01_sensitivity_budget_findings.md)。
+
+下文保留早期規劃與假設，不能直接當成已完成驗證的結論；正式數據及限制以該研究紀錄與其連結的CSV為準。
+
+新增 [剪枝參考論文紀錄](research_notes/2026-11-01_pruning_reference_papers.md) 與 [固定配額共享mask修補提案](research_notes/2026-11-01_shared_mask_repair_proposal.md)。截至2026-11-01已實作並完成五模型診斷及兩模型16個訓練分支；重建誤差下降，但原版與mean-safe調整均未在seed0 validation勝過l1，未擴大三seed或使用test。見 [完整負結果及限制](runs/shared_mask_repair_study/FINAL_REPORT.md)。學術新穎性仍未確認。
+
 ## 目前專題定位
 
 目前這個專題是 CNN 剪枝與推論成本分析的 Python 軟體模擬。程式目前已經支援：

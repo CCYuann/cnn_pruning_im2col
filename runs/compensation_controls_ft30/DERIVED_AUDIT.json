@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "checkpoints": 42,
+  "layers": 2226,
+  "source_sha256": "7bfa90981e5bea065032048f3dde3073afe5781e2fe87c9e715f9e828ff43593",
+  "training_changed": false,
+  "test_evaluated": false,
+  "note": "Numerical zeros inside scheduled kept positions do not imply additional skipped hardware cycles"
+}

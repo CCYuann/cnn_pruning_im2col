@@ -1,0 +1,16 @@
+{
+  "seed": 1,
+  "arm": "group",
+  "group_lambda": 3e-05,
+  "epochs": 60,
+  "final_validation": 0.9438,
+  "final_train": 0.9966222222222222,
+  "split_id": "42fbb7440cc27c71",
+  "seconds": 747.9929146498907,
+  "test_evaluated": false,
+  "kept": 1172144,
+  "sparsity": 0.9500092804131421,
+  "macs": 161867264,
+  "mac_reduction": 0.8752765521638135,
+  "q_zero": 285
+}

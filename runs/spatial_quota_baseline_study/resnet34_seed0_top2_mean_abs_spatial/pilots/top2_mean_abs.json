@@ -1,0 +1,11 @@
+{
+  "model": "resnet34",
+  "seed": 0,
+  "variant": "top2_mean_abs",
+  "direct_validation_acc": 0.3068,
+  "final_validation_acc": 0.9472,
+  "validation_loss": 0.20332453708648682,
+  "finetune_epochs": 10,
+  "sparsity": 0.9000009783645958,
+  "test_evaluated": false
+}

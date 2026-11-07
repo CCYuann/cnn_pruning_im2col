@@ -1,0 +1,12 @@
+{
+  "updated_at": "2026-10-27T17:00:54+08:00",
+  "scheduler_pid": 624488,
+  "gpu": 1,
+  "max_jobs": 3,
+  "completed": 45,
+  "total": 45,
+  "pending": 0,
+  "active": [],
+  "failed": {},
+  "state": "complete"
+}

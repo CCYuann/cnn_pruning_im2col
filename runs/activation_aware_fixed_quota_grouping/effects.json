@@ -1,0 +1,9 @@
+{
+  "score_effect_contiguous_pp": -0.7200000000000131,
+  "grouping_effect_l1_pp": 0.1799999999999926,
+  "grouping_effect_activation_pp": 0.4200000000000159,
+  "optimized_pipeline_difference_pp": -0.47999999999998977,
+  "interaction_pp": 0.2400000000000233,
+  "independent_dense_seeds": 1,
+  "test_evaluated": false
+}

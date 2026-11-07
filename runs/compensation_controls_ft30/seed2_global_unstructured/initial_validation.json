@@ -1,0 +1,6 @@
+{
+  "raw_loss": 1.2181817840576172,
+  "raw_accuracy": 0.5546,
+  "bn_clone_loss": 0.3215215937137604,
+  "bn_clone_accuracy": 0.9046
+}

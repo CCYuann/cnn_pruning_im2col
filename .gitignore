@@ -1,4 +1,8 @@
 # Python
+.claude_research/
+.env
+.env.*
+!.env.example
 __pycache__/
 *.py[cod]
 *.orig
@@ -32,3 +36,11 @@ datasets/
 # IDE
 .idea/
 .vscode/
+
+# Expanded handoff copy duplicates runs/.
+handoffs/pruning_contributions_20261027/
+
+# Queue bookkeeping: per-job exit codes, daemon output and backups.
+*.rc
+*.out
+*.bak

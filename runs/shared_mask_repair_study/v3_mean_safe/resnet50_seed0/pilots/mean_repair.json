@@ -1,0 +1,11 @@
+{
+  "model": "resnet50",
+  "seed": 0,
+  "variant": "mean_repair",
+  "direct_validation_acc": 0.139,
+  "final_validation_acc": 0.9306,
+  "validation_loss": 0.25638983688354494,
+  "finetune_epochs": 10,
+  "sparsity": 0.89999433621845,
+  "test_evaluated": false
+}

@@ -1,0 +1,36 @@
+test_search_does_not_change_training_rng_stream (test_adapted_gradient_mask.AdaptedGradientTests.test_search_does_not_change_training_rng_stream) ... ok
+test_swap_restores_shadow_and_clears_new_momentum (test_adapted_gradient_mask.AdaptedGradientTests.test_swap_restores_shadow_and_clears_new_momentum) ... ok
+test_unchanged_connections_keep_momentum (test_adapted_gradient_mask.AdaptedGradientTests.test_unchanged_connections_keep_momentum) ... ok
+test_control_seed_is_not_passed_twice (test_adapted_gradient_reporting.AdaptedGradientReportTests.test_control_seed_is_not_passed_twice) ... ok
+test_promotion_requires_best_control_and_both_ablations (test_adapted_gradient_reporting.AdaptedGradientReportTests.test_promotion_requires_best_control_and_both_ablations) ... ok
+test_less_sensitive_receives_more_extra_pruning (test_sensitivity_budget_pruning.AllocationTests.test_less_sensitive_receives_more_extra_pruning) ... ok
+test_protection_and_exact_budget (test_sensitivity_budget_pruning.AllocationTests.test_protection_and_exact_budget) ... ok
+test_seeded_varied_k_sizes_and_caps (test_sensitivity_budget_pruning.AllocationTests.test_seeded_varied_k_sizes_and_caps) ... ok
+test_unrepresentable_or_infeasible_budget (test_sensitivity_budget_pruning.AllocationTests.test_unrepresentable_or_infeasible_budget) ... ok
+test_implicit_derivative_matches_explicit_shared_gates (test_shared_gate_gradient.SharedGateGradientTests.test_implicit_derivative_matches_explicit_shared_gates) ... ok
+test_no_improving_pair (test_shared_gate_gradient.SharedGateGradientTests.test_no_improving_pair) ... ok
+test_random_matches_per_cluster_exchange_budget (test_shared_gate_gradient.SharedGateGradientTests.test_random_matches_per_cluster_exchange_budget) ... ok
+test_signed_pair_and_empty_full (test_shared_gate_gradient.SharedGateGradientTests.test_signed_pair_and_empty_full) ... ok
+test_empty_full_and_zero_energy (test_shared_mask_repair.SharedMaskTests.test_empty_full_and_zero_energy) ... ok
+test_grouped_and_depthwise_input_mapping (test_shared_mask_repair.SharedMaskTests.test_grouped_and_depthwise_input_mapping) ... ok
+test_patch_order_stride_padding_dilation (test_shared_mask_repair.SharedMaskTests.test_patch_order_stride_padding_dilation) ... ok
+test_random_and_grouped_swap_predictions (test_shared_mask_repair.SharedMaskTests.test_random_and_grouped_swap_predictions) ... ok
+test_toy_conflict_improves_worst_and_keeps_budget (test_shared_mask_repair.SharedMaskTests.test_toy_conflict_improves_worst_and_keeps_budget) ... ok
+test_two_pass_preserves_post_mean_error_bound (test_shared_mask_repair.SharedMaskTests.test_two_pass_preserves_post_mean_error_bound) ... ok
+test_all_empty_or_full (test_spatial_quota_pruning.SpatialQuotaTests.test_all_empty_or_full) ... ok
+test_fuzz_quotas_and_kernel_order (test_spatial_quota_pruning.SpatialQuotaTests.test_fuzz_quotas_and_kernel_order) ... ok
+test_invalid_reference_or_budget_rejected (test_spatial_quota_pruning.SpatialQuotaTests.test_invalid_reference_or_budget_rejected) ... ok
+test_largest_remainder_and_raster_tie_break (test_spatial_quota_pruning.SpatialQuotaTests.test_largest_remainder_and_raster_tie_break) ... ok
+test_pointwise_identical_even_with_tied_importance (test_spatial_quota_pruning.SpatialQuotaTests.test_pointwise_identical_even_with_tied_importance) ... ok
+test_spatial_can_differ_without_changing_budget (test_spatial_quota_pruning.SpatialQuotaTests.test_spatial_can_differ_without_changing_budget) ... ok
+test_acceptance_and_nonfinite (test_task_loss_mask_search.TaskLossMaskTests.test_acceptance_and_nonfinite) ... ok
+test_bn_trial_rollback_and_dropout_eval (test_task_loss_mask_search.TaskLossMaskTests.test_bn_trial_rollback_and_dropout_eval) ... ok
+test_quotas_are_per_cluster_not_only_global (test_task_loss_mask_search.TaskLossMaskTests.test_quotas_are_per_cluster_not_only_global) ... ok
+test_restore_dense_weights_on_rejected_trial (test_task_loss_mask_search.TaskLossMaskTests.test_restore_dense_weights_on_rejected_trial) ... ok
+test_check_veto_restores_mask_and_real_weights (test_task_loss_search_integration.TaskLossIntegrationTests.test_check_veto_restores_mask_and_real_weights) ... ok
+test_whole_network_accepts_and_resumes (test_task_loss_search_integration.TaskLossIntegrationTests.test_whole_network_accepts_and_resumes) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.139s
+
+OK

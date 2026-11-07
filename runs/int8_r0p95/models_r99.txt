@@ -1,0 +1,9 @@
+group_gradual_r99_3=resnet50=runs/confirmation_r0p95/seed3_group_gradual_r99/final_model.pt=0.921
+group_gradual_r99_4=resnet50=runs/confirmation_r0p95/seed4_group_gradual_r99/final_model.pt=0.9072
+group_gradual_r99_5=resnet50=runs/confirmation_r0p95/seed5_group_gradual_r99/final_model.pt=0.921
+gradual_r99_3=resnet50=runs/confirmation_r0p95/seed3_gradual_r99/final_model.pt=0.927
+gradual_r99_4=resnet50=runs/confirmation_r0p95/seed4_gradual_r99/final_model.pt=0.9096
+gradual_r99_5=resnet50=runs/confirmation_r0p95/seed5_gradual_r99/final_model.pt=0.9204
+gradual_r98_3=resnet50=runs/confirmation_r0p95/seed3_gradual_r98/final_model.pt=0.9372
+gradual_r98_4=resnet50=runs/confirmation_r0p95/seed4_gradual_r98/final_model.pt=0.9304
+gradual_r98_5=resnet50=runs/confirmation_r0p95/seed5_gradual_r98/final_model.pt=0.9314

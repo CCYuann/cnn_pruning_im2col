@@ -1,0 +1,19 @@
+{
+  "seed": 2,
+  "model": "resnet50",
+  "checkpoint_sha256": "e5a6a905e3303872cc05c42b99b987ccf0f7d2e2fdef987ce94a3310192d92cd",
+  "core_sha256": "ecf1576102d4e32d90758a580557357485e0ce677bbb02462d68de01854a0e7f",
+  "worker_sha256": "875e89fec81f531665f2a0e3d92b3d22caaaea85b02546d6a6f46837a1e74796",
+  "helper_sha256": "0718cd74592effb20f027c55a0c6081e69ea911d7af614aa5a0e7bfd0d2738e7",
+  "sampler_sha256": "4cb4097f32bc89a0f6ea0d160f4a44af5b7473efdbc75f032c83f08279c6f0a9",
+  "training_helper_sha256": "ede0a26c936d4c7a515e30a0a8e7a6c8ff086ba65504908747bd68a39d07ee06",
+  "eval_helper_sha256": "9884bab9943b8929d7159f8b2d08455bbbffb53c873b96db87476d95070fea3d",
+  "images_per_split": 512,
+  "max_patches": 4096,
+  "calibration_seed": 20261107,
+  "tm": 8,
+  "target_sparsity": 0.9,
+  "variant": "original",
+  "cache_manifest_sha256": "8424ce1795c09126c36cb9e75ab2c637fa428b5d622cffc084d0687d62ca7369",
+  "total_ft_epochs": 10
+}

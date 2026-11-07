@@ -1,0 +1,1185 @@
+{
+  "seed": 0,
+  "layers": [
+    {
+      "index": 0,
+      "name": "conv1",
+      "file": "000.pt",
+      "output_hw": [
+        32,
+        32
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 18
+    },
+    {
+      "index": 1,
+      "name": "layer1.0.conv1",
+      "file": "001.pt",
+      "output_hw": [
+        32,
+        32
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 18
+    },
+    {
+      "index": 2,
+      "name": "layer1.0.conv2",
+      "file": "002.pt",
+      "output_hw": [
+        32,
+        32
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 91
+    },
+    {
+      "index": 3,
+      "name": "layer1.0.conv3",
+      "file": "003.pt",
+      "output_hw": [
+        32,
+        32
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 14
+    },
+    {
+      "index": 4,
+      "name": "layer1.0.downsample.0",
+      "file": "004.pt",
+      "output_hw": [
+        32,
+        32
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 21
+    },
+    {
+      "index": 5,
+      "name": "layer1.1.conv1",
+      "file": "005.pt",
+      "output_hw": [
+        32,
+        32
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 47
+    },
+    {
+      "index": 6,
+      "name": "layer1.1.conv2",
+      "file": "006.pt",
+      "output_hw": [
+        32,
+        32
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 52
+    },
+    {
+      "index": 7,
+      "name": "layer1.1.conv3",
+      "file": "007.pt",
+      "output_hw": [
+        32,
+        32
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 10
+    },
+    {
+      "index": 8,
+      "name": "layer1.2.conv1",
+      "file": "008.pt",
+      "output_hw": [
+        32,
+        32
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 53
+    },
+    {
+      "index": 9,
+      "name": "layer1.2.conv2",
+      "file": "009.pt",
+      "output_hw": [
+        32,
+        32
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 124
+    },
+    {
+      "index": 10,
+      "name": "layer1.2.conv3",
+      "file": "010.pt",
+      "output_hw": [
+        32,
+        32
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 17
+    },
+    {
+      "index": 11,
+      "name": "layer2.0.conv1",
+      "file": "011.pt",
+      "output_hw": [
+        32,
+        32
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 58
+    },
+    {
+      "index": 12,
+      "name": "layer2.0.conv2",
+      "file": "012.pt",
+      "output_hw": [
+        16,
+        16
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "max_q": 240
+    },
+    {
+      "index": 13,
+      "name": "layer2.0.conv3",
+      "file": "013.pt",
+      "output_hw": [
+        16,
+        16
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 38
+    },
+    {
+      "index": 14,
+      "name": "layer2.0.downsample.0",
+      "file": "014.pt",
+      "output_hw": [
+        16,
+        16
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "max_q": 52
+    },
+    {
+      "index": 15,
+      "name": "layer2.1.conv1",
+      "file": "015.pt",
+      "output_hw": [
+        16,
+        16
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 90
+    },
+    {
+      "index": 16,
+      "name": "layer2.1.conv2",
+      "file": "016.pt",
+      "output_hw": [
+        16,
+        16
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 221
+    },
+    {
+      "index": 17,
+      "name": "layer2.1.conv3",
+      "file": "017.pt",
+      "output_hw": [
+        16,
+        16
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 36
+    },
+    {
+      "index": 18,
+      "name": "layer2.2.conv1",
+      "file": "018.pt",
+      "output_hw": [
+        16,
+        16
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 100
+    },
+    {
+      "index": 19,
+      "name": "layer2.2.conv2",
+      "file": "019.pt",
+      "output_hw": [
+        16,
+        16
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 214
+    },
+    {
+      "index": 20,
+      "name": "layer2.2.conv3",
+      "file": "020.pt",
+      "output_hw": [
+        16,
+        16
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 40
+    },
+    {
+      "index": 21,
+      "name": "layer2.3.conv1",
+      "file": "021.pt",
+      "output_hw": [
+        16,
+        16
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 117
+    },
+    {
+      "index": 22,
+      "name": "layer2.3.conv2",
+      "file": "022.pt",
+      "output_hw": [
+        16,
+        16
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 256
+    },
+    {
+      "index": 23,
+      "name": "layer2.3.conv3",
+      "file": "023.pt",
+      "output_hw": [
+        16,
+        16
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 38
+    },
+    {
+      "index": 24,
+      "name": "layer3.0.conv1",
+      "file": "024.pt",
+      "output_hw": [
+        16,
+        16
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 165
+    },
+    {
+      "index": 25,
+      "name": "layer3.0.conv2",
+      "file": "025.pt",
+      "output_hw": [
+        8,
+        8
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "max_q": 387
+    },
+    {
+      "index": 26,
+      "name": "layer3.0.conv3",
+      "file": "026.pt",
+      "output_hw": [
+        8,
+        8
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 84
+    },
+    {
+      "index": 27,
+      "name": "layer3.0.downsample.0",
+      "file": "027.pt",
+      "output_hw": [
+        8,
+        8
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "max_q": 87
+    },
+    {
+      "index": 28,
+      "name": "layer3.1.conv1",
+      "file": "028.pt",
+      "output_hw": [
+        8,
+        8
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 111
+    },
+    {
+      "index": 29,
+      "name": "layer3.1.conv2",
+      "file": "029.pt",
+      "output_hw": [
+        8,
+        8
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 312
+    },
+    {
+      "index": 30,
+      "name": "layer3.1.conv3",
+      "file": "030.pt",
+      "output_hw": [
+        8,
+        8
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 66
+    },
+    {
+      "index": 31,
+      "name": "layer3.2.conv1",
+      "file": "031.pt",
+      "output_hw": [
+        8,
+        8
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 195
+    },
+    {
+      "index": 32,
+      "name": "layer3.2.conv2",
+      "file": "032.pt",
+      "output_hw": [
+        8,
+        8
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 537
+    },
+    {
+      "index": 33,
+      "name": "layer3.2.conv3",
+      "file": "033.pt",
+      "output_hw": [
+        8,
+        8
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 81
+    },
+    {
+      "index": 34,
+      "name": "layer3.3.conv1",
+      "file": "034.pt",
+      "output_hw": [
+        8,
+        8
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 180
+    },
+    {
+      "index": 35,
+      "name": "layer3.3.conv2",
+      "file": "035.pt",
+      "output_hw": [
+        8,
+        8
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 320
+    },
+    {
+      "index": 36,
+      "name": "layer3.3.conv3",
+      "file": "036.pt",
+      "output_hw": [
+        8,
+        8
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 43
+    },
+    {
+      "index": 37,
+      "name": "layer3.4.conv1",
+      "file": "037.pt",
+      "output_hw": [
+        8,
+        8
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 224
+    },
+    {
+      "index": 38,
+      "name": "layer3.4.conv2",
+      "file": "038.pt",
+      "output_hw": [
+        8,
+        8
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 331
+    },
+    {
+      "index": 39,
+      "name": "layer3.4.conv3",
+      "file": "039.pt",
+      "output_hw": [
+        8,
+        8
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 47
+    },
+    {
+      "index": 40,
+      "name": "layer3.5.conv1",
+      "file": "040.pt",
+      "output_hw": [
+        8,
+        8
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 191
+    },
+    {
+      "index": 41,
+      "name": "layer3.5.conv2",
+      "file": "041.pt",
+      "output_hw": [
+        8,
+        8
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 231
+    },
+    {
+      "index": 42,
+      "name": "layer3.5.conv3",
+      "file": "042.pt",
+      "output_hw": [
+        8,
+        8
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 26
+    },
+    {
+      "index": 43,
+      "name": "layer4.0.conv1",
+      "file": "043.pt",
+      "output_hw": [
+        8,
+        8
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 227
+    },
+    {
+      "index": 44,
+      "name": "layer4.0.conv2",
+      "file": "044.pt",
+      "output_hw": [
+        4,
+        4
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "max_q": 158
+    },
+    {
+      "index": 45,
+      "name": "layer4.0.conv3",
+      "file": "045.pt",
+      "output_hw": [
+        4,
+        4
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 39
+    },
+    {
+      "index": 46,
+      "name": "layer4.0.downsample.0",
+      "file": "046.pt",
+      "output_hw": [
+        4,
+        4
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "max_q": 53
+    },
+    {
+      "index": 47,
+      "name": "layer4.1.conv1",
+      "file": "047.pt",
+      "output_hw": [
+        4,
+        4
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 38
+    },
+    {
+      "index": 48,
+      "name": "layer4.1.conv2",
+      "file": "048.pt",
+      "output_hw": [
+        4,
+        4
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 177
+    },
+    {
+      "index": 49,
+      "name": "layer4.1.conv3",
+      "file": "049.pt",
+      "output_hw": [
+        4,
+        4
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 32
+    },
+    {
+      "index": 50,
+      "name": "layer4.2.conv1",
+      "file": "050.pt",
+      "output_hw": [
+        4,
+        4
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 58
+    },
+    {
+      "index": 51,
+      "name": "layer4.2.conv2",
+      "file": "051.pt",
+      "output_hw": [
+        4,
+        4
+      ],
+      "kernel": [
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 52
+    },
+    {
+      "index": 52,
+      "name": "layer4.2.conv3",
+      "file": "052.pt",
+      "output_hw": [
+        4,
+        4
+      ],
+      "kernel": [
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "max_q": 32
+    }
+  ],
+  "cache_files": [
+    {
+      "file": "000.pt",
+      "sha256": "52a1d3494ef92dd995aac58f3209bac4bc88162a23f525d9d41d248adbc8bf34"
+    },
+    {
+      "file": "001.pt",
+      "sha256": "3be6b6564a41840248472913ab6cfee97e8c2e27b55b193ca275288bb255d26c"
+    },
+    {
+      "file": "002.pt",
+      "sha256": "5fdaa4adba98e0367c73ba8b370de4809b95c39b6aa158af58022f4bb7aa834f"
+    },
+    {
+      "file": "003.pt",
+      "sha256": "7a2a3ab5afbbc360441c2432120217199ee21e1a948382cbdf7ff4eb3be3f3aa"
+    },
+    {
+      "file": "004.pt",
+      "sha256": "811d46f31c406a0cbe8783c08f83d270116bd41d9e3b483a0fbc73ff1aabac92"
+    },
+    {
+      "file": "005.pt",
+      "sha256": "d0b2128812132deaa2e75d89bfb63586c75c6e7745beeeed157bf5c59ed3b23a"
+    },
+    {
+      "file": "006.pt",
+      "sha256": "289428d674cf153bb81f15fc8dfb651420bdcccaa7a89e735a6c8a844920a237"
+    },
+    {
+      "file": "007.pt",
+      "sha256": "e825caeb7526720a58cc5a74ab185339586dc620899e4b40687b38d202a6d878"
+    },
+    {
+      "file": "008.pt",
+      "sha256": "1cde47241e933158b47425f7cf32540bbb9a8520cdbe13280da7f561d90b45be"
+    },
+    {
+      "file": "009.pt",
+      "sha256": "efa802f260cbe253202d12fa0234ce5612c580453888461ae99f3455b5145da3"
+    },
+    {
+      "file": "010.pt",
+      "sha256": "67dec466edcab43624be002d83af94f475ebe484c273dbe837a356dbdf7a1b0a"
+    },
+    {
+      "file": "011.pt",
+      "sha256": "a2beac39650094c8a72fc106275843323844c3e368840467c088cb97b8ec1c09"
+    },
+    {
+      "file": "012.pt",
+      "sha256": "0544f7143ff784bd967f352c56a1610a1397accf59ea2135ade9c32c85d43f82"
+    },
+    {
+      "file": "013.pt",
+      "sha256": "d50199fbc48fc32b6878cc2ed69fcf911f414f147ce5fa5d4547057d1e202cc6"
+    },
+    {
+      "file": "014.pt",
+      "sha256": "9ee4d2fceb5ae513c5d3bddf3596a12111b90869c558b97c46c6fa8120a6ad7a"
+    },
+    {
+      "file": "015.pt",
+      "sha256": "ab219142e025cc9298be65fb05490a8983f8ac658c23149dfa5ab530541f91a8"
+    },
+    {
+      "file": "016.pt",
+      "sha256": "2260c4594ee2ff38424c5ac2418a1f145ca752a4a25ba4f3c1cd28f637b2f127"
+    },
+    {
+      "file": "017.pt",
+      "sha256": "5e136d2a53f7c7b3d4ec61d5a6cc40598546b3b1c934521514ad598f5ad579b0"
+    },
+    {
+      "file": "018.pt",
+      "sha256": "97de4c4dc5b0a254567b1f286aae65fd22a2ec2583b37176e31d2e729160036c"
+    },
+    {
+      "file": "019.pt",
+      "sha256": "e835c3117fa92c106dc00b7fae48f19c5e62f70501c01bb3bfeb65b8da47266d"
+    },
+    {
+      "file": "020.pt",
+      "sha256": "9369b2fc53429db2b94043ca4e444460bc096b65fea788c8039f31c0b0ccdfa9"
+    },
+    {
+      "file": "021.pt",
+      "sha256": "5d0380b06e7448f1f5ba410c0d9e9be5de145c0268454781b831e2ca3d72a535"
+    },
+    {
+      "file": "022.pt",
+      "sha256": "51919f4c403513fdd716ab933d197efcf25d2285466d5d9538008be4f68d758d"
+    },
+    {
+      "file": "023.pt",
+      "sha256": "aac37a5780d563eeeab435d765fdb8b42195d793fb8072df8a55a707fa777b4b"
+    },
+    {
+      "file": "024.pt",
+      "sha256": "f47f075c2c3c144474ef395ec830ca07dcfe794d186ee2c5fdf9b80738c8fd45"
+    },
+    {
+      "file": "025.pt",
+      "sha256": "2810577150f58188779e8dd366d647c876ae2f80944d42ae0ab90d0dfafad256"
+    },
+    {
+      "file": "026.pt",
+      "sha256": "7b6c89efef695c7070127fdc86d18dab3d7a73687a8728534e9c7a51c40c107e"
+    },
+    {
+      "file": "027.pt",
+      "sha256": "90adcc1978126e079dde2536130bc6a63a8221230561ed6d8bf3d2a3e4b89a50"
+    },
+    {
+      "file": "028.pt",
+      "sha256": "3da6988a90d734c284a166774c4e3bea5046ee0e20cf8e2018c34e08c775a0c1"
+    },
+    {
+      "file": "029.pt",
+      "sha256": "b0bb29607d199316807e345be2e9121d373dea39b544ccd0c25ff9e3a170147d"
+    },
+    {
+      "file": "030.pt",
+      "sha256": "496c6c746da744ba0c44c06cc0740b937629fabc876ef3733a7dd8fec8f0bf2c"
+    },
+    {
+      "file": "031.pt",
+      "sha256": "e78aa99d5dd1fa924361fa0f05c28a5c2e5570db85acb4d35be816d0c00b3700"
+    },
+    {
+      "file": "032.pt",
+      "sha256": "a2bf415fc6af38cc89c68acf0be9ce4599ea71ab1d7015848ea50df941fd72d2"
+    },
+    {
+      "file": "033.pt",
+      "sha256": "aca2bdbb3ba40f02644c74a4dc669195c2d1490c49db8e73948de49523178a58"
+    },
+    {
+      "file": "034.pt",
+      "sha256": "45c45805e42ea0ba57851c6cf67a1b91877795bb71c420125ccaa26cf3576312"
+    },
+    {
+      "file": "035.pt",
+      "sha256": "8c74f16d4881f48b6a9e5e6b53e2a167a6cdcb0a7a4cbfecb9aa1778caffa4db"
+    },
+    {
+      "file": "036.pt",
+      "sha256": "6223a2101614e9e06e13a6631d33c71d1e77f8beed7be3c6dae2a8ef7aa8d9f5"
+    },
+    {
+      "file": "037.pt",
+      "sha256": "5e1e9267eaf87e349e0dff0a12122de48f6b86e68ad88455a7aafd61de3a6e78"
+    },
+    {
+      "file": "038.pt",
+      "sha256": "4662d23ce46228e98d33c985e5c6223ee981844c2c20894d1c1004fdbab947d1"
+    },
+    {
+      "file": "039.pt",
+      "sha256": "cecac09f38e1337966f31199572d2dc37964cc5485c66e35bab225d1890774e0"
+    },
+    {
+      "file": "040.pt",
+      "sha256": "df4558e6d8e3eadaa4eccbd3f8ed368b31cfc1c0a5a0ba05feabcf7199609efd"
+    },
+    {
+      "file": "041.pt",
+      "sha256": "3744e05b68e615c0ad7339198bcaf66396ee0c605f4c932374ab7c97648f9810"
+    },
+    {
+      "file": "042.pt",
+      "sha256": "47634f709a3272710d05fef3634e08ec0f39f86eaf8d9d62786b8265737bcee0"
+    },
+    {
+      "file": "043.pt",
+      "sha256": "250615dc436dc206bb5270982f4cf6c6d2968f38c140fa852b93914f9a11315c"
+    },
+    {
+      "file": "044.pt",
+      "sha256": "736a84649a8806716f9666fd7f6d7f6d5b52028ab14cbea16705fe58b652ca9c"
+    },
+    {
+      "file": "045.pt",
+      "sha256": "612048dc52ac9011d3f3a1ea339baf517c5f4141bbc73e27884ca945055b0b20"
+    },
+    {
+      "file": "046.pt",
+      "sha256": "e8a668bb84e976ecf52021610ecf501b9627a87f8fa4a96c5fa62e44ff268c5a"
+    },
+    {
+      "file": "047.pt",
+      "sha256": "ffe7f7683cbc050836dd944d66b7f7f764b07c718d95ba6fd62ecfb0fed8198d"
+    },
+    {
+      "file": "048.pt",
+      "sha256": "95a15eccb60d5ca0f40a05e9dac451c4d0ec12d3cb707c3b85354c3cf18e5ae1"
+    },
+    {
+      "file": "049.pt",
+      "sha256": "f969c40bd651bdce9dcb5e96d8bdbb00c32206b05b81a0ae81d6dfee6c93a802"
+    },
+    {
+      "file": "050.pt",
+      "sha256": "feab4dd14fc2b7e4848f9cd72a1c6b71957f9767e9e84d66a24494df9768db58"
+    },
+    {
+      "file": "051.pt",
+      "sha256": "54e12bd6c2fa609a5475ed81cbf6fe107bd8166ee9e00e1abbd5e2d2a464cfa5"
+    },
+    {
+      "file": "052.pt",
+      "sha256": "3187061cf6c3925fdfaf318ca98346d79a2225147bbd428aea541144dff9e198"
+    }
+  ],
+  "total_weights": 23447232,
+  "kept_weights": 1171976,
+  "mask_sha256": "8310eea2a7bd646921eac424606c26e43a73f94297381c7bcce3b9d4c0fb7660",
+  "image_sha256": "4a627faffd17c1a5fb0dead226e32ff4319d5c5ec278d248f9660ef53cbe64f2",
+  "zero_clusters": 247,
+  "max_q": 537,
+  "cache_bytes": 2602839968,
+  "peak_gpu_bytes": 1607831552,
+  "seconds": 5.97342789801769,
+  "test_evaluated": false,
+  "reproduced_r0p9_masks": true,
+  "target_sparsity": 0.95
+}

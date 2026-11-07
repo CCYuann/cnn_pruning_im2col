@@ -1,0 +1,1698 @@
+[
+  {
+    "layer": "conv1",
+    "before": 13.26023505136618,
+    "after": 11.830904741183488,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 128,
+        "accepted": 3,
+        "cost": 12.623371234693272
+      },
+      {
+        "iteration": 2,
+        "proposals": 128,
+        "accepted": 3,
+        "cost": 12.151947364469866
+      },
+      {
+        "iteration": 3,
+        "proposals": 128,
+        "accepted": 3,
+        "cost": 11.957508985875377
+      },
+      {
+        "iteration": 4,
+        "proposals": 128,
+        "accepted": 3,
+        "cost": 11.830904741183488
+      }
+    ],
+    "accepted": 12
+  },
+  {
+    "layer": "layer1.0.conv1",
+    "before": 0.7817066571668585,
+    "after": 0.748325910460852,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 128,
+        "accepted": 4,
+        "cost": 0.7650213419994725
+      },
+      {
+        "iteration": 2,
+        "proposals": 128,
+        "accepted": 3,
+        "cost": 0.7585811060159082
+      },
+      {
+        "iteration": 3,
+        "proposals": 128,
+        "accepted": 3,
+        "cost": 0.7544216940590975
+      },
+      {
+        "iteration": 4,
+        "proposals": 128,
+        "accepted": 3,
+        "cost": 0.7483259104608523
+      }
+    ],
+    "accepted": 13
+  },
+  {
+    "layer": "layer1.0.conv2",
+    "before": 2.9469773654625344,
+    "after": 2.886998190509366,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 128,
+        "accepted": 3,
+        "cost": 2.917749522866147
+      },
+      {
+        "iteration": 2,
+        "proposals": 128,
+        "accepted": 3,
+        "cost": 2.9011111086417283
+      },
+      {
+        "iteration": 3,
+        "proposals": 128,
+        "accepted": 3,
+        "cost": 2.892136576112763
+      },
+      {
+        "iteration": 4,
+        "proposals": 128,
+        "accepted": 3,
+        "cost": 2.8869981905093653
+      }
+    ],
+    "accepted": 12
+  },
+  {
+    "layer": "layer1.0.conv3",
+    "before": 1.770792314111171,
+    "after": 1.689988408367664,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 512,
+        "accepted": 13,
+        "cost": 1.7366402275822637
+      },
+      {
+        "iteration": 2,
+        "proposals": 512,
+        "accepted": 13,
+        "cost": 1.7133707711117192
+      },
+      {
+        "iteration": 3,
+        "proposals": 512,
+        "accepted": 12,
+        "cost": 1.7002683741713098
+      },
+      {
+        "iteration": 4,
+        "proposals": 512,
+        "accepted": 13,
+        "cost": 1.689988408367664
+      }
+    ],
+    "accepted": 51
+  },
+  {
+    "layer": "layer1.0.downsample.0",
+    "before": 2.8901614871379238,
+    "after": 2.7661808988701617,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 512,
+        "accepted": 11,
+        "cost": 2.83706327211622
+      },
+      {
+        "iteration": 2,
+        "proposals": 512,
+        "accepted": 12,
+        "cost": 2.8053620740635425
+      },
+      {
+        "iteration": 3,
+        "proposals": 512,
+        "accepted": 9,
+        "cost": 2.7864646434764078
+      },
+      {
+        "iteration": 4,
+        "proposals": 512,
+        "accepted": 8,
+        "cost": 2.7661808988701617
+      }
+    ],
+    "accepted": 40
+  },
+  {
+    "layer": "layer1.1.conv1",
+    "before": 2.6546281909572627,
+    "after": 2.5411904558618765,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 128,
+        "accepted": 4,
+        "cost": 2.5856330977973845
+      },
+      {
+        "iteration": 2,
+        "proposals": 128,
+        "accepted": 3,
+        "cost": 2.5641637845855865
+      },
+      {
+        "iteration": 3,
+        "proposals": 128,
+        "accepted": 3,
+        "cost": 2.550281346256962
+      },
+      {
+        "iteration": 4,
+        "proposals": 128,
+        "accepted": 4,
+        "cost": 2.5411904558618765
+      }
+    ],
+    "accepted": 14
+  },
+  {
+    "layer": "layer1.1.conv2",
+    "before": 1.884628496355709,
+    "after": 1.8388700053860285,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 128,
+        "accepted": 4,
+        "cost": 1.8588687594050002
+      },
+      {
+        "iteration": 2,
+        "proposals": 128,
+        "accepted": 3,
+        "cost": 1.8454199000785851
+      },
+      {
+        "iteration": 3,
+        "proposals": 128,
+        "accepted": 3,
+        "cost": 1.8426792202621747
+      },
+      {
+        "iteration": 4,
+        "proposals": 128,
+        "accepted": 3,
+        "cost": 1.8388700053860287
+      }
+    ],
+    "accepted": 13
+  },
+  {
+    "layer": "layer1.1.conv3",
+    "before": 1.5903804260416625,
+    "after": 1.5268625138277483,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 512,
+        "accepted": 13,
+        "cost": 1.5619088487246051
+      },
+      {
+        "iteration": 2,
+        "proposals": 512,
+        "accepted": 13,
+        "cost": 1.5457490474712041
+      },
+      {
+        "iteration": 3,
+        "proposals": 512,
+        "accepted": 15,
+        "cost": 1.5335170999322338
+      },
+      {
+        "iteration": 4,
+        "proposals": 512,
+        "accepted": 11,
+        "cost": 1.5268625138277483
+      }
+    ],
+    "accepted": 52
+  },
+  {
+    "layer": "layer1.2.conv1",
+    "before": 3.301269143118639,
+    "after": 3.2056748721757558,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 128,
+        "accepted": 3,
+        "cost": 3.253859603929516
+      },
+      {
+        "iteration": 2,
+        "proposals": 128,
+        "accepted": 2,
+        "cost": 3.2278704497463853
+      },
+      {
+        "iteration": 3,
+        "proposals": 128,
+        "accepted": 2,
+        "cost": 3.2188318099525053
+      },
+      {
+        "iteration": 4,
+        "proposals": 128,
+        "accepted": 4,
+        "cost": 3.2056748721757553
+      }
+    ],
+    "accepted": 11
+  },
+  {
+    "layer": "layer1.2.conv2",
+    "before": 4.16311333730671,
+    "after": 4.091705564436757,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 128,
+        "accepted": 3,
+        "cost": 4.132291506632178
+      },
+      {
+        "iteration": 2,
+        "proposals": 128,
+        "accepted": 2,
+        "cost": 4.1161847054001415
+      },
+      {
+        "iteration": 3,
+        "proposals": 128,
+        "accepted": 3,
+        "cost": 4.098544188533637
+      },
+      {
+        "iteration": 4,
+        "proposals": 128,
+        "accepted": 2,
+        "cost": 4.091705564436757
+      }
+    ],
+    "accepted": 10
+  },
+  {
+    "layer": "layer1.2.conv3",
+    "before": 2.487613525573858,
+    "after": 2.3632870867295357,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 512,
+        "accepted": 11,
+        "cost": 2.42925392222812
+      },
+      {
+        "iteration": 2,
+        "proposals": 512,
+        "accepted": 11,
+        "cost": 2.4049675007270865
+      },
+      {
+        "iteration": 3,
+        "proposals": 512,
+        "accepted": 11,
+        "cost": 2.3880779777117223
+      },
+      {
+        "iteration": 4,
+        "proposals": 512,
+        "accepted": 11,
+        "cost": 2.363287086729536
+      }
+    ],
+    "accepted": 44
+  },
+  {
+    "layer": "layer2.0.conv1",
+    "before": 8.375437342299703,
+    "after": 8.182141539808647,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 256,
+        "accepted": 6,
+        "cost": 8.279889322075316
+      },
+      {
+        "iteration": 2,
+        "proposals": 256,
+        "accepted": 6,
+        "cost": 8.225664016789123
+      },
+      {
+        "iteration": 3,
+        "proposals": 256,
+        "accepted": 4,
+        "cost": 8.19921346441782
+      },
+      {
+        "iteration": 4,
+        "proposals": 256,
+        "accepted": 5,
+        "cost": 8.182141539808647
+      }
+    ],
+    "accepted": 21
+  },
+  {
+    "layer": "layer2.0.conv2",
+    "before": 17.661630984396936,
+    "after": 17.37416531283926,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 256,
+        "accepted": 6,
+        "cost": 17.54614782916759
+      },
+      {
+        "iteration": 2,
+        "proposals": 256,
+        "accepted": 6,
+        "cost": 17.486243696311153
+      },
+      {
+        "iteration": 3,
+        "proposals": 256,
+        "accepted": 7,
+        "cost": 17.442045295685027
+      },
+      {
+        "iteration": 4,
+        "proposals": 256,
+        "accepted": 6,
+        "cost": 17.37416531283926
+      }
+    ],
+    "accepted": 25
+  },
+  {
+    "layer": "layer2.0.conv3",
+    "before": 15.953528043964466,
+    "after": 15.00585195844633,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 1024,
+        "accepted": 26,
+        "cost": 15.431650174804854
+      },
+      {
+        "iteration": 2,
+        "proposals": 1024,
+        "accepted": 26,
+        "cost": 15.224329023267831
+      },
+      {
+        "iteration": 3,
+        "proposals": 1024,
+        "accepted": 24,
+        "cost": 15.066785308839744
+      },
+      {
+        "iteration": 4,
+        "proposals": 1024,
+        "accepted": 22,
+        "cost": 15.00585195844633
+      }
+    ],
+    "accepted": 98
+  },
+  {
+    "layer": "layer2.0.downsample.0",
+    "before": 31.899038768394522,
+    "after": 31.34103890159828,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 1024,
+        "accepted": 22,
+        "cost": 31.607673701338648
+      },
+      {
+        "iteration": 2,
+        "proposals": 1024,
+        "accepted": 20,
+        "cost": 31.483336560350203
+      },
+      {
+        "iteration": 3,
+        "proposals": 1024,
+        "accepted": 20,
+        "cost": 31.410083373338196
+      },
+      {
+        "iteration": 4,
+        "proposals": 1024,
+        "accepted": 17,
+        "cost": 31.34103890159828
+      }
+    ],
+    "accepted": 79
+  },
+  {
+    "layer": "layer2.1.conv1",
+    "before": 12.006788706972948,
+    "after": 11.795669967005075,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 256,
+        "accepted": 5,
+        "cost": 11.886104556892505
+      },
+      {
+        "iteration": 2,
+        "proposals": 256,
+        "accepted": 5,
+        "cost": 11.839287346327167
+      },
+      {
+        "iteration": 3,
+        "proposals": 256,
+        "accepted": 4,
+        "cost": 11.808027505991877
+      },
+      {
+        "iteration": 4,
+        "proposals": 256,
+        "accepted": 4,
+        "cost": 11.795669967005075
+      }
+    ],
+    "accepted": 18
+  },
+  {
+    "layer": "layer2.1.conv2",
+    "before": 21.749235145333344,
+    "after": 21.384768699882372,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 256,
+        "accepted": 6,
+        "cost": 21.543312317605288
+      },
+      {
+        "iteration": 2,
+        "proposals": 256,
+        "accepted": 6,
+        "cost": 21.477756758844855
+      },
+      {
+        "iteration": 3,
+        "proposals": 256,
+        "accepted": 6,
+        "cost": 21.431879941712694
+      },
+      {
+        "iteration": 4,
+        "proposals": 256,
+        "accepted": 5,
+        "cost": 21.384768699882372
+      }
+    ],
+    "accepted": 23
+  },
+  {
+    "layer": "layer2.1.conv3",
+    "before": 9.536161120074834,
+    "after": 9.25389626283783,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 1024,
+        "accepted": 26,
+        "cost": 9.388355449497203
+      },
+      {
+        "iteration": 2,
+        "proposals": 1024,
+        "accepted": 21,
+        "cost": 9.330034295673947
+      },
+      {
+        "iteration": 3,
+        "proposals": 1024,
+        "accepted": 18,
+        "cost": 9.2854617216068
+      },
+      {
+        "iteration": 4,
+        "proposals": 1024,
+        "accepted": 22,
+        "cost": 9.25389626283783
+      }
+    ],
+    "accepted": 87
+  },
+  {
+    "layer": "layer2.2.conv1",
+    "before": 15.031652188135531,
+    "after": 14.872130428027422,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 256,
+        "accepted": 5,
+        "cost": 14.97118024161789
+      },
+      {
+        "iteration": 2,
+        "proposals": 256,
+        "accepted": 3,
+        "cost": 14.945775293748161
+      },
+      {
+        "iteration": 3,
+        "proposals": 256,
+        "accepted": 5,
+        "cost": 14.907439962868008
+      },
+      {
+        "iteration": 4,
+        "proposals": 256,
+        "accepted": 5,
+        "cost": 14.872130428027422
+      }
+    ],
+    "accepted": 18
+  },
+  {
+    "layer": "layer2.2.conv2",
+    "before": 20.161573278827504,
+    "after": 19.964564420753355,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 256,
+        "accepted": 6,
+        "cost": 20.07422866759153
+      },
+      {
+        "iteration": 2,
+        "proposals": 256,
+        "accepted": 6,
+        "cost": 20.030273165687014
+      },
+      {
+        "iteration": 3,
+        "proposals": 256,
+        "accepted": 5,
+        "cost": 19.979563243174795
+      },
+      {
+        "iteration": 4,
+        "proposals": 256,
+        "accepted": 4,
+        "cost": 19.964564420753355
+      }
+    ],
+    "accepted": 21
+  },
+  {
+    "layer": "layer2.2.conv3",
+    "before": 9.969095345702321,
+    "after": 9.701902534914492,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 1024,
+        "accepted": 26,
+        "cost": 9.84323279857215
+      },
+      {
+        "iteration": 2,
+        "proposals": 1024,
+        "accepted": 23,
+        "cost": 9.78109280658877
+      },
+      {
+        "iteration": 3,
+        "proposals": 1024,
+        "accepted": 23,
+        "cost": 9.731130558946024
+      },
+      {
+        "iteration": 4,
+        "proposals": 1024,
+        "accepted": 21,
+        "cost": 9.701902534914492
+      }
+    ],
+    "accepted": 93
+  },
+  {
+    "layer": "layer2.3.conv1",
+    "before": 16.51765831869681,
+    "after": 16.35545355138845,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 256,
+        "accepted": 6,
+        "cost": 16.44133352450334
+      },
+      {
+        "iteration": 2,
+        "proposals": 256,
+        "accepted": 4,
+        "cost": 16.40815665607183
+      },
+      {
+        "iteration": 3,
+        "proposals": 256,
+        "accepted": 5,
+        "cost": 16.38490033511838
+      },
+      {
+        "iteration": 4,
+        "proposals": 256,
+        "accepted": 3,
+        "cost": 16.35545355138845
+      }
+    ],
+    "accepted": 18
+  },
+  {
+    "layer": "layer2.3.conv2",
+    "before": 21.26254761834968,
+    "after": 21.066581980582107,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 256,
+        "accepted": 6,
+        "cost": 21.175997529047127
+      },
+      {
+        "iteration": 2,
+        "proposals": 256,
+        "accepted": 6,
+        "cost": 21.122242571501047
+      },
+      {
+        "iteration": 3,
+        "proposals": 256,
+        "accepted": 5,
+        "cost": 21.088142377367852
+      },
+      {
+        "iteration": 4,
+        "proposals": 256,
+        "accepted": 4,
+        "cost": 21.06658198058211
+      }
+    ],
+    "accepted": 21
+  },
+  {
+    "layer": "layer2.3.conv3",
+    "before": 8.54247980989703,
+    "after": 8.347245940282772,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 1024,
+        "accepted": 26,
+        "cost": 8.436201710860486
+      },
+      {
+        "iteration": 2,
+        "proposals": 1024,
+        "accepted": 22,
+        "cost": 8.398301179742768
+      },
+      {
+        "iteration": 3,
+        "proposals": 1024,
+        "accepted": 22,
+        "cost": 8.367790808600446
+      },
+      {
+        "iteration": 4,
+        "proposals": 1024,
+        "accepted": 20,
+        "cost": 8.347245940282772
+      }
+    ],
+    "accepted": 90
+  },
+  {
+    "layer": "layer3.0.conv1",
+    "before": 33.27383918378441,
+    "after": 33.02159586766669,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 512,
+        "accepted": 11,
+        "cost": 33.186709858268244
+      },
+      {
+        "iteration": 2,
+        "proposals": 512,
+        "accepted": 7,
+        "cost": 33.13300600199963
+      },
+      {
+        "iteration": 3,
+        "proposals": 512,
+        "accepted": 9,
+        "cost": 33.07350598788291
+      },
+      {
+        "iteration": 4,
+        "proposals": 512,
+        "accepted": 9,
+        "cost": 33.02159586766669
+      }
+    ],
+    "accepted": 36
+  },
+  {
+    "layer": "layer3.0.conv2",
+    "before": 99.28854354223537,
+    "after": 98.90809922742646,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 512,
+        "accepted": 10,
+        "cost": 99.18477618557873
+      },
+      {
+        "iteration": 2,
+        "proposals": 512,
+        "accepted": 10,
+        "cost": 99.0663239556897
+      },
+      {
+        "iteration": 3,
+        "proposals": 512,
+        "accepted": 8,
+        "cost": 98.97055097268766
+      },
+      {
+        "iteration": 4,
+        "proposals": 512,
+        "accepted": 7,
+        "cost": 98.90809922742646
+      }
+    ],
+    "accepted": 35
+  },
+  {
+    "layer": "layer3.0.conv3",
+    "before": 58.074755645919296,
+    "after": 57.38729415688035,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 2048,
+        "accepted": 46,
+        "cost": 57.72839251719583
+      },
+      {
+        "iteration": 2,
+        "proposals": 2048,
+        "accepted": 41,
+        "cost": 57.57410919712955
+      },
+      {
+        "iteration": 3,
+        "proposals": 2048,
+        "accepted": 34,
+        "cost": 57.47754543196069
+      },
+      {
+        "iteration": 4,
+        "proposals": 2048,
+        "accepted": 33,
+        "cost": 57.38729415688035
+      }
+    ],
+    "accepted": 154
+  },
+  {
+    "layer": "layer3.0.downsample.0",
+    "before": 132.3044258318425,
+    "after": 131.34933255252034,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 2048,
+        "accepted": 49,
+        "cost": 131.81552914107266
+      },
+      {
+        "iteration": 2,
+        "proposals": 2048,
+        "accepted": 38,
+        "cost": 131.59899778894692
+      },
+      {
+        "iteration": 3,
+        "proposals": 2048,
+        "accepted": 35,
+        "cost": 131.45251250349278
+      },
+      {
+        "iteration": 4,
+        "proposals": 2048,
+        "accepted": 35,
+        "cost": 131.34933255252034
+      }
+    ],
+    "accepted": 157
+  },
+  {
+    "layer": "layer3.1.conv1",
+    "before": 54.75764520595516,
+    "after": 54.29996312014019,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 512,
+        "accepted": 11,
+        "cost": 54.53948402869337
+      },
+      {
+        "iteration": 2,
+        "proposals": 512,
+        "accepted": 8,
+        "cost": 54.45195917498762
+      },
+      {
+        "iteration": 3,
+        "proposals": 512,
+        "accepted": 11,
+        "cost": 54.37718403945654
+      },
+      {
+        "iteration": 4,
+        "proposals": 512,
+        "accepted": 9,
+        "cost": 54.299963120140184
+      }
+    ],
+    "accepted": 39
+  },
+  {
+    "layer": "layer3.1.conv2",
+    "before": 71.93480107552801,
+    "after": 71.39993237130086,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 512,
+        "accepted": 11,
+        "cost": 71.68146765585013
+      },
+      {
+        "iteration": 2,
+        "proposals": 512,
+        "accepted": 11,
+        "cost": 71.52765329083638
+      },
+      {
+        "iteration": 3,
+        "proposals": 512,
+        "accepted": 9,
+        "cost": 71.44957260492887
+      },
+      {
+        "iteration": 4,
+        "proposals": 512,
+        "accepted": 9,
+        "cost": 71.39993237130086
+      }
+    ],
+    "accepted": 40
+  },
+  {
+    "layer": "layer3.1.conv3",
+    "before": 33.593747034727826,
+    "after": 33.24902829473918,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 2048,
+        "accepted": 44,
+        "cost": 33.44407138078131
+      },
+      {
+        "iteration": 2,
+        "proposals": 2048,
+        "accepted": 41,
+        "cost": 33.355662708038366
+      },
+      {
+        "iteration": 3,
+        "proposals": 2048,
+        "accepted": 36,
+        "cost": 33.289776798612195
+      },
+      {
+        "iteration": 4,
+        "proposals": 2048,
+        "accepted": 29,
+        "cost": 33.24902829473918
+      }
+    ],
+    "accepted": 150
+  },
+  {
+    "layer": "layer3.2.conv1",
+    "before": 62.39697834623263,
+    "after": 62.073121006403895,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 512,
+        "accepted": 12,
+        "cost": 62.26070525030281
+      },
+      {
+        "iteration": 2,
+        "proposals": 512,
+        "accepted": 10,
+        "cost": 62.14818511073358
+      },
+      {
+        "iteration": 3,
+        "proposals": 512,
+        "accepted": 7,
+        "cost": 62.10495172569418
+      },
+      {
+        "iteration": 4,
+        "proposals": 512,
+        "accepted": 8,
+        "cost": 62.07312100640388
+      }
+    ],
+    "accepted": 37
+  },
+  {
+    "layer": "layer3.2.conv2",
+    "before": 88.17803470081023,
+    "after": 87.80872613883648,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 512,
+        "accepted": 12,
+        "cost": 88.0194368948389
+      },
+      {
+        "iteration": 2,
+        "proposals": 512,
+        "accepted": 11,
+        "cost": 87.94042142144116
+      },
+      {
+        "iteration": 3,
+        "proposals": 512,
+        "accepted": 8,
+        "cost": 87.8835032862329
+      },
+      {
+        "iteration": 4,
+        "proposals": 512,
+        "accepted": 11,
+        "cost": 87.80872613883648
+      }
+    ],
+    "accepted": 42
+  },
+  {
+    "layer": "layer3.2.conv3",
+    "before": 36.5049156994477,
+    "after": 36.15608800453852,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 2048,
+        "accepted": 39,
+        "cost": 36.36535282502311
+      },
+      {
+        "iteration": 2,
+        "proposals": 2048,
+        "accepted": 40,
+        "cost": 36.27322471430517
+      },
+      {
+        "iteration": 3,
+        "proposals": 2048,
+        "accepted": 34,
+        "cost": 36.20677910765674
+      },
+      {
+        "iteration": 4,
+        "proposals": 2048,
+        "accepted": 33,
+        "cost": 36.15608800453852
+      }
+    ],
+    "accepted": 146
+  },
+  {
+    "layer": "layer3.3.conv1",
+    "before": 61.59099920090503,
+    "after": 61.35277870065032,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 512,
+        "accepted": 11,
+        "cost": 61.48899385509095
+      },
+      {
+        "iteration": 2,
+        "proposals": 512,
+        "accepted": 9,
+        "cost": 61.4381818648035
+      },
+      {
+        "iteration": 3,
+        "proposals": 512,
+        "accepted": 8,
+        "cost": 61.391270347552435
+      },
+      {
+        "iteration": 4,
+        "proposals": 512,
+        "accepted": 7,
+        "cost": 61.35277870065032
+      }
+    ],
+    "accepted": 35
+  },
+  {
+    "layer": "layer3.3.conv2",
+    "before": 67.05737227327613,
+    "after": 66.7823467697801,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 512,
+        "accepted": 11,
+        "cost": 66.94980813360517
+      },
+      {
+        "iteration": 2,
+        "proposals": 512,
+        "accepted": 9,
+        "cost": 66.86687696783423
+      },
+      {
+        "iteration": 3,
+        "proposals": 512,
+        "accepted": 9,
+        "cost": 66.82051421032543
+      },
+      {
+        "iteration": 4,
+        "proposals": 512,
+        "accepted": 9,
+        "cost": 66.7823467697801
+      }
+    ],
+    "accepted": 38
+  },
+  {
+    "layer": "layer3.3.conv3",
+    "before": 24.484665188891107,
+    "after": 24.204215943437127,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 2048,
+        "accepted": 50,
+        "cost": 24.351884514213225
+      },
+      {
+        "iteration": 2,
+        "proposals": 2048,
+        "accepted": 47,
+        "cost": 24.28142895923855
+      },
+      {
+        "iteration": 3,
+        "proposals": 2048,
+        "accepted": 40,
+        "cost": 24.236419288565784
+      },
+      {
+        "iteration": 4,
+        "proposals": 2048,
+        "accepted": 32,
+        "cost": 24.204215943437127
+      }
+    ],
+    "accepted": 169
+  },
+  {
+    "layer": "layer3.4.conv1",
+    "before": 57.18964039184034,
+    "after": 56.84959486115352,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 512,
+        "accepted": 10,
+        "cost": 57.03333438201681
+      },
+      {
+        "iteration": 2,
+        "proposals": 512,
+        "accepted": 10,
+        "cost": 56.9609448303517
+      },
+      {
+        "iteration": 3,
+        "proposals": 512,
+        "accepted": 8,
+        "cost": 56.901125609811054
+      },
+      {
+        "iteration": 4,
+        "proposals": 512,
+        "accepted": 7,
+        "cost": 56.84959486115352
+      }
+    ],
+    "accepted": 35
+  },
+  {
+    "layer": "layer3.4.conv2",
+    "before": 74.43060615475531,
+    "after": 74.1262173967786,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 512,
+        "accepted": 10,
+        "cost": 74.28830791776676
+      },
+      {
+        "iteration": 2,
+        "proposals": 512,
+        "accepted": 9,
+        "cost": 74.23245929682878
+      },
+      {
+        "iteration": 3,
+        "proposals": 512,
+        "accepted": 9,
+        "cost": 74.20156875240221
+      },
+      {
+        "iteration": 4,
+        "proposals": 512,
+        "accepted": 9,
+        "cost": 74.1262173967786
+      }
+    ],
+    "accepted": 37
+  },
+  {
+    "layer": "layer3.4.conv3",
+    "before": 24.566071102704846,
+    "after": 24.287867513944455,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 2048,
+        "accepted": 51,
+        "cost": 24.421475124613593
+      },
+      {
+        "iteration": 2,
+        "proposals": 2048,
+        "accepted": 43,
+        "cost": 24.360833303350077
+      },
+      {
+        "iteration": 3,
+        "proposals": 2048,
+        "accepted": 42,
+        "cost": 24.315709946213993
+      },
+      {
+        "iteration": 4,
+        "proposals": 2048,
+        "accepted": 35,
+        "cost": 24.287867513944455
+      }
+    ],
+    "accepted": 171
+  },
+  {
+    "layer": "layer3.5.conv1",
+    "before": 52.27596079946298,
+    "after": 52.068653454650395,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 512,
+        "accepted": 7,
+        "cost": 52.20187477573888
+      },
+      {
+        "iteration": 2,
+        "proposals": 512,
+        "accepted": 8,
+        "cost": 52.147529340751746
+      },
+      {
+        "iteration": 3,
+        "proposals": 512,
+        "accepted": 6,
+        "cost": 52.10088531355347
+      },
+      {
+        "iteration": 4,
+        "proposals": 512,
+        "accepted": 8,
+        "cost": 52.06865345465039
+      }
+    ],
+    "accepted": 29
+  },
+  {
+    "layer": "layer3.5.conv2",
+    "before": 59.16596897641266,
+    "after": 58.841101033374585,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 512,
+        "accepted": 12,
+        "cost": 59.02388982525284
+      },
+      {
+        "iteration": 2,
+        "proposals": 512,
+        "accepted": 7,
+        "cost": 58.93434148118642
+      },
+      {
+        "iteration": 3,
+        "proposals": 512,
+        "accepted": 8,
+        "cost": 58.87776128010986
+      },
+      {
+        "iteration": 4,
+        "proposals": 512,
+        "accepted": 7,
+        "cost": 58.841101033374585
+      }
+    ],
+    "accepted": 34
+  },
+  {
+    "layer": "layer3.5.conv3",
+    "before": 18.796935632248818,
+    "after": 18.614176798087172,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 2048,
+        "accepted": 49,
+        "cost": 18.71446621170866
+      },
+      {
+        "iteration": 2,
+        "proposals": 2048,
+        "accepted": 47,
+        "cost": 18.666214434487806
+      },
+      {
+        "iteration": 3,
+        "proposals": 2048,
+        "accepted": 39,
+        "cost": 18.638709818680887
+      },
+      {
+        "iteration": 4,
+        "proposals": 2048,
+        "accepted": 39,
+        "cost": 18.614176798087172
+      }
+    ],
+    "accepted": 174
+  },
+  {
+    "layer": "layer4.0.conv1",
+    "before": 97.93164026487537,
+    "after": 97.43067649077848,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 1024,
+        "accepted": 20,
+        "cost": 97.71351654755338
+      },
+      {
+        "iteration": 2,
+        "proposals": 1024,
+        "accepted": 16,
+        "cost": 97.62332445817913
+      },
+      {
+        "iteration": 3,
+        "proposals": 1024,
+        "accepted": 13,
+        "cost": 97.53424697967193
+      },
+      {
+        "iteration": 4,
+        "proposals": 1024,
+        "accepted": 14,
+        "cost": 97.43067649077848
+      }
+    ],
+    "accepted": 63
+  },
+  {
+    "layer": "layer4.0.conv2",
+    "before": 194.14968700023053,
+    "after": 193.5758259999567,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 1024,
+        "accepted": 19,
+        "cost": 193.878370297939
+      },
+      {
+        "iteration": 2,
+        "proposals": 1024,
+        "accepted": 19,
+        "cost": 193.73322736930007
+      },
+      {
+        "iteration": 3,
+        "proposals": 1024,
+        "accepted": 21,
+        "cost": 193.6555968631786
+      },
+      {
+        "iteration": 4,
+        "proposals": 1024,
+        "accepted": 19,
+        "cost": 193.5758259999567
+      }
+    ],
+    "accepted": 78
+  },
+  {
+    "layer": "layer4.0.conv3",
+    "before": 88.51340792082866,
+    "after": 87.90573186886796,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 4096,
+        "accepted": 85,
+        "cost": 88.25607483762587
+      },
+      {
+        "iteration": 2,
+        "proposals": 4096,
+        "accepted": 78,
+        "cost": 88.09267188344103
+      },
+      {
+        "iteration": 3,
+        "proposals": 4096,
+        "accepted": 69,
+        "cost": 87.98458157954212
+      },
+      {
+        "iteration": 4,
+        "proposals": 4096,
+        "accepted": 73,
+        "cost": 87.90573186886795
+      }
+    ],
+    "accepted": 305
+  },
+  {
+    "layer": "layer4.0.downsample.0",
+    "before": 195.32325960069647,
+    "after": 194.5706089799324,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 4096,
+        "accepted": 101,
+        "cost": 195.02132588354345
+      },
+      {
+        "iteration": 2,
+        "proposals": 4096,
+        "accepted": 87,
+        "cost": 194.8307667923177
+      },
+      {
+        "iteration": 3,
+        "proposals": 4096,
+        "accepted": 85,
+        "cost": 194.683640733246
+      },
+      {
+        "iteration": 4,
+        "proposals": 4096,
+        "accepted": 85,
+        "cost": 194.5706089799324
+      }
+    ],
+    "accepted": 358
+  },
+  {
+    "layer": "layer4.1.conv1",
+    "before": 143.25195721445635,
+    "after": 142.76193101332166,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 1024,
+        "accepted": 23,
+        "cost": 143.06106125861174
+      },
+      {
+        "iteration": 2,
+        "proposals": 1024,
+        "accepted": 20,
+        "cost": 142.91463814707794
+      },
+      {
+        "iteration": 3,
+        "proposals": 1024,
+        "accepted": 20,
+        "cost": 142.82866113046475
+      },
+      {
+        "iteration": 4,
+        "proposals": 1024,
+        "accepted": 15,
+        "cost": 142.76193101332166
+      }
+    ],
+    "accepted": 78
+  },
+  {
+    "layer": "layer4.1.conv2",
+    "before": 158.50698402712845,
+    "after": 158.18987038269535,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 1024,
+        "accepted": 19,
+        "cost": 158.35382023864838
+      },
+      {
+        "iteration": 2,
+        "proposals": 1024,
+        "accepted": 22,
+        "cost": 158.27014487262852
+      },
+      {
+        "iteration": 3,
+        "proposals": 1024,
+        "accepted": 16,
+        "cost": 158.2216227878075
+      },
+      {
+        "iteration": 4,
+        "proposals": 1024,
+        "accepted": 15,
+        "cost": 158.18987038269537
+      }
+    ],
+    "accepted": 72
+  },
+  {
+    "layer": "layer4.1.conv3",
+    "before": 53.73325749325031,
+    "after": 53.386549180585064,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 4096,
+        "accepted": 101,
+        "cost": 53.595307655531
+      },
+      {
+        "iteration": 2,
+        "proposals": 4096,
+        "accepted": 88,
+        "cost": 53.50403989879351
+      },
+      {
+        "iteration": 3,
+        "proposals": 4096,
+        "accepted": 84,
+        "cost": 53.43417828631749
+      },
+      {
+        "iteration": 4,
+        "proposals": 4096,
+        "accepted": 82,
+        "cost": 53.386549180585064
+      }
+    ],
+    "accepted": 355
+  },
+  {
+    "layer": "layer4.2.conv1",
+    "before": 178.557199509053,
+    "after": 178.02502377123966,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 1024,
+        "accepted": 19,
+        "cost": 178.34001862141366
+      },
+      {
+        "iteration": 2,
+        "proposals": 1024,
+        "accepted": 19,
+        "cost": 178.2178143593137
+      },
+      {
+        "iteration": 3,
+        "proposals": 1024,
+        "accepted": 17,
+        "cost": 178.09977940842353
+      },
+      {
+        "iteration": 4,
+        "proposals": 1024,
+        "accepted": 13,
+        "cost": 178.02502377123966
+      }
+    ],
+    "accepted": 68
+  },
+  {
+    "layer": "layer4.2.conv2",
+    "before": 133.01246541242944,
+    "after": 132.73405362864293,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 1024,
+        "accepted": 21,
+        "cost": 132.89703179151576
+      },
+      {
+        "iteration": 2,
+        "proposals": 1024,
+        "accepted": 20,
+        "cost": 132.83699607867075
+      },
+      {
+        "iteration": 3,
+        "proposals": 1024,
+        "accepted": 19,
+        "cost": 132.77567204236254
+      },
+      {
+        "iteration": 4,
+        "proposals": 1024,
+        "accepted": 17,
+        "cost": 132.73405362864293
+      }
+    ],
+    "accepted": 77
+  },
+  {
+    "layer": "layer4.2.conv3",
+    "before": 62.94735618447124,
+    "after": 62.55863842962868,
+    "rounds": [
+      {
+        "iteration": 1,
+        "proposals": 4096,
+        "accepted": 92,
+        "cost": 62.798544429068436
+      },
+      {
+        "iteration": 2,
+        "proposals": 4096,
+        "accepted": 94,
+        "cost": 62.699153895716606
+      },
+      {
+        "iteration": 3,
+        "proposals": 4096,
+        "accepted": 81,
+        "cost": 62.62251304363603
+      },
+      {
+        "iteration": 4,
+        "proposals": 4096,
+        "accepted": 80,
+        "cost": 62.55863842962868
+      }
+    ],
+    "accepted": 347
+  }
+]

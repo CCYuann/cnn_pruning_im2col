@@ -1,0 +1,174 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "seed": 0,
+      "variant": "A",
+      "epochs": 30,
+      "no_regrowth": true,
+      "continuous_history": true
+    },
+    {
+      "seed": 0,
+      "variant": "BN",
+      "epochs": 30,
+      "no_regrowth": true,
+      "continuous_history": true
+    },
+    {
+      "seed": 0,
+      "variant": "scalar",
+      "epochs": 30,
+      "no_regrowth": true,
+      "continuous_history": true
+    },
+    {
+      "seed": 0,
+      "variant": "B",
+      "epochs": 30,
+      "no_regrowth": true,
+      "continuous_history": true
+    },
+    {
+      "seed": 0,
+      "variant": "C",
+      "epochs": 30,
+      "no_regrowth": true,
+      "continuous_history": true
+    },
+    {
+      "seed": 0,
+      "variant": "dense_extra",
+      "epochs": 30,
+      "no_regrowth": true,
+      "continuous_history": true
+    },
+    {
+      "seed": 0,
+      "variant": "global_unstructured",
+      "epochs": 10,
+      "no_regrowth": true,
+      "continuous_history": true
+    },
+    {
+      "seed": 0,
+      "variant": "quota_unstructured",
+      "epochs": 10,
+      "no_regrowth": true,
+      "continuous_history": true
+    },
+    {
+      "seed": 1,
+      "variant": "A",
+      "epochs": 30,
+      "no_regrowth": true,
+      "continuous_history": true
+    },
+    {
+      "seed": 1,
+      "variant": "BN",
+      "epochs": 30,
+      "no_regrowth": true,
+      "continuous_history": true
+    },
+    {
+      "seed": 1,
+      "variant": "scalar",
+      "epochs": 30,
+      "no_regrowth": true,
+      "continuous_history": true
+    },
+    {
+      "seed": 1,
+      "variant": "B",
+      "epochs": 30,
+      "no_regrowth": true,
+      "continuous_history": true
+    },
+    {
+      "seed": 1,
+      "variant": "C",
+      "epochs": 30,
+      "no_regrowth": true,
+      "continuous_history": true
+    },
+    {
+      "seed": 1,
+      "variant": "dense_extra",
+      "epochs": 30,
+      "no_regrowth": true,
+      "continuous_history": true
+    },
+    {
+      "seed": 1,
+      "variant": "global_unstructured",
+      "epochs": 10,
+      "no_regrowth": true,
+      "continuous_history": true
+    },
+    {
+      "seed": 1,
+      "variant": "quota_unstructured",
+      "epochs": 10,
+      "no_regrowth": true,
+      "continuous_history": true
+    },
+    {
+      "seed": 2,
+      "variant": "A",
+      "epochs": 30,
+      "no_regrowth": true,
+      "continuous_history": true
+    },
+    {
+      "seed": 2,
+      "variant": "BN",
+      "epochs": 30,
+      "no_regrowth": true,
+      "continuous_history": true
+    },
+    {
+      "seed": 2,
+      "variant": "scalar",
+      "epochs": 30,
+      "no_regrowth": true,
+      "continuous_history": true
+    },
+    {
+      "seed": 2,
+      "variant": "B",
+      "epochs": 30,
+      "no_regrowth": true,
+      "continuous_history": true
+    },
+    {
+      "seed": 2,
+      "variant": "C",
+      "epochs": 30,
+      "no_regrowth": true,
+      "continuous_history": true
+    },
+    {
+      "seed": 2,
+      "variant": "dense_extra",
+      "epochs": 30,
+      "no_regrowth": true,
+      "continuous_history": true
+    },
+    {
+      "seed": 2,
+      "variant": "global_unstructured",
+      "epochs": 10,
+      "no_regrowth": true,
+      "continuous_history": true
+    },
+    {
+      "seed": 2,
+      "variant": "quota_unstructured",
+      "epochs": 10,
+      "no_regrowth": true,
+      "continuous_history": true
+    }
+  ],
+  "test_evaluated": false
+}

@@ -1,0 +1,28 @@
+{
+  "seed": 2,
+  "arm": "gradual",
+  "model": "resnet50",
+  "ratio": 0.99,
+  "allocator": "cluster",
+  "q_floor": false,
+  "ramp_frac": 0.6666666666666666,
+  "mac_beta": null,
+  "group_lambda": null,
+  "epochs": 60,
+  "final_validation": 0.9242,
+  "final_train": 0.9718888888888889,
+  "split_id": "42fbb7440cc27c71",
+  "seconds": 3502.552235285053,
+  "test_evaluated": false,
+  "kept": 236024,
+  "sparsity": 0.9899338224656966,
+  "macs": 29982464,
+  "mac_reduction": 0.9768976370373176,
+  "q_zero": 1264,
+  "zero_layers": [
+    "layer1.2.conv1",
+    "layer4.2.conv1",
+    "layer4.2.conv2",
+    "layer4.2.conv3"
+  ]
+}

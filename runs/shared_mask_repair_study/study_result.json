@@ -1,0 +1,24 @@
+{
+  "state": "complete",
+  "completed_at": "2026-11-01T23:38:49+08:00",
+  "diagnostic_jobs": 5,
+  "pilot_jobs": 10,
+  "conclusions": [
+    {
+      "model": "resnet50",
+      "version": "v1",
+      "validation_gain_vs_l1_pp": -0.05999999999999339,
+      "validation_gain_vs_mean_pp": 0.0,
+      "next_step": "do not claim a method advantage"
+    },
+    {
+      "model": "densenet121",
+      "version": "v1",
+      "validation_gain_vs_l1_pp": -0.10000000000000009,
+      "validation_gain_vs_mean_pp": 0.10000000000000009,
+      "next_step": "do not claim a method advantage"
+    }
+  ],
+  "test_evaluated": false,
+  "meaning": "Evidence-backed diagnostic/pilot result; no forced positive result"
+}

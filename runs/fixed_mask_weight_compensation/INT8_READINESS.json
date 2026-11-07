@@ -1,0 +1,24 @@
+{
+  "int8_evaluated": false,
+  "inspected_references": [
+    {
+      "path": "/home/yenmh3/11457019/mask_aware_conv_accelerator/scripts/quantization.py",
+      "sha256": "8332908bdab7ad90d9953308c4b18cff5c6063fc4e1d1119a2b4f7c730aeb3fe"
+    },
+    {
+      "path": "/home/yenmh3/11457019/mask_aware_conv_accelerator/scripts/analyze_resnet34_quantization.py",
+      "sha256": "d70a0cbad71371030c0fe691ccc5f5e3a260fb7e8b340c5ac1f4951b9f21734e"
+    },
+    {
+      "path": "/home/yenmh3/11457019/mask_aware_conv_accelerator/scripts/evaluate_bitexact_resnet34_backbone.py",
+      "sha256": "6c7e7f60cfa072a70b06933e4f8d69d16aac018dbe411a381a178de1a8632c1f"
+    }
+  ],
+  "inspected_path_supports_resnet50_bottleneck": false,
+  "reasons": [
+    "Inspected Conv-BN mapping only handles conv1/conv2; conv3 is not mapped",
+    "Inspected integer backbone executes two convolutions per block, not ResNet50's three",
+    "Scalar Q15 primitives exist, but do not establish full-model ResNet50 bit-exact coverage"
+  ],
+  "action": "Do not substitute oneDNN for hardware Q15; synchronize or extend and verify a ResNet50 reference in a separately scoped step"
+}

@@ -1,0 +1,16 @@
+{
+  "seed": 2,
+  "variant": "dense_input",
+  "ft0_accuracy": 0.106,
+  "ft0_bn_clone_accuracy": 0.7816,
+  "ft2_accuracy": 0.9156,
+  "ft10_accuracy": 0.9356,
+  "validation_loss": 0.21079568495750428,
+  "sparsity": 0.9500198573545909,
+  "training_seconds": 368.70018449798226,
+  "peak_gpu_bytes": 2065586688,
+  "epochs": 10,
+  "split_id": "42fbb7440cc27c71",
+  "mask_sha256": "97f3de3dfc2abcabea343583839c9b5c87e98fd3728fc16bb562391505d5f557",
+  "test_evaluated": false
+}

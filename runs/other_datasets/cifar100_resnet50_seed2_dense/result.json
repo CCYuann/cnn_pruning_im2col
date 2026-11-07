@@ -1,0 +1,13 @@
+{
+  "dataset": "cifar100",
+  "model": "resnet50",
+  "seed": 2,
+  "arm": "dense",
+  "ratio": 0,
+  "q_floor": false,
+  "epochs": 100,
+  "final_validation": 0.7518,
+  "final_test": 0.7608,
+  "final_train": 0.9996222222222222,
+  "seconds": 3564.0462964680046
+}

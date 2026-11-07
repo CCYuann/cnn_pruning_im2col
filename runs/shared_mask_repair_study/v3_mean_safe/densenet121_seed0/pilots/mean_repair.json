@@ -1,0 +1,11 @@
+{
+  "model": "densenet121",
+  "seed": 0,
+  "variant": "mean_repair",
+  "direct_validation_acc": 0.094,
+  "final_validation_acc": 0.9388,
+  "validation_loss": 0.2176864070892334,
+  "finetune_epochs": 10,
+  "sparsity": 0.8999867104367371,
+  "test_evaluated": false
+}

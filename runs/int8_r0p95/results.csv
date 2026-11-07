@@ -1,0 +1,3 @@
+label,mode,fp32,int8,loss_pp
+rewind_0,onednn,0.9428,0.9428,0.0
+group_0,onednn,0.9476,0.9484,-0.08000000000000229

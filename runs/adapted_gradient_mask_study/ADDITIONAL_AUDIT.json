@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "seed": 0,
+      "variant": "continuous_control",
+      "identical_full_adaptation_state": true,
+      "source_hashes": true,
+      "actual_applied_swaps": 0
+    },
+    {
+      "seed": 0,
+      "variant": "gradient_all",
+      "identical_full_adaptation_state": true,
+      "source_hashes": true,
+      "actual_applied_swaps": 3261
+    },
+    {
+      "seed": 0,
+      "variant": "gradient_gate",
+      "identical_full_adaptation_state": true,
+      "source_hashes": true,
+      "actual_applied_swaps": 144
+    },
+    {
+      "seed": 0,
+      "variant": "matched_random",
+      "identical_full_adaptation_state": true,
+      "source_hashes": true,
+      "actual_applied_swaps": 144
+    }
+  ]
+}
