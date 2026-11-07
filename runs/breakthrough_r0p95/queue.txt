@@ -1,0 +1,528 @@
+g2_rewind_r34_3	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 3 --group-lambda 3e-5 --arm rewind --model resnet34 --ratio .8 --tag _r34
+g2_rewind_r34r95_3	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 3 --group-lambda 3e-5 --arm rewind --model resnet34 --ratio .95 --tag _r34r95
+g2_rewind_r34r98_3	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 3 --group-lambda 3e-5 --arm rewind --model resnet34 --ratio .98 --tag _r34r98
+g2_gradual_r34r98_3	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 3 --group-lambda 3e-5 --arm gradual --model resnet34 --ratio .98 --tag _r34r98
+g2_unstructured_r34r98_3	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 3 --group-lambda 3e-5 --arm unstructured --model resnet34 --ratio .98 --tag _r34r98
+g2_rewind_r34_4	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 4 --group-lambda 3e-5 --arm rewind --model resnet34 --ratio .8 --tag _r34
+g2_rewind_r34r95_4	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 4 --group-lambda 3e-5 --arm rewind --model resnet34 --ratio .95 --tag _r34r95
+g2_rewind_r34r98_4	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 4 --group-lambda 3e-5 --arm rewind --model resnet34 --ratio .98 --tag _r34r98
+g2_gradual_r34r98_4	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 4 --group-lambda 3e-5 --arm gradual --model resnet34 --ratio .98 --tag _r34r98
+g2_unstructured_r34r98_4	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 4 --group-lambda 3e-5 --arm unstructured --model resnet34 --ratio .98 --tag _r34r98
+g2_rewind_r34_5	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 5 --group-lambda 3e-5 --arm rewind --model resnet34 --ratio .8 --tag _r34
+g2_rewind_r34r95_5	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 5 --group-lambda 3e-5 --arm rewind --model resnet34 --ratio .95 --tag _r34r95
+g2_rewind_r34r98_5	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 5 --group-lambda 3e-5 --arm rewind --model resnet34 --ratio .98 --tag _r34r98
+g2_gradual_r34r98_5	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 5 --group-lambda 3e-5 --arm gradual --model resnet34 --ratio .98 --tag _r34r98
+g2_unstructured_r34r98_5	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 5 --group-lambda 3e-5 --arm unstructured --model resnet34 --ratio .98 --tag _r34r98
+ds_imagenette_resnet34_dense_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 0 --arm dense
+ds_imagenette_resnet34_dense_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 1 --arm dense
+ds_imagenette_resnet34_dense_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 2 --arm dense
+ds_imagewoof_resnet34_dense_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 0 --arm dense
+ds_imagewoof_resnet34_dense_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 1 --arm dense
+ds_imagewoof_resnet34_dense_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 2 --arm dense
+ds_cifar100_resnet34_dense_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm dense
+ds_cifar100_resnet34_dense_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm dense
+ds_cifar100_resnet34_dense_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm dense
+ds_cifar100_resnet50_dense_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 0 --arm dense
+ds_cifar100_resnet50_dense_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 1 --arm dense
+ds_cifar100_resnet50_dense_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 2 --arm dense
+st_r34_fs_r90_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --group-lambda 3e-5 --arm gradual --seed 1 --model resnet34 --ratio .90 --q-floor --stem-keep --tag _r34r90_fs
+st_r34_fs_r95_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --group-lambda 3e-5 --arm gradual --seed 1 --model resnet34 --ratio .95 --q-floor --stem-keep --tag _r34r95_fs
+st_r34_fs_r98_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --group-lambda 3e-5 --arm gradual --seed 1 --model resnet34 --ratio .98 --q-floor --stem-keep --tag _r34r98_fs
+st_r34_fs_r99_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --group-lambda 3e-5 --arm gradual --seed 1 --model resnet34 --ratio .99 --q-floor --stem-keep --tag _r34r99_fs
+st_r34_floor_r98_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --group-lambda 3e-5 --arm gradual --seed 1 --model resnet34 --ratio .98 --q-floor --tag _r34r98_floor
+st_r50_fs_r98_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --group-lambda 3e-5 --arm gradual --seed 1 --ratio .98 --q-floor --stem-keep --tag _r98_fs
+st_r50_fs_r99_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --group-lambda 3e-5 --arm gradual --seed 1 --ratio .99 --q-floor --stem-keep --tag _r99_fs
+st_r34_fs_r90_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --group-lambda 3e-5 --arm gradual --seed 2 --model resnet34 --ratio .90 --q-floor --stem-keep --tag _r34r90_fs
+st_r34_fs_r95_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --group-lambda 3e-5 --arm gradual --seed 2 --model resnet34 --ratio .95 --q-floor --stem-keep --tag _r34r95_fs
+st_r34_fs_r98_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --group-lambda 3e-5 --arm gradual --seed 2 --model resnet34 --ratio .98 --q-floor --stem-keep --tag _r34r98_fs
+st_r34_fs_r99_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --group-lambda 3e-5 --arm gradual --seed 2 --model resnet34 --ratio .99 --q-floor --stem-keep --tag _r34r99_fs
+st_r34_floor_r98_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --group-lambda 3e-5 --arm gradual --seed 2 --model resnet34 --ratio .98 --q-floor --tag _r34r98_floor
+st_r50_fs_r98_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --group-lambda 3e-5 --arm gradual --seed 2 --ratio .98 --q-floor --stem-keep --tag _r98_fs
+st_r50_fs_r99_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --group-lambda 3e-5 --arm gradual --seed 2 --ratio .99 --q-floor --stem-keep --tag _r99_fs
+ds_imagenette_resnet34_rewind_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 0 --arm rewind --ratio .90
+ds_imagenette_resnet34_gradual_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 0 --arm gradual --ratio .90 --q-floor
+ds_imagenette_resnet34_unstructured_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 0 --arm unstructured --ratio .90
+ds_imagenette_resnet34_rewind_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 0 --arm rewind --ratio .95
+ds_imagenette_resnet34_gradual_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 0 --arm gradual --ratio .95 --q-floor
+ds_imagenette_resnet34_unstructured_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 0 --arm unstructured --ratio .95
+ds_imagenette_resnet34_rewind_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 0 --arm rewind --ratio .98
+ds_imagenette_resnet34_gradual_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 0 --arm gradual --ratio .98 --q-floor
+ds_imagenette_resnet34_unstructured_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 0 --arm unstructured --ratio .98
+ds_imagenette_resnet34_rewind_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 0 --arm rewind --ratio .99
+ds_imagenette_resnet34_gradual_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 0 --arm gradual --ratio .99 --q-floor
+ds_imagenette_resnet34_unstructured_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 0 --arm unstructured --ratio .99
+ds_imagenette_resnet34_rewind_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 1 --arm rewind --ratio .90
+ds_imagenette_resnet34_gradual_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 1 --arm gradual --ratio .90 --q-floor
+ds_imagenette_resnet34_unstructured_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 1 --arm unstructured --ratio .90
+ds_imagenette_resnet34_rewind_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 1 --arm rewind --ratio .95
+ds_imagenette_resnet34_gradual_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 1 --arm gradual --ratio .95 --q-floor
+ds_imagenette_resnet34_unstructured_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 1 --arm unstructured --ratio .95
+ds_imagenette_resnet34_rewind_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 1 --arm rewind --ratio .98
+ds_imagenette_resnet34_gradual_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 1 --arm gradual --ratio .98 --q-floor
+ds_imagenette_resnet34_unstructured_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 1 --arm unstructured --ratio .98
+ds_imagenette_resnet34_rewind_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 1 --arm rewind --ratio .99
+ds_imagenette_resnet34_gradual_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 1 --arm gradual --ratio .99 --q-floor
+ds_imagenette_resnet34_unstructured_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 1 --arm unstructured --ratio .99
+ds_imagenette_resnet34_rewind_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 2 --arm rewind --ratio .90
+ds_imagenette_resnet34_gradual_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 2 --arm gradual --ratio .90 --q-floor
+ds_imagenette_resnet34_unstructured_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 2 --arm unstructured --ratio .90
+ds_imagenette_resnet34_rewind_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 2 --arm rewind --ratio .95
+ds_imagenette_resnet34_gradual_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 2 --arm gradual --ratio .95 --q-floor
+g3_dense_r34_6	/usr/local/anaconda3/bin/python3 resnet34_pruning_experiments.py --dataset cifar10 --models resnet34 --device cuda --amp --amp-dtype float16 --epochs 100 --lr 0.1 --lr-scheduler cosine --min-lr 0.0001 --batch-size 128 --num-workers 2 --pin-memory --seed 6 --val-size 5000 --split-seed 0 --deterministic --no-cudnn-benchmark --train-dense-only --dense-checkpoint-out runs/fixed_checkpoint_resnet34_new/checkpoints/resnet34_seed6_dense.pt --save-dir runs/fixed_checkpoint_resnet34_new --run-name dense_resnet34_seed6
+g3_dense_r34_7	/usr/local/anaconda3/bin/python3 resnet34_pruning_experiments.py --dataset cifar10 --models resnet34 --device cuda --amp --amp-dtype float16 --epochs 100 --lr 0.1 --lr-scheduler cosine --min-lr 0.0001 --batch-size 128 --num-workers 2 --pin-memory --seed 7 --val-size 5000 --split-seed 0 --deterministic --no-cudnn-benchmark --train-dense-only --dense-checkpoint-out runs/fixed_checkpoint_resnet34_new/checkpoints/resnet34_seed7_dense.pt --save-dir runs/fixed_checkpoint_resnet34_new --run-name dense_resnet34_seed7
+g3_dense_r34_8	/usr/local/anaconda3/bin/python3 resnet34_pruning_experiments.py --dataset cifar10 --models resnet34 --device cuda --amp --amp-dtype float16 --epochs 100 --lr 0.1 --lr-scheduler cosine --min-lr 0.0001 --batch-size 128 --num-workers 2 --pin-memory --seed 8 --val-size 5000 --split-seed 0 --deterministic --no-cudnn-benchmark --train-dense-only --dense-checkpoint-out runs/fixed_checkpoint_resnet34_new/checkpoints/resnet34_seed8_dense.pt --save-dir runs/fixed_checkpoint_resnet34_new --run-name dense_resnet34_seed8
+ctl_imagenette_resnet34_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 0 --arm rewind --ratio 0
+ctl_imagenette_resnet34_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 1 --arm rewind --ratio 0
+ctl_imagenette_resnet34_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 2 --arm rewind --ratio 0
+ctl_imagewoof_resnet34_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 0 --arm rewind --ratio 0
+ctl_imagewoof_resnet34_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 1 --arm rewind --ratio 0
+ctl_imagewoof_resnet34_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 2 --arm rewind --ratio 0
+ctl_cifar100_resnet34_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm rewind --ratio 0
+ctl_cifar100_resnet34_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm rewind --ratio 0
+ctl_cifar100_resnet34_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm rewind --ratio 0
+ctl_cifar100_resnet50_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 0 --arm rewind --ratio 0
+ctl_cifar100_resnet50_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 1 --arm rewind --ratio 0
+ctl_cifar100_resnet50_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 2 --arm rewind --ratio 0
+ds_imagenette_resnet34_unstructured_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 2 --arm unstructured --ratio .95
+ds_imagenette_resnet34_rewind_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 2 --arm rewind --ratio .98
+ds_imagenette_resnet34_gradual_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 2 --arm gradual --ratio .98 --q-floor
+ds_imagenette_resnet34_unstructured_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 2 --arm unstructured --ratio .98
+ds_imagenette_resnet34_rewind_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 2 --arm rewind --ratio .99
+g3_rewind_r95_6	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 6 --arm rewind --ratio .95 --tag _r34r95
+g3_gradual_r95_6	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 6 --arm gradual --ratio .95 --tag _r34r95
+g3_fs_r95_6	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 6 --arm gradual --ratio .95 --q-floor --stem-keep --tag _r34r95_fs
+g3_rewind_r98_6	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 6 --arm rewind --ratio .98 --tag _r34r98
+g3_gradual_r98_6	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 6 --arm gradual --ratio .98 --tag _r34r98
+g3_fs_r98_6	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 6 --arm gradual --ratio .98 --q-floor --stem-keep --tag _r34r98_fs
+g3_rewind_r99_6	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 6 --arm rewind --ratio .99 --tag _r34r99
+g3_gradual_r99_6	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 6 --arm gradual --ratio .99 --tag _r34r99
+g3_fs_r99_6	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 6 --arm gradual --ratio .99 --q-floor --stem-keep --tag _r34r99_fs
+g3_floor_r98_6	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 6 --arm gradual --ratio .98 --q-floor --tag _r34r98_floor
+g3_rewind_r95_7	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 7 --arm rewind --ratio .95 --tag _r34r95
+g3_gradual_r95_7	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 7 --arm gradual --ratio .95 --tag _r34r95
+g3_fs_r95_7	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 7 --arm gradual --ratio .95 --q-floor --stem-keep --tag _r34r95_fs
+g3_rewind_r98_7	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 7 --arm rewind --ratio .98 --tag _r34r98
+g3_gradual_r98_7	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 7 --arm gradual --ratio .98 --tag _r34r98
+g3_fs_r98_7	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 7 --arm gradual --ratio .98 --q-floor --stem-keep --tag _r34r98_fs
+g3_rewind_r99_7	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 7 --arm rewind --ratio .99 --tag _r34r99
+g3_gradual_r99_7	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 7 --arm gradual --ratio .99 --tag _r34r99
+g3_fs_r99_7	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 7 --arm gradual --ratio .99 --q-floor --stem-keep --tag _r34r99_fs
+g3_floor_r98_7	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 7 --arm gradual --ratio .98 --q-floor --tag _r34r98_floor
+g3_rewind_r95_8	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 8 --arm rewind --ratio .95 --tag _r34r95
+g3_gradual_r95_8	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 8 --arm gradual --ratio .95 --tag _r34r95
+g3_fs_r95_8	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 8 --arm gradual --ratio .95 --q-floor --stem-keep --tag _r34r95_fs
+g3_rewind_r98_8	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 8 --arm rewind --ratio .98 --tag _r34r98
+g3_gradual_r98_8	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 8 --arm gradual --ratio .98 --tag _r34r98
+g3_fs_r98_8	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 8 --arm gradual --ratio .98 --q-floor --stem-keep --tag _r34r98_fs
+g3_rewind_r99_8	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 8 --arm rewind --ratio .99 --tag _r34r99
+g3_gradual_r99_8	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 8 --arm gradual --ratio .99 --tag _r34r99
+g3_fs_r99_8	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 8 --arm gradual --ratio .99 --q-floor --stem-keep --tag _r34r99_fs
+g3_floor_r98_8	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 8 --arm gradual --ratio .98 --q-floor --tag _r34r98_floor
+ds_imagenette_resnet34_gradual_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 2 --arm gradual --ratio .99 --q-floor
+ds_imagenette_resnet34_unstructured_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 2 --arm unstructured --ratio .99
+ds_imagewoof_resnet34_rewind_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 0 --arm rewind --ratio .90
+ds_imagewoof_resnet34_gradual_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 0 --arm gradual --ratio .90 --q-floor
+ds_imagewoof_resnet34_unstructured_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 0 --arm unstructured --ratio .90
+ds_imagewoof_resnet34_rewind_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 0 --arm rewind --ratio .95
+ds_imagewoof_resnet34_gradual_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 0 --arm gradual --ratio .95 --q-floor
+ds_imagewoof_resnet34_unstructured_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 0 --arm unstructured --ratio .95
+ds_imagewoof_resnet34_rewind_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 0 --arm rewind --ratio .98
+ds_imagewoof_resnet34_gradual_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 0 --arm gradual --ratio .98 --q-floor
+ds_imagewoof_resnet34_unstructured_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 0 --arm unstructured --ratio .98
+ds_imagewoof_resnet34_rewind_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 0 --arm rewind --ratio .99
+ds_imagewoof_resnet34_gradual_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 0 --arm gradual --ratio .99 --q-floor
+ds_imagewoof_resnet34_unstructured_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 0 --arm unstructured --ratio .99
+ds_imagewoof_resnet34_rewind_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 1 --arm rewind --ratio .90
+ds_imagewoof_resnet34_gradual_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 1 --arm gradual --ratio .90 --q-floor
+ds_imagewoof_resnet34_unstructured_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 1 --arm unstructured --ratio .90
+ds_imagewoof_resnet34_rewind_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 1 --arm rewind --ratio .95
+ds_imagewoof_resnet34_gradual_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 1 --arm gradual --ratio .95 --q-floor
+ds_imagewoof_resnet34_unstructured_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 1 --arm unstructured --ratio .95
+ds_imagewoof_resnet34_rewind_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 1 --arm rewind --ratio .98
+ds_imagewoof_resnet34_gradual_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 1 --arm gradual --ratio .98 --q-floor
+ds_imagewoof_resnet34_unstructured_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 1 --arm unstructured --ratio .98
+ds_imagewoof_resnet34_rewind_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 1 --arm rewind --ratio .99
+ds_imagewoof_resnet34_gradual_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 1 --arm gradual --ratio .99 --q-floor
+ds_imagewoof_resnet34_unstructured_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 1 --arm unstructured --ratio .99
+ds_imagewoof_resnet34_rewind_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 2 --arm rewind --ratio .90
+ds_imagewoof_resnet34_gradual_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 2 --arm gradual --ratio .90 --q-floor
+ds_imagewoof_resnet34_unstructured_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 2 --arm unstructured --ratio .90
+ds_imagewoof_resnet34_rewind_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 2 --arm rewind --ratio .95
+ds_imagewoof_resnet34_gradual_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 2 --arm gradual --ratio .95 --q-floor
+ds_imagewoof_resnet34_unstructured_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 2 --arm unstructured --ratio .95
+ds_imagewoof_resnet34_rewind_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 2 --arm rewind --ratio .98
+ds_imagewoof_resnet34_gradual_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 2 --arm gradual --ratio .98 --q-floor
+ds_imagewoof_resnet34_unstructured_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 2 --arm unstructured --ratio .98
+ds_imagewoof_resnet34_rewind_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 2 --arm rewind --ratio .99
+ds_imagewoof_resnet34_gradual_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 2 --arm gradual --ratio .99 --q-floor
+ds_imagewoof_resnet34_unstructured_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 2 --arm unstructured --ratio .99
+ds_cifar100_resnet34_rewind_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm rewind --ratio .90
+ds_cifar100_resnet34_gradual_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm gradual --ratio .90 --q-floor
+ds_cifar100_resnet34_unstructured_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm unstructured --ratio .90
+ds_cifar100_resnet34_rewind_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm rewind --ratio .95
+ds_cifar100_resnet34_gradual_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm gradual --ratio .95 --q-floor
+ds_cifar100_resnet34_unstructured_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm unstructured --ratio .95
+ds_cifar100_resnet34_rewind_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm rewind --ratio .98
+ds_cifar100_resnet34_gradual_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm gradual --ratio .98 --q-floor
+rnd_imagenette_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 0 --arm random --ratio .98
+rnd_imagenette_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 1 --arm random --ratio .98
+rnd_imagenette_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 2 --arm random --ratio .98
+rnd_imagenette_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 0 --arm random --ratio .99
+rnd_imagenette_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 1 --arm random --ratio .99
+rnd_imagenette_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagenette --model resnet34 --seed 2 --arm random --ratio .99
+rnd_imagewoof_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 0 --arm random --ratio .98
+rnd_imagewoof_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 1 --arm random --ratio .98
+rnd_imagewoof_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 2 --arm random --ratio .98
+rnd_imagewoof_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 0 --arm random --ratio .99
+rnd_imagewoof_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 1 --arm random --ratio .99
+rnd_imagewoof_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset imagewoof --model resnet34 --seed 2 --arm random --ratio .99
+rnd_cifar100_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm random --ratio .98
+rnd_cifar100_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm random --ratio .98
+rnd_cifar100_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm random --ratio .98
+rnd_cifar100_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm random --ratio .99
+rnd_cifar100_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm random --ratio .99
+rnd_cifar100_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm random --ratio .99
+ds_cifar100_resnet34_unstructured_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm unstructured --ratio .98
+ds_cifar100_resnet34_rewind_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm rewind --ratio .99
+ds_cifar100_resnet34_gradual_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm gradual --ratio .99 --q-floor
+ds_cifar100_resnet34_unstructured_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm unstructured --ratio .99
+ds_cifar100_resnet34_rewind_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm rewind --ratio .90
+ds_cifar100_resnet34_gradual_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm gradual --ratio .90 --q-floor
+ds_cifar100_resnet34_unstructured_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm unstructured --ratio .90
+ds_cifar100_resnet34_rewind_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm rewind --ratio .95
+ds_cifar100_resnet34_gradual_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm gradual --ratio .95 --q-floor
+ds_cifar100_resnet34_unstructured_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm unstructured --ratio .95
+ds_cifar100_resnet34_rewind_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm rewind --ratio .98
+v3_fill15_r98_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --group-lambda 3e-5 --arm gradual --model resnet34 --q-floor --stem-keep --q-floor-n 15 --seed 1 --ratio .98 --free-fill --tag _r34r98_fill15
+v3_budget15_r98_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --group-lambda 3e-5 --arm gradual --model resnet34 --q-floor --stem-keep --q-floor-n 15 --seed 1 --ratio .98 --tag _r34r98_b15
+v3_fill15_r99_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --group-lambda 3e-5 --arm gradual --model resnet34 --q-floor --stem-keep --q-floor-n 15 --seed 1 --ratio .99 --free-fill --tag _r34r99_fill15
+v3_budget15_r99_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --group-lambda 3e-5 --arm gradual --model resnet34 --q-floor --stem-keep --q-floor-n 15 --seed 1 --ratio .99 --tag _r34r99_b15
+v3_fill15_r98_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --group-lambda 3e-5 --arm gradual --model resnet34 --q-floor --stem-keep --q-floor-n 15 --seed 2 --ratio .98 --free-fill --tag _r34r98_fill15
+v3_budget15_r98_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --group-lambda 3e-5 --arm gradual --model resnet34 --q-floor --stem-keep --q-floor-n 15 --seed 2 --ratio .98 --tag _r34r98_b15
+v3_fill15_r99_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --group-lambda 3e-5 --arm gradual --model resnet34 --q-floor --stem-keep --q-floor-n 15 --seed 2 --ratio .99 --free-fill --tag _r34r99_fill15
+v3_budget15_r99_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --group-lambda 3e-5 --arm gradual --model resnet34 --q-floor --stem-keep --q-floor-n 15 --seed 2 --ratio .99 --tag _r34r99_b15
+ds_cifar100_resnet34_gradual_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm gradual --ratio .98 --q-floor
+ds_cifar100_resnet34_unstructured_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm unstructured --ratio .98
+ds_cifar100_resnet34_rewind_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm rewind --ratio .99
+ds_cifar100_resnet34_gradual_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm gradual --ratio .99 --q-floor
+ds_cifar100_resnet34_unstructured_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm unstructured --ratio .99
+ds_cifar100_resnet34_rewind_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm rewind --ratio .90
+ds_cifar100_resnet34_gradual_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm gradual --ratio .90 --q-floor
+ds_cifar100_resnet34_unstructured_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm unstructured --ratio .90
+ds_cifar100_resnet34_rewind_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm rewind --ratio .95
+ds_cifar100_resnet34_gradual_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm gradual --ratio .95 --q-floor
+ds_cifar100_resnet34_unstructured_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm unstructured --ratio .95
+ds_cifar100_resnet34_rewind_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm rewind --ratio .98
+ds_cifar100_resnet34_gradual_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm gradual --ratio .98 --q-floor
+ds_cifar100_resnet34_unstructured_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm unstructured --ratio .98
+ds_cifar100_resnet34_rewind_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm rewind --ratio .99
+ds_cifar100_resnet34_gradual_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm gradual --ratio .99 --q-floor
+ds_cifar100_resnet34_unstructured_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm unstructured --ratio .99
+g4_dense_r34_9	/usr/local/anaconda3/bin/python3 resnet34_pruning_experiments.py --dataset cifar10 --models resnet34 --device cuda --amp --amp-dtype float16 --epochs 100 --lr 0.1 --lr-scheduler cosine --min-lr 0.0001 --batch-size 128 --num-workers 2 --pin-memory --seed 9 --val-size 5000 --split-seed 0 --deterministic --no-cudnn-benchmark --train-dense-only --dense-checkpoint-out runs/fixed_checkpoint_resnet34_new/checkpoints/resnet34_seed9_dense.pt --save-dir runs/fixed_checkpoint_resnet34_new --run-name dense_resnet34_seed9
+g4_dense_r34_10	/usr/local/anaconda3/bin/python3 resnet34_pruning_experiments.py --dataset cifar10 --models resnet34 --device cuda --amp --amp-dtype float16 --epochs 100 --lr 0.1 --lr-scheduler cosine --min-lr 0.0001 --batch-size 128 --num-workers 2 --pin-memory --seed 10 --val-size 5000 --split-seed 0 --deterministic --no-cudnn-benchmark --train-dense-only --dense-checkpoint-out runs/fixed_checkpoint_resnet34_new/checkpoints/resnet34_seed10_dense.pt --save-dir runs/fixed_checkpoint_resnet34_new --run-name dense_resnet34_seed10
+g4_dense_r34_11	/usr/local/anaconda3/bin/python3 resnet34_pruning_experiments.py --dataset cifar10 --models resnet34 --device cuda --amp --amp-dtype float16 --epochs 100 --lr 0.1 --lr-scheduler cosine --min-lr 0.0001 --batch-size 128 --num-workers 2 --pin-memory --seed 11 --val-size 5000 --split-seed 0 --deterministic --no-cudnn-benchmark --train-dense-only --dense-checkpoint-out runs/fixed_checkpoint_resnet34_new/checkpoints/resnet34_seed11_dense.pt --save-dir runs/fixed_checkpoint_resnet34_new --run-name dense_resnet34_seed11
+g4_rewind_r98_9	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 9 --ratio .98 --arm rewind --tag _r34r98
+g4_fs_r98_9	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 9 --ratio .98 --arm gradual --q-floor --stem-keep --tag _r34r98_fs
+g4_fill15_r98_9	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 9 --ratio .98 --arm gradual --q-floor --stem-keep --q-floor-n 15 --free-fill --tag _r34r98_fill15
+g4_b15_r98_9	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 9 --ratio .98 --arm gradual --q-floor --stem-keep --q-floor-n 15 --tag _r34r98_b15
+g4_rewind_r99_9	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 9 --ratio .99 --arm rewind --tag _r34r99
+g4_fs_r99_9	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 9 --ratio .99 --arm gradual --q-floor --stem-keep --tag _r34r99_fs
+g4_fill15_r99_9	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 9 --ratio .99 --arm gradual --q-floor --stem-keep --q-floor-n 15 --free-fill --tag _r34r99_fill15
+g4_b15_r99_9	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 9 --ratio .99 --arm gradual --q-floor --stem-keep --q-floor-n 15 --tag _r34r99_b15
+g4_rewind_r98_10	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 10 --ratio .98 --arm rewind --tag _r34r98
+g4_fs_r98_10	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 10 --ratio .98 --arm gradual --q-floor --stem-keep --tag _r34r98_fs
+g4_fill15_r98_10	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 10 --ratio .98 --arm gradual --q-floor --stem-keep --q-floor-n 15 --free-fill --tag _r34r98_fill15
+g4_b15_r98_10	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 10 --ratio .98 --arm gradual --q-floor --stem-keep --q-floor-n 15 --tag _r34r98_b15
+g4_rewind_r99_10	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 10 --ratio .99 --arm rewind --tag _r34r99
+g4_fs_r99_10	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 10 --ratio .99 --arm gradual --q-floor --stem-keep --tag _r34r99_fs
+g4_fill15_r99_10	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 10 --ratio .99 --arm gradual --q-floor --stem-keep --q-floor-n 15 --free-fill --tag _r34r99_fill15
+g4_b15_r99_10	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 10 --ratio .99 --arm gradual --q-floor --stem-keep --q-floor-n 15 --tag _r34r99_b15
+g4_rewind_r98_11	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 11 --ratio .98 --arm rewind --tag _r34r98
+g4_fs_r98_11	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 11 --ratio .98 --arm gradual --q-floor --stem-keep --tag _r34r98_fs
+g4_fill15_r98_11	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 11 --ratio .98 --arm gradual --q-floor --stem-keep --q-floor-n 15 --free-fill --tag _r34r98_fill15
+g4_b15_r98_11	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 11 --ratio .98 --arm gradual --q-floor --stem-keep --q-floor-n 15 --tag _r34r98_b15
+g4_rewind_r99_11	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 11 --ratio .99 --arm rewind --tag _r34r99
+g4_fs_r99_11	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 11 --ratio .99 --arm gradual --q-floor --stem-keep --tag _r34r99_fs
+g4_fill15_r99_11	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 11 --ratio .99 --arm gradual --q-floor --stem-keep --q-floor-n 15 --free-fill --tag _r34r99_fill15
+g4_b15_r99_11	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 11 --ratio .99 --arm gradual --q-floor --stem-keep --q-floor-n 15 --tag _r34r99_b15
+ds_cifar100_resnet50_rewind_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 0 --arm rewind --ratio .90
+ds_cifar100_resnet50_gradual_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 0 --arm gradual --ratio .90 --q-floor
+ds_cifar100_resnet50_unstructured_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 0 --arm unstructured --ratio .90
+ds_cifar100_resnet50_rewind_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 0 --arm rewind --ratio .95
+ds_cifar100_resnet50_gradual_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 0 --arm gradual --ratio .95 --q-floor
+ds_cifar100_resnet50_unstructured_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 0 --arm unstructured --ratio .95
+ds_cifar100_resnet50_rewind_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 0 --arm rewind --ratio .98
+ds_cifar100_resnet50_gradual_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 0 --arm gradual --ratio .98 --q-floor
+ds_cifar100_resnet50_unstructured_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 0 --arm unstructured --ratio .98
+ds_cifar100_resnet50_rewind_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 0 --arm rewind --ratio .99
+ds_cifar100_resnet50_gradual_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 0 --arm gradual --ratio .99 --q-floor
+ds_cifar100_resnet50_unstructured_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 0 --arm unstructured --ratio .99
+ds_cifar100_resnet50_rewind_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 1 --arm rewind --ratio .90
+ds_cifar100_resnet50_gradual_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 1 --arm gradual --ratio .90 --q-floor
+ds_cifar100_resnet50_unstructured_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 1 --arm unstructured --ratio .90
+ds_cifar100_resnet50_rewind_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 1 --arm rewind --ratio .95
+h_fs_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --stem-keep --discard-model --seed 0 --ratio .95
+h_fs_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --stem-keep --discard-model --seed 0 --ratio .98
+h_fs_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --stem-keep --discard-model --seed 0 --ratio .99
+h_b15_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --stem-keep --discard-model --seed 0 --ratio .98 --q-floor-n 15
+h_b15_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --stem-keep --discard-model --seed 0 --ratio .99 --q-floor-n 15
+h_mac25_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --stem-keep --discard-model --seed 0 --ratio .98 --allocator mac --mac-beta .25
+h_mac25_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --stem-keep --discard-model --seed 0 --ratio .99 --allocator mac --mac-beta .25
+h_mac5_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --stem-keep --discard-model --seed 0 --ratio .98 --allocator mac --mac-beta .5
+h_mac5_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --stem-keep --discard-model --seed 0 --ratio .99 --allocator mac --mac-beta .5
+h_fs_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --stem-keep --discard-model --seed 1 --ratio .95
+h_fs_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --stem-keep --discard-model --seed 1 --ratio .98
+h_fs_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --stem-keep --discard-model --seed 1 --ratio .99
+h_b15_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --stem-keep --discard-model --seed 1 --ratio .98 --q-floor-n 15
+h_b15_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --stem-keep --discard-model --seed 1 --ratio .99 --q-floor-n 15
+h_mac25_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --stem-keep --discard-model --seed 1 --ratio .98 --allocator mac --mac-beta .25
+h_mac25_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --stem-keep --discard-model --seed 1 --ratio .99 --allocator mac --mac-beta .25
+h_mac5_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --stem-keep --discard-model --seed 1 --ratio .98 --allocator mac --mac-beta .5
+h_mac5_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --stem-keep --discard-model --seed 1 --ratio .99 --allocator mac --mac-beta .5
+h_fs_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --stem-keep --discard-model --seed 2 --ratio .95
+h_fs_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --stem-keep --discard-model --seed 2 --ratio .98
+h_fs_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --stem-keep --discard-model --seed 2 --ratio .99
+h_b15_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --stem-keep --discard-model --seed 2 --ratio .98 --q-floor-n 15
+h_b15_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --stem-keep --discard-model --seed 2 --ratio .99 --q-floor-n 15
+h_mac25_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --stem-keep --discard-model --seed 2 --ratio .98 --allocator mac --mac-beta .25
+h_mac25_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --stem-keep --discard-model --seed 2 --ratio .99 --allocator mac --mac-beta .25
+h_mac5_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --stem-keep --discard-model --seed 2 --ratio .98 --allocator mac --mac-beta .5
+h_mac5_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --stem-keep --discard-model --seed 2 --ratio .99 --allocator mac --mac-beta .5
+ds_cifar100_resnet50_gradual_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 1 --arm gradual --ratio .95 --q-floor --discard-model
+ds_cifar100_resnet50_unstructured_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 1 --arm unstructured --ratio .95 --discard-model
+ds_cifar100_resnet50_rewind_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 1 --arm rewind --ratio .98
+ds_cifar100_resnet50_gradual_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 1 --arm gradual --ratio .98 --q-floor
+ds_cifar100_resnet50_unstructured_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 1 --arm unstructured --ratio .98 --discard-model
+ds_cifar100_resnet50_rewind_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 1 --arm rewind --ratio .99
+ds_cifar100_resnet50_gradual_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 1 --arm gradual --ratio .99 --q-floor
+i_wd_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --discard-model --seed 0 --ratio .98 --weight-decay 1e-4
+i_kd_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --discard-model --seed 0 --ratio .98 --kd
+i_e120_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --discard-model --seed 0 --ratio .98 --epochs 120
+i_wd_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --discard-model --seed 0 --ratio .99 --weight-decay 1e-4
+i_kd_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --discard-model --seed 0 --ratio .99 --kd
+i_e120_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --discard-model --seed 0 --ratio .99 --epochs 120
+i_wd_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --discard-model --seed 1 --ratio .98 --weight-decay 1e-4
+i_kd_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --discard-model --seed 1 --ratio .98 --kd
+i_e120_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --discard-model --seed 1 --ratio .98 --epochs 120
+i_wd_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --discard-model --seed 1 --ratio .99 --weight-decay 1e-4
+i_kd_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --discard-model --seed 1 --ratio .99 --kd
+i_e120_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --discard-model --seed 1 --ratio .99 --epochs 120
+i_wd_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --discard-model --seed 2 --ratio .98 --weight-decay 1e-4
+i_kd_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --discard-model --seed 2 --ratio .98 --kd
+i_e120_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --discard-model --seed 2 --ratio .98 --epochs 120
+i_wd_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --discard-model --seed 2 --ratio .99 --weight-decay 1e-4
+i_kd_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --discard-model --seed 2 --ratio .99 --kd
+i_e120_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --discard-model --seed 2 --ratio .99 --epochs 120
+ds_cifar100_resnet50_unstructured_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 1 --arm unstructured --ratio .99 --discard-model
+ds_cifar100_resnet50_rewind_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 2 --arm rewind --ratio .90 --discard-model
+ds_cifar100_resnet50_gradual_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 2 --arm gradual --ratio .90 --q-floor --discard-model
+ds_cifar100_resnet50_unstructured_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 2 --arm unstructured --ratio .90 --discard-model
+ds_cifar100_resnet50_rewind_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 2 --arm rewind --ratio .95 --discard-model
+ds_cifar100_resnet50_gradual_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 2 --arm gradual --ratio .95 --q-floor --discard-model
+ds_cifar100_resnet50_unstructured_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 2 --arm unstructured --ratio .95 --discard-model
+ds_cifar100_resnet50_rewind_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 2 --arm rewind --ratio .98
+ds_cifar100_resnet50_gradual_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 2 --arm gradual --ratio .98 --q-floor
+ds_cifar100_resnet50_unstructured_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 2 --arm unstructured --ratio .98 --discard-model
+j_dense_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 3 --arm dense
+j_dense_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 4 --arm dense
+j_dense_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 5 --arm dense
+ds_cifar100_resnet50_rewind_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 2 --arm rewind --ratio .99
+ds_cifar100_resnet50_gradual_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 2 --arm gradual --ratio .99 --q-floor
+ds_cifar100_resnet50_unstructured_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 2 --arm unstructured --ratio .99 --discard-model
+g0_dense_r34_3	/usr/local/anaconda3/bin/python3 resnet34_pruning_experiments.py --dataset cifar10 --models resnet34 --device cuda --amp --amp-dtype float16 --epochs 100 --lr 0.1 --lr-scheduler cosine --min-lr 0.0001 --batch-size 128 --num-workers 2 --pin-memory --seed 3 --val-size 5000 --split-seed 0 --deterministic --no-cudnn-benchmark --train-dense-only --dense-checkpoint-out runs/fixed_checkpoint_resnet34_new/checkpoints/resnet34_seed3_dense.pt --save-dir runs/fixed_checkpoint_resnet34_new --run-name dense_resnet34_seed3
+g0_dense_r34_4	/usr/local/anaconda3/bin/python3 resnet34_pruning_experiments.py --dataset cifar10 --models resnet34 --device cuda --amp --amp-dtype float16 --epochs 100 --lr 0.1 --lr-scheduler cosine --min-lr 0.0001 --batch-size 128 --num-workers 2 --pin-memory --seed 4 --val-size 5000 --split-seed 0 --deterministic --no-cudnn-benchmark --train-dense-only --dense-checkpoint-out runs/fixed_checkpoint_resnet34_new/checkpoints/resnet34_seed4_dense.pt --save-dir runs/fixed_checkpoint_resnet34_new --run-name dense_resnet34_seed4
+g0_dense_r34_5	/usr/local/anaconda3/bin/python3 resnet34_pruning_experiments.py --dataset cifar10 --models resnet34 --device cuda --amp --amp-dtype float16 --epochs 100 --lr 0.1 --lr-scheduler cosine --min-lr 0.0001 --batch-size 128 --num-workers 2 --pin-memory --seed 5 --val-size 5000 --split-seed 0 --deterministic --no-cudnn-benchmark --train-dense-only --dense-checkpoint-out runs/fixed_checkpoint_resnet34_new/checkpoints/resnet34_seed5_dense.pt --save-dir runs/fixed_checkpoint_resnet34_new --run-name dense_resnet34_seed5
+g1_rewind_r34r99_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm rewind --model resnet34 --ratio .99 --tag _r34r99
+g1_gradual_r34r99_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm gradual --model resnet34 --ratio .99 --tag _r34r99
+g1_rewind_r34r99_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm rewind --model resnet34 --ratio .99 --tag _r34r99
+g1_gradual_r34r99_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm gradual --model resnet34 --ratio .99 --tag _r34r99
+f_gradual_r98_floor_3	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 3 --group-lambda 3e-5 --arm gradual --ratio .98 --q-floor --tag _r98_floor
+f_gradual_r99_floor_3	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 3 --group-lambda 3e-5 --arm gradual --ratio .99 --q-floor --tag _r99_floor
+f_gradual_r98_floor_4	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 4 --group-lambda 3e-5 --arm gradual --ratio .98 --q-floor --tag _r98_floor
+f_gradual_r99_floor_4	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 4 --group-lambda 3e-5 --arm gradual --ratio .99 --q-floor --tag _r99_floor
+f_gradual_r98_floor_5	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 5 --group-lambda 3e-5 --arm gradual --ratio .98 --q-floor --tag _r98_floor
+f_gradual_r99_floor_5	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 5 --group-lambda 3e-5 --arm gradual --ratio .99 --q-floor --tag _r99_floor
+f_gradual_r98_floor_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm gradual --ratio .98 --q-floor --tag _r98_floor
+f_gradual_r99_floor_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm gradual --ratio .99 --q-floor --tag _r99_floor
+f_gradual_r98_floor_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm gradual --ratio .98 --q-floor --tag _r98_floor
+f_gradual_r99_floor_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm gradual --ratio .99 --q-floor --tag _r99_floor
+conf98_unstructured_3	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 3 --group-lambda 3e-5 --arm unstructured --ratio .98 --tag _r98
+conf98_unstructured_4	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 4 --group-lambda 3e-5 --arm unstructured --ratio .98 --tag _r98
+conf98_unstructured_5	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 5 --group-lambda 3e-5 --arm unstructured --ratio .98 --tag _r98
+conf98_rewind_3	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 3 --group-lambda 3e-5 --arm rewind --ratio .98 --tag _r98
+conf98_group_3	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 3 --group-lambda 3e-5 --arm group --ratio .98 --tag _r98
+conf98_group_gradual_3	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 3 --group-lambda 3e-5 --arm group_gradual --ratio .98 --tag _r98
+conf98_rewind_4	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 4 --group-lambda 3e-5 --arm rewind --ratio .98 --tag _r98
+conf98_group_4	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 4 --group-lambda 3e-5 --arm group --ratio .98 --tag _r98
+conf98_group_gradual_4	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 4 --group-lambda 3e-5 --arm group_gradual --ratio .98 --tag _r98
+conf98_rewind_5	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 5 --group-lambda 3e-5 --arm rewind --ratio .98 --tag _r98
+conf98_group_5	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 5 --group-lambda 3e-5 --arm group --ratio .98 --tag _r98
+conf98_group_gradual_5	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 5 --group-lambda 3e-5 --arm group_gradual --ratio .98 --tag _r98
+conf_rewind_3	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 3 --group-lambda 3e-5 --arm rewind 
+conf_group_3	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 3 --group-lambda 3e-5 --arm group --tag _lam3e-5
+conf_group_gradual_3	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 3 --group-lambda 3e-5 --arm group_gradual --tag _lam3e-5
+conf_unstructured_3	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 3 --group-lambda 3e-5 --arm unstructured 
+conf_rewind_4	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 4 --group-lambda 3e-5 --arm rewind 
+conf_group_4	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 4 --group-lambda 3e-5 --arm group --tag _lam3e-5
+conf_group_gradual_4	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 4 --group-lambda 3e-5 --arm group_gradual --tag _lam3e-5
+conf_unstructured_4	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 4 --group-lambda 3e-5 --arm unstructured 
+conf_rewind_5	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 5 --group-lambda 3e-5 --arm rewind 
+conf_group_5	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 5 --group-lambda 3e-5 --arm group --tag _lam3e-5
+conf_group_gradual_5	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 5 --group-lambda 3e-5 --arm group_gradual --tag _lam3e-5
+conf_unstructured_5	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 5 --group-lambda 3e-5 --arm unstructured 
+conf_dpf_3	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 3 --group-lambda 3e-5 --arm dpf
+conf_dpf_4	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 4 --group-lambda 3e-5 --arm dpf
+conf_dpf_5	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 5 --group-lambda 3e-5 --arm dpf
+ggrad_mac05_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm group_gradual --allocator mac --mac-beta .5 --tag _mac05
+dpf_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm dpf
+group_lamp_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm group --allocator lamp --tag _lamp
+ggrad_mac025_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm group_gradual --allocator mac --mac-beta .25 --tag _mac025
+ggrad_lamp_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm group_gradual --allocator lamp --tag _lamp
+rewind_mac05_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm rewind --allocator mac --mac-beta .5 --tag _mac05
+group_e100_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm group --epochs 100 --tag _e100
+ggrad_mac05_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm group_gradual --allocator mac --mac-beta .5 --tag _mac05
+dpf_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm dpf
+group_lamp_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm group --allocator lamp --tag _lamp
+ggrad_mac025_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm group_gradual --allocator mac --mac-beta .25 --tag _mac025
+ggrad_lamp_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm group_gradual --allocator lamp --tag _lamp
+rewind_mac05_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm rewind --allocator mac --mac-beta .5 --tag _mac05
+group_e100_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm group --epochs 100 --tag _e100
+rewind_r97_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm rewind --ratio .97 --tag _r97
+group_r97_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm group --ratio .97 --tag _r97
+group_gradual_r97_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm group_gradual --ratio .97 --tag _r97
+rewind_r97_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm rewind --ratio .97 --tag _r97
+group_r97_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm group --ratio .97 --tag _r97
+group_gradual_r97_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm group_gradual --ratio .97 --tag _r97
+rewind_r98_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm rewind --ratio .98 --tag _r98
+group_r98_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm group --ratio .98 --tag _r98
+group_gradual_r98_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm group_gradual --ratio .98 --tag _r98
+rewind_r98_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm rewind --ratio .98 --tag _r98
+group_r98_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm group --ratio .98 --tag _r98
+group_gradual_r98_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm group_gradual --ratio .98 --tag _r98
+r34_rewind_0	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 0 --group-lambda 3e-5 --arm rewind --model resnet34 --ratio .8 --tag _r34
+r34_group_0	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 0 --group-lambda 3e-5 --arm group --model resnet34 --ratio .8 --tag _r34
+r34_group_gradual_0	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 0 --group-lambda 3e-5 --arm group_gradual --model resnet34 --ratio .8 --tag _r34
+r34_rewind_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm rewind --model resnet34 --ratio .8 --tag _r34
+r34_group_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm group --model resnet34 --ratio .8 --tag _r34
+r34_group_gradual_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm group_gradual --model resnet34 --ratio .8 --tag _r34
+r34_rewind_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm rewind --model resnet34 --ratio .8 --tag _r34
+r34_group_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm group --model resnet34 --ratio .8 --tag _r34
+r34_group_gradual_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm group_gradual --model resnet34 --ratio .8 --tag _r34
+next_dpf_group_lam3e-5_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm dpf_group --allocator cluster --mac-beta .5 --tag _lam3e-5
+next_dpf_mac025_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm dpf --allocator mac --mac-beta .25 --tag _mac025
+next_dpf_mac05_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm dpf --allocator mac --mac-beta .5 --tag _mac05
+next_dpf_group_lam3e-5_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm dpf_group --allocator cluster --mac-beta .5 --tag _lam3e-5
+next_dpf_mac025_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm dpf --allocator mac --mac-beta .25 --tag _mac025
+next_dpf_mac05_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm dpf --allocator mac --mac-beta .5 --tag _mac05
+d1_gradual_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm gradual --ratio .98 --tag _r98
+d1_gradual_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm gradual --ratio .98 --tag _r98
+d1_dpf_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm dpf --ratio .98 --tag _r98
+d1_dpf_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm dpf --ratio .98 --tag _r98
+d2_rewind_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm rewind --ratio .99 --tag _r99
+d2_rewind_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm rewind --ratio .99 --tag _r99
+d2_ggrad_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm group_gradual --ratio .99 --tag _r99
+d2_ggrad_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm group_gradual --ratio .99 --tag _r99
+d3_ggrad_l1e5_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 1e-5 --arm group_gradual --ratio .98 --tag _r98_lam1e-5
+d3_ggrad_l1e5_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 1e-5 --arm group_gradual --ratio .98 --tag _r98_lam1e-5
+d3_ggrad_l1e4_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 1e-4 --arm group_gradual --ratio .98 --tag _r98_lam1e-4
+d3_ggrad_l1e4_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 1e-4 --arm group_gradual --ratio .98 --tag _r98_lam1e-4
+d4_ggrad_e100_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm group_gradual --ratio .98 --epochs 100 --tag _r98_e100
+d4_ggrad_e100_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm group_gradual --ratio .98 --epochs 100 --tag _r98_e100
+d5_rewind_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm rewind --model resnet34 --ratio .9 --tag _r34r90
+d5_rewind_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm rewind --model resnet34 --ratio .9 --tag _r34r90
+d5_ggrad_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm group_gradual --model resnet34 --ratio .9 --tag _r34r90
+d5_ggrad_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm group_gradual --model resnet34 --ratio .9 --tag _r34r90
+e1_gradual_r98_3	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 3 --group-lambda 3e-5 --arm gradual --ratio .98 --tag _r98
+e1_gradual_r98_4	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 4 --group-lambda 3e-5 --arm gradual --ratio .98 --tag _r98
+e1_gradual_r98_5	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 5 --group-lambda 3e-5 --arm gradual --ratio .98 --tag _r98
+e1_ggrad_l1e4_3	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 3 --group-lambda 1e-4 --arm group_gradual --ratio .98 --tag _r98_lam1e-4
+e1_ggrad_l1e4_4	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 4 --group-lambda 1e-4 --arm group_gradual --ratio .98 --tag _r98_lam1e-4
+e1_ggrad_l1e4_5	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 5 --group-lambda 1e-4 --arm group_gradual --ratio .98 --tag _r98_lam1e-4
+e1_rewind_r99_3	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 3 --group-lambda 3e-5 --arm rewind --ratio .99 --tag _r99
+e1_rewind_r99_4	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 4 --group-lambda 3e-5 --arm rewind --ratio .99 --tag _r99
+e1_rewind_r99_5	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 5 --group-lambda 3e-5 --arm rewind --ratio .99 --tag _r99
+e1_ggrad_r99_3	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 3 --group-lambda 3e-5 --arm group_gradual --ratio .99 --tag _r99
+e1_ggrad_r99_4	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 4 --group-lambda 3e-5 --arm group_gradual --ratio .99 --tag _r99
+e1_ggrad_r99_5	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 5 --group-lambda 3e-5 --arm group_gradual --ratio .99 --tag _r99
+e1_gradual_r99_3	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 3 --group-lambda 3e-5 --arm gradual --ratio .99 --tag _r99
+e1_gradual_r99_4	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 4 --group-lambda 3e-5 --arm gradual --ratio .99 --tag _r99
+e1_gradual_r99_5	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 5 --group-lambda 3e-5 --arm gradual --ratio .99 --tag _r99
+e1_unstr_r99_3	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 3 --group-lambda 3e-5 --arm unstructured --ratio .99 --tag _r99
+e1_unstr_r99_4	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 4 --group-lambda 3e-5 --arm unstructured --ratio .99 --tag _r99
+e1_unstr_r99_5	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --seed 5 --group-lambda 3e-5 --arm unstructured --ratio .99 --tag _r99
+e2_r34_gradual80_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm gradual --model resnet34 --ratio .8 --tag _r34
+e2_r34_gradual80_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm gradual --model resnet34 --ratio .8 --tag _r34
+e2_r34_gradual90_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm gradual --model resnet34 --ratio .9 --tag _r34r90
+e2_r34_gradual90_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm gradual --model resnet34 --ratio .9 --tag _r34r90
+e2_r34_rewind95_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm rewind --model resnet34 --ratio .95 --tag _r34r95
+e2_r34_rewind95_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm rewind --model resnet34 --ratio .95 --tag _r34r95
+e2_r34_gradual95_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm gradual --model resnet34 --ratio .95 --tag _r34r95
+e2_r34_gradual95_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm gradual --model resnet34 --ratio .95 --tag _r34r95
+e2_r34_rewind98_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm rewind --model resnet34 --ratio .98 --tag _r34r98
+e2_r34_rewind98_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm rewind --model resnet34 --ratio .98 --tag _r34r98
+e2_r34_gradual98_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm gradual --model resnet34 --ratio .98 --tag _r34r98
+e2_r34_gradual98_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm gradual --model resnet34 --ratio .98 --tag _r34r98
+e2_gradual_r99_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm gradual --ratio .99 --tag _r99
+e2_gradual_r99_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm gradual --ratio .99 --tag _r99
+e2_gradual_e100_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm gradual --ratio .98 --epochs 100 --tag _r98_e100
+e2_gradual_e100_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm gradual --ratio .98 --epochs 100 --tag _r98_e100
+e2_gradual_ramp50_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm gradual --ratio .98 --ramp-frac .5 --tag _r98_ramp50
+e2_gradual_ramp50_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm gradual --ratio .98 --ramp-frac .5 --tag _r98_ramp50
+e2_gradual_ramp83_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm gradual --ratio .98 --ramp-frac .8333 --tag _r98_ramp83
+e2_gradual_ramp83_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm gradual --ratio .98 --ramp-frac .8333 --tag _r98_ramp83
+e2_gradual_mac025_1	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 1 --group-lambda 3e-5 --arm gradual --ratio .98 --allocator mac --mac-beta .25 --tag _r98_mac025
+j_kd_r98_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 3 --arm gradual --ratio .98 --q-floor --kd
+j_floor_r98_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 3 --arm gradual --ratio .98 --q-floor
+j_rewind_r98_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 3 --arm rewind --ratio .98 --discard-model
+j_kd_r99_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 3 --arm gradual --ratio .99 --q-floor --kd
+j_floor_r99_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 3 --arm gradual --ratio .99 --q-floor
+j_rewind_r99_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 3 --arm rewind --ratio .99 --discard-model
+j_kd_r98_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 4 --arm gradual --ratio .98 --q-floor --kd
+j_floor_r98_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 4 --arm gradual --ratio .98 --q-floor
+j_rewind_r98_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 4 --arm rewind --ratio .98 --discard-model
+j_kd_r99_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 4 --arm gradual --ratio .99 --q-floor --kd
+j_floor_r99_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 4 --arm gradual --ratio .99 --q-floor
+j_rewind_r99_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 4 --arm rewind --ratio .99 --discard-model
+j_kd_r98_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 5 --arm gradual --ratio .98 --q-floor --kd
+j_floor_r98_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 5 --arm gradual --ratio .98 --q-floor
+j_rewind_r98_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 5 --arm rewind --ratio .98 --discard-model
+j_kd_r99_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 5 --arm gradual --ratio .99 --q-floor --kd
+j_floor_r99_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 5 --arm gradual --ratio .99 --q-floor
+j_rewind_r99_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 5 --arm rewind --ratio .99 --discard-model
+e2_gradual_mac025_2	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/breakthrough_r0p95 --seed 2 --group-lambda 3e-5 --arm gradual --ratio .98 --allocator mac --mac-beta .25 --tag _r98_mac025
+k1_fskd_r98_6	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --arm gradual --q-floor --stem-keep --kd --discard-model --seed 6 --ratio .98 --tag _r34r98_fskd
+k1_fskd_r99_6	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --arm gradual --q-floor --stem-keep --kd --discard-model --seed 6 --ratio .99 --tag _r34r99_fskd
+k1_fskd_r98_7	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --arm gradual --q-floor --stem-keep --kd --discard-model --seed 7 --ratio .98 --tag _r34r98_fskd
+k1_fskd_r99_7	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --arm gradual --q-floor --stem-keep --kd --discard-model --seed 7 --ratio .99 --tag _r34r99_fskd
+k1_fskd_r98_8	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --arm gradual --q-floor --stem-keep --kd --discard-model --seed 8 --ratio .98 --tag _r34r98_fskd
+k1_fskd_r99_8	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --arm gradual --q-floor --stem-keep --kd --discard-model --seed 8 --ratio .99 --tag _r34r99_fskd
+k2_a5_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --kd --discard-model --seed 0 --ratio .98 --kd-alpha .5
+k2_a5_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --kd --discard-model --seed 0 --ratio .99 --kd-alpha .5
+k3_kd_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --kd --discard-model --seed 0 --ratio .90
+k3_kd_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --kd --discard-model --seed 0 --ratio .95
+k2_a5_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --kd --discard-model --seed 1 --ratio .98 --kd-alpha .5
+k2_a5_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --kd --discard-model --seed 1 --ratio .99 --kd-alpha .5
+k3_kd_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --kd --discard-model --seed 1 --ratio .90
+k3_kd_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --kd --discard-model --seed 1 --ratio .95
+k2_a5_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --kd --discard-model --seed 2 --ratio .98 --kd-alpha .5
+k2_a5_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --kd --discard-model --seed 2 --ratio .99 --kd-alpha .5
+k3_kd_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --kd --discard-model --seed 2 --ratio .90
+k3_kd_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --kd --discard-model --seed 2 --ratio .95
+l1_a5_r99_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --seed 3 --ratio .99 --kd --kd-alpha .5
+l4_a5_r98_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --seed 3 --ratio .98 --kd --kd-alpha .5
+l_kd_r95_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --seed 3 --ratio .95 --kd
+l_floor_r95_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --seed 3 --ratio .95 --discard-model
+l_kd_r90_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --seed 3 --ratio .90 --kd
+l_floor_r90_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --seed 3 --ratio .90 --discard-model
+l1_a5_r99_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --seed 4 --ratio .99 --kd --kd-alpha .5
+l4_a5_r98_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --seed 4 --ratio .98 --kd --kd-alpha .5
+l_kd_r95_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --seed 4 --ratio .95 --kd
+l_floor_r95_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --seed 4 --ratio .95 --discard-model
+l_kd_r90_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --seed 4 --ratio .90 --kd
+l_floor_r90_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --seed 4 --ratio .90 --discard-model
+l1_a5_r99_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --seed 5 --ratio .99 --kd --kd-alpha .5
+l4_a5_r98_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --seed 5 --ratio .98 --kd --kd-alpha .5
+l_kd_r95_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --seed 5 --ratio .95 --kd
+l_floor_r95_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --seed 5 --ratio .95 --discard-model
+l_kd_r90_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --seed 5 --ratio .90 --kd
+l_floor_r90_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --seed 5 --ratio .90 --discard-model

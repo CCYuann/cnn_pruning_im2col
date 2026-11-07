@@ -1,0 +1,13 @@
+{
+  "dataset": "imagenette",
+  "model": "resnet34",
+  "seed": 2,
+  "arm": "dense",
+  "ratio": 0,
+  "q_floor": false,
+  "epochs": 100,
+  "final_validation": 0.857,
+  "final_test": 0.8677707006369427,
+  "final_train": 0.9851222104144527,
+  "seconds": 696.0058591039851
+}

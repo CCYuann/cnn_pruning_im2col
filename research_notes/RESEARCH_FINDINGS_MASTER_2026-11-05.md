@@ -1,6 +1,6 @@
 # 研究發現與完整實驗紀錄
 
-更新日期：2026-11-05。範圍：本專案已保存的CNN剪枝、共享mask補償、相關量化旁證，以及目前研究決策。
+更新日期：2026-11-06。範圍：本專案已保存的CNN剪枝、共享mask補償、相關量化旁證，以及目前研究決策。
 
 本文件是給自己、指導教授及另一個模型閱讀的研究總檔。數據以連結的原始CSV/報告為準，不將不同split、Dense checkpoint、配額或訓練預算的結果混成排名。
 
@@ -17,9 +17,29 @@
 7. **保護敏感層必須一起檢查實際預算。** 只保護不補剪，target90%可能只實際剪59%至74%；補回預算則可能把其他層剪壞，尤其本批DenseNet121。
 8. **停止新增分組搜尋及activation加權實驗。** 補償感知mask選擇不再列為優先。
 9. **高LR重訓明顯勝過舊微調。** ResNet50/95%、60epochs，rewind比固定lr0.001高0.713pp，3/3seeds為正。
-10. **Group L2,1懲罰是目前唯一通過方法門檻的做法。** 比rewind高0.427pp、3/3seeds為正，共享差距縮小約42%；但95%仍比90%低0.407pp。
+10. **Group L2,1的精度增益未通過新seeds確認。** 開發seed0-2的+0.427pp，在新Dense seed3-5的validation降為+0.273pp、2/3為正（未過門檻），test只剩+0.03pp。不得宣稱Group提高95%精度。
+11. **95%最終test：** Dense 94.153%、非共享94.333%、rewind 93.590%、group 93.620%、group_gradual 93.683%（seed3-5）。共享mask與Dense差約0.56pp；非共享與Dense相當。
+12. **目前站得住的好處在硬體成本。** group_gradual精度與rewind相當，MAC減少91.48%對88.66%，RTL校準週期估計50.60 ms對57.36 ms（僅卷積、50 MHz）。
+13. **Q15可行但校準要改。** MinMax activation scale平均損失0.362pp，每tensor MSE最佳scale降到0.111pp（validation）；test上rewind/group/group_gradual損失0.060/0.047/0.177pp。INT8權重本身幾乎無損。
 
-截至本日，rewind與group只有ResNet50/三Dense seeds的validation證據，沒有test、ResNet34及INT8結果。硬體評估主體定為ResNet34/80%，ResNet50/95%作為高稀疏度架構延伸。
+14. **98%下group_gradual的精度增益通過確認。** 新seed3-5 validation +1.173pp（3/3），test 92.807%對rewind 91.833%，+0.973pp（3/3）；Q15 test 92.680%對91.737%；配對bootstrap 95% CI [+0.67,+1.28]（不含seed變異）。同時MAC減少96.31%對94.26%，週期估計28.47 ms對32.87 ms。group在98%差0.02pp未過門檻。
+15. **ResNet34/80%沒有增益。** group -0.273pp、group_gradual -0.473pp（對rewind 95.273%，validation），H2不成立，維持rewind；group_gradual仍少9%週期。
+
+16. **主方法改為gradual，硬體版gradual+q下限（ResNet50）。** 98%與99%對rewind的Q15 test增益+0.917與+1.913pp；q下限非劣、全q=0層歸零、週期未增，不宣稱提高精度。group_gradual對gradual無增益。
+17. **Q15定案流程：每tensor MSE scale + 分支內CLE（k<=8）+ 逐層bias correction。** 只改數值，mask與RTL不變；此流程尚未以RTL實測。TEST_Q15_FINAL.csv的peak_acc約2^29是近乎死掉channel的bias，真實卷積和峰值約1.8e5。
+18. **ResNet34確認：rewind 98%未能支配ResNet50 gradual 98%。** Q15 93.25對92.75（+0.50pp）但週期+3.3%，主模型未定。
+19. **Stem飢餓（2026-11-06事後診斷）。** ResNet34 gradual 98% seed4的conv1全在G通道，是色盲模型；ResNet34 gradual的conv1在80–99%都只剩3–5個位置，可能是該模型gradual無增益的原因（待PLAN_STEM.md驗證）。
+20. **G3確認：ResNet34改採gradual+q下限+stem保留。** 新seeds 6/7/8：98% Q15 test 93.660%、22.98 ms，對rewind +0.173pp，週期少23%；99% 92.577%、13.54 ms，對rewind +0.980pp。缺色基準的增益+0.993pp，RGB齊全+0.100pp（validation），機制受獨立檢驗支持。ResNet34優於ResNet50 gradual+floor 98%（+0.997pp、週期-17.4%，非配對）。
+21. **ImageNette與ImageWoof不能當方法證據。** 隨機mask在ImageNette差距 < 1pp，在ImageWoof高於學到的mask；gradual在兩者皆無精度增益，週期少約40%。CIFAR-100為下一個容量測試。
+22. **硬體已升級V3，本檔2026-11-06以前的ms皆為V2.3模型。** V3週期 = 31 + tiles×max(q,15)；重算見RESULT_TEST.md「V3週期重算」。ResNet34 fs 98% 20.74 ms、20.66倍。
+23. **G4第三批確認（2026-11-07，seeds 9/10/11）。** fs 98% Q15 test 93.83%、20.64 ms；99% 92.98%、12.34 ms。fs對rewind合併seeds 6–11：98% +0.32pp（5/6），99% +1.00pp（6/6）。fill15 98%未重現。budget15 99%以validation過D2，但Q15 test -0.61pp（3/3），不採用。
+24. **CIFAR-100才是方法證據。** 隨機mask輸2至3pp，能區分方法。ResNet34 gradual+floor對rewind在98%、99%皆3/3，seeds 0/1/2的Q15增益 +1.10、+2.11pp。99%對Dense掉6.5pp，CIFAR-10不得外推。
+25. **KD在CIFAR-100 98%有效，已於新seeds確認。** T=4、alpha=0.9，seeds 3/4/5 Q15 test 73.12%、12.85 ms，對gradual+floor +1.05pp（3/3）、週期少6%；99%無增益。CIFAR-100 KD曲線（seeds 3/4/5，Q15）：90% 76.29%、95% 75.32%、98% 73.12%，test皆3/3；95%的validation差一個seed，依規則未過。KD在CIFAR-10有害（fs+kd 98/99% -0.47/-0.57pp，3/3），99%兩種alpha皆無增益。降WD、延長訓練無效，欠擬合假設不成立。fs在CIFAR-100無增益，週期感知配額明顯變差。
+26. **V3週期下限。** ResNet34 5.73 ms（74.8倍），ResNet50 18.95 ms（25.3倍），32×32輸入。ResNet50在CIFAR-100全面低於ResNet34，主線維持ResNet34。明細：runs/other_datasets/PLAN.md、PLAN_H.md。
+
+高剪枝率（98–99%）、其他資料集、KD與V3週期的統整見 `research_notes/EXPERIMENT_SUMMARY_2026-11-07.md`。
+
+截至2026-11-06，ResNet50/95%與98%已有seed3-5 test與Q15整數模擬；ResNet34/80%已有validation、週期與Q15（見第19節）。硬體評估主體仍為ResNet34/80%，ResNet50/95%作為高稀疏度架構延伸。
 
 ## 1. 讀數據前必須知道的比較規則
 
@@ -547,3 +567,28 @@ group+其他方法的疊加、CIFAR-100等較難任務，等P0、P1後再決定�
 - 另一硬體repository可能已有比舊架構/量化狀態文件更新的RTL。本文只檢查指定軟體reference與歷史數據，不判定最新RTL功能、合成或板上測試是否完成。
 - 論文原始accuracy較低、別的論文accuracy較高，都不是本方法因果提升的直接證明；應回到同checkpoint、同split與實際預算的控制組。
 - 沒有列入正式結論，不等於否認做過任何探索；只是尚未取得或尚未在本次核對到足以支撐該主張的證據。
+
+## 19. 2026-11-06突破測試總結
+
+證據：[第一輪](../runs/breakthrough_r0p95/RESULT_ROUND1.md)、[新seeds validation](../runs/confirmation_r0p95/RESULT_VALIDATION.md)、[test](../runs/confirmation_r0p95/RESULT_TEST.md)、[週期校準](../../mask_aware_conv_accelerator/results/cycle_model_calibration/README.md)。第12.6節與第16節的P0-P2若與本節衝突，以本節為準。
+
+精度方法：DPF、LAMP、MAC加權配額、100 epochs都沒有達到晉級門檻。LAMP的MAC較差；100 epochs沒有贏過60 epochs；MAC配額是真實取捨，beta 0.5比group_gradual少約30%時間，代價約0.78pp。
+
+硬體：穩態tile間隔約為max(q*II, 10.75+0.5*q*II)，以RTL量測校準，未見過幾何的誤差在2.1%內。低於q*II約21.5時，少一個位置只省約0.5 cycle，因此MAC不等於週期。q=0已由頂層bias-only路徑處理，舊的「RTL拒絕q=0」只適用於單獨的scheduler模組；q=0只佔總週期0.5%至6.8%。
+
+量化：95%模型有near-dead channels（BN gain趨近0），直接量化時bias遠超INT32，需提高該channel的weight scale。
+
+教訓：開發seed上的增益含選擇偏差，且5000張validation與10000張test約差1pp；精度主張一律以新seed的test為準。
+
+98%（PLAN A與確認）：增益隨剪枝率變大，95% test +0.09pp，98% test +0.97pp。
+
+第D輪（seed1/2 validation，表見PLAN_RATIO_R34.md）：增益主要來自漸進遮罩，不是group懲罰，gradual_r98 93.46%約等於group_gradual_r98 93.49%；lambda 0至1e-4非單調，看起來是雜訊。99% group_gradual比rewind高1.55pp（92.39%對90.84%，22.71 ms）。100 epochs反而變差（92.81%，全q=0層10）。ResNet34/90%仍無增益（-0.38pp），週期少16%。98%非共享（seed3-5 validation）94.633%，共享mask代價對rewind 2.33pp、對group_gradual 1.15pp。第E輪以新seeds確認中。
+
+ResNet34/80%（seed0/1/2 validation）：rewind 95.273%/152.00 ms、group 95.000%/154.80 ms、group_gradual 94.800%/137.81 ms；Q15平均損失0.153/0.033/0.033pp，無INT32溢位。
+
+DPF：95%新seeds validation +0.047pp、test +0.213pp、50.72 ms，探索性，CI含0。DPF+MAC配額：dpf_mac0.25 93.83%/43.18 ms、dpf_mac0.5 93.12%/35.83 ms（seed1/2），週期比ggrad對應組短；沿ggrad曲線換算到同週期約低0.09pp與0.44pp（後者為外推），未達+0.3pp，不進下一輪。
+
+## 20. 2026-11-06下午：確認、其他資料集與stem
+
+細節見 runs/confirmation_r0p95/RESULT_TEST.md 的「ResNet34確認」「Stem飢餓」「peak_acc更正」。
+其他資料集計畫 runs/other_datasets/PLAN.md（ImageNette、ImageWoof、CIFAR-100），Dense test：ImageNette ResNet34 86.91%，ImageWoof ResNet34 75.32%，CIFAR-100 ResNet34 76.79%、ResNet50 75.73%。

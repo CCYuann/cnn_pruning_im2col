@@ -39,3 +39,8 @@ datasets/
 
 # Expanded handoff copy duplicates runs/.
 handoffs/pruning_contributions_20261027/
+
+# Queue bookkeeping: per-job exit codes, daemon output and backups.
+*.rc
+*.out
+*.bak

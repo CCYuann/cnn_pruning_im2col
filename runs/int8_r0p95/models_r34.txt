@@ -1,0 +1,9 @@
+rewind_0=resnet34=runs/breakthrough_r0p95/seed0_rewind_r34/final_model.pt=0.9516
+rewind_1=resnet34=runs/breakthrough_r0p95/seed1_rewind_r34/final_model.pt=0.953
+rewind_2=resnet34=runs/breakthrough_r0p95/seed2_rewind_r34/final_model.pt=0.9536
+group_0=resnet34=runs/breakthrough_r0p95/seed0_group_r34/final_model.pt=0.9538
+group_1=resnet34=runs/breakthrough_r0p95/seed1_group_r34/final_model.pt=0.9466
+group_2=resnet34=runs/breakthrough_r0p95/seed2_group_r34/final_model.pt=0.9496
+group_gradual_0=resnet34=runs/breakthrough_r0p95/seed0_group_gradual_r34/final_model.pt=0.9526
+group_gradual_1=resnet34=runs/breakthrough_r0p95/seed1_group_gradual_r34/final_model.pt=0.9502
+group_gradual_2=resnet34=runs/breakthrough_r0p95/seed2_group_gradual_r34/final_model.pt=0.9412

@@ -1,0 +1,23 @@
+{
+  "dataset": "cifar100",
+  "model": "resnet34",
+  "seed": 1,
+  "arm": "gradual",
+  "ratio": 0.99,
+  "q_floor": true,
+  "stem_keep": true,
+  "allocator": "mac",
+  "mac_beta": 0.25,
+  "q_floor_n": 1,
+  "epochs": 60,
+  "final_validation": 0.6506,
+  "final_test": 0.6658,
+  "final_train": 0.8003333333333333,
+  "seconds": 1169.4871398110408,
+  "kept": 213344,
+  "sparsity": 0.9899649895992317,
+  "macs": 8962304,
+  "mac_reduction": 0.9922698600276977,
+  "q_zero": 0,
+  "zero_layers": []
+}

@@ -1,0 +1,21 @@
+{
+  "seed": 5,
+  "arm": "unstructured",
+  "model": "resnet34",
+  "ratio": 0.98,
+  "allocator": "cluster",
+  "q_floor": false,
+  "ramp_frac": 0.6666666666666666,
+  "mac_beta": null,
+  "group_lambda": null,
+  "epochs": 60,
+  "final_validation": 0.9454,
+  "final_train": 0.9994,
+  "split_id": "42fbb7440cc27c71",
+  "seconds": 1218.2816293321084,
+  "test_evaluated": false,
+  "kept": 425199,
+  "sparsity": 0.9800000169332334,
+  "macs": 79801680,
+  "mac_reduction": 0.9311696906928311
+}

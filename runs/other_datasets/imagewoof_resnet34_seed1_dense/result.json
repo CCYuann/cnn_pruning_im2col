@@ -1,0 +1,13 @@
+{
+  "dataset": "imagewoof",
+  "model": "resnet34",
+  "seed": 1,
+  "arm": "dense",
+  "ratio": 0,
+  "q_floor": false,
+  "epochs": 100,
+  "final_validation": 0.753,
+  "final_test": 0.7650801730720285,
+  "final_train": 0.9829283489096573,
+  "seconds": 693.6780665779952
+}
