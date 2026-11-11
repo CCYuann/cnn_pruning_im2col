@@ -1,0 +1,24 @@
+
+resnet34 50%  Dense 76.79  (CIFAR-100, seeds 0/1/2, n=3)
+  cluster       test 76.76  sparsity 50.00%  kept 10.631M  V3 221.84 ms (dense 428.51)
+  unstructured  test 77.23  sparsity 50.00%  kept 10.630M  V3 418.75 ms (dense 428.51)
+  2:4           test 76.86  sparsity 50.00%  kept 10.631M  V3 419.99 ms (dense 428.51)
+  cluster - unstructured -0.49/-0.19/-0.75 (mean -0.48pp)
+  cluster - 2:4          -0.17/+0.26/-0.41 (mean -0.11pp)
+
+resnet34 90%  Dense 76.79  (CIFAR-100, seeds 0/1/2, n=3)
+  cluster       test 75.98  sparsity 90.00%  kept 2.127M  V3 48.61 ms (dense 428.51)
+  unstructured  test 76.84  sparsity 90.00%  kept 2.126M  V3 250.36 ms (dense 428.51)
+  cluster - unstructured -1.04/-0.53/-1.00 (mean -0.86pp)
+
+resnet56 50%  Dense 70.93  (CIFAR-100, seeds 0/1/2, n=3)
+  cluster       test 70.57  sparsity 49.97%  kept 0.426M  V3 18.26 ms (dense 39.46)
+  unstructured  test 70.90  sparsity 50.00%  kept 0.425M  V3 38.77 ms (dense 39.46)
+  2:4           test 70.77  sparsity 49.97%  kept 0.426M  V3 38.93 ms (dense 39.46)
+  cluster - unstructured -0.85/-0.20/+0.06 (mean -0.33pp)
+  cluster - 2:4          -0.10/-0.52/+0.02 (mean -0.20pp)
+
+resnet56 90%  Dense 70.93  (CIFAR-100, seeds 0/1/2, n=3)
+  cluster       test 67.40  sparsity 89.97%  kept 0.085M  V3 4.42 ms (dense 39.46)
+  unstructured  test 69.39  sparsity 90.00%  kept 0.085M  V3 20.79 ms (dense 39.46)
+  cluster - unstructured -2.16/-1.74/-2.05 (mean -1.98pp)

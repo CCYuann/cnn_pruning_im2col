@@ -1,0 +1,7 @@
+c10_fs98_seed6 re-encoded 956 channels | val logits identical True | test logits identical True (top-1 changes 0/10000) | right_shift now 14..35 | max|bias| bits 22 | max|acc+bias| bits 22
+c100_kd98_seed3 re-encoded 327 channels | val logits identical True | test logits identical True (top-1 changes 0/10000) | right_shift now 14..34 | max|bias| bits 20 | max|acc+bias| bits 20
+c100_floor90_seed0 re-encoded 231 channels | val logits identical True | test logits identical True (top-1 changes 0/10000) | right_shift now 14..34 | max|bias| bits 20 | max|acc+bias| bits 20
+c100_floor90_seed1 re-encoded 272 channels | val logits identical True | test logits identical False (top-1 changes 0/10000) | right_shift now 14..33 | max|bias| bits 20 | max|acc+bias| bits 20
+c100_floor90_seed2 re-encoded 193 channels | val logits identical True | test logits identical False (top-1 changes 0/10000) | right_shift now 14..34 | max|bias| bits 20 | max|acc+bias| bits 20
+
+[exited with code 0]

@@ -1,0 +1,17 @@
+c10_fs98_seed6 | ch |bias|>=2^27: 17 (constant output 17) | ch raw shift>32: 657 (constant 643) | max|acc| 238951 (bits 19)
+   raw right_shift histogram: {19: 43, 20: 144, 21: 613, 22: 1226, 23: 1758, 24: 1909, 25: 888, 26: 405, 27: 232, 28: 167, 29: 120, 30: 125, 31: 105, 32: 120, 33: 99, 34: 98, 35: 82, 36: 86, 37: 85, 38: 57, 39: 29, 40: 24, 41: 13, 42: 12, 43: 14, 44: 5, 45: 12, 46: 10, 47: 6, 48: 9, 49: 7, 50: 4, 51: 3, 52: 1, 53: 1}
+   bit-exact (logits identical, top-1 flips): {'bias_clamp_28bit': (False, 3), 'shift_cap_40': (False, 56), 'shift_cap_36': (False, 1350), 'shift_cap_32': (False, 2969), 'shift_cap_30': (False, 3952)}
+c100_kd98_seed3 | ch |bias|>=2^27: 2 (constant output 2) | ch raw shift>32: 222 (constant 213) | max|acc| 117686 (bits 18)
+   raw right_shift histogram: {19: 41, 20: 110, 21: 804, 22: 2132, 23: 2932, 24: 1621, 25: 316, 26: 82, 27: 53, 28: 28, 29: 23, 30: 31, 31: 51, 32: 66, 33: 71, 34: 51, 35: 51, 36: 22, 37: 12, 38: 7, 39: 4, 40: 1, 42: 1, 43: 2}
+   bit-exact (logits identical, top-1 flips): {'bias_clamp_28bit': (True, 0), 'shift_cap_40': (True, 0), 'shift_cap_36': (True, 0), 'shift_cap_32': (False, 155), 'shift_cap_30': (False, 989)}
+c100_floor90_seed0 | ch |bias|>=2^27: 7 (constant output 7) | ch raw shift>32: 148 (constant 142) | max|acc| 229287 (bits 19)
+   raw right_shift histogram: {19: 1, 20: 30, 21: 265, 22: 764, 23: 1858, 24: 3081, 25: 1491, 26: 392, 27: 146, 28: 77, 29: 49, 30: 72, 31: 74, 32: 64, 33: 40, 34: 29, 35: 17, 36: 8, 37: 7, 38: 5, 39: 4, 40: 2, 41: 4, 42: 4, 43: 3, 44: 4, 45: 2, 46: 3, 47: 3, 48: 5, 49: 4, 51: 1, 52: 2, 53: 1}
+   bit-exact (logits identical, top-1 flips): {'bias_clamp_28bit': (True, 0), 'shift_cap_40': (True, 0), 'shift_cap_36': (True, 0), 'shift_cap_32': (False, 109), 'shift_cap_30': (False, 514)}
+c100_floor90_seed1 | ch |bias|>=2^27: 9 (constant output 9) | ch raw shift>32: 172 (constant 164) | max|acc| 206754 (bits 19)
+   raw right_shift histogram: {19: 9, 20: 59, 21: 366, 22: 803, 23: 1628, 24: 3100, 25: 1493, 26: 383, 27: 146, 28: 76, 29: 54, 30: 63, 31: 80, 32: 80, 33: 54, 34: 26, 35: 25, 36: 13, 37: 6, 38: 5, 39: 4, 41: 4, 42: 1, 43: 5, 44: 1, 45: 4, 46: 1, 47: 5, 48: 5, 49: 2, 50: 3, 51: 4, 52: 3, 53: 1}
+   bit-exact (logits identical, top-1 flips): {'bias_clamp_28bit': (True, 0), 'shift_cap_40': (True, 0), 'shift_cap_36': (True, 0), 'shift_cap_32': (False, 207), 'shift_cap_30': (False, 908)}
+c100_floor90_seed2 | ch |bias|>=2^27: 8 (constant output 8) | ch raw shift>32: 124 (constant 119) | max|acc| 192880 (bits 19)
+   raw right_shift histogram: {19: 2, 20: 17, 21: 296, 22: 827, 23: 1749, 24: 3018, 25: 1688, 26: 358, 27: 124, 28: 55, 29: 39, 30: 70, 31: 77, 32: 68, 33: 35, 34: 19, 35: 10, 36: 9, 37: 6, 38: 3, 39: 2, 40: 5, 41: 5, 42: 1, 43: 5, 45: 1, 46: 1, 47: 6, 48: 4, 49: 3, 50: 3, 51: 1, 52: 3, 53: 2}
+   bit-exact (logits identical, top-1 flips): {'bias_clamp_28bit': (True, 0), 'shift_cap_40': (True, 0), 'shift_cap_36': (True, 0), 'shift_cap_32': (False, 92), 'shift_cap_30': (False, 281)}
+
+[exited with code 0]
