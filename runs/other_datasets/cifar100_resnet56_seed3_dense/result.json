@@ -1,0 +1,22 @@
+{
+  "dataset": "cifar100",
+  "model": "resnet56",
+  "seed": 3,
+  "arm": "dense",
+  "ratio": 0,
+  "q_floor": false,
+  "stem_keep": false,
+  "allocator": "cluster",
+  "mac_beta": null,
+  "q_floor_n": 1,
+  "free_fill": false,
+  "tag": "",
+  "kd": false,
+  "kd_alpha": 0.9,
+  "weight_decay": 0.0005,
+  "epochs": 100,
+  "final_validation": 0.707,
+  "final_test": 0.707,
+  "final_train": 0.9718666666666667,
+  "seconds": 1240.9503414281644
+}

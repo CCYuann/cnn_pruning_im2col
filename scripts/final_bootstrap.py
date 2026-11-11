@@ -33,14 +33,14 @@ def loader(cifar100):
 
 
 @torch.inference_mode()
-def correct(path, classes, test, targets):
-    model = core.make_model("resnet34", classes, 32).to(device).eval()
+def correct(path, classes, test, targets, name="resnet34"):
+    model = core.make_model(name, classes, 32).to(device).eval()
     model.load_state_dict(torch.load(path, map_location=device, weights_only=False))
     return np.concatenate([model(x.to(device)).argmax(1).cpu().numpy() for x, _ in test]) == targets
 
 
-def compare(label, a, b, classes, test, targets):
-    pairs = [correct(p, classes, test, targets).astype(float)-correct(q, classes, test, targets).astype(float) for p, q in zip(a, b)]
+def compare(label, a, b, classes, test, targets, name="resnet34"):
+    pairs = [correct(p, classes, test, targets, name).astype(float)-correct(q, classes, test, targets, name).astype(float) for p, q in zip(a, b)]
     pairs = np.stack(pairs)
     rng = np.random.default_rng(0)
     draws = [pairs[:, rng.integers(0, pairs.shape[1], pairs.shape[1])].mean()*100 for _ in range(DRAWS)]

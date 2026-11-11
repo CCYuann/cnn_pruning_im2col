@@ -1,0 +1,28 @@
+{
+  "dataset": "cifar100",
+  "model": "googlenet",
+  "seed": 2,
+  "arm": "rewind",
+  "ratio": 0.99,
+  "q_floor": false,
+  "stem_keep": false,
+  "allocator": "cluster",
+  "mac_beta": null,
+  "q_floor_n": 1,
+  "kd": false,
+  "kd_alpha": 0.9,
+  "weight_decay": 0.0005,
+  "epochs": 60,
+  "final_validation": 0.5498,
+  "final_test": 0.56,
+  "final_train": 0.5952666666666667,
+  "seconds": 1000.2318341771606,
+  "kept": 55592,
+  "sparsity": 0.9900331034641026,
+  "macs": 9100928,
+  "mac_reduction": 0.9798725790818176,
+  "q_zero": 177,
+  "zero_layers": [
+    "inception4c.branch2.1.conv"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "seed": 6,
+  "arm": "ft_const",
+  "model": "resnet34",
+  "ratio": 0.99,
+  "allocator": "cluster",
+  "q_floor": false,
+  "stem_keep": false,
+  "q_floor_n": 1,
+  "free_fill": false,
+  "kd": false,
+  "kd_alpha": null,
+  "ramp_frac": 0.6666666666666666,
+  "mac_beta": null,
+  "group_lambda": null,
+  "epochs": 60,
+  "final_validation": 0.9,
+  "final_train": 0.9516666666666667,
+  "split_id": "42fbb7440cc27c71",
+  "seconds": 1274.457002436975,
+  "test_evaluated": false,
+  "kept": 212440,
+  "sparsity": 0.9900075108297435,
+  "macs": 48524032,
+  "mac_reduction": 0.9581471952546493,
+  "q_zero": 354,
+  "zero_layers": [
+    "layer4.2.conv1",
+    "layer4.2.conv2"
+  ]
+}

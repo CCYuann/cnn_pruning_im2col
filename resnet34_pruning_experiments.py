@@ -16,7 +16,7 @@ from torch import nn
 from torch.nn import functional as F
 from torch.utils.data import DataLoader, random_split, Subset
 from torchvision import datasets, transforms
-from torchvision.models import densenet121, efficientnet_v2_m, googlenet, mobilenet_v2, resnet34, resnet50
+from torchvision.models import densenet121, efficientnet_v2_m, googlenet, mobilenet_v2, resnet18, resnet34, resnet50
 
 
 @dataclass
@@ -56,7 +56,11 @@ class Result:
 
 
 SUPPORTED_MODELS = [
+    "resnet18",
     "resnet34",
+    "resnet110",
+    "vgg16_bn",
+    "resnet56",
     "resnet50",
     "googlenet",
     "densenet121",
@@ -68,7 +72,7 @@ SUPPORTED_MODELS = [
 def adapt_small_image_stem(model, model_name):
     # CIFAR/Animals-10 images are smaller than ImageNet. These stem changes
     # keep more spatial detail and avoid collapsing 32x32 inputs too early.
-    if model_name in {"resnet34", "resnet50"}:
+    if model_name in {"resnet18", "resnet34", "resnet50"}:
         model.conv1 = nn.Conv2d(3, 64, kernel_size=3, stride=1, padding=1, bias=False)
         model.maxpool = nn.Identity()
     elif model_name == "googlenet":
@@ -81,7 +85,9 @@ def adapt_small_image_stem(model, model_name):
 
 
 def make_model(model_name, num_classes, image_size):
-    if model_name == "resnet34":
+    if model_name == "resnet18":
+        model = resnet18(weights=None, num_classes=num_classes)
+    elif model_name == "resnet34":
         model = resnet34(weights=None, num_classes=num_classes)
     elif model_name == "resnet50":
         model = resnet50(weights=None, num_classes=num_classes)
@@ -89,6 +95,15 @@ def make_model(model_name, num_classes, image_size):
         model = googlenet(weights=None, aux_logits=False, init_weights=True, num_classes=num_classes)
     elif model_name == "densenet121":
         model = densenet121(weights=None, num_classes=num_classes)
+    elif model_name == "vgg16_bn":
+        from cifar_models import VGG
+        return VGG(num_classes)
+    elif model_name == "resnet56":
+        from cifar_models import CifarResNet
+        return CifarResNet(num_classes)
+    elif model_name == "resnet110":
+        from cifar_models import CifarResNet
+        return CifarResNet(num_classes, blocks=18)
     elif model_name == "mobilenet_v2":
         model = mobilenet_v2(weights=None, num_classes=num_classes)
     elif model_name == "efficientnet_v2_m":

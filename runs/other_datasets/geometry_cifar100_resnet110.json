@@ -1,0 +1,1001 @@
+{
+ "conv1": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 27,
+  "Cin": 3,
+  "kernel": 3
+ },
+ "layer1.0.conv1": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.0.conv2": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.1.conv1": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.1.conv2": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.2.conv1": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.2.conv2": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.3.conv1": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.3.conv2": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.4.conv1": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.4.conv2": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.5.conv1": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.5.conv2": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.6.conv1": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.6.conv2": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.7.conv1": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.7.conv2": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.8.conv1": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.8.conv2": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.9.conv1": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.9.conv2": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.10.conv1": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.10.conv2": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.11.conv1": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.11.conv2": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.12.conv1": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.12.conv2": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.13.conv1": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.13.conv2": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.14.conv1": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.14.conv2": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.15.conv1": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.15.conv2": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.16.conv1": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.16.conv2": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.17.conv1": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer1.17.conv2": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 2,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer2.0.conv1": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 2,
+  "clusters": 4,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "layer2.0.conv2": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.0.downsample.0": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 2,
+  "clusters": 4,
+  "K": 16,
+  "Cin": 16,
+  "kernel": 1
+ },
+ "layer2.1.conv1": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.1.conv2": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.2.conv1": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.2.conv2": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.3.conv1": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.3.conv2": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.4.conv1": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.4.conv2": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.5.conv1": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.5.conv2": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.6.conv1": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.6.conv2": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.7.conv1": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.7.conv2": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.8.conv1": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.8.conv2": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.9.conv1": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.9.conv2": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.10.conv1": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.10.conv2": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.11.conv1": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.11.conv2": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.12.conv1": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.12.conv2": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.13.conv1": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.13.conv2": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.14.conv1": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.14.conv2": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.15.conv1": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.15.conv2": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.16.conv1": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.16.conv2": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.17.conv1": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer2.17.conv2": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer3.0.conv1": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 2,
+  "clusters": 8,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "layer3.0.conv2": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.0.downsample.0": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 2,
+  "clusters": 8,
+  "K": 32,
+  "Cin": 32,
+  "kernel": 1
+ },
+ "layer3.1.conv1": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.1.conv2": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.2.conv1": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.2.conv2": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.3.conv1": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.3.conv2": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.4.conv1": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.4.conv2": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.5.conv1": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.5.conv2": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.6.conv1": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.6.conv2": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.7.conv1": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.7.conv2": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.8.conv1": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.8.conv2": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.9.conv1": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.9.conv2": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.10.conv1": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.10.conv2": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.11.conv1": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.11.conv2": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.12.conv1": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.12.conv2": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.13.conv1": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.13.conv2": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.14.conv1": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.14.conv2": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.15.conv1": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.15.conv2": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.16.conv1": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.16.conv2": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.17.conv1": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "layer3.17.conv2": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ }
+}

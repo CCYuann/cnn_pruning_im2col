@@ -1,0 +1,5 @@
+resnet56  seeds 3/4/5: A0 59.15(tr 64.4) A1 57.37(tr 62.6) A2 60.50(tr 67.4) A3 63.23(tr 70.6) | allocation -2.12/-0.66/-2.58 (-1.79) -effect | positions +2.98/+2.73/+3.70 (+3.14) +effect | process +2.66/+2.32/+3.19 (+2.72) +effect
+vgg16_bn  seeds 3/4/5: A0 68.87(tr 94.6) A1 68.57(tr 93.9) A2 70.21(tr 96.4) A3 70.28(tr 96.9) | allocation -0.59/-0.55/+0.22 (-0.31) unclear | positions +1.17/+2.29/+1.48 (+1.65) +effect | process +0.71/-0.52/+0.02 (+0.07) unclear
+V1 process positive (both models): not replicated
+V2 positions positive (both models): REPLICATED
+V3 allocation alone negative (ResNet-56): REPLICATED

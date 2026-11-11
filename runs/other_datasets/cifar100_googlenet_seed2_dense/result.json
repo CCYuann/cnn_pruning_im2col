@@ -1,0 +1,20 @@
+{
+  "dataset": "cifar100",
+  "model": "googlenet",
+  "seed": 2,
+  "arm": "dense",
+  "ratio": 0,
+  "q_floor": false,
+  "stem_keep": false,
+  "allocator": "cluster",
+  "mac_beta": null,
+  "q_floor_n": 1,
+  "kd": false,
+  "kd_alpha": 0.9,
+  "weight_decay": 0.0005,
+  "epochs": 100,
+  "final_validation": 0.758,
+  "final_test": 0.7671,
+  "final_train": 0.9993111111111111,
+  "seconds": 1993.018932166975
+}

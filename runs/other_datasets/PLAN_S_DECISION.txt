@@ -1,0 +1,10 @@
+resnet18    seeds 0/1/2: Dense 76.32 | ft_const 71.93 | rewind 74.01 (31.09 ms) | floor 74.16 (26.32 ms) | S1 floor-ft_const +2.21/+1.92/+2.54 (+2.22) PASS | S2 floor-rewind +0.14/-0.05/+0.34 (+0.14) fail
+resnet34    seeds 0/1/2: Dense 76.79 | ft_const 74.53 | rewind 75.91 (59.60 ms) | floor 75.98 (48.61 ms) | S1 floor-ft_const +1.55/+1.49/+1.31 (+1.45) PASS | S2 floor-rewind +0.37/+0.51/-0.66 (+0.07) fail
+resnet50    seeds 0/1/2: Dense 75.73 | ft_const 72.64 | rewind 73.80 (50.96 ms) | floor 73.97 (47.58 ms) | S1 floor-ft_const +0.71/+2.05/+1.23 (+1.33) PASS | S2 floor-rewind -0.21/+0.50/+0.22 (+0.17) fail
+resnet56    seeds 0/1/2: Dense 70.93 | ft_const 61.71 | rewind 65.14 (4.63 ms) | floor 67.40 (4.42 ms) | S1 floor-ft_const +5.58/+5.63/+5.88 (+5.70) PASS | S2 floor-rewind +2.97/+2.22/+1.61 (+2.27) PASS
+resnet110   seeds 0/1/2: Dense 72.32 | ft_const 64.89 | rewind 67.62 (8.87 ms) | floor 68.22 (8.68 ms) | S1 floor-ft_const +3.06/+2.63/+4.32 (+3.34) PASS | S2 floor-rewind +0.09/+0.33/+1.38 (+0.60) PASS
+vgg16_bn    seeds 0/1/2: Dense 72.10 | ft_const 70.21 | rewind 71.79 (34.27 ms) | floor 71.90 (31.09 ms) | S1 floor-ft_const +2.29/+1.25/+1.52 (+1.69) PASS | S2 floor-rewind +0.02/+0.10/+0.20 (+0.11) fail
+googlenet   seeds 0/1/2: Dense 76.62 | ft_const 70.71 | rewind 73.52 (22.41 ms) | floor 74.93 (22.65 ms) | S1 floor-ft_const +3.61/+4.45/+4.61 (+4.22) PASS | S2 floor-rewind +1.03/+1.26/+1.93 (+1.41) PASS
+densenet121 seeds 0/1/2: Dense 79.39 | ft_const 74.08 | rewind 73.06 (32.19 ms) | floor 77.14 (37.81 ms) | S1 floor-ft_const +3.21/+3.08/+2.87 (+3.05) PASS | S2 floor-rewind +4.10/+4.67/+3.47 (+4.08) PASS
+resnet56    seeds 3/4/5: Dense 70.58 | ft_const 61.97 | rewind 64.90 (4.58 ms) | floor 67.48 (4.39 ms) | S1 floor-ft_const +5.25/+5.85/+5.44 (+5.51) PASS | S2 floor-rewind +2.26/+2.83/+2.65 (+2.58) PASS
+vgg16_bn    seeds 3/4/5: Dense 72.24 | ft_const 70.26 | rewind 71.60 (33.78 ms) | floor 71.51 (30.54 ms) | S1 floor-ft_const +0.72/+1.43/+1.61 (+1.25) PASS | S2 floor-rewind -0.56/-0.12/+0.41 (-0.09) fail

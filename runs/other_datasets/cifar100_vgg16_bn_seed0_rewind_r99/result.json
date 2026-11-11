@@ -1,0 +1,28 @@
+{
+  "dataset": "cifar100",
+  "model": "vgg16_bn",
+  "seed": 0,
+  "arm": "rewind",
+  "ratio": 0.99,
+  "q_floor": false,
+  "stem_keep": false,
+  "allocator": "cluster",
+  "mac_beta": null,
+  "q_floor_n": 1,
+  "kd": false,
+  "kd_alpha": 0.9,
+  "weight_decay": 0.0005,
+  "epochs": 60,
+  "final_validation": 0.0064,
+  "final_test": 0.01,
+  "final_train": 0.0104,
+  "seconds": 320.21854586014524,
+  "kept": 147040,
+  "sparsity": 0.9900043941509935,
+  "macs": 20004928,
+  "mac_reduction": 0.9361266004263444,
+  "q_zero": 187,
+  "zero_layers": [
+    "features.37"
+  ]
+}

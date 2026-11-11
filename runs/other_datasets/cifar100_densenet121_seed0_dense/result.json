@@ -1,0 +1,20 @@
+{
+  "dataset": "cifar100",
+  "model": "densenet121",
+  "seed": 0,
+  "arm": "dense",
+  "ratio": 0,
+  "q_floor": false,
+  "stem_keep": false,
+  "allocator": "cluster",
+  "mac_beta": null,
+  "q_floor_n": 1,
+  "kd": false,
+  "kd_alpha": 0.9,
+  "weight_decay": 0.0005,
+  "epochs": 100,
+  "final_validation": 0.7788,
+  "final_test": 0.7923,
+  "final_train": 0.9997333333333334,
+  "seconds": 4445.831841428997
+}

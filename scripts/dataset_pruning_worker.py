@@ -68,6 +68,40 @@ def random_masks(masks, seed):
     return out
 
 
+@torch.no_grad()
+def nm24_masks(specs, target, previous):
+    """2:4 along input channels (NVIDIA ASP layout: groups of 4 consecutive Cin at each output channel and kernel tap).
+
+    Gradual form for the same cubic schedule: each group offers its two smallest weights as candidates, and the
+    globally smallest round(2*target*candidates) are pruned (candidates are half of all weights), so target 0.5 is exactly 2:4. Positions pruned by the
+    previous mask score -1, so they are always kept pruned. Layers with Cin not a multiple of 4 (conv1) stay dense.
+    """
+    full, parts = {}, []
+    for spec in specs:
+        w = spec.module.weight.detach()
+        if w.shape[1] % 4:
+            full[spec.name] = torch.ones_like(w, dtype=torch.bool)
+            continue
+        score = w.abs().float()
+        if previous is not None:
+            score = torch.where(previous[spec.name], score, torch.full_like(score, -1.))
+        g = score.permute(0, 2, 3, 1).reshape(-1, 4)
+        order = g.argsort(dim=1, stable=True)[:, :2]
+        parts.append((spec, order, g.gather(1, order)))
+    values = torch.cat([v.flatten() for _, _, v in parts])
+    pruned = torch.zeros(values.numel(), dtype=torch.bool, device=values.device)
+    pruned[values.argsort(stable=True)[:round(min(2*target, 1.)*values.numel())]] = True
+    start = 0
+    for spec, order, v in parts:
+        flags = pruned[start:start+v.numel()].view_as(v)
+        start += v.numel()
+        c_out, c_in, kh, kw = spec.module.weight.shape
+        keep = torch.ones(order.shape[0], 4, dtype=torch.bool, device=order.device)
+        keep.scatter_(1, order, ~flags)
+        full[spec.name] = keep.view(c_out, kh, kw, c_in).permute(0, 3, 1, 2).contiguous()
+    return full
+
+
 def checkpoint(args):
     return args.root/"checkpoints"/f"{args.dataset}_{args.model}_seed{args.seed}.pt"
 
@@ -75,8 +109,14 @@ def checkpoint(args):
 def run(args, device):
     meta = DATA[args.dataset]
     name = f"{args.dataset}_{args.model}_seed{args.seed}_{args.arm}"+(f"_r{round(args.ratio*100)}" if args.arm != "dense" else "")+("_floor" if args.q_floor else "")+("_stem" if args.stem_keep else "")
-    name += (f"_mac{args.mac_beta:g}" if args.allocator == "mac" else "")+(f"_n{args.q_floor_n}" if args.q_floor_n > 1 else "")
-    name += ("_kd" if args.kd else "")+(f"_a{args.kd_alpha:g}" if args.kd_alpha != .9 else "")+(f"_wd{args.weight_decay:g}" if args.weight_decay != 5e-4 else "")+(f"_e{args.epochs}" if args.epochs else "")
+    name += (f"_mac{args.mac_beta:g}" if args.allocator == "mac" else "")+(f"_n{args.q_floor_n}" if args.q_floor_n > 1 else "")+("_free" if args.free_fill else "")
+    name += ("_kd" if args.kd else "")+(f"_a{args.kd_alpha:g}" if args.kd_alpha != .9 else "")+(f"_wd{args.weight_decay:g}" if args.weight_decay != 5e-4 else "")+(f"_e{args.epochs}" if args.epochs else "")+(f"_lr{args.ft_lr:g}" if args.ft_lr != .001 else "")+("_mfrom" if args.mask_from else "")+("_qfrom" if args.quota_from else "")+args.tag
+    if (args.mask_from or args.quota_from) and (args.arm not in ("rewind", "ft_const") or (args.mask_from and args.quota_from) or args.q_floor or args.stem_keep):
+        raise ValueError("--mask-from/--quota-from need rewind or ft_const, one of them only, and no other mask options")
+    if args.arm == "gradual_nm24" and (args.ratio != .5 or args.q_floor or args.stem_keep):
+        raise ValueError("gradual_nm24 is 2:4, ratio 0.5 only, no cluster options")
+    if args.ft_lr != .001 and args.arm != "ft_const":
+        raise ValueError("--ft-lr applies to ft_const only")
     directory = args.root/name
     if (directory/"result.json").exists():
         return
@@ -96,10 +136,25 @@ def run(args, device):
         raise ValueError("Standard convolutions only")
     (args.root/f"geometry_{args.dataset}_{args.model}.json").write_text(json.dumps(geometry(specs), indent=1))
     full = None
-    masks_at = lambda ratio: rw.build_masks(specs, ratio, args.allocator, args.mac_beta, args.q_floor, args.stem_keep, args.q_floor_n)
+    masks_at = lambda ratio: rw.build_masks(specs, ratio, args.allocator, args.mac_beta, args.q_floor, args.stem_keep, args.q_floor_n, args.free_fill)
     if args.arm == "unstructured":
         full = rw.unstructured_masks(specs, args.ratio, device)
-    elif args.arm == "rewind":
+    elif args.arm in ("rewind", "ft_const") and (args.mask_from or args.quota_from):
+        # Swap controls: the mask (or only its per-cluster quota) comes from another run on the same Dense checkpoint.
+        source = torch.load((args.mask_from or args.quota_from)/"masks.pt")
+        if set(source) != {s.name for s in specs}:
+            raise ValueError("Source masks do not match this model")
+        if args.quota_from:
+            picked = {}
+            for spec in specs:
+                score = rw.cluster_view(spec.module.weight).abs().sum(1).flatten(1).cpu()
+                q = source[spec.name].sum(1)
+                rank = score.argsort(1, descending=True).argsort(1)
+                picked[spec.name] = rank < q[:, None]
+            source = picked
+        full = rw.expand(specs, {k: v.bool() for k, v in source.items()}, device)
+    elif args.arm in ("rewind", "ft_const"):
+        # ft_const keeps the rewind mask (the paper's quota rule) and fine-tunes at a constant LR of 0.001.
         full = rw.expand(specs, masks_at(args.ratio), device)
     elif args.arm == "random":
         full = rw.expand(specs, random_masks(rw.build_masks(specs, args.ratio, "cluster", .5), args.seed), device)
@@ -111,13 +166,23 @@ def run(args, device):
     core.reset_training_rng(args.seed+100000, train_loader)
     end, history, started = round(epochs*2/3), [], time.monotonic()
     for epoch in range(epochs):
-        # Budgets other than 60 epochs stretch the same LR curve; lr_at itself only covers budgets up to 100.
-        lr = rw.lr_at("rewind" if args.arm == "random" else args.arm, epoch*60/epochs, 60)
+        # Dense uses the full 100-epoch cosine. Pruned budgets other than 60 epochs stretch the 60-epoch curve,
+        # because lr_at itself only covers budgets up to 100.
+        if args.arm == "dense":
+            lr = rw.lr_at("dense", epoch, epochs)
+        else:
+            lr = args.ft_lr if args.arm == "ft_const" else rw.lr_at("rewind" if args.arm == "random" else args.arm, epoch*60/epochs, 60)
         for group in optimizer.param_groups:
             group["lr"] = lr
-        if args.arm == "gradual" and epoch < end and epoch % 2 == 0:
-            previous = full
-            full = rw.expand(specs, masks_at(rw.gradual_target(epoch, end, args.ratio)), device)
+        if args.arm in ("gradual", "gradual_unstructured", "gradual_nm24") and epoch < end and epoch % 2 == 0:
+            previous, target = full, rw.gradual_target(epoch, end, args.ratio)
+            # gradual_unstructured: same schedule with global magnitude masks, the reference for the cost of structure.
+            if args.arm == "gradual_unstructured":
+                full = rw.unstructured_masks(specs, target, device)
+            elif args.arm == "gradual_nm24":
+                full = nm24_masks(specs, target, previous)
+            else:
+                full = rw.expand(specs, masks_at(target), device)
             if previous is not None and any((full[n] & ~previous[n]).any() for n in full):
                 raise ValueError("Gradual mask regrew a pruned position")
             rw.apply(specs, full)
@@ -153,17 +218,20 @@ def run(args, device):
         print(json.dumps(row), flush=True)
     _, test_acc = core.evaluate(model, test_loader, device, use_amp="float16")
     common.write_csv(directory/"training_history.csv", history)
-    result = dict(dataset=args.dataset, model=args.model, seed=args.seed, arm=args.arm, ratio=args.ratio if args.arm != "dense" else 0, q_floor=args.q_floor, stem_keep=args.stem_keep, allocator=args.allocator, mac_beta=args.mac_beta if args.allocator == "mac" else None, q_floor_n=args.q_floor_n, kd=args.kd, kd_alpha=args.kd_alpha, weight_decay=args.weight_decay,
+    result = dict(dataset=args.dataset, model=args.model, seed=args.seed, arm=args.arm, ratio=args.ratio if args.arm != "dense" else 0, q_floor=args.q_floor, stem_keep=args.stem_keep, allocator=args.allocator, mac_beta=args.mac_beta if args.allocator == "mac" else None, q_floor_n=args.q_floor_n, free_fill=args.free_fill, tag=args.tag, mask_from=str(args.mask_from) if args.mask_from else None, quota_from=str(args.quota_from) if args.quota_from else None, ft_lr=args.ft_lr if args.arm == "ft_const" else None, kd=args.kd, kd_alpha=args.kd_alpha, weight_decay=args.weight_decay,
                   epochs=epochs, final_validation=val_acc, final_test=test_acc, final_train=correct/seen, seconds=time.monotonic()-started)
     if full:
         for spec in specs:
             if torch.count_nonzero(spec.module.weight[~full[spec.name].bool()]):
                 raise ValueError("Forbidden weights are nonzero")
         result.update(rw.cost(specs, full))
-        if args.arm != "unstructured":
+        if "unstructured" not in args.arm and "nm24" not in args.arm:
             result["q_zero"] = sum(int((full[s.name].flatten(1)[::8].sum(1) == 0).sum()) for s in specs)
             result["zero_layers"] = [s.name for s in specs if not full[s.name].any()]
             torch.save({s.name: full[s.name][::8].flatten(1).cpu() for s in specs}, directory/"masks.pt")
+        else:
+            # V3 runs a cluster over the union of its 8 filters' positions; kept for the cycle estimate.
+            torch.save({s.name: rw.cluster_view(full[s.name].float()).any(1).cpu() for s in specs}, directory/"union_masks.pt")
     state = {n: v.detach().cpu() for n, v in model.state_dict().items()}
     if not args.discard_model:
         torch.save(state, directory/"final_model.pt")
@@ -176,13 +244,18 @@ def run(args, device):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--dataset", choices=list(DATA), required=True)
-    parser.add_argument("--model", choices=["resnet34", "resnet50"], required=True)
+    parser.add_argument("--model", choices=["resnet18", "resnet34", "resnet50", "googlenet", "densenet121", "vgg16_bn", "resnet56", "resnet110"], required=True)
     parser.add_argument("--seed", type=int, required=True)
-    parser.add_argument("--arm", choices=["dense", "rewind", "gradual", "unstructured", "random"], required=True)
+    parser.add_argument("--arm", choices=["dense", "rewind", "ft_const", "gradual", "gradual_unstructured", "gradual_nm24", "unstructured", "random"], required=True)
     parser.add_argument("--ratio", type=float, default=.98)
     parser.add_argument("--q-floor", action="store_true")
     parser.add_argument("--stem-keep", action="store_true")
     parser.add_argument("--q-floor-n", type=int, default=1)
+    parser.add_argument("--tag", default="", help="Suffix for reruns that must not reuse an earlier directory")
+    parser.add_argument("--mask-from", type=Path, default=None, help="rewind/ft_const only: train with this run's saved masks.pt instead of building one")
+    parser.add_argument("--quota-from", type=Path, default=None, help="rewind/ft_const only: per-cluster q from this run's masks.pt, positions by Dense L1")
+    parser.add_argument("--ft-lr", type=float, default=.001, help="ft_const only: the constant fine-tuning LR (the paper gives none; .001 is the frozen default)")
+    parser.add_argument("--free-fill", action="store_true", help="Floor positions are added on top of the ratio budget (fill15)")
     parser.add_argument("--kd", action="store_true", help="Dense teacher with T=4, alpha=0.9")
     parser.add_argument("--kd-alpha", type=float, default=.9)
     parser.add_argument("--weight-decay", type=float, default=5e-4)

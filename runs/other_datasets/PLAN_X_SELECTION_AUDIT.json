@@ -1,0 +1,371 @@
+{
+  "created_at": "2026-11-11T13:05:46+08:00",
+  "selection_rule": "Three-seed mean final_validation only; ties smaller LR",
+  "inputs_sha256": {
+    "runs/other_datasets/cifar100_resnet18_seed0_ft_const_r90_lr0.0003/result.json": "5b0299ee8063e67a92dea90e9d04d768ef6297cf20decfa72199938f5f2810cf",
+    "runs/other_datasets/cifar100_resnet18_seed1_ft_const_r90_lr0.0003/result.json": "59ee50f79f95694d1d57e7d353ff429c37a4e75405621fc881e9d62be5a004f3",
+    "runs/other_datasets/cifar100_resnet18_seed2_ft_const_r90_lr0.0003/result.json": "4724fbbec4c04eedffb47279a9f5f6ad7cb154a24bafbccfb093ed12c2e07cf2",
+    "runs/other_datasets/cifar100_resnet18_seed0_ft_const_r90/result.json": "edfec10a1e0cbf001e06a9b49d06f11ab20a44eeffbef8f39ec358ea4cad510e",
+    "runs/other_datasets/cifar100_resnet18_seed1_ft_const_r90/result.json": "5f1236c02efdcf9eaa95e111113855189fb0058b7413079fb5fd6542903d24bc",
+    "runs/other_datasets/cifar100_resnet18_seed2_ft_const_r90/result.json": "bbc3c0f07df44378e9abd40860a38827245af84d98a7936390aa08cc67eb189b",
+    "runs/other_datasets/cifar100_resnet18_seed0_ft_const_r90_lr0.003/result.json": "26d1736b5e40064afadb8f3f35e717ec2cb6ba9ac969e32c62fc828b84da3c4c",
+    "runs/other_datasets/cifar100_resnet18_seed1_ft_const_r90_lr0.003/result.json": "7504c9f27b7a813aa170a8277484b479e7ade8c948387ad7da0efcee3dd5d2e1",
+    "runs/other_datasets/cifar100_resnet18_seed2_ft_const_r90_lr0.003/result.json": "cdebb3e6ff8618aa536dd2f7abea3844740c889061b5985e43c4b9c224c922ae",
+    "runs/other_datasets/cifar100_resnet18_seed0_ft_const_r90_lr0.01/result.json": "fd88e2b9ead47d0b4a6f649935a1439d40d89a77081ce98bcf4a66f877a1a0d9",
+    "runs/other_datasets/cifar100_resnet18_seed1_ft_const_r90_lr0.01/result.json": "05c23e0205dcb2af7a7551f6174eab71733b72a55fde3fd17270e67ceb9e61a3",
+    "runs/other_datasets/cifar100_resnet18_seed2_ft_const_r90_lr0.01/result.json": "f31fdcc21d38fdbabfe60f6e093cd49e110abef33dab47bdb24ca4d52c23e5db",
+    "runs/other_datasets/cifar100_resnet18_seed0_ft_const_r90_lr0.03/result.json": "a7f339a05ee7da1cff2b9eb27e85312d24ba4acfa2a1dc28fb2c91c197c3aef8",
+    "runs/other_datasets/cifar100_resnet18_seed1_ft_const_r90_lr0.03/result.json": "fdf7b6947a629dd265ce776171f0da1a0f59f87c5e707b89c0f612977071b57a",
+    "runs/other_datasets/cifar100_resnet18_seed2_ft_const_r90_lr0.03/result.json": "f25f520952ff576a2c36ca920c43d9cbeca0f92e96ed4fa585da08c939539729",
+    "runs/other_datasets/cifar100_resnet34_seed0_ft_const_r90_lr0.0003/result.json": "720b3bb7f3be99a424f2a2b1d3d4bad30a97c54f7b567441e4259e3c8a5e350d",
+    "runs/other_datasets/cifar100_resnet34_seed1_ft_const_r90_lr0.0003/result.json": "5116f0a1d837a6f5c515dc39ba6562487e2343900bcd0e2953eb2dc2ad92462f",
+    "runs/other_datasets/cifar100_resnet34_seed2_ft_const_r90_lr0.0003/result.json": "31146450e5f5aa3585e1cbcfd3079550e17dcdcb1bbc71561b40638c38f6b196",
+    "runs/other_datasets/cifar100_resnet34_seed0_ft_const_r90/result.json": "7953c9e7f031e5403d7a86c4ff3edf790c52b657dd43089102c5b6625deeae27",
+    "runs/other_datasets/cifar100_resnet34_seed1_ft_const_r90/result.json": "42d65bd8d7e591da155a11146ffb7ea9627d0d91b6b1080bcf5df9729d5f45d1",
+    "runs/other_datasets/cifar100_resnet34_seed2_ft_const_r90/result.json": "9a5cc3acfd0c3b1df8ddf321852084d36098bce573a16838701f82006472a2b0",
+    "runs/other_datasets/cifar100_resnet34_seed0_ft_const_r90_lr0.003/result.json": "9ad301a18c9e3147e47a44311d5e4b7e2c69e8c77b7c812b353527b4a1381ce3",
+    "runs/other_datasets/cifar100_resnet34_seed1_ft_const_r90_lr0.003/result.json": "98ee286518804383c03f3245364f0cad9190f8c852807e41c417577515c97767",
+    "runs/other_datasets/cifar100_resnet34_seed2_ft_const_r90_lr0.003/result.json": "b7e71e2f15e834ab10b60b82c6c2271873ba6d5fb930296df5596beded74dca1",
+    "runs/other_datasets/cifar100_resnet34_seed0_ft_const_r90_lr0.01/result.json": "a334b02e40e38ef69f55eb6b1db8dbe659671c2d10a881343ba3f0c4853f420d",
+    "runs/other_datasets/cifar100_resnet34_seed1_ft_const_r90_lr0.01/result.json": "125e8b2fb529b55152ff11f827183776b5c2c85bd1c6e1f093f635f97fcdeb95",
+    "runs/other_datasets/cifar100_resnet34_seed2_ft_const_r90_lr0.01/result.json": "c3359e2eecbba4a14bdee4b6dc238505f63f588b29e23b45bb46ddc54a9077bc",
+    "runs/other_datasets/cifar100_resnet34_seed0_ft_const_r90_lr0.03/result.json": "7fd4f3ce0cdc1e9791c745eb9186a8fdb0101ec29aac7f62efd8ee6afc3aef5d",
+    "runs/other_datasets/cifar100_resnet34_seed1_ft_const_r90_lr0.03/result.json": "5186f4d38d1f3c8b8e4fc19e4054b7df68360e223446cf2d53cf60273f3f4aa1",
+    "runs/other_datasets/cifar100_resnet34_seed2_ft_const_r90_lr0.03/result.json": "4b682afd676448ff26a071aec008491a6033f0d969bee01b38f9cd3bb0f12fbc",
+    "runs/other_datasets/cifar100_resnet50_seed0_ft_const_r90_lr0.0003/result.json": "6b279385f028f8a3ea7fbd8128c93ce3c21a760be1ce7f5137016357d957b0f5",
+    "runs/other_datasets/cifar100_resnet50_seed1_ft_const_r90_lr0.0003/result.json": "39440e223fb6f10f2558a4eeb15675ac06e979998be975a5a20674189c038364",
+    "runs/other_datasets/cifar100_resnet50_seed2_ft_const_r90_lr0.0003/result.json": "479636be55ff5daac85321a83530931fc90ad2b9cf3fafcd774c25e7186ffa9a",
+    "runs/other_datasets/cifar100_resnet50_seed0_ft_const_r90/result.json": "88760ccfabedd80953292205f456b1b7cbeb847890a319dd0ae913fc207c6f5f",
+    "runs/other_datasets/cifar100_resnet50_seed1_ft_const_r90/result.json": "d55eb8842b1f6ac5d247afdd828e56ac9c647cf1ffb0dea3ad927ffef468bfc5",
+    "runs/other_datasets/cifar100_resnet50_seed2_ft_const_r90/result.json": "18e7c4c99c6142e89d75dda86980a58db6ec053ae186963a3db1e028f2276d7e",
+    "runs/other_datasets/cifar100_resnet50_seed0_ft_const_r90_lr0.003/result.json": "3fde59b53542c08626af18bb65437ef2db6aa5eee4e245638a0982fd86cc3878",
+    "runs/other_datasets/cifar100_resnet50_seed1_ft_const_r90_lr0.003/result.json": "95be86162330315eee7df49f5e2616b88782ba72c504e81b680f3e9650e868a0",
+    "runs/other_datasets/cifar100_resnet50_seed2_ft_const_r90_lr0.003/result.json": "5462c9c297c2b664ca521ed2501dadce03c9e044ba85613f13fafb831018e678",
+    "runs/other_datasets/cifar100_resnet50_seed0_ft_const_r90_lr0.01/result.json": "33abc83641fd17a71cc008165122345ed6074b1f470c816f46024b7d04e5de71",
+    "runs/other_datasets/cifar100_resnet50_seed1_ft_const_r90_lr0.01/result.json": "2b28116673763fe8a0273bf7a9d8eafcd034c396520d7a842d2a216b94f3007b",
+    "runs/other_datasets/cifar100_resnet50_seed2_ft_const_r90_lr0.01/result.json": "12b12a049716073c771e0d6b6343fc9ee20adf9ebd1f9a8041b83d5293eaebe1",
+    "runs/other_datasets/cifar100_resnet50_seed0_ft_const_r90_lr0.03/result.json": "8984f522b30ed615ba858dbe2db54fa7a893f01edc7048143b33a68810025089",
+    "runs/other_datasets/cifar100_resnet50_seed1_ft_const_r90_lr0.03/result.json": "04398c1f191e2110f007d68442d077e8aea4dc131b5e06de895e95271ba156c7",
+    "runs/other_datasets/cifar100_resnet50_seed2_ft_const_r90_lr0.03/result.json": "080a092cd6e50d52d83c7ad0ccf63760b746f59f677297298bfaf79bc503c7e5",
+    "runs/other_datasets/cifar100_resnet56_seed0_ft_const_r90_lr0.0003/result.json": "389f4bd5720ce5421c28c25e9a30594690b50cc468cbe17000e6e8dcfec02db8",
+    "runs/other_datasets/cifar100_resnet56_seed1_ft_const_r90_lr0.0003/result.json": "de81049231c35442245e71460bb3792828a598e18f0665a7b49f67c994f28d67",
+    "runs/other_datasets/cifar100_resnet56_seed2_ft_const_r90_lr0.0003/result.json": "b8d842ec4c173813ab94e3429e6cf4c7fe9e42c395db8cfd177d4ebce8f5f99c",
+    "runs/other_datasets/cifar100_resnet56_seed0_ft_const_r90/result.json": "cf39f801fb9cab21e186591ea44e9a8ca26688d2c21308ccdef4b1284919b937",
+    "runs/other_datasets/cifar100_resnet56_seed1_ft_const_r90/result.json": "305a0b95892046291e1c95b37df5168ea2f912df851463accec3760f0cc74acb",
+    "runs/other_datasets/cifar100_resnet56_seed2_ft_const_r90/result.json": "d0790d87673c54cbad25ba0368e7d9473ec4ea8bd9ae7e0bfd7422cc4e7e6e6b",
+    "runs/other_datasets/cifar100_resnet56_seed0_ft_const_r90_lr0.003/result.json": "1ad87c182d3c993e242b1d6189a76d1bd8aab3ee800c78ea7001e735ef893f49",
+    "runs/other_datasets/cifar100_resnet56_seed1_ft_const_r90_lr0.003/result.json": "40d100d06520b6743f5ec1c232a0c7c88aef3bd2f2949059e967208a6c82725c",
+    "runs/other_datasets/cifar100_resnet56_seed2_ft_const_r90_lr0.003/result.json": "f4f0a96bdb278c29fced6a6a9747b96b1d4b018a9eaec0f4ed63126ca9a6149d",
+    "runs/other_datasets/cifar100_resnet56_seed0_ft_const_r90_lr0.01/result.json": "322c15a24ef95ad78d112776c14932329fe911d63980beafab2b5b7cc4470a75",
+    "runs/other_datasets/cifar100_resnet56_seed1_ft_const_r90_lr0.01/result.json": "803aafd4af4dd03cf755d6d25081d363e04e3a4c045556994c3197a1dd163840",
+    "runs/other_datasets/cifar100_resnet56_seed2_ft_const_r90_lr0.01/result.json": "1d2c77e4ee5b18d952d07205e84de409ada888e81644c0e5208d09bd372c459a",
+    "runs/other_datasets/cifar100_resnet56_seed0_ft_const_r90_lr0.03/result.json": "697cf62dbe84ebb35ce8e85a85c65657ef7273fc40746ddd425f7bb90e3393e6",
+    "runs/other_datasets/cifar100_resnet56_seed1_ft_const_r90_lr0.03/result.json": "8661f7b03e0877e72f8208066e2b96cd9ab4432b1df949668e20e82da386cbd8",
+    "runs/other_datasets/cifar100_resnet56_seed2_ft_const_r90_lr0.03/result.json": "f3fe026bba18ca26c21d924a0fd425917bf406934cffb854ec8e58b417fd421b",
+    "runs/other_datasets/cifar100_resnet110_seed0_ft_const_r90_lr0.0003/result.json": "df82a2caedf56c5f269495924525dd4a0c5e93196c4620c1147503c1ac878342",
+    "runs/other_datasets/cifar100_resnet110_seed1_ft_const_r90_lr0.0003/result.json": "565168f341955f104a87f7fa0d5cbed3ad615bc640894a37e18c3dec5846d104",
+    "runs/other_datasets/cifar100_resnet110_seed2_ft_const_r90_lr0.0003/result.json": "eb289caa498c46d82151dbd80768e9f57a48140f60247707bdfb075b4a55bd9c",
+    "runs/other_datasets/cifar100_resnet110_seed0_ft_const_r90/result.json": "795569a292d1c1fe886096c33c1caba9002b251a397f36800549d8cf69228759",
+    "runs/other_datasets/cifar100_resnet110_seed1_ft_const_r90/result.json": "59e60fb4c6859c1ee89a2b38128f533ea91614fb5c6f9647e9e12491734da283",
+    "runs/other_datasets/cifar100_resnet110_seed2_ft_const_r90/result.json": "f54d9d8e456dcbd5cae57e160fa77ce67d47765d2c638535d4969dd77efb4b89",
+    "runs/other_datasets/cifar100_resnet110_seed0_ft_const_r90_lr0.003/result.json": "f7f30d380518f1850020f594a412fee462103c2f878bb06f81da033d476e8708",
+    "runs/other_datasets/cifar100_resnet110_seed1_ft_const_r90_lr0.003/result.json": "6ef3b0c6441a9f33a211738e0214806e4b1366c357c675f18993ede465a7d6c5",
+    "runs/other_datasets/cifar100_resnet110_seed2_ft_const_r90_lr0.003/result.json": "107b72b96096d2cd09d6a1682c39e365918f8d829f0b9bf6f4d824b2ee0f6e7e",
+    "runs/other_datasets/cifar100_resnet110_seed0_ft_const_r90_lr0.01/result.json": "4bac8606f609e73162bf5f59940a09f8a8e1d1f3f4b3d6920621cd8767b939ac",
+    "runs/other_datasets/cifar100_resnet110_seed1_ft_const_r90_lr0.01/result.json": "5cd51ed18cd4f2b8b28b35004b8ff690be39944c40eec688f166a84b38574c5b",
+    "runs/other_datasets/cifar100_resnet110_seed2_ft_const_r90_lr0.01/result.json": "162b9040198177a5dff7fbbf420832c242971a7e6dcb8de6a91403075f91d20c",
+    "runs/other_datasets/cifar100_resnet110_seed0_ft_const_r90_lr0.03/result.json": "9af0b5e780e38c1df47eef15999f64397a8b03f89374b013f56f18f9f5b0f14f",
+    "runs/other_datasets/cifar100_resnet110_seed1_ft_const_r90_lr0.03/result.json": "e99a18a0510874734e09d439fc2c96fa07ca8a51c6f8e4841973bdbb122d8f2c",
+    "runs/other_datasets/cifar100_resnet110_seed2_ft_const_r90_lr0.03/result.json": "b885f2f21e615783c8f1a049add7df64fa006899b468689ac7622baf89a9127d",
+    "runs/other_datasets/cifar100_vgg16_bn_seed0_ft_const_r90_lr0.0003/result.json": "5e84850d4a7cf277a5586316f9810cd11ae03f7d112197ce6c6cc599a565a915",
+    "runs/other_datasets/cifar100_vgg16_bn_seed1_ft_const_r90_lr0.0003/result.json": "126ff6c93f1bcda0563a0b49ea0b154be729f3bc18c1961dcb0085cfffdb4551",
+    "runs/other_datasets/cifar100_vgg16_bn_seed2_ft_const_r90_lr0.0003/result.json": "777cff5af24aa320031183325c0db59f66c510c544fe0076fac655312dd192a9",
+    "runs/other_datasets/cifar100_vgg16_bn_seed0_ft_const_r90/result.json": "cc52327d3d8216a5c4031d5c101cec5a60aa9931e8a828321bdfa3f6edd55981",
+    "runs/other_datasets/cifar100_vgg16_bn_seed1_ft_const_r90/result.json": "57c602a731232ab91057bf84b77e79abe320c2610a56014b552455d037c070f9",
+    "runs/other_datasets/cifar100_vgg16_bn_seed2_ft_const_r90/result.json": "e27f329d88512012f8e792c21381a120309250ce3b9daa5d95c52c9b8315e602",
+    "runs/other_datasets/cifar100_vgg16_bn_seed0_ft_const_r90_lr0.003/result.json": "2e8a90a132b3b686097d32d93027c4b9e56869c015352380878ffab0b2812731",
+    "runs/other_datasets/cifar100_vgg16_bn_seed1_ft_const_r90_lr0.003/result.json": "27b5a5e211a061632212d68861b5afb0d87bf3b22e46c1cdd08da65d27b59669",
+    "runs/other_datasets/cifar100_vgg16_bn_seed2_ft_const_r90_lr0.003/result.json": "bbf8522c3389a8b3058d834d17daacc5f032ae5f2352463cffd64b81a7177283",
+    "runs/other_datasets/cifar100_vgg16_bn_seed0_ft_const_r90_lr0.01/result.json": "f3d457aa189ef3a900767c065a845bad40f6e218cfef8735dae66ad9d7a3aa9d",
+    "runs/other_datasets/cifar100_vgg16_bn_seed1_ft_const_r90_lr0.01/result.json": "11fcfb90a4c0446bee008983724be1799f5b292d05ca63fe62758923984ba1d2",
+    "runs/other_datasets/cifar100_vgg16_bn_seed2_ft_const_r90_lr0.01/result.json": "d174e1d2748b8c9beec9983ea2f34b173caa199106df4e9a344aaad27ff24d26",
+    "runs/other_datasets/cifar100_vgg16_bn_seed0_ft_const_r90_lr0.03/result.json": "c6e18215c28862b19d85ab53fb2f9a65c0bbcead6581e74cc6f41fa3b0505858",
+    "runs/other_datasets/cifar100_vgg16_bn_seed1_ft_const_r90_lr0.03/result.json": "a4e7df6f83e43175d880a11bd227a16a2d1698da7a5070199c4803359e91aec0",
+    "runs/other_datasets/cifar100_vgg16_bn_seed2_ft_const_r90_lr0.03/result.json": "4c44bb1f46b46767709e3817a24c124b0285bbc9a6994bce286f59a0a8c7100a",
+    "runs/other_datasets/cifar100_googlenet_seed0_ft_const_r90_lr0.0003/result.json": "30c3c33733c9e79df80a9e3625f26f044758168e0b05eeb75672af5c1c88c356",
+    "runs/other_datasets/cifar100_googlenet_seed1_ft_const_r90_lr0.0003/result.json": "cd11d46cc1cfe848e669e53e9e89f47b417170d76eaa6f9dc39143065d057394",
+    "runs/other_datasets/cifar100_googlenet_seed2_ft_const_r90_lr0.0003/result.json": "9e71f4a9bd6caafebe7f2fd4d44a0cc65b5ab8137f06f630db899cf6ea4bafcd",
+    "runs/other_datasets/cifar100_googlenet_seed0_ft_const_r90/result.json": "80ea68bcad6bd6f01b9d4865198016509943c99f91e1237bbcbc8a6752f1070f",
+    "runs/other_datasets/cifar100_googlenet_seed1_ft_const_r90/result.json": "d052fa8c4e8f35590feecd6ecf09d701e8ac453daee503d766b3ee93064d6b17",
+    "runs/other_datasets/cifar100_googlenet_seed2_ft_const_r90/result.json": "1e6621a78e9a8f46eadd4cee3dbacf5ecf1d0e1f438d9c036afc5c01de03e71b",
+    "runs/other_datasets/cifar100_googlenet_seed0_ft_const_r90_lr0.003/result.json": "7d7bd83453920a93fe8ece91f52893bd5ab109f0761b2f1b0a9b4457e6b3cea2",
+    "runs/other_datasets/cifar100_googlenet_seed1_ft_const_r90_lr0.003/result.json": "3f311a8cd7a3457fd50e2469b80f116d4e4ee000f80fa82cba531177e954ab04",
+    "runs/other_datasets/cifar100_googlenet_seed2_ft_const_r90_lr0.003/result.json": "1a558ea0bcc0125406d9a0cf661cc989a3c3e4ae7211320f7455b8674b0f053b",
+    "runs/other_datasets/cifar100_googlenet_seed0_ft_const_r90_lr0.01/result.json": "453abd980ea71ff245fa2b032cbf38d616bc92dfa979e8e5a1356b6e689e5fa4",
+    "runs/other_datasets/cifar100_googlenet_seed1_ft_const_r90_lr0.01/result.json": "7d114983cc32b393134ccaac2e121b5d8e143bf478339a462f9ed4f099e10532",
+    "runs/other_datasets/cifar100_googlenet_seed2_ft_const_r90_lr0.01/result.json": "a93094c4d81131e60dfdc31faf49aa56a9cf3fae122e197b23c02760477a5c34",
+    "runs/other_datasets/cifar100_googlenet_seed0_ft_const_r90_lr0.03/result.json": "c878a786ea4fab9cd5c6c96e82384e1e55f9dcdeb2b075336e15509cdb105b1e",
+    "runs/other_datasets/cifar100_googlenet_seed1_ft_const_r90_lr0.03/result.json": "6736d8cd31321fff019ce93fe4c0dd26b8649d105b79cdbd5fd7b813763c438c",
+    "runs/other_datasets/cifar100_googlenet_seed2_ft_const_r90_lr0.03/result.json": "c5a36f8a76abdc7106c9dfbe4134f928be2f3c360b7029ce1c7e43a5d927507e",
+    "runs/other_datasets/cifar100_densenet121_seed0_ft_const_r90_lr0.0003/result.json": "e800daf02e3b52bb2b0956678c55e490b2f656dfad829ed367f25e1f717309ee",
+    "runs/other_datasets/cifar100_densenet121_seed1_ft_const_r90_lr0.0003/result.json": "dedd6d4de555315fce00cae59f6b513dbe362853f1800cd560bb346042a09435",
+    "runs/other_datasets/cifar100_densenet121_seed2_ft_const_r90_lr0.0003/result.json": "f228bae7d3a9b2a20e9a340f1be636e15048c9fd6e0b79e8ebab2082cf5e19ca",
+    "runs/other_datasets/cifar100_densenet121_seed0_ft_const_r90/result.json": "8abb7c099b6420e087ccd250795aa56e45d655cb5076ed8405605b313d7595b7",
+    "runs/other_datasets/cifar100_densenet121_seed1_ft_const_r90/result.json": "979b1b44c8e4fc5d0cc3706224395944076f7c0603202bd9ca4fe92c2e9aa611",
+    "runs/other_datasets/cifar100_densenet121_seed2_ft_const_r90/result.json": "6018d2878654a956cc2faa4fcd4cdb041eb4dc0dba5a52a10ff8334011456a0b",
+    "runs/other_datasets/cifar100_densenet121_seed0_ft_const_r90_lr0.003/result.json": "0a68b0e9a18d2b0370464439f5276b4a91716e1270f422fabca3ad348aa38c52",
+    "runs/other_datasets/cifar100_densenet121_seed1_ft_const_r90_lr0.003/result.json": "116a53fd24631b250eb7eb18deb0c8dc903c000f8208228031cdce163ae789b5",
+    "runs/other_datasets/cifar100_densenet121_seed2_ft_const_r90_lr0.003/result.json": "53003bdf9f08a1b357a97266ee3b8e938f495bc0bbe4fabedd106114d0d47cce",
+    "runs/other_datasets/cifar100_densenet121_seed0_ft_const_r90_lr0.01/result.json": "e0bb6dab290835ec3294fe623682df33e734b8b9c8135d2d9e3a869c83ac7261",
+    "runs/other_datasets/cifar100_densenet121_seed1_ft_const_r90_lr0.01/result.json": "ef3a26065ce0e7790462abde8a7de4c87997580d42830362391cb7b61aad961a",
+    "runs/other_datasets/cifar100_densenet121_seed2_ft_const_r90_lr0.01/result.json": "a00e16cf1b91a70996eafa15de70ce1235338f24bf18c4a6d235ffdecb5196cb",
+    "runs/other_datasets/cifar100_densenet121_seed0_ft_const_r90_lr0.03/result.json": "054d41f84b237598d4b54058181d70062fce18f3013f0781f0e24a033aa6418e",
+    "runs/other_datasets/cifar100_densenet121_seed1_ft_const_r90_lr0.03/result.json": "3dda08cade8560ecee602ea148b5ce62cf9cbaf3def8fc017b9ce91a380c6ff1",
+    "runs/other_datasets/cifar100_densenet121_seed2_ft_const_r90_lr0.03/result.json": "8cc0007c07a502df523934cd416c9fdaf5e70c6ccfee93608229fa55451eaba8"
+  },
+  "models": {
+    "resnet18": {
+      "validation_per_seed": {
+        "0.0003": [
+          72.24000000000001,
+          71.36,
+          71.56
+        ],
+        "0.001": [
+          72.34,
+          71.56,
+          71.6
+        ],
+        "0.003": [
+          71.7,
+          71.06,
+          70.7
+        ],
+        "0.01": [
+          69.17999999999999,
+          68.02,
+          68.8
+        ],
+        "0.03": [
+          64.92,
+          65.14,
+          66.97999999999999
+        ]
+      },
+      "expected_lr": 0.001
+    },
+    "resnet34": {
+      "validation_per_seed": {
+        "0.0003": [
+          73.88,
+          73.52,
+          74.22
+        ],
+        "0.001": [
+          73.82,
+          73.16,
+          74.22
+        ],
+        "0.003": [
+          73.6,
+          72.68,
+          73.16
+        ],
+        "0.01": [
+          69.44,
+          68.64,
+          69.94
+        ],
+        "0.03": [
+          67.16,
+          64.84,
+          64.46
+        ]
+      },
+      "expected_lr": 0.0003
+    },
+    "resnet50": {
+      "validation_per_seed": {
+        "0.0003": [
+          71.48,
+          72.61999999999999,
+          72.66
+        ],
+        "0.001": [
+          71.64,
+          72.28,
+          72.54
+        ],
+        "0.003": [
+          70.89999999999999,
+          70.64,
+          71.2
+        ],
+        "0.01": [
+          66.4,
+          67.82000000000001,
+          66.67999999999999
+        ],
+        "0.03": [
+          60.62,
+          63.7,
+          61.7
+        ]
+      },
+      "expected_lr": 0.0003
+    },
+    "resnet56": {
+      "validation_per_seed": {
+        "0.0003": [
+          59.260000000000005,
+          57.48,
+          57.440000000000005
+        ],
+        "0.001": [
+          61.480000000000004,
+          60.519999999999996,
+          60.480000000000004
+        ],
+        "0.003": [
+          60.8,
+          61.6,
+          60.64000000000001
+        ],
+        "0.01": [
+          58.46,
+          58.86,
+          58.08
+        ],
+        "0.03": [
+          53.76,
+          53.839999999999996,
+          55.74
+        ]
+      },
+      "expected_lr": 0.003
+    },
+    "resnet110": {
+      "validation_per_seed": {
+        "0.0003": [
+          63.080000000000005,
+          62.239999999999995,
+          63.04
+        ],
+        "0.001": [
+          64.53999999999999,
+          64.12,
+          65.06
+        ],
+        "0.003": [
+          63.56,
+          62.660000000000004,
+          63.06
+        ],
+        "0.01": [
+          61.86000000000001,
+          61.08,
+          61.980000000000004
+        ],
+        "0.03": [
+          58.68,
+          56.08,
+          54.26
+        ]
+      },
+      "expected_lr": 0.001
+    },
+    "vgg16_bn": {
+      "validation_per_seed": {
+        "0.0003": [
+          69.52000000000001,
+          68.38,
+          68.24
+        ],
+        "0.001": [
+          69.64,
+          68.38,
+          68.62
+        ],
+        "0.003": [
+          67.97999999999999,
+          68.24,
+          67.52
+        ],
+        "0.01": [
+          64.98,
+          66.32000000000001,
+          65.14
+        ],
+        "0.03": [
+          61.519999999999996,
+          60.699999999999996,
+          58.46
+        ]
+      },
+      "expected_lr": 0.001
+    },
+    "googlenet": {
+      "validation_per_seed": {
+        "0.0003": [
+          70.22,
+          69.46,
+          68.96
+        ],
+        "0.001": [
+          70.17999999999999,
+          69.67999999999999,
+          69.66
+        ],
+        "0.003": [
+          69.14,
+          68.0,
+          68.46
+        ],
+        "0.01": [
+          67.0,
+          66.74,
+          66.2
+        ],
+        "0.03": [
+          63.339999999999996,
+          61.88,
+          59.38
+        ]
+      },
+      "expected_lr": 0.001
+    },
+    "densenet121": {
+      "validation_per_seed": {
+        "0.0003": [
+          73.83999999999999,
+          73.52,
+          72.5
+        ],
+        "0.001": [
+          72.89999999999999,
+          73.92,
+          72.72
+        ],
+        "0.003": [
+          72.1,
+          72.6,
+          71.72
+        ],
+        "0.01": [
+          70.72,
+          69.28,
+          70.0
+        ],
+        "0.03": [
+          66.67999999999999,
+          65.48,
+          65.28
+        ]
+      },
+      "expected_lr": 0.0003
+    }
+  },
+  "selection_sha256": "87fd46be6a4ca8dac28bc2e98226582b0d49eeffac1520f4b2ab87b55f5380cf",
+  "selection_mtime_ns": 1794373546858853221,
+  "selection_saved_before_test_at": "2026-11-11T13:05:46+08:00"
+}

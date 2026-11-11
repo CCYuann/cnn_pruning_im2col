@@ -1,0 +1,515 @@
+{
+ "conv1.conv": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 8,
+  "K": 27,
+  "Cin": 3,
+  "kernel": 3
+ },
+ "conv2.conv": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 8,
+  "K": 64,
+  "Cin": 64,
+  "kernel": 1
+ },
+ "conv3.conv": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 24,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "inception3a.branch1.conv": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 8,
+  "K": 192,
+  "Cin": 192,
+  "kernel": 1
+ },
+ "inception3a.branch2.0.conv": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 12,
+  "K": 192,
+  "Cin": 192,
+  "kernel": 1
+ },
+ "inception3a.branch2.1.conv": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 16,
+  "K": 864,
+  "Cin": 96,
+  "kernel": 3
+ },
+ "inception3a.branch3.0.conv": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 2,
+  "K": 192,
+  "Cin": 192,
+  "kernel": 1
+ },
+ "inception3a.branch3.1.conv": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "inception3a.branch4.1.conv": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 192,
+  "Cin": 192,
+  "kernel": 1
+ },
+ "inception3b.branch1.conv": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 16,
+  "K": 256,
+  "Cin": 256,
+  "kernel": 1
+ },
+ "inception3b.branch2.0.conv": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 16,
+  "K": 256,
+  "Cin": 256,
+  "kernel": 1
+ },
+ "inception3b.branch2.1.conv": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 24,
+  "K": 1152,
+  "Cin": 128,
+  "kernel": 3
+ },
+ "inception3b.branch3.0.conv": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 4,
+  "K": 256,
+  "Cin": 256,
+  "kernel": 1
+ },
+ "inception3b.branch3.1.conv": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 12,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "inception3b.branch4.1.conv": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 8,
+  "K": 256,
+  "Cin": 256,
+  "kernel": 1
+ },
+ "inception4a.branch1.conv": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 24,
+  "K": 480,
+  "Cin": 480,
+  "kernel": 1
+ },
+ "inception4a.branch2.0.conv": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 12,
+  "K": 480,
+  "Cin": 480,
+  "kernel": 1
+ },
+ "inception4a.branch2.1.conv": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 26,
+  "K": 864,
+  "Cin": 96,
+  "kernel": 3
+ },
+ "inception4a.branch3.0.conv": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 2,
+  "K": 480,
+  "Cin": 480,
+  "kernel": 1
+ },
+ "inception4a.branch3.1.conv": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 6,
+  "K": 144,
+  "Cin": 16,
+  "kernel": 3
+ },
+ "inception4a.branch4.1.conv": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 480,
+  "Cin": 480,
+  "kernel": 1
+ },
+ "inception4b.branch1.conv": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 20,
+  "K": 512,
+  "Cin": 512,
+  "kernel": 1
+ },
+ "inception4b.branch2.0.conv": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 14,
+  "K": 512,
+  "Cin": 512,
+  "kernel": 1
+ },
+ "inception4b.branch2.1.conv": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 28,
+  "K": 1008,
+  "Cin": 112,
+  "kernel": 3
+ },
+ "inception4b.branch3.0.conv": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 3,
+  "K": 512,
+  "Cin": 512,
+  "kernel": 1
+ },
+ "inception4b.branch3.1.conv": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 216,
+  "Cin": 24,
+  "kernel": 3
+ },
+ "inception4b.branch4.1.conv": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 512,
+  "Cin": 512,
+  "kernel": 1
+ },
+ "inception4c.branch1.conv": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 16,
+  "K": 512,
+  "Cin": 512,
+  "kernel": 1
+ },
+ "inception4c.branch2.0.conv": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 16,
+  "K": 512,
+  "Cin": 512,
+  "kernel": 1
+ },
+ "inception4c.branch2.1.conv": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 32,
+  "K": 1152,
+  "Cin": 128,
+  "kernel": 3
+ },
+ "inception4c.branch3.0.conv": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 3,
+  "K": 512,
+  "Cin": 512,
+  "kernel": 1
+ },
+ "inception4c.branch3.1.conv": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 216,
+  "Cin": 24,
+  "kernel": 3
+ },
+ "inception4c.branch4.1.conv": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 512,
+  "Cin": 512,
+  "kernel": 1
+ },
+ "inception4d.branch1.conv": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 14,
+  "K": 512,
+  "Cin": 512,
+  "kernel": 1
+ },
+ "inception4d.branch2.0.conv": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 18,
+  "K": 512,
+  "Cin": 512,
+  "kernel": 1
+ },
+ "inception4d.branch2.1.conv": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 36,
+  "K": 1296,
+  "Cin": 144,
+  "kernel": 3
+ },
+ "inception4d.branch3.0.conv": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 4,
+  "K": 512,
+  "Cin": 512,
+  "kernel": 1
+ },
+ "inception4d.branch3.1.conv": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "inception4d.branch4.1.conv": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 8,
+  "K": 512,
+  "Cin": 512,
+  "kernel": 1
+ },
+ "inception4e.branch1.conv": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 32,
+  "K": 528,
+  "Cin": 528,
+  "kernel": 1
+ },
+ "inception4e.branch2.0.conv": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 20,
+  "K": 528,
+  "Cin": 528,
+  "kernel": 1
+ },
+ "inception4e.branch2.1.conv": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 40,
+  "K": 1440,
+  "Cin": 160,
+  "kernel": 3
+ },
+ "inception4e.branch3.0.conv": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 4,
+  "K": 528,
+  "Cin": 528,
+  "kernel": 1
+ },
+ "inception4e.branch3.1.conv": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 16,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "inception4e.branch4.1.conv": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 16,
+  "K": 528,
+  "Cin": 528,
+  "kernel": 1
+ },
+ "inception5a.branch1.conv": {
+  "Hout": 4,
+  "Wout": 4,
+  "stride": 1,
+  "clusters": 32,
+  "K": 832,
+  "Cin": 832,
+  "kernel": 1
+ },
+ "inception5a.branch2.0.conv": {
+  "Hout": 4,
+  "Wout": 4,
+  "stride": 1,
+  "clusters": 20,
+  "K": 832,
+  "Cin": 832,
+  "kernel": 1
+ },
+ "inception5a.branch2.1.conv": {
+  "Hout": 4,
+  "Wout": 4,
+  "stride": 1,
+  "clusters": 40,
+  "K": 1440,
+  "Cin": 160,
+  "kernel": 3
+ },
+ "inception5a.branch3.0.conv": {
+  "Hout": 4,
+  "Wout": 4,
+  "stride": 1,
+  "clusters": 4,
+  "K": 832,
+  "Cin": 832,
+  "kernel": 1
+ },
+ "inception5a.branch3.1.conv": {
+  "Hout": 4,
+  "Wout": 4,
+  "stride": 1,
+  "clusters": 16,
+  "K": 288,
+  "Cin": 32,
+  "kernel": 3
+ },
+ "inception5a.branch4.1.conv": {
+  "Hout": 4,
+  "Wout": 4,
+  "stride": 1,
+  "clusters": 16,
+  "K": 832,
+  "Cin": 832,
+  "kernel": 1
+ },
+ "inception5b.branch1.conv": {
+  "Hout": 4,
+  "Wout": 4,
+  "stride": 1,
+  "clusters": 48,
+  "K": 832,
+  "Cin": 832,
+  "kernel": 1
+ },
+ "inception5b.branch2.0.conv": {
+  "Hout": 4,
+  "Wout": 4,
+  "stride": 1,
+  "clusters": 24,
+  "K": 832,
+  "Cin": 832,
+  "kernel": 1
+ },
+ "inception5b.branch2.1.conv": {
+  "Hout": 4,
+  "Wout": 4,
+  "stride": 1,
+  "clusters": 48,
+  "K": 1728,
+  "Cin": 192,
+  "kernel": 3
+ },
+ "inception5b.branch3.0.conv": {
+  "Hout": 4,
+  "Wout": 4,
+  "stride": 1,
+  "clusters": 6,
+  "K": 832,
+  "Cin": 832,
+  "kernel": 1
+ },
+ "inception5b.branch3.1.conv": {
+  "Hout": 4,
+  "Wout": 4,
+  "stride": 1,
+  "clusters": 16,
+  "K": 432,
+  "Cin": 48,
+  "kernel": 3
+ },
+ "inception5b.branch4.1.conv": {
+  "Hout": 4,
+  "Wout": 4,
+  "stride": 1,
+  "clusters": 16,
+  "K": 832,
+  "Cin": 832,
+  "kernel": 1
+ }
+}

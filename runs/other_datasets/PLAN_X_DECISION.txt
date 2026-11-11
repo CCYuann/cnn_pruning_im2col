@@ -1,0 +1,8 @@
+resnet18    chosen 0.001 [same as W, reused] | ft 71.93 | floor 74.16 | X1 +2.21/+1.92/+2.54 (+2.22) PASS | X2 rewind-ft +2.08 | all-LR ft test 0.0003:72.35 0.001:71.93 0.003:71.34 0.01:68.91 0.03:65.94
+resnet34    chosen 0.0003 [NEW] (LOWER BOUND) | ft 74.22 | floor 75.98 | X1 +1.78/+1.80/+1.70 (+1.76) PASS | X2 rewind-ft +1.69 | all-LR ft test 0.0003:74.22 0.001:74.53 0.003:73.63 0.01:69.64 0.03:66.25
+resnet50    chosen 0.0003 [NEW] (LOWER BOUND) | ft 72.52 | floor 73.97 | X1 +0.71/+2.38/+1.25 (+1.45) PASS | X2 rewind-ft +1.28 | all-LR ft test 0.0003:72.52 0.001:72.64 0.003:71.52 0.01:67.49 0.03:62.62
+resnet56    chosen 0.003 [same as W, reused] | ft 61.42 | floor 67.40 | X1 +6.23/+5.88/+5.85 (+5.99) PASS | X2 rewind-ft +3.72 | all-LR ft test 0.0003:58.37 0.001:61.71 0.003:61.42 0.01:59.23 0.03:54.37
+resnet110   chosen 0.001 [same as W, reused] | ft 64.89 | floor 68.22 | X1 +3.06/+2.63/+4.32 (+3.34) PASS | X2 rewind-ft +2.74 | all-LR ft test 0.0003:63.41 0.001:64.89 0.003:63.26 0.01:61.49 0.03:55.98
+vgg16_bn    chosen 0.001 [same as W, reused] | ft 70.21 | floor 71.90 | X1 +2.29/+1.25/+1.52 (+1.69) PASS | X2 rewind-ft +1.58 | all-LR ft test 0.0003:69.90 0.001:70.21 0.003:68.66 0.01:65.91 0.03:61.58
+googlenet   chosen 0.001 [same as W, reused] | ft 70.71 | floor 74.93 | X1 +3.61/+4.45/+4.61 (+4.22) PASS | X2 rewind-ft +2.82 | all-LR ft test 0.0003:70.51 0.001:70.71 0.003:69.37 0.01:67.76 0.03:61.85
+densenet121 chosen 0.0003 [NEW] (LOWER BOUND) | ft 73.97 | floor 77.14 | X1 +3.47/+3.03/+3.00 (+3.17) PASS | X2 rewind-ft -0.91 | all-LR ft test 0.0003:73.97 0.001:74.08 0.003:72.81 0.01:70.35 0.03:66.41

@@ -139,3 +139,10 @@ L2 依規則未過，判定不改，但 test 3/3 為正且 +1.21pp，應報為�
 | CIFAR-100 kd－gradual+floor 98% | 3 | +0.96 | 0.53 至 1.41 | -0.55 至 2.47 |
 KD 的 seed 區間含 0。支持證據是兩批 seeds（開發 +1.67pp、確認 +1.08pp，validation）皆 3/3，不是單批的顯著性。
 RTL：KD 98% seed3 一張影像 36/36 逐位元通過，見加速器 repo results/rtl_full_model/README.md。
+
+## 揭露：Dense seeds 3/4/5 的 LR 曲線錯誤（2026-11-08 發現）
+計畫 I 為了讓 120 epochs 拉長 LR 曲線，改了 dataset_pruning_worker.py 的 LR 計算，但沒有排除 Dense。
+計畫 J 訓練的 CIFAR-100 ResNet34 Dense seeds 3/4/5 因此從 LR 0.0655 起跳（原配方 0.1），即 60-epoch 曲線拉長到 100 epochs。
+影響：計畫 J 寫的「配方不變」不成立。Dense test 76.70%（seeds 0/1/2 為 76.79%）。剪枝組別的 60-epoch LR 與原本完全相同，不受影響。
+J、L 的配對比較都在同一個 Dense 上，KD 與 gradual+floor 的配對差仍有效，但應描述為「在不同 Dense 配方下重現」。
+已修正（Dense 改回完整 100-epoch cosine），計畫 M 的 seeds 6/7/8 用正確配方，作為乾淨的重現。

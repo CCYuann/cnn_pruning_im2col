@@ -35,3 +35,9 @@ resnet34,gradual_r90_floor_kd,5,0.7634,0.763,268435456
 resnet34,gradual_r95_floor_kd,5,0.7551,0.7556,83629989
 resnet34,gradual_r98_floor_kd_a0.5,5,0.7311,0.7304,536884510
 resnet34,gradual_r99_floor_kd_a0.5,5,0.7019,0.6995,228752916
+resnet34,gradual_r98_floor_kd,6,0.7295,0.7273,536883255
+resnet34,gradual_r98_floor,6,0.7226,0.7202,536885932
+resnet34,gradual_r98_floor_kd,7,0.7357,0.7335,536887350
+resnet34,gradual_r98_floor,7,0.7256,0.7248,536881045
+resnet34,gradual_r98_floor_kd,8,0.7312,0.7284,536890869
+resnet34,gradual_r98_floor,8,0.715,0.714,536894693

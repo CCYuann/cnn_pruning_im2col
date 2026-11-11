@@ -15,7 +15,7 @@ def load():
     for path in ROOT.glob("*/result.json"):
         r = json.loads(path.read_text())
         # This table is the frozen seed 0/1/2 study; plans H, I and J are judged in their own scripts.
-        special = r.get("kd") or r.get("allocator", "cluster") != "cluster" or r.get("q_floor_n", 1) > 1 or r.get("weight_decay", 5e-4) != 5e-4
+        special = r.get("kd") or r.get("allocator", "cluster") != "cluster" or r.get("q_floor_n", 1) > 1 or r.get("free_fill") or r.get("tag") or r.get("mask_from") or r.get("quota_from") or (r.get("ft_lr") or .001) != .001 or r.get("weight_decay", 5e-4) != 5e-4
         if special or r["seed"] > 2 or (r["arm"] != "dense" and r["epochs"] != 60):
             continue
         ratio = round(r["ratio"]*100)

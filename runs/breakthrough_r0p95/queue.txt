@@ -526,3 +526,694 @@ l_kd_r95_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --
 l_floor_r95_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --seed 5 --ratio .95 --discard-model
 l_kd_r90_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --seed 5 --ratio .90 --kd
 l_floor_r90_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --arm gradual --q-floor --seed 5 --ratio .90 --discard-model
+m2_dense_6	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 6 --arm dense
+m2_dense_7	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 7 --arm dense
+m2_dense_8	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 8 --arm dense
+m3_googlenet_dense_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm dense
+m3_googlenet_dense_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 1 --arm dense
+m3_googlenet_dense_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 2 --arm dense
+m3_densenet121_dense_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm dense
+m3_densenet121_dense_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm dense
+m3_densenet121_dense_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm dense
+m1_c100_ft_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm ft_const --ratio .90 --discard-model
+m1_c100_ft_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm ft_const --ratio .95 --discard-model
+m1_c100_ft_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm ft_const --ratio .98 --discard-model
+m1_c100_ft_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm ft_const --ratio .99 --discard-model
+m1_c100_ft_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm ft_const --ratio .90 --discard-model
+m1_c100_ft_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm ft_const --ratio .95 --discard-model
+m1_c100_ft_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm ft_const --ratio .98 --discard-model
+m1_c100_ft_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm ft_const --ratio .99 --discard-model
+m1_c100_ft_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm ft_const --ratio .90 --discard-model
+m1_c100_ft_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm ft_const --ratio .95 --discard-model
+m1_c100_ft_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm ft_const --ratio .98 --discard-model
+m1_c100_ft_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm ft_const --ratio .99 --discard-model
+m1_c10_ft_r98_6	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 6 --ratio .98 --arm ft_const --tag _r34r98
+m1_c10_ft_r99_6	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 6 --ratio .99 --arm ft_const --tag _r34r99
+m1_c10_ft_r98_7	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 7 --ratio .98 --arm ft_const --tag _r34r98
+m1_c10_ft_r99_7	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 7 --ratio .99 --arm ft_const --tag _r34r99
+m1_c10_ft_r98_8	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 8 --ratio .98 --arm ft_const --tag _r34r98
+m1_c10_ft_r99_8	/usr/local/anaconda3/bin/python3 scripts/retrain_recovery_worker.py --root runs/confirmation_r0p95 --group-lambda 3e-5 --model resnet34 --seed 8 --ratio .99 --arm ft_const --tag _r34r99
+m2_floor_r90_6	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 6 --arm gradual --ratio .90 --q-floor --discard-model
+m2_kd_r90_6	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 6 --arm gradual --ratio .90 --q-floor --kd --discard-model
+m2_floor_r95_6	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 6 --arm gradual --ratio .95 --q-floor --discard-model
+m2_kd_r95_6	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 6 --arm gradual --ratio .95 --q-floor --kd --discard-model
+m2_floor_r98_6	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 6 --arm gradual --ratio .98 --q-floor
+m2_kd_r98_6	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 6 --arm gradual --ratio .98 --q-floor --kd
+m2_rewind_r98_6	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 6 --arm rewind --ratio .98 --discard-model
+m2_floor_r90_7	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 7 --arm gradual --ratio .90 --q-floor --discard-model
+m2_kd_r90_7	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 7 --arm gradual --ratio .90 --q-floor --kd --discard-model
+m2_floor_r95_7	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 7 --arm gradual --ratio .95 --q-floor --discard-model
+m2_kd_r95_7	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 7 --arm gradual --ratio .95 --q-floor --kd --discard-model
+m2_floor_r98_7	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 7 --arm gradual --ratio .98 --q-floor
+m2_kd_r98_7	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 7 --arm gradual --ratio .98 --q-floor --kd
+m2_rewind_r98_7	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 7 --arm rewind --ratio .98 --discard-model
+m2_floor_r90_8	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 8 --arm gradual --ratio .90 --q-floor --discard-model
+m2_kd_r90_8	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 8 --arm gradual --ratio .90 --q-floor --kd --discard-model
+m2_floor_r95_8	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 8 --arm gradual --ratio .95 --q-floor --discard-model
+m2_kd_r95_8	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 8 --arm gradual --ratio .95 --q-floor --kd --discard-model
+m2_floor_r98_8	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 8 --arm gradual --ratio .98 --q-floor
+m2_kd_r98_8	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 8 --arm gradual --ratio .98 --q-floor --kd
+m2_rewind_r98_8	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 8 --arm rewind --ratio .98 --discard-model
+m3_googlenet_rewind_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm rewind --ratio .90
+m3_googlenet_floor_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm gradual --ratio .90 --q-floor
+m3_googlenet_rewind_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm rewind --ratio .98
+m3_googlenet_floor_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm gradual --ratio .98 --q-floor
+m3_googlenet_rewind_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm rewind --ratio .99
+m3_googlenet_floor_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm gradual --ratio .99 --q-floor
+m3_googlenet_unstructured_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm unstructured --ratio .98
+m3_googlenet_unstructured_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm unstructured --ratio .99
+m3_googlenet_rewind_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 1 --arm rewind --ratio .90
+m3_googlenet_floor_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 1 --arm gradual --ratio .90 --q-floor
+m3_googlenet_rewind_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 1 --arm rewind --ratio .98
+m3_googlenet_floor_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 1 --arm gradual --ratio .98 --q-floor
+m3_googlenet_rewind_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 1 --arm rewind --ratio .99
+m3_googlenet_floor_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 1 --arm gradual --ratio .99 --q-floor
+m3_googlenet_unstructured_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 1 --arm unstructured --ratio .98
+m3_googlenet_unstructured_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 1 --arm unstructured --ratio .99
+m3_googlenet_rewind_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 2 --arm rewind --ratio .90
+m3_googlenet_floor_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 2 --arm gradual --ratio .90 --q-floor
+m3_googlenet_rewind_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 2 --arm rewind --ratio .98
+m3_googlenet_floor_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 2 --arm gradual --ratio .98 --q-floor
+m3_googlenet_rewind_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 2 --arm rewind --ratio .99
+m3_googlenet_floor_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 2 --arm gradual --ratio .99 --q-floor
+m3_googlenet_unstructured_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 2 --arm unstructured --ratio .98
+m3_googlenet_unstructured_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 2 --arm unstructured --ratio .99
+m3_densenet121_rewind_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm rewind --ratio .90
+m3_densenet121_floor_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm gradual --ratio .90 --q-floor
+m3_densenet121_rewind_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm rewind --ratio .98
+m3_densenet121_floor_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm gradual --ratio .98 --q-floor
+m3_densenet121_rewind_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm rewind --ratio .99
+m3_densenet121_floor_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm gradual --ratio .99 --q-floor
+m3_densenet121_unstructured_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm unstructured --ratio .98
+m3_densenet121_unstructured_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm unstructured --ratio .99
+m3_densenet121_rewind_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm rewind --ratio .90
+m3_densenet121_floor_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm gradual --ratio .90 --q-floor
+m3_densenet121_rewind_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm rewind --ratio .98
+m3_densenet121_floor_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm gradual --ratio .98 --q-floor
+m3_densenet121_rewind_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm rewind --ratio .99
+m3_densenet121_floor_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm gradual --ratio .99 --q-floor
+m3_densenet121_unstructured_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm unstructured --ratio .98
+m3_densenet121_unstructured_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm unstructured --ratio .99
+m3_densenet121_rewind_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm rewind --ratio .90
+m3_densenet121_floor_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm gradual --ratio .90 --q-floor
+m3_densenet121_rewind_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm rewind --ratio .98
+m3_densenet121_floor_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm gradual --ratio .98 --q-floor
+m3_densenet121_rewind_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm rewind --ratio .99
+m3_densenet121_floor_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm gradual --ratio .99 --q-floor
+m3_densenet121_unstructured_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm unstructured --ratio .98
+m3_densenet121_unstructured_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm unstructured --ratio .99
+n1_vgg16_bn_dense_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm dense
+n1_vgg16_bn_dense_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm dense
+n1_vgg16_bn_dense_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm dense
+n1_resnet56_dense_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm dense
+n1_resnet56_dense_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm dense
+n1_resnet56_dense_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm dense
+n2_resnet34_gu_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm gradual_unstructured --ratio .98 --discard-model
+n2_resnet34_gu_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm gradual_unstructured --ratio .99 --discard-model
+n2_resnet34_gu_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm gradual_unstructured --ratio .98 --discard-model
+n2_resnet34_gu_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm gradual_unstructured --ratio .99 --discard-model
+n2_resnet34_gu_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm gradual_unstructured --ratio .98 --discard-model
+n2_resnet34_gu_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm gradual_unstructured --ratio .99 --discard-model
+n2_googlenet_gu_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm gradual_unstructured --ratio .98 --discard-model
+n2_googlenet_gu_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm gradual_unstructured --ratio .99 --discard-model
+n2_googlenet_gu_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 1 --arm gradual_unstructured --ratio .98 --discard-model
+n2_googlenet_gu_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 1 --arm gradual_unstructured --ratio .99 --discard-model
+n2_googlenet_gu_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 2 --arm gradual_unstructured --ratio .98 --discard-model
+n2_googlenet_gu_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 2 --arm gradual_unstructured --ratio .99 --discard-model
+n2_densenet121_gu_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm gradual_unstructured --ratio .98 --discard-model
+n2_densenet121_gu_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm gradual_unstructured --ratio .99 --discard-model
+n2_densenet121_gu_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm gradual_unstructured --ratio .98 --discard-model
+n2_densenet121_gu_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm gradual_unstructured --ratio .99 --discard-model
+n2_densenet121_gu_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm gradual_unstructured --ratio .98 --discard-model
+n2_densenet121_gu_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm gradual_unstructured --ratio .99 --discard-model
+n3_googlenet_kd_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm gradual --ratio .98 --q-floor --kd
+n3_googlenet_kd_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 1 --arm gradual --ratio .98 --q-floor --kd
+n3_googlenet_kd_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 2 --arm gradual --ratio .98 --q-floor --kd
+n3_densenet121_kd_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm gradual --ratio .98 --q-floor --kd
+n3_densenet121_kd_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm gradual --ratio .98 --q-floor --kd
+n3_densenet121_kd_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm gradual --ratio .98 --q-floor --kd
+n1_vgg16_bn_rewind_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm rewind --ratio .90
+n1_vgg16_bn_floor_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm gradual --ratio .90 --q-floor
+n1_vgg16_bn_rewind_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm rewind --ratio .98
+n1_vgg16_bn_floor_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm gradual --ratio .98 --q-floor
+n1_vgg16_bn_rewind_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm rewind --ratio .99
+n1_vgg16_bn_floor_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm gradual --ratio .99 --q-floor
+n1_vgg16_bn_unstructured_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm unstructured --ratio .98 --discard-model
+n1_vgg16_bn_unstructured_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm unstructured --ratio .99 --discard-model
+n1_vgg16_bn_rewind_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm rewind --ratio .90
+n1_vgg16_bn_floor_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm gradual --ratio .90 --q-floor
+n1_vgg16_bn_rewind_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm rewind --ratio .98
+n1_vgg16_bn_floor_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm gradual --ratio .98 --q-floor
+n1_vgg16_bn_rewind_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm rewind --ratio .99
+n1_vgg16_bn_floor_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm gradual --ratio .99 --q-floor
+n1_vgg16_bn_unstructured_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm unstructured --ratio .98 --discard-model
+n1_vgg16_bn_unstructured_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm unstructured --ratio .99 --discard-model
+n1_vgg16_bn_rewind_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm rewind --ratio .90
+n1_vgg16_bn_floor_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm gradual --ratio .90 --q-floor
+n1_vgg16_bn_rewind_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm rewind --ratio .98
+n1_vgg16_bn_floor_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm gradual --ratio .98 --q-floor
+n1_vgg16_bn_rewind_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm rewind --ratio .99
+n1_vgg16_bn_floor_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm gradual --ratio .99 --q-floor
+n1_vgg16_bn_unstructured_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm unstructured --ratio .98 --discard-model
+n1_vgg16_bn_unstructured_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm unstructured --ratio .99 --discard-model
+n2_vgg16_bn_gu_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm gradual_unstructured --ratio .98 --discard-model
+n2_vgg16_bn_gu_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm gradual_unstructured --ratio .99 --discard-model
+n2_vgg16_bn_gu_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm gradual_unstructured --ratio .98 --discard-model
+n2_vgg16_bn_gu_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm gradual_unstructured --ratio .99 --discard-model
+n2_vgg16_bn_gu_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm gradual_unstructured --ratio .98 --discard-model
+n2_vgg16_bn_gu_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm gradual_unstructured --ratio .99 --discard-model
+n3_vgg16_bn_kd_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm gradual --ratio .98 --q-floor --kd
+n3_vgg16_bn_kd_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm gradual --ratio .98 --q-floor --kd
+n3_vgg16_bn_kd_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm gradual --ratio .98 --q-floor --kd
+n1_resnet56_rewind_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm rewind --ratio .90
+n1_resnet56_floor_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm gradual --ratio .90 --q-floor
+n1_resnet56_rewind_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm rewind --ratio .98
+n1_resnet56_floor_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm gradual --ratio .98 --q-floor
+n1_resnet56_rewind_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm rewind --ratio .99
+n1_resnet56_floor_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm gradual --ratio .99 --q-floor
+n1_resnet56_unstructured_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm unstructured --ratio .98 --discard-model
+n1_resnet56_unstructured_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm unstructured --ratio .99 --discard-model
+n1_resnet56_rewind_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm rewind --ratio .90
+n1_resnet56_floor_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm gradual --ratio .90 --q-floor
+n1_resnet56_rewind_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm rewind --ratio .98
+n1_resnet56_floor_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm gradual --ratio .98 --q-floor
+n1_resnet56_rewind_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm rewind --ratio .99
+n1_resnet56_floor_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm gradual --ratio .99 --q-floor
+n1_resnet56_unstructured_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm unstructured --ratio .98 --discard-model
+n1_resnet56_unstructured_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm unstructured --ratio .99 --discard-model
+n1_resnet56_rewind_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm rewind --ratio .90
+n1_resnet56_floor_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm gradual --ratio .90 --q-floor
+n1_resnet56_rewind_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm rewind --ratio .98
+n1_resnet56_floor_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm gradual --ratio .98 --q-floor
+n1_resnet56_rewind_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm rewind --ratio .99
+n1_resnet56_floor_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm gradual --ratio .99 --q-floor
+n1_resnet56_unstructured_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm unstructured --ratio .98 --discard-model
+n1_resnet56_unstructured_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm unstructured --ratio .99 --discard-model
+n2_resnet56_gu_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm gradual_unstructured --ratio .98 --discard-model
+n2_resnet56_gu_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm gradual_unstructured --ratio .99 --discard-model
+n2_resnet56_gu_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm gradual_unstructured --ratio .98 --discard-model
+n2_resnet56_gu_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm gradual_unstructured --ratio .99 --discard-model
+n2_resnet56_gu_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm gradual_unstructured --ratio .98 --discard-model
+n2_resnet56_gu_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm gradual_unstructured --ratio .99 --discard-model
+n3_resnet56_kd_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm gradual --ratio .98 --q-floor --kd
+n3_resnet56_kd_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm gradual --ratio .98 --q-floor --kd
+n3_resnet56_kd_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm gradual --ratio .98 --q-floor --kd
+p_vgg16_bn_rewind_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm rewind --ratio .95 --discard-model
+p_vgg16_bn_rewind_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm rewind --ratio .95 --discard-model
+p_vgg16_bn_rewind_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm rewind --ratio .95 --discard-model
+p_vgg16_bn_floor_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm gradual --q-floor --ratio .95
+p_vgg16_bn_floor_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm gradual --q-floor --ratio .95
+p_vgg16_bn_floor_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm gradual --q-floor --ratio .95
+p_vgg16_bn_fill15_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .95 --discard-model
+p_vgg16_bn_fill15_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .95 --discard-model
+p_vgg16_bn_fill15_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .95 --discard-model
+p_vgg16_bn_gu_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm gradual_unstructured --ratio .95 --discard-model
+p_vgg16_bn_gu_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm gradual_unstructured --ratio .95 --discard-model
+p_vgg16_bn_gu_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm gradual_unstructured --ratio .95 --discard-model
+p_resnet56_rewind_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm rewind --ratio .95 --discard-model
+p_resnet56_rewind_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm rewind --ratio .95 --discard-model
+p_resnet56_rewind_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm rewind --ratio .95 --discard-model
+p_resnet56_floor_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm gradual --q-floor --ratio .95
+p_resnet56_floor_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm gradual --q-floor --ratio .95
+p_resnet56_floor_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm gradual --q-floor --ratio .95
+p_resnet56_fill15_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .95 --discard-model
+p_resnet56_fill15_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .95 --discard-model
+p_resnet56_fill15_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .95 --discard-model
+p_resnet56_gu_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm gradual_unstructured --ratio .95 --discard-model
+p_resnet56_gu_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm gradual_unstructured --ratio .95 --discard-model
+p_resnet56_gu_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm gradual_unstructured --ratio .95 --discard-model
+p_googlenet_rewind_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm rewind --ratio .95 --discard-model
+p_googlenet_rewind_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 1 --arm rewind --ratio .95 --discard-model
+p_googlenet_rewind_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 2 --arm rewind --ratio .95 --discard-model
+p_googlenet_floor_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm gradual --q-floor --ratio .95
+p_googlenet_floor_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 1 --arm gradual --q-floor --ratio .95
+p_googlenet_floor_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 2 --arm gradual --q-floor --ratio .95
+p_googlenet_fill15_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .95 --discard-model
+p_googlenet_fill15_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 1 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .95 --discard-model
+p_googlenet_fill15_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 2 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .95 --discard-model
+p_googlenet_gu_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm gradual_unstructured --ratio .95 --discard-model
+p_googlenet_gu_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 1 --arm gradual_unstructured --ratio .95 --discard-model
+p_googlenet_gu_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 2 --arm gradual_unstructured --ratio .95 --discard-model
+p_resnet34_fill15_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .95 --discard-model
+p_resnet34_fill15_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .95 --discard-model
+p_resnet34_fill15_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .95 --discard-model
+p_resnet34_gu_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm gradual_unstructured --ratio .95 --discard-model
+p_resnet34_gu_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm gradual_unstructured --ratio .95 --discard-model
+p_resnet34_gu_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm gradual_unstructured --ratio .95 --discard-model
+p_densenet121_rewind_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm rewind --ratio .95 --discard-model
+p_densenet121_rewind_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm rewind --ratio .95 --discard-model
+p_densenet121_rewind_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm rewind --ratio .95 --discard-model
+p_densenet121_floor_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm gradual --q-floor --ratio .95
+p_densenet121_floor_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm gradual --q-floor --ratio .95
+p_densenet121_floor_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm gradual --q-floor --ratio .95
+p_densenet121_fill15_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .95 --discard-model
+p_densenet121_fill15_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .95 --discard-model
+p_densenet121_fill15_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .95 --discard-model
+p_densenet121_gu_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm gradual_unstructured --ratio .95 --discard-model
+p_densenet121_gu_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm gradual_unstructured --ratio .95 --discard-model
+p_densenet121_gu_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm gradual_unstructured --ratio .95 --discard-model
+p_vgg16_bn_rewind_r92_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm rewind --ratio .92 --discard-model
+p_vgg16_bn_rewind_r92_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm rewind --ratio .92 --discard-model
+p_vgg16_bn_rewind_r92_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm rewind --ratio .92 --discard-model
+p_vgg16_bn_floor_r92_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm gradual --q-floor --ratio .92
+p_vgg16_bn_floor_r92_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm gradual --q-floor --ratio .92
+p_vgg16_bn_floor_r92_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm gradual --q-floor --ratio .92
+p_vgg16_bn_fill15_r92_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .92 --discard-model
+p_vgg16_bn_fill15_r92_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .92 --discard-model
+p_vgg16_bn_fill15_r92_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .92 --discard-model
+p_vgg16_bn_gu_r92_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm gradual_unstructured --ratio .92 --discard-model
+p_vgg16_bn_gu_r92_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm gradual_unstructured --ratio .92 --discard-model
+p_vgg16_bn_gu_r92_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm gradual_unstructured --ratio .92 --discard-model
+p_resnet56_rewind_r92_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm rewind --ratio .92 --discard-model
+p_resnet56_rewind_r92_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm rewind --ratio .92 --discard-model
+p_resnet56_rewind_r92_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm rewind --ratio .92 --discard-model
+p_resnet56_floor_r92_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm gradual --q-floor --ratio .92
+p_resnet56_floor_r92_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm gradual --q-floor --ratio .92
+p_resnet56_floor_r92_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm gradual --q-floor --ratio .92
+p_resnet56_fill15_r92_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .92 --discard-model
+p_resnet56_fill15_r92_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .92 --discard-model
+p_resnet56_fill15_r92_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .92 --discard-model
+p_resnet56_gu_r92_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm gradual_unstructured --ratio .92 --discard-model
+p_resnet56_gu_r92_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm gradual_unstructured --ratio .92 --discard-model
+p_resnet56_gu_r92_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm gradual_unstructured --ratio .92 --discard-model
+p_googlenet_rewind_r92_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm rewind --ratio .92 --discard-model
+p_googlenet_rewind_r92_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 1 --arm rewind --ratio .92 --discard-model
+p_googlenet_rewind_r92_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 2 --arm rewind --ratio .92 --discard-model
+p_googlenet_floor_r92_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm gradual --q-floor --ratio .92
+p_googlenet_floor_r92_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 1 --arm gradual --q-floor --ratio .92
+p_googlenet_floor_r92_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 2 --arm gradual --q-floor --ratio .92
+p_googlenet_fill15_r92_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .92 --discard-model
+p_googlenet_fill15_r92_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 1 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .92 --discard-model
+p_googlenet_fill15_r92_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 2 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .92 --discard-model
+p_googlenet_gu_r92_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm gradual_unstructured --ratio .92 --discard-model
+p_googlenet_gu_r92_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 1 --arm gradual_unstructured --ratio .92 --discard-model
+p_googlenet_gu_r92_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 2 --arm gradual_unstructured --ratio .92 --discard-model
+p_resnet34_rewind_r92_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm rewind --ratio .92 --discard-model
+p_resnet34_rewind_r92_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm rewind --ratio .92 --discard-model
+p_resnet34_rewind_r92_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm rewind --ratio .92 --discard-model
+p_resnet34_floor_r92_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm gradual --q-floor --ratio .92
+p_resnet34_floor_r92_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm gradual --q-floor --ratio .92
+p_resnet34_floor_r92_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm gradual --q-floor --ratio .92
+p_resnet34_fill15_r92_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .92 --discard-model
+p_resnet34_fill15_r92_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .92 --discard-model
+p_resnet34_fill15_r92_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .92 --discard-model
+p_resnet34_gu_r92_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm gradual_unstructured --ratio .92 --discard-model
+p_resnet34_gu_r92_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm gradual_unstructured --ratio .92 --discard-model
+p_resnet34_gu_r92_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm gradual_unstructured --ratio .92 --discard-model
+p_densenet121_rewind_r92_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm rewind --ratio .92 --discard-model
+p_densenet121_rewind_r92_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm rewind --ratio .92 --discard-model
+p_densenet121_rewind_r92_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm rewind --ratio .92 --discard-model
+p_densenet121_floor_r92_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm gradual --q-floor --ratio .92
+p_densenet121_floor_r92_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm gradual --q-floor --ratio .92
+p_densenet121_floor_r92_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm gradual --q-floor --ratio .92
+p_densenet121_fill15_r92_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .92 --discard-model
+p_densenet121_fill15_r92_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .92 --discard-model
+p_densenet121_fill15_r92_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .92 --discard-model
+p_densenet121_gu_r92_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm gradual_unstructured --ratio .92 --discard-model
+p_densenet121_gu_r92_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm gradual_unstructured --ratio .92 --discard-model
+p_densenet121_gu_r92_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm gradual_unstructured --ratio .92 --discard-model
+o1_resnet56_fill15_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm gradual --ratio .98 --q-floor --q-floor-n 15 --free-fill --discard-model
+o1_resnet56_fill15_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm gradual --ratio .98 --q-floor --q-floor-n 15 --free-fill --discard-model
+o1_resnet56_fill15_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm gradual --ratio .98 --q-floor --q-floor-n 15 --free-fill --discard-model
+o1_resnet56_fill15_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm gradual --ratio .99 --q-floor --q-floor-n 15 --free-fill --discard-model
+o1_resnet56_fill15_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm gradual --ratio .99 --q-floor --q-floor-n 15 --free-fill --discard-model
+o1_resnet56_fill15_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm gradual --ratio .99 --q-floor --q-floor-n 15 --free-fill --discard-model
+o1_vgg16_bn_fill15_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm gradual --ratio .98 --q-floor --q-floor-n 15 --free-fill --discard-model
+o1_vgg16_bn_fill15_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm gradual --ratio .98 --q-floor --q-floor-n 15 --free-fill --discard-model
+o1_vgg16_bn_fill15_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm gradual --ratio .98 --q-floor --q-floor-n 15 --free-fill --discard-model
+o1_vgg16_bn_fill15_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm gradual --ratio .99 --q-floor --q-floor-n 15 --free-fill --discard-model
+o1_vgg16_bn_fill15_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm gradual --ratio .99 --q-floor --q-floor-n 15 --free-fill --discard-model
+o1_vgg16_bn_fill15_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm gradual --ratio .99 --q-floor --q-floor-n 15 --free-fill --discard-model
+o1_googlenet_fill15_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm gradual --ratio .98 --q-floor --q-floor-n 15 --free-fill --discard-model
+o1_googlenet_fill15_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 1 --arm gradual --ratio .98 --q-floor --q-floor-n 15 --free-fill --discard-model
+o1_googlenet_fill15_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 2 --arm gradual --ratio .98 --q-floor --q-floor-n 15 --free-fill --discard-model
+o1_googlenet_fill15_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm gradual --ratio .99 --q-floor --q-floor-n 15 --free-fill --discard-model
+o1_googlenet_fill15_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 1 --arm gradual --ratio .99 --q-floor --q-floor-n 15 --free-fill --discard-model
+o1_googlenet_fill15_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 2 --arm gradual --ratio .99 --q-floor --q-floor-n 15 --free-fill --discard-model
+o1_densenet121_fill15_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm gradual --ratio .98 --q-floor --q-floor-n 15 --free-fill --discard-model
+o1_densenet121_fill15_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm gradual --ratio .98 --q-floor --q-floor-n 15 --free-fill --discard-model
+o1_densenet121_fill15_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm gradual --ratio .98 --q-floor --q-floor-n 15 --free-fill --discard-model
+o1_densenet121_fill15_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm gradual --ratio .99 --q-floor --q-floor-n 15 --free-fill --discard-model
+o1_densenet121_fill15_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm gradual --ratio .99 --q-floor --q-floor-n 15 --free-fill --discard-model
+o1_densenet121_fill15_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm gradual --ratio .99 --q-floor --q-floor-n 15 --free-fill --discard-model
+o1_resnet34_fill15_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm gradual --ratio .98 --q-floor --q-floor-n 15 --free-fill --discard-model
+o1_resnet34_fill15_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm gradual --ratio .98 --q-floor --q-floor-n 15 --free-fill --discard-model
+o1_resnet34_fill15_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm gradual --ratio .98 --q-floor --q-floor-n 15 --free-fill --discard-model
+o1_resnet34_fill15_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm gradual --ratio .99 --q-floor --q-floor-n 15 --free-fill --discard-model
+o1_resnet34_fill15_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm gradual --ratio .99 --q-floor --q-floor-n 15 --free-fill --discard-model
+o1_resnet34_fill15_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm gradual --ratio .99 --q-floor --q-floor-n 15 --free-fill --discard-model
+o2_vgg16_bn_rewind_floor_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm rewind --ratio .98 --q-floor --discard-model
+o2_vgg16_bn_rewind_floor_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm rewind --ratio .98 --q-floor --discard-model
+o2_vgg16_bn_rewind_floor_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm rewind --ratio .98 --q-floor --discard-model
+o2_vgg16_bn_rewind_floor_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm rewind --ratio .99 --q-floor --discard-model
+o2_vgg16_bn_rewind_floor_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm rewind --ratio .99 --q-floor --discard-model
+o2_vgg16_bn_rewind_floor_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm rewind --ratio .99 --q-floor --discard-model
+o3_resnet56_gu_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm gradual_unstructured --ratio .98 --discard-model --tag _union
+o3_resnet56_gu_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm gradual_unstructured --ratio .99 --discard-model --tag _union
+o3_vgg16_bn_gu_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm gradual_unstructured --ratio .98 --discard-model --tag _union
+o3_vgg16_bn_gu_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm gradual_unstructured --ratio .99 --discard-model --tag _union
+o3_googlenet_gu_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm gradual_unstructured --ratio .98 --discard-model --tag _union
+o3_googlenet_gu_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm gradual_unstructured --ratio .99 --discard-model --tag _union
+o3_densenet121_gu_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm gradual_unstructured --ratio .98 --discard-model --tag _union
+o3_densenet121_gu_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm gradual_unstructured --ratio .99 --discard-model --tag _union
+o3_resnet34_gu_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm gradual_unstructured --ratio .98 --discard-model --tag _union
+o3_resnet34_gu_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm gradual_unstructured --ratio .99 --discard-model --tag _union
+q_vgg16_bn_fill15kd_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm gradual --ratio .98 --q-floor --q-floor-n 15 --free-fill --kd
+q_vgg16_bn_fill15kd_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm gradual --ratio .98 --q-floor --q-floor-n 15 --free-fill --kd
+q_vgg16_bn_fill15kd_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm gradual --ratio .98 --q-floor --q-floor-n 15 --free-fill --kd
+q_vgg16_bn_fill15kd_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm gradual --ratio .99 --q-floor --q-floor-n 15 --free-fill --kd
+q_vgg16_bn_fill15kd_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm gradual --ratio .99 --q-floor --q-floor-n 15 --free-fill --kd
+q_vgg16_bn_fill15kd_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm gradual --ratio .99 --q-floor --q-floor-n 15 --free-fill --kd
+q_resnet34_fill15kd_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm gradual --ratio .98 --q-floor --q-floor-n 15 --free-fill --kd
+q_resnet34_fill15kd_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm gradual --ratio .98 --q-floor --q-floor-n 15 --free-fill --kd
+q_resnet34_fill15kd_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm gradual --ratio .98 --q-floor --q-floor-n 15 --free-fill --kd
+q_resnet34_fill15kd_r99_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm gradual --ratio .99 --q-floor --q-floor-n 15 --free-fill --kd
+q_resnet34_fill15kd_r99_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm gradual --ratio .99 --q-floor --q-floor-n 15 --free-fill --kd
+q_resnet34_fill15kd_r99_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm gradual --ratio .99 --q-floor --q-floor-n 15 --free-fill --kd
+r_resnet34_floor_r99_6	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 6 --arm gradual --ratio .99 --q-floor --discard-model
+r_resnet34_fill15_r98_6	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 6 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .98 --discard-model
+r_resnet34_fill15_r99_6	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 6 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .99 --discard-model
+r_resnet34_fill15kd_r98_6	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 6 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .98 --kd --discard-model
+r_resnet34_floor_r99_7	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 7 --arm gradual --ratio .99 --q-floor --discard-model
+r_resnet34_fill15_r98_7	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 7 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .98 --discard-model
+r_resnet34_fill15_r99_7	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 7 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .99 --discard-model
+r_resnet34_fill15kd_r98_7	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 7 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .98 --kd --discard-model
+r_resnet34_floor_r99_8	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 8 --arm gradual --ratio .99 --q-floor --discard-model
+r_resnet34_fill15_r98_8	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 8 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .98 --discard-model
+r_resnet34_fill15_r99_8	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 8 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .99 --discard-model
+r_resnet34_fill15kd_r98_8	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 8 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .98 --kd --discard-model
+r_vgg16_bn_dense_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 3 --arm dense
+r_vgg16_bn_dense_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 4 --arm dense
+r_vgg16_bn_dense_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 5 --arm dense
+r_resnet56_dense_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 3 --arm dense
+r_resnet56_dense_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 4 --arm dense
+r_resnet56_dense_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 5 --arm dense
+r_vgg16_bn_rewind_r95_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 3 --arm rewind --ratio .95 --discard-model
+r_vgg16_bn_floor_r95_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 3 --arm gradual --ratio .95 --q-floor --discard-model
+r_vgg16_bn_floor_r98_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 3 --arm gradual --ratio .98 --q-floor --discard-model
+r_vgg16_bn_floor_r99_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 3 --arm gradual --ratio .99 --q-floor --discard-model
+r_vgg16_bn_fill15_r98_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 3 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .98 --discard-model
+r_vgg16_bn_fill15_r99_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 3 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .99 --discard-model
+r_vgg16_bn_fill15kd_r98_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 3 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .98 --kd --discard-model
+r_vgg16_bn_rewind_r95_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 4 --arm rewind --ratio .95 --discard-model
+r_vgg16_bn_floor_r95_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 4 --arm gradual --ratio .95 --q-floor --discard-model
+r_vgg16_bn_floor_r98_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 4 --arm gradual --ratio .98 --q-floor --discard-model
+r_vgg16_bn_floor_r99_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 4 --arm gradual --ratio .99 --q-floor --discard-model
+r_vgg16_bn_fill15_r98_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 4 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .98 --discard-model
+r_vgg16_bn_fill15_r99_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 4 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .99 --discard-model
+r_vgg16_bn_fill15kd_r98_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 4 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .98 --kd --discard-model
+r_vgg16_bn_rewind_r95_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 5 --arm rewind --ratio .95 --discard-model
+r_vgg16_bn_floor_r95_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 5 --arm gradual --ratio .95 --q-floor --discard-model
+r_vgg16_bn_floor_r98_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 5 --arm gradual --ratio .98 --q-floor --discard-model
+r_vgg16_bn_floor_r99_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 5 --arm gradual --ratio .99 --q-floor --discard-model
+r_vgg16_bn_fill15_r98_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 5 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .98 --discard-model
+r_vgg16_bn_fill15_r99_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 5 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .99 --discard-model
+r_vgg16_bn_fill15kd_r98_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 5 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .98 --kd --discard-model
+r_resnet56_rewind_r95_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 3 --arm rewind --ratio .95 --discard-model
+r_resnet56_floor_r95_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 3 --arm gradual --ratio .95 --q-floor --discard-model
+r_resnet56_floor_r98_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 3 --arm gradual --ratio .98 --q-floor --discard-model
+r_resnet56_floor_r99_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 3 --arm gradual --ratio .99 --q-floor --discard-model
+r_resnet56_fill15_r98_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 3 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .98 --discard-model
+r_resnet56_fill15_r99_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 3 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .99 --discard-model
+r_resnet56_rewind_r95_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 4 --arm rewind --ratio .95 --discard-model
+r_resnet56_floor_r95_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 4 --arm gradual --ratio .95 --q-floor --discard-model
+r_resnet56_floor_r98_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 4 --arm gradual --ratio .98 --q-floor --discard-model
+r_resnet56_floor_r99_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 4 --arm gradual --ratio .99 --q-floor --discard-model
+r_resnet56_fill15_r98_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 4 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .98 --discard-model
+r_resnet56_fill15_r99_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 4 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .99 --discard-model
+r_resnet56_rewind_r95_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 5 --arm rewind --ratio .95 --discard-model
+r_resnet56_floor_r95_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 5 --arm gradual --ratio .95 --q-floor --discard-model
+r_resnet56_floor_r98_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 5 --arm gradual --ratio .98 --q-floor --discard-model
+r_resnet56_floor_r99_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 5 --arm gradual --ratio .99 --q-floor --discard-model
+r_resnet56_fill15_r98_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 5 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .98 --discard-model
+r_resnet56_fill15_r99_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 5 --arm gradual --q-floor --q-floor-n 15 --free-fill --ratio .99 --discard-model
+s_resnet18_dense_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 0 --arm dense
+s_resnet18_dense_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 1 --arm dense
+s_resnet18_dense_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 2 --arm dense
+s_resnet110_dense_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 0 --arm dense
+s_resnet110_dense_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 1 --arm dense
+s_resnet110_dense_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 2 --arm dense
+s_resnet56_ft_const_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm ft_const --ratio .90 --discard-model
+s_resnet56_ft_const_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm ft_const --ratio .90 --discard-model
+s_resnet56_ft_const_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm ft_const --ratio .90 --discard-model
+s_vgg16_bn_ft_const_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm ft_const --ratio .90 --discard-model
+s_vgg16_bn_ft_const_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm ft_const --ratio .90 --discard-model
+s_vgg16_bn_ft_const_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm ft_const --ratio .90 --discard-model
+s_googlenet_ft_const_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm ft_const --ratio .90 --discard-model
+s_googlenet_ft_const_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 1 --arm ft_const --ratio .90 --discard-model
+s_googlenet_ft_const_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 2 --arm ft_const --ratio .90 --discard-model
+s_resnet50_ft_const_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 0 --arm ft_const --ratio .90 --discard-model
+s_resnet50_ft_const_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 1 --arm ft_const --ratio .90 --discard-model
+s_resnet50_ft_const_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 2 --arm ft_const --ratio .90 --discard-model
+s_densenet121_ft_const_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm ft_const --ratio .90 --discard-model
+s_densenet121_ft_const_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm ft_const --ratio .90 --discard-model
+s_densenet121_ft_const_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm ft_const --ratio .90 --discard-model
+s_resnet56_ft_const_r90_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 3 --arm ft_const --ratio .90 --discard-model
+s_resnet56_rewind_r90_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 3 --arm rewind --ratio .90 --discard-model
+s_resnet56_floor_r90_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 3 --arm gradual --q-floor --ratio .90
+s_resnet56_ft_const_r90_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 4 --arm ft_const --ratio .90 --discard-model
+s_resnet56_rewind_r90_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 4 --arm rewind --ratio .90 --discard-model
+s_resnet56_floor_r90_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 4 --arm gradual --q-floor --ratio .90
+s_resnet56_ft_const_r90_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 5 --arm ft_const --ratio .90 --discard-model
+s_resnet56_rewind_r90_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 5 --arm rewind --ratio .90 --discard-model
+s_resnet56_floor_r90_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 5 --arm gradual --q-floor --ratio .90
+s_vgg16_bn_ft_const_r90_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 3 --arm ft_const --ratio .90 --discard-model
+s_vgg16_bn_rewind_r90_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 3 --arm rewind --ratio .90 --discard-model
+s_vgg16_bn_floor_r90_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 3 --arm gradual --q-floor --ratio .90
+s_vgg16_bn_ft_const_r90_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 4 --arm ft_const --ratio .90 --discard-model
+s_vgg16_bn_rewind_r90_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 4 --arm rewind --ratio .90 --discard-model
+s_vgg16_bn_floor_r90_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 4 --arm gradual --q-floor --ratio .90
+s_vgg16_bn_ft_const_r90_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 5 --arm ft_const --ratio .90 --discard-model
+s_vgg16_bn_rewind_r90_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 5 --arm rewind --ratio .90 --discard-model
+s_vgg16_bn_floor_r90_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 5 --arm gradual --q-floor --ratio .90
+s_resnet18_ft_const_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 0 --arm ft_const --ratio .90 --discard-model
+s_resnet18_rewind_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 0 --arm rewind --ratio .90 --discard-model
+s_resnet18_floor_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 0 --arm gradual --q-floor --ratio .90
+s_resnet18_ft_const_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 1 --arm ft_const --ratio .90 --discard-model
+s_resnet18_rewind_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 1 --arm rewind --ratio .90 --discard-model
+s_resnet18_floor_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 1 --arm gradual --q-floor --ratio .90
+s_resnet18_ft_const_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 2 --arm ft_const --ratio .90 --discard-model
+s_resnet18_rewind_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 2 --arm rewind --ratio .90 --discard-model
+s_resnet18_floor_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 2 --arm gradual --q-floor --ratio .90
+s_resnet110_ft_const_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 0 --arm ft_const --ratio .90 --discard-model
+s_resnet110_rewind_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 0 --arm rewind --ratio .90 --discard-model
+s_resnet110_floor_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 0 --arm gradual --q-floor --ratio .90
+s_resnet110_ft_const_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 1 --arm ft_const --ratio .90 --discard-model
+s_resnet110_rewind_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 1 --arm rewind --ratio .90 --discard-model
+s_resnet110_floor_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 1 --arm gradual --q-floor --ratio .90
+s_resnet110_ft_const_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 2 --arm ft_const --ratio .90 --discard-model
+s_resnet110_rewind_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 2 --arm rewind --ratio .90 --discard-model
+s_resnet110_floor_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 2 --arm gradual --q-floor --ratio .90
+t_resnet18_ft_const_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 0 --arm ft_const --discard-model --ratio .95
+t_resnet18_ft_const_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 1 --arm ft_const --discard-model --ratio .95
+t_resnet18_ft_const_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 2 --arm ft_const --discard-model --ratio .95
+t_resnet50_ft_const_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 0 --arm ft_const --discard-model --ratio .95
+t_resnet50_ft_const_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 1 --arm ft_const --discard-model --ratio .95
+t_resnet50_ft_const_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 2 --arm ft_const --discard-model --ratio .95
+t_resnet56_ft_const_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm ft_const --discard-model --ratio .95
+t_resnet56_ft_const_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm ft_const --discard-model --ratio .95
+t_resnet56_ft_const_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm ft_const --discard-model --ratio .95
+t_resnet110_ft_const_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 0 --arm ft_const --discard-model --ratio .95
+t_resnet110_ft_const_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 1 --arm ft_const --discard-model --ratio .95
+t_resnet110_ft_const_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 2 --arm ft_const --discard-model --ratio .95
+t_vgg16_bn_ft_const_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm ft_const --discard-model --ratio .95
+t_vgg16_bn_ft_const_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm ft_const --discard-model --ratio .95
+t_vgg16_bn_ft_const_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm ft_const --discard-model --ratio .95
+t_googlenet_ft_const_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm ft_const --discard-model --ratio .95
+t_googlenet_ft_const_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 1 --arm ft_const --discard-model --ratio .95
+t_googlenet_ft_const_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 2 --arm ft_const --discard-model --ratio .95
+t_densenet121_ft_const_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm ft_const --discard-model --ratio .95
+t_densenet121_ft_const_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm ft_const --discard-model --ratio .95
+t_densenet121_ft_const_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm ft_const --discard-model --ratio .95
+t_resnet18_rewind_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 0 --arm rewind --discard-model --ratio .95
+t_resnet18_floor_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 0 --arm gradual --q-floor --ratio .95
+t_resnet18_rewind_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 1 --arm rewind --discard-model --ratio .95
+t_resnet18_floor_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 1 --arm gradual --q-floor --ratio .95
+t_resnet18_rewind_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 2 --arm rewind --discard-model --ratio .95
+t_resnet18_floor_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 2 --arm gradual --q-floor --ratio .95
+t_resnet110_rewind_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 0 --arm rewind --discard-model --ratio .95
+t_resnet110_floor_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 0 --arm gradual --q-floor --ratio .95
+t_resnet110_rewind_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 1 --arm rewind --discard-model --ratio .95
+t_resnet110_floor_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 1 --arm gradual --q-floor --ratio .95
+t_resnet110_rewind_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 2 --arm rewind --discard-model --ratio .95
+t_resnet110_floor_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 2 --arm gradual --q-floor --ratio .95
+t_resnet56_ft_const_r95_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 3 --arm ft_const --discard-model --ratio .95
+t_resnet56_ft_const_r95_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 4 --arm ft_const --discard-model --ratio .95
+t_resnet56_ft_const_r95_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 5 --arm ft_const --discard-model --ratio .95
+t_vgg16_bn_ft_const_r95_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 3 --arm ft_const --discard-model --ratio .95
+t_vgg16_bn_ft_const_r95_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 4 --arm ft_const --discard-model --ratio .95
+t_vgg16_bn_ft_const_r95_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 5 --arm ft_const --discard-model --ratio .95
+u_resnet56_qfrom_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm rewind --ratio .95 --quota-from runs/other_datasets/cifar100_resnet56_seed0_gradual_r95_floor --discard-model
+u_resnet56_mfrom_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm rewind --ratio .95 --mask-from runs/other_datasets/cifar100_resnet56_seed0_gradual_r95_floor --discard-model
+u_resnet56_qfrom_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm rewind --ratio .95 --quota-from runs/other_datasets/cifar100_resnet56_seed1_gradual_r95_floor --discard-model
+u_resnet56_mfrom_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm rewind --ratio .95 --mask-from runs/other_datasets/cifar100_resnet56_seed1_gradual_r95_floor --discard-model
+u_resnet56_qfrom_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm rewind --ratio .95 --quota-from runs/other_datasets/cifar100_resnet56_seed2_gradual_r95_floor --discard-model
+u_resnet56_mfrom_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm rewind --ratio .95 --mask-from runs/other_datasets/cifar100_resnet56_seed2_gradual_r95_floor --discard-model
+u_vgg16_bn_qfrom_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm rewind --ratio .95 --quota-from runs/other_datasets/cifar100_vgg16_bn_seed0_gradual_r95_floor --discard-model
+u_vgg16_bn_mfrom_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm rewind --ratio .95 --mask-from runs/other_datasets/cifar100_vgg16_bn_seed0_gradual_r95_floor --discard-model
+u_vgg16_bn_qfrom_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm rewind --ratio .95 --quota-from runs/other_datasets/cifar100_vgg16_bn_seed1_gradual_r95_floor --discard-model
+u_vgg16_bn_mfrom_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm rewind --ratio .95 --mask-from runs/other_datasets/cifar100_vgg16_bn_seed1_gradual_r95_floor --discard-model
+u_vgg16_bn_qfrom_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm rewind --ratio .95 --quota-from runs/other_datasets/cifar100_vgg16_bn_seed2_gradual_r95_floor --discard-model
+u_vgg16_bn_mfrom_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm rewind --ratio .95 --mask-from runs/other_datasets/cifar100_vgg16_bn_seed2_gradual_r95_floor --discard-model
+u_googlenet_qfrom_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm rewind --ratio .95 --quota-from runs/other_datasets/cifar100_googlenet_seed0_gradual_r95_floor --discard-model
+u_googlenet_mfrom_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm rewind --ratio .95 --mask-from runs/other_datasets/cifar100_googlenet_seed0_gradual_r95_floor --discard-model
+u_googlenet_qfrom_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 1 --arm rewind --ratio .95 --quota-from runs/other_datasets/cifar100_googlenet_seed1_gradual_r95_floor --discard-model
+u_googlenet_mfrom_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 1 --arm rewind --ratio .95 --mask-from runs/other_datasets/cifar100_googlenet_seed1_gradual_r95_floor --discard-model
+u_googlenet_qfrom_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 2 --arm rewind --ratio .95 --quota-from runs/other_datasets/cifar100_googlenet_seed2_gradual_r95_floor --discard-model
+u_googlenet_mfrom_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 2 --arm rewind --ratio .95 --mask-from runs/other_datasets/cifar100_googlenet_seed2_gradual_r95_floor --discard-model
+u_densenet121_qfrom_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm rewind --ratio .95 --quota-from runs/other_datasets/cifar100_densenet121_seed0_gradual_r95_floor --discard-model
+u_densenet121_mfrom_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm rewind --ratio .95 --mask-from runs/other_datasets/cifar100_densenet121_seed0_gradual_r95_floor --discard-model
+u_densenet121_qfrom_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm rewind --ratio .95 --quota-from runs/other_datasets/cifar100_densenet121_seed1_gradual_r95_floor --discard-model
+u_densenet121_mfrom_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm rewind --ratio .95 --mask-from runs/other_datasets/cifar100_densenet121_seed1_gradual_r95_floor --discard-model
+u_densenet121_qfrom_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm rewind --ratio .95 --quota-from runs/other_datasets/cifar100_densenet121_seed2_gradual_r95_floor --discard-model
+u_densenet121_mfrom_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm rewind --ratio .95 --mask-from runs/other_datasets/cifar100_densenet121_seed2_gradual_r95_floor --discard-model
+u_resnet110_qfrom_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 0 --arm rewind --ratio .95 --quota-from runs/other_datasets/cifar100_resnet110_seed0_gradual_r95_floor --discard-model
+u_resnet110_mfrom_r95_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 0 --arm rewind --ratio .95 --mask-from runs/other_datasets/cifar100_resnet110_seed0_gradual_r95_floor --discard-model
+u_resnet110_qfrom_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 1 --arm rewind --ratio .95 --quota-from runs/other_datasets/cifar100_resnet110_seed1_gradual_r95_floor --discard-model
+u_resnet110_mfrom_r95_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 1 --arm rewind --ratio .95 --mask-from runs/other_datasets/cifar100_resnet110_seed1_gradual_r95_floor --discard-model
+u_resnet110_qfrom_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 2 --arm rewind --ratio .95 --quota-from runs/other_datasets/cifar100_resnet110_seed2_gradual_r95_floor --discard-model
+u_resnet110_mfrom_r95_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 2 --arm rewind --ratio .95 --mask-from runs/other_datasets/cifar100_resnet110_seed2_gradual_r95_floor --discard-model
+u_resnet34_qfrom_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm rewind --ratio .98 --quota-from runs/other_datasets/cifar100_resnet34_seed0_gradual_r98_floor --discard-model
+u_resnet34_mfrom_r98_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm rewind --ratio .98 --mask-from runs/other_datasets/cifar100_resnet34_seed0_gradual_r98_floor --discard-model
+u_resnet34_qfrom_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm rewind --ratio .98 --quota-from runs/other_datasets/cifar100_resnet34_seed1_gradual_r98_floor --discard-model
+u_resnet34_mfrom_r98_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm rewind --ratio .98 --mask-from runs/other_datasets/cifar100_resnet34_seed1_gradual_r98_floor --discard-model
+u_resnet34_qfrom_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm rewind --ratio .98 --quota-from runs/other_datasets/cifar100_resnet34_seed2_gradual_r98_floor --discard-model
+u_resnet34_mfrom_r98_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm rewind --ratio .98 --mask-from runs/other_datasets/cifar100_resnet34_seed2_gradual_r98_floor --discard-model
+u_densenet121_qfrom_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm rewind --ratio .90 --quota-from runs/other_datasets/cifar100_densenet121_seed0_gradual_r90_floor --discard-model
+u_densenet121_mfrom_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm rewind --ratio .90 --mask-from runs/other_datasets/cifar100_densenet121_seed0_gradual_r90_floor --discard-model
+u_densenet121_qfrom_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm rewind --ratio .90 --quota-from runs/other_datasets/cifar100_densenet121_seed1_gradual_r90_floor --discard-model
+u_densenet121_mfrom_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm rewind --ratio .90 --mask-from runs/other_datasets/cifar100_densenet121_seed1_gradual_r90_floor --discard-model
+u_densenet121_qfrom_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm rewind --ratio .90 --quota-from runs/other_datasets/cifar100_densenet121_seed2_gradual_r90_floor --discard-model
+u_densenet121_mfrom_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm rewind --ratio .90 --mask-from runs/other_datasets/cifar100_densenet121_seed2_gradual_r90_floor --discard-model
+v_resnet56_qfrom_r95_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 3 --arm rewind --ratio .95 --quota-from runs/other_datasets/cifar100_resnet56_seed3_gradual_r95_floor --discard-model
+v_resnet56_mfrom_r95_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 3 --arm rewind --ratio .95 --mask-from runs/other_datasets/cifar100_resnet56_seed3_gradual_r95_floor --discard-model
+v_resnet56_qfrom_r95_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 4 --arm rewind --ratio .95 --quota-from runs/other_datasets/cifar100_resnet56_seed4_gradual_r95_floor --discard-model
+v_resnet56_mfrom_r95_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 4 --arm rewind --ratio .95 --mask-from runs/other_datasets/cifar100_resnet56_seed4_gradual_r95_floor --discard-model
+v_resnet56_qfrom_r95_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 5 --arm rewind --ratio .95 --quota-from runs/other_datasets/cifar100_resnet56_seed5_gradual_r95_floor --discard-model
+v_resnet56_mfrom_r95_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 5 --arm rewind --ratio .95 --mask-from runs/other_datasets/cifar100_resnet56_seed5_gradual_r95_floor --discard-model
+v_vgg16_bn_qfrom_r95_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 3 --arm rewind --ratio .95 --quota-from runs/other_datasets/cifar100_vgg16_bn_seed3_gradual_r95_floor --discard-model
+v_vgg16_bn_mfrom_r95_3	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 3 --arm rewind --ratio .95 --mask-from runs/other_datasets/cifar100_vgg16_bn_seed3_gradual_r95_floor --discard-model
+v_vgg16_bn_qfrom_r95_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 4 --arm rewind --ratio .95 --quota-from runs/other_datasets/cifar100_vgg16_bn_seed4_gradual_r95_floor --discard-model
+v_vgg16_bn_mfrom_r95_4	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 4 --arm rewind --ratio .95 --mask-from runs/other_datasets/cifar100_vgg16_bn_seed4_gradual_r95_floor --discard-model
+v_vgg16_bn_qfrom_r95_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 5 --arm rewind --ratio .95 --quota-from runs/other_datasets/cifar100_vgg16_bn_seed5_gradual_r95_floor --discard-model
+v_vgg16_bn_mfrom_r95_5	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 5 --arm rewind --ratio .95 --mask-from runs/other_datasets/cifar100_vgg16_bn_seed5_gradual_r95_floor --discard-model
+w_densenet121_ftlr003_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm ft_const --ratio .90 --ft-lr .003 --discard-model
+w_densenet121_ftlr003_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm ft_const --ratio .90 --ft-lr .003 --discard-model
+w_densenet121_ftlr003_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm ft_const --ratio .90 --ft-lr .003 --discard-model
+w_densenet121_ftlr01_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm ft_const --ratio .90 --ft-lr .01 --discard-model
+w_densenet121_ftlr01_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm ft_const --ratio .90 --ft-lr .01 --discard-model
+w_densenet121_ftlr01_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm ft_const --ratio .90 --ft-lr .01 --discard-model
+w_densenet121_ftlr03_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm ft_const --ratio .90 --ft-lr .03 --discard-model
+w_densenet121_ftlr03_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm ft_const --ratio .90 --ft-lr .03 --discard-model
+w_densenet121_ftlr03_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm ft_const --ratio .90 --ft-lr .03 --discard-model
+w_resnet50_ftlr003_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 0 --arm ft_const --ratio .90 --ft-lr .003 --discard-model
+w_resnet50_ftlr003_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 1 --arm ft_const --ratio .90 --ft-lr .003 --discard-model
+w_resnet50_ftlr003_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 2 --arm ft_const --ratio .90 --ft-lr .003 --discard-model
+w_resnet50_ftlr01_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 0 --arm ft_const --ratio .90 --ft-lr .01 --discard-model
+w_resnet50_ftlr01_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 1 --arm ft_const --ratio .90 --ft-lr .01 --discard-model
+w_resnet50_ftlr01_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 2 --arm ft_const --ratio .90 --ft-lr .01 --discard-model
+w_resnet50_ftlr03_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 0 --arm ft_const --ratio .90 --ft-lr .03 --discard-model
+w_resnet50_ftlr03_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 1 --arm ft_const --ratio .90 --ft-lr .03 --discard-model
+w_resnet50_ftlr03_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 2 --arm ft_const --ratio .90 --ft-lr .03 --discard-model
+w_resnet110_ftlr003_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 0 --arm ft_const --ratio .90 --ft-lr .003 --discard-model
+w_resnet110_ftlr003_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 1 --arm ft_const --ratio .90 --ft-lr .003 --discard-model
+w_resnet110_ftlr003_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 2 --arm ft_const --ratio .90 --ft-lr .003 --discard-model
+w_resnet110_ftlr01_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 0 --arm ft_const --ratio .90 --ft-lr .01 --discard-model
+w_resnet110_ftlr01_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 1 --arm ft_const --ratio .90 --ft-lr .01 --discard-model
+w_resnet110_ftlr01_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 2 --arm ft_const --ratio .90 --ft-lr .01 --discard-model
+w_resnet110_ftlr03_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 0 --arm ft_const --ratio .90 --ft-lr .03 --discard-model
+w_resnet110_ftlr03_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 1 --arm ft_const --ratio .90 --ft-lr .03 --discard-model
+w_resnet110_ftlr03_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 2 --arm ft_const --ratio .90 --ft-lr .03 --discard-model
+w_googlenet_ftlr003_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm ft_const --ratio .90 --ft-lr .003 --discard-model
+w_googlenet_ftlr003_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 1 --arm ft_const --ratio .90 --ft-lr .003 --discard-model
+w_googlenet_ftlr003_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 2 --arm ft_const --ratio .90 --ft-lr .003 --discard-model
+w_googlenet_ftlr01_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm ft_const --ratio .90 --ft-lr .01 --discard-model
+w_googlenet_ftlr01_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 1 --arm ft_const --ratio .90 --ft-lr .01 --discard-model
+w_googlenet_ftlr01_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 2 --arm ft_const --ratio .90 --ft-lr .01 --discard-model
+w_googlenet_ftlr03_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm ft_const --ratio .90 --ft-lr .03 --discard-model
+w_googlenet_ftlr03_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 1 --arm ft_const --ratio .90 --ft-lr .03 --discard-model
+w_googlenet_ftlr03_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 2 --arm ft_const --ratio .90 --ft-lr .03 --discard-model
+w_resnet34_ftlr003_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm ft_const --ratio .90 --ft-lr .003 --discard-model
+w_resnet34_ftlr003_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm ft_const --ratio .90 --ft-lr .003 --discard-model
+w_resnet34_ftlr003_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm ft_const --ratio .90 --ft-lr .003 --discard-model
+w_resnet34_ftlr01_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm ft_const --ratio .90 --ft-lr .01 --discard-model
+w_resnet34_ftlr01_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm ft_const --ratio .90 --ft-lr .01 --discard-model
+w_resnet34_ftlr01_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm ft_const --ratio .90 --ft-lr .01 --discard-model
+w_resnet34_ftlr03_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm ft_const --ratio .90 --ft-lr .03 --discard-model
+w_resnet34_ftlr03_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm ft_const --ratio .90 --ft-lr .03 --discard-model
+w_resnet34_ftlr03_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm ft_const --ratio .90 --ft-lr .03 --discard-model
+w_resnet18_ftlr003_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 0 --arm ft_const --ratio .90 --ft-lr .003 --discard-model
+w_resnet18_ftlr003_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 1 --arm ft_const --ratio .90 --ft-lr .003 --discard-model
+w_resnet18_ftlr003_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 2 --arm ft_const --ratio .90 --ft-lr .003 --discard-model
+w_resnet18_ftlr01_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 0 --arm ft_const --ratio .90 --ft-lr .01 --discard-model
+w_resnet18_ftlr01_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 1 --arm ft_const --ratio .90 --ft-lr .01 --discard-model
+w_resnet18_ftlr01_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 2 --arm ft_const --ratio .90 --ft-lr .01 --discard-model
+w_resnet18_ftlr03_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 0 --arm ft_const --ratio .90 --ft-lr .03 --discard-model
+w_resnet18_ftlr03_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 1 --arm ft_const --ratio .90 --ft-lr .03 --discard-model
+w_resnet18_ftlr03_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 2 --arm ft_const --ratio .90 --ft-lr .03 --discard-model
+w_vgg16_bn_ftlr003_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm ft_const --ratio .90 --ft-lr .003 --discard-model
+w_vgg16_bn_ftlr003_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm ft_const --ratio .90 --ft-lr .003 --discard-model
+w_vgg16_bn_ftlr003_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm ft_const --ratio .90 --ft-lr .003 --discard-model
+w_vgg16_bn_ftlr01_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm ft_const --ratio .90 --ft-lr .01 --discard-model
+w_vgg16_bn_ftlr01_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm ft_const --ratio .90 --ft-lr .01 --discard-model
+w_vgg16_bn_ftlr01_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm ft_const --ratio .90 --ft-lr .01 --discard-model
+w_vgg16_bn_ftlr03_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm ft_const --ratio .90 --ft-lr .03 --discard-model
+w_vgg16_bn_ftlr03_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm ft_const --ratio .90 --ft-lr .03 --discard-model
+w_vgg16_bn_ftlr03_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm ft_const --ratio .90 --ft-lr .03 --discard-model
+w_resnet56_ftlr003_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm ft_const --ratio .90 --ft-lr .003 --discard-model
+w_resnet56_ftlr003_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm ft_const --ratio .90 --ft-lr .003 --discard-model
+w_resnet56_ftlr003_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm ft_const --ratio .90 --ft-lr .003 --discard-model
+w_resnet56_ftlr01_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm ft_const --ratio .90 --ft-lr .01 --discard-model
+w_resnet56_ftlr01_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm ft_const --ratio .90 --ft-lr .01 --discard-model
+w_resnet56_ftlr01_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm ft_const --ratio .90 --ft-lr .01 --discard-model
+w_resnet56_ftlr03_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm ft_const --ratio .90 --ft-lr .03 --discard-model
+w_resnet56_ftlr03_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm ft_const --ratio .90 --ft-lr .03 --discard-model
+w_resnet56_ftlr03_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm ft_const --ratio .90 --ft-lr .03 --discard-model
+x_densenet121_ftlr0003_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 0 --arm ft_const --ratio .90 --ft-lr .0003 --discard-model
+x_densenet121_ftlr0003_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 1 --arm ft_const --ratio .90 --ft-lr .0003 --discard-model
+x_densenet121_ftlr0003_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model densenet121 --seed 2 --arm ft_const --ratio .90 --ft-lr .0003 --discard-model
+x_resnet50_ftlr0003_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 0 --arm ft_const --ratio .90 --ft-lr .0003 --discard-model
+x_resnet50_ftlr0003_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 1 --arm ft_const --ratio .90 --ft-lr .0003 --discard-model
+x_resnet50_ftlr0003_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet50 --seed 2 --arm ft_const --ratio .90 --ft-lr .0003 --discard-model
+x_resnet110_ftlr0003_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 0 --arm ft_const --ratio .90 --ft-lr .0003 --discard-model
+x_resnet110_ftlr0003_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 1 --arm ft_const --ratio .90 --ft-lr .0003 --discard-model
+x_resnet110_ftlr0003_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet110 --seed 2 --arm ft_const --ratio .90 --ft-lr .0003 --discard-model
+x_googlenet_ftlr0003_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 0 --arm ft_const --ratio .90 --ft-lr .0003 --discard-model
+x_googlenet_ftlr0003_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 1 --arm ft_const --ratio .90 --ft-lr .0003 --discard-model
+x_googlenet_ftlr0003_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model googlenet --seed 2 --arm ft_const --ratio .90 --ft-lr .0003 --discard-model
+x_resnet34_ftlr0003_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm ft_const --ratio .90 --ft-lr .0003 --discard-model
+x_resnet34_ftlr0003_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm ft_const --ratio .90 --ft-lr .0003 --discard-model
+x_resnet34_ftlr0003_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm ft_const --ratio .90 --ft-lr .0003 --discard-model
+x_resnet18_ftlr0003_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 0 --arm ft_const --ratio .90 --ft-lr .0003 --discard-model
+x_resnet18_ftlr0003_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 1 --arm ft_const --ratio .90 --ft-lr .0003 --discard-model
+x_resnet18_ftlr0003_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet18 --seed 2 --arm ft_const --ratio .90 --ft-lr .0003 --discard-model
+x_vgg16_bn_ftlr0003_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 0 --arm ft_const --ratio .90 --ft-lr .0003 --discard-model
+x_vgg16_bn_ftlr0003_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 1 --arm ft_const --ratio .90 --ft-lr .0003 --discard-model
+x_vgg16_bn_ftlr0003_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model vgg16_bn --seed 2 --arm ft_const --ratio .90 --ft-lr .0003 --discard-model
+x_resnet56_ftlr0003_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm ft_const --ratio .90 --ft-lr .0003 --discard-model
+x_resnet56_ftlr0003_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm ft_const --ratio .90 --ft-lr .0003 --discard-model
+x_resnet56_ftlr0003_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm ft_const --ratio .90 --ft-lr .0003 --discard-model
+y_resnet34_cluster_r50_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm gradual --q-floor --ratio .50
+y_resnet34_unstr_r50_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm gradual_unstructured --ratio .50
+y_resnet34_nm24_r50_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm gradual_nm24 --ratio .50
+y_resnet34_unstr_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 0 --arm gradual_unstructured --ratio .90
+y_resnet34_cluster_r50_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm gradual --q-floor --ratio .50
+y_resnet34_unstr_r50_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm gradual_unstructured --ratio .50
+y_resnet34_nm24_r50_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm gradual_nm24 --ratio .50
+y_resnet34_unstr_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 1 --arm gradual_unstructured --ratio .90
+y_resnet34_cluster_r50_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm gradual --q-floor --ratio .50
+y_resnet34_unstr_r50_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm gradual_unstructured --ratio .50
+y_resnet34_nm24_r50_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm gradual_nm24 --ratio .50
+y_resnet34_unstr_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet34 --seed 2 --arm gradual_unstructured --ratio .90
+y_resnet56_cluster_r50_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm gradual --q-floor --ratio .50
+y_resnet56_unstr_r50_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm gradual_unstructured --ratio .50
+y_resnet56_nm24_r50_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm gradual_nm24 --ratio .50
+y_resnet56_unstr_r90_0	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 0 --arm gradual_unstructured --ratio .90
+y_resnet56_cluster_r50_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm gradual --q-floor --ratio .50
+y_resnet56_unstr_r50_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm gradual_unstructured --ratio .50
+y_resnet56_nm24_r50_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm gradual_nm24 --ratio .50
+y_resnet56_unstr_r90_1	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 1 --arm gradual_unstructured --ratio .90
+y_resnet56_cluster_r50_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm gradual --q-floor --ratio .50
+y_resnet56_unstr_r50_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm gradual_unstructured --ratio .50
+y_resnet56_nm24_r50_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm gradual_nm24 --ratio .50
+y_resnet56_unstr_r90_2	/usr/local/anaconda3/bin/python3 scripts/dataset_pruning_worker.py --dataset cifar100 --model resnet56 --seed 2 --arm gradual_unstructured --ratio .90

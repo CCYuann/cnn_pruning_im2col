@@ -1,0 +1,119 @@
+{
+ "features.0": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 8,
+  "K": 27,
+  "Cin": 3,
+  "kernel": 3
+ },
+ "features.3": {
+  "Hout": 32,
+  "Wout": 32,
+  "stride": 1,
+  "clusters": 8,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "features.7": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 16,
+  "K": 576,
+  "Cin": 64,
+  "kernel": 3
+ },
+ "features.10": {
+  "Hout": 16,
+  "Wout": 16,
+  "stride": 1,
+  "clusters": 16,
+  "K": 1152,
+  "Cin": 128,
+  "kernel": 3
+ },
+ "features.14": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 32,
+  "K": 1152,
+  "Cin": 128,
+  "kernel": 3
+ },
+ "features.17": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 32,
+  "K": 2304,
+  "Cin": 256,
+  "kernel": 3
+ },
+ "features.20": {
+  "Hout": 8,
+  "Wout": 8,
+  "stride": 1,
+  "clusters": 32,
+  "K": 2304,
+  "Cin": 256,
+  "kernel": 3
+ },
+ "features.24": {
+  "Hout": 4,
+  "Wout": 4,
+  "stride": 1,
+  "clusters": 64,
+  "K": 2304,
+  "Cin": 256,
+  "kernel": 3
+ },
+ "features.27": {
+  "Hout": 4,
+  "Wout": 4,
+  "stride": 1,
+  "clusters": 64,
+  "K": 4608,
+  "Cin": 512,
+  "kernel": 3
+ },
+ "features.30": {
+  "Hout": 4,
+  "Wout": 4,
+  "stride": 1,
+  "clusters": 64,
+  "K": 4608,
+  "Cin": 512,
+  "kernel": 3
+ },
+ "features.34": {
+  "Hout": 2,
+  "Wout": 2,
+  "stride": 1,
+  "clusters": 64,
+  "K": 4608,
+  "Cin": 512,
+  "kernel": 3
+ },
+ "features.37": {
+  "Hout": 2,
+  "Wout": 2,
+  "stride": 1,
+  "clusters": 64,
+  "K": 4608,
+  "Cin": 512,
+  "kernel": 3
+ },
+ "features.40": {
+  "Hout": 2,
+  "Wout": 2,
+  "stride": 1,
+  "clusters": 64,
+  "K": 4608,
+  "Cin": 512,
+  "kernel": 3
+ }
+}

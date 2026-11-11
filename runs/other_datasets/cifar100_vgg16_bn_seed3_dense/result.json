@@ -1,0 +1,22 @@
+{
+  "dataset": "cifar100",
+  "model": "vgg16_bn",
+  "seed": 3,
+  "arm": "dense",
+  "ratio": 0,
+  "q_floor": false,
+  "stem_keep": false,
+  "allocator": "cluster",
+  "mac_beta": null,
+  "q_floor_n": 1,
+  "free_fill": false,
+  "tag": "",
+  "kd": false,
+  "kd_alpha": 0.9,
+  "weight_decay": 0.0005,
+  "epochs": 100,
+  "final_validation": 0.7198,
+  "final_test": 0.7233,
+  "final_train": 0.9974444444444445,
+  "seconds": 757.3780862488784
+}
