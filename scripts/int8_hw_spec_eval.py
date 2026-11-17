@@ -70,6 +70,8 @@ class IntConv:
 
 def blocks(model):
     for number in range(1, 5):
+        if not hasattr(model, f"layer{number}"):  # CIFAR ResNet-56/110 have three stages
+            continue
         for index, block in enumerate(getattr(model, f"layer{number}")):
             yield f"layer{number}.{index}", block
 
@@ -111,7 +113,7 @@ def calibrate(model, loader, device, clip=1.):
             candidates = [peak[name]*f for f in torch.linspace(.2, 1, 41).tolist()]
             error = [float((ties_away(value/(c/127)).clamp(-127, 127)*(c/127)-value).square().mean()) for c in candidates]
             peak[name] = candidates[min(range(len(error)), key=error.__getitem__)]
-    return {k: v/127 for k, v in peak.items()}, logit/127
+    return {k: max(v, 1e-8)/127 for k, v in peak.items()}, logit/127  # floor only matters for an all-zero (dead) activation
 
 
 @torch.inference_mode()

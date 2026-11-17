@@ -1,0 +1,6 @@
+model,channels,provably_constant,val_logits_identical,raw_shift_max_all,raw_shift_max_live,live_channels_shift_over_36,live_channels_shift_over_32,bias_bits_live,acc_bias_observed_bits,acc_bias_bound_bits_max,layers_bound_over_28bit,bias_only_clusters,ms_v3,ms_after_bias_only,ms_after_both,saving_pct
+c10_fs98_seed6,8512,1175,True,53,35,0,10,21,21,21,0,2,20.766,20.766,20.712,0.26
+c100_kd98_seed3,8512,508,True,44,32,0,0,19,19,21,0,0,12.494,12.494,12.476,0.14
+c100_floor90_seed0,8512,290,True,53,35,0,7,21,21,23,0,0,48.99,48.99,48.947,0.09
+c100_floor90_seed1,8512,343,True,53,34,0,2,22,22,23,0,0,48.025,48.025,47.969,0.12
+c100_floor90_seed2,8512,249,True,53,33,0,5,21,21,23,0,0,48.828,48.828,48.739,0.18

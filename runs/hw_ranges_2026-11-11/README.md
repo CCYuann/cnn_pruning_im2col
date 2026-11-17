@@ -80,7 +80,7 @@
   - 3 個模型逐位元相同。
   - c100_floor90 的 seed1、seed2 有部分影像的 logits 不同，但 Top-1 都沒有改變（0/10,000）。
 
-**限制：** 「輸出固定」是在 validation 上觀察的，不是數學上的保證，所以在沒看過的影像上可能有很小的差異。若硬體需要保證逐位元相同，軟體端可以改用保守的判定：用權重的最大可能累加值去證明輸出不會變，只改寫證明得了的 channel。這還沒做。
+**限制：** 「輸出固定」是在 validation 上觀察的，不是數學上的保證，所以在沒看過的影像上可能有很小的差異。可證明的版本見第 6 節，建議改用那個。
 
 ## 3. S3：package 版本
 
@@ -122,6 +122,36 @@
 - 2:4 最多只能剪 50%。它在支援 2:4 的硬體上可加速 2 倍，但 V3 不是那類硬體。
 - 只有浮點精度（AMP float16）。週期是 V3 公式預測，不是 RTL 實測。
 
+## 6. 可證明的改寫（2026-11-15，建議採用）
+
+第 2 節的「輸出固定」是觀察出來的。這一節改成數學上可證明的判定：
+- 從輸入影像的範圍（像素 0–1）開始，逐層算出每個 channel 整數值的上下界。
+- 上下界相等的 channel 才算「可證明固定」，只改寫這些（同第 2 節：權重 0、bias = v、multiplier 2^14、right_shift 14）。
+- 因為是上下界的推導，改寫後**對任何輸入**都保證逐位元相同，不是只在看過的影像上成立。
+
+**結果（5 個模型，明細：[provable/summary.csv](provable/summary.csv)、[provable/layers.csv](provable/layers.csv)）：**
+
+| 項目 | 結果 |
+|---|---|
+| 可證明固定的 channel | 249–1,175 個（共 8,512）。比第 2 節多，因為也包含 ReLU 後恆為 0 的分支卷積 |
+| validation logits | 5 個模型全部逐位元相同（數學保證，這裡只是確認） |
+| 其餘 channel 的 right_shift | 最大 32–35；超過 36 的 channel：0 個 |
+| 其餘 channel 的 bias | 最大 19–22 bit |
+| acc+bias 實測最大值（validation） | 19–22 bit |
+| **acc+bias 最壞情況上界** | **21–23 bit；超過 28 bit 的層：0 層** |
+
+**對 D 和 F 的意義：**
+- **F（bias 預載進累加器）：** 可證明安全。上界是任何輸入的最壞情況，不是觀察值。離 28 bit 有 5 bit 以上的餘裕；硬體 V4.1 的累加器是 25 bit，也有 2 bit 以上。
+  - 2026-11-17 補算：bias 預載後，**累加過程中的每一個部分和**（保留位置的任意子集，所以和 q 的順序無關）的上界也是 21–23 bit，5 個模型都和最終和的上界相同。程式：[hw_provable_partial_bound.py](../../scripts/hw_provable_partial_bound.py)。
+  - 沒有算過 80% 對照組（`layer_json_r0p8_contiguous`）套用改寫後是多少。
+- **D（縮小移位器）：** right_shift 上限可以從 48 降到 36。
+- 前提是軟體端在輸出 package 時套用這個改寫。程式：[hw_provable_analysis.py](../../scripts/hw_provable_analysis.py)。
+- 只驗證了這 5 個 ResNet34 模型。其他模型或新的 package 要重跑一次確認。
+
+**順帶測的（負面結果）：** 這些固定 channel 能不能省 V3 週期？
+- 做法：8 個 filter 全部固定的 cluster 改成 bias-only（q=0），讀到恆為 0 輸入的位置刪掉。兩者都不改變數值。
+- 結果：只省 0.09–0.26% 的週期，不值得做。固定的 channel 很少整個 cluster 一起出現。
+
 ## 檔案
 
 | 檔案 | 內容 |
@@ -130,4 +160,5 @@
 | [clamp_test.txt](clamp_test.txt) | 直接夾值的逐位元測試 |
 | [reencode_test.txt](reencode_test.txt) | 改寫固定輸出 channel 的逐位元測試 |
 | [scripts/](scripts/) | 上面兩個測試的腳本 |
+| [provable/](provable/) | 可證明改寫的結果（第 6 節） |
 | [q_per_cluster_r90/](q_per_cluster_r90/) | 90% 主線每層的幾何和每個 cluster 的 q |
